@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="activity-average-rate-of-change">
+  <title>Activity: Average Rate of Change</title>
+  
+  <!-- ============================================================
+       PAGE 1: FORMULAS
+       ============================================================ -->
+  <page>
+    <exercise xml:id="aroc-formula-1" workspace="1.5in">
+      <introduction>
+        <p>
+          The <em>average rate of change</em> of a function <m>f</m> from <m>x=a</m> to <m>x=b</m> is:
+        </p>
+        <p>
+          <md>
+            <mrow>\frac{f(b)-f(a)}{b-a}</mrow>
+          </md>
+        </p>
+        <p>
+          This is the change in output divided by the change in input. Three things to keep in mind: Only the two endpoints matter, no matter what happens in between. The units are always output units per input unit. A negative answer means the output decreased across the interval, not that the function was negative.
+        </p>
+        <p>
+          <em>Worked Example:</em> Find the average rate of change of <m>\displaystyle h(x) = \frac{60}{x}</m> on the interval <m>[3,10]</m>.
+        </p>
+        <p>
+          <em>Solution:</em> Evaluate at both endpoints first, then divide.
+          <md>
+            <mrow>h(10) \amp= \frac{60}{10} = 6</mrow>
+            <mrow>h(3) \amp= \frac{60}{3} = 20</mrow>
+            <mrow>\frac{h(10)-h(3)}{10-3} \amp= \frac{6-20}{7} = \frac{-14}{7} = -2</mrow>
+          </md>
+        </p>
+        <p>
+          The average rate of change is <m>-2</m>. On average, the output drops by <m>2</m> units for each <m>1</m> unit increase in the input across this interval.
+        </p>
+      </introduction>
+      <statement>
+        <p>Find the average rate of change of <m>\displaystyle g(x) = \frac{36}{x}</m> on the interval <m>[2,6]</m>.</p>
+      </statement>
+      <solution>
+        <p>
+          First, evaluate the function at the endpoints <m>x = 6</m> and <m>x = 2</m>:
+          <md>
+            <mrow>g(6) \amp= \frac{36}{6} = 6</mrow>
+            <mrow>g(2) \amp= \frac{36}{2} = 18</mrow>
+          </md>
+          Next, apply the average rate of change formula:
+          <md>
+            <mrow>\frac{g(6)-g(2)}{6-2} \amp= \frac{6-18}{4}</mrow>
+            <mrow>\amp= \frac{-12}{4}</mrow>
+            <mrow>\amp= -3</mrow>
+          </md>
+          The average rate of change is <m>-3</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="aroc-formula-2" workspace="1.5in">
+      <statement>
+        <p>Find the average rate of change of <m>k(x) = 2x^2 - 5</m> on the interval <m>[-1,3]</m>.</p>
+      </statement>
+      <solution>
+        <p>
+          Evaluate the function at the endpoints <m>x = 3</m> and <m>x = -1</m>:
+          <md>
+            <mrow>k(3) \amp= 2(3)^2 - 5 = 2(9) - 5 = 18 - 5 = 13</mrow>
+            <mrow>k(-1) \amp= 2(-1)^2 - 5 = 2(1) - 5 = 2 - 5 = -3</mrow>
+          </md>
+          Apply the formula, being very careful with subtracting negative numbers in the denominator:
+          <md>
+            <mrow>\frac{k(3)-k(-1)}{3-(-1)} \amp= \frac{13 - (-3)}{3 - (-1)}</mrow>
+            <mrow>\amp= \frac{13 + 3}{3 + 1}</mrow>
+            <mrow>\amp= \frac{16}{4}</mrow>
+            <mrow>\amp= 4</mrow>
+          </md>
+          The average rate of change is <m>4</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="aroc-formula-3" workspace="1.5in">
+      <statement>
+        <p>Find the average rate of change of <m>m(x) = 12\sqrt{x}</m> on the interval <m>[1,9]</m>.</p>
+      </statement>
+      <solution>
+        <p>
+          Evaluate the function at the endpoints <m>x = 9</m> and <m>x = 1</m>:
+          <md>
+            <mrow>m(9) \amp= 12\sqrt{9} = 12(3) = 36</mrow>
+            <mrow>m(1) \amp= 12\sqrt{1} = 12(1) = 12</mrow>
+          </md>
+          Apply the average rate of change formula:
+          <md>
+            <mrow>\frac{m(9)-m(1)}{9-1} \amp= \frac{36-12}{8}</mrow>
+            <mrow>\amp= \frac{24}{8}</mrow>
+            <mrow>\amp= 3</mrow>
+          </md>
+          The average rate of change is <m>3</m>.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 2: TABLES
+       ============================================================ -->
+  <page>
+    <exercise xml:id="aroc-table-1">
+      <introduction>
+        <p>
+          <em>Worked Example:</em> A new app is gaining subscribers. The total number of subscribers <m>N(x)</m> after <m>x</m> weeks is given below. Find the average rate of change from <m>x=3</m> to <m>x=12</m> and interpret it.
+        </p>
+        <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+          <row bottom="medium">
+            <cell><m>x</m> (weeks)</cell>
+            <cell right="minor"><m>0</m></cell>
+            <cell right="minor"><m>3</m></cell>
+            <cell right="minor"><m>6</m></cell>
+            <cell right="minor"><m>9</m></cell>
+            <cell><m>12</m></cell>
+          </row>
+          <row>
+            <cell><m>N(x)</m> (subscribers)</cell>
+            <cell right="minor"><m>120</m></cell>
+            <cell right="minor"><m>210</m></cell>
+            <cell right="minor"><m>340</m></cell>
+            <cell right="minor"><m>480</m></cell>
+            <cell><m>660</m></cell>
+          </row>
+        </tabular>
+        <p>
+          <em>Solution:</em> Read the two endpoint columns, <m>N(3) = 210</m> and <m>N(12) = 660</m>. Then:
+          <md>
+            <mrow>\frac{N(12)-N(3)}{12-3} \amp= \frac{660-210}{9} = \frac{450}{9} = 50</mrow>
+          </md>
+        </p>
+        <p>
+          The average rate of change is <m>50</m> subscribers per week. Between week <m>3</m> and week <m>12</m>, the app gained an average of <m>50</m> new subscribers each week. The columns at <m>x=6</m> and <m>x=9</m> never entered the computation.
+        </p>
+        
+        <p>
+          <em>Practice:</em> A large tank is being drained, and <m>W(x)</m> is the amount of water left in the tank after <m>x</m> minutes.
+        </p>
+        <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+          <row bottom="medium">
+            <cell><m>x</m> (minutes)</cell>
+            <cell right="minor"><m>0</m></cell>
+            <cell right="minor"><m>5</m></cell>
+            <cell right="minor"><m>10</m></cell>
+            <cell right="minor"><m>15</m></cell>
+            <cell><m>20</m></cell>
+          </row>
+          <row>
+            <cell><m>W(x)</m> (gallons)</cell>
+            <cell right="minor"><m>800</m></cell>
+            <cell right="minor"><m>620</m></cell>
+            <cell right="minor"><m>430</m></cell>
+            <cell right="minor"><m>290</m></cell>
+            <cell><m>155</m></cell>
+          </row>
+        </tabular>
+      </introduction>
+      <statement>
+        <p>Consider the interval from <m>x=5</m> to <m>x=20</m>.</p>
+      </statement>
+      
+      <task workspace="1.5in">
+        <statement>
+          <p>Determine the average rate of change of the water amount on this interval, and state its units.</p>
+        </statement>
+        <solution>
+          <p>
+            Using the table, <m>W(20) = 155</m> and <m>W(5) = 620</m>. Apply the formula:
+            <md>
+              <mrow>\frac{W(20)-W(5)}{20-5} \amp= \frac{155-620}{15}</mrow>
+              <mrow>\amp= \frac{-465}{15}</mrow>
+              <mrow>\amp= -31</mrow>
+            </md>
+            The average rate of change is <m>-31</m> gallons per minute.
+          </p>
+        </solution>
+      </task>
+      
+      <task workspace="1.25in">
+        <statement>
+          <p>Describe the meaning of your result in the context of the question. Write a full sentence that does not use the letters <m>W</m> or <m>x</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            Between <m>5</m> and <m>20</m> minutes after draining began, the tank lost an average of <m>31</m> gallons of water each minute.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="aroc-table-2">
+      <statement>
+        <p>Now consider the interval from <m>x=0</m> to <m>x=10</m>.</p>
+      </statement>
+      <task workspace="1.5in">
+        <statement>
+          <p>Determine the average rate of change of the water amount on this interval.</p>
+        </statement>
+        <solution>
+          <p>
+            Using the table, <m>W(10) = 430</m> and <m>W(0) = 800</m>. Apply the formula:
+            <md>
+              <mrow>\frac{W(10)-W(0)}{10-0} \amp= \frac{430-800}{10}</mrow>
+              <mrow>\amp= \frac{-370}{10}</mrow>
+              <mrow>\amp= -37</mrow>
+            </md>
+            The average rate of change is <m>-37</m> gallons per minute.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.25in">
+        <statement>
+          <p>Compare your answer to the one from the previous interval. During which stretch of time was the tank draining faster? Explain how you can tell from the two numbers.</p>
+        </statement>
+        <solution>
+          <p>
+            The tank drained faster over the first ten minutes. It was losing <m>37</m> gallons per minute there compared with <m>31</m> gallons per minute on the later interval. Both values are negative (indicating a loss of water), so the comparison is about which rate is farther from zero, not which is larger as a signed number. This demonstrates that the average rate of change depends heavily on the specific interval you choose.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 3: GRAPHS
+       ============================================================ -->
+  <page>
+    <exercise xml:id="aroc-graph-1">
+      <introduction>
+        <p>
+          <em>Worked Example:</em> The graph of <m>h(x)</m> is shown below. Find the average rate of change of <m>h</m> from <m>x=0</m> to <m>x=2</m>.
+        </p>
+        <image width="50%">
+          <description>
+            <p>A downward opening parabola with a dashed line connecting the points (0,2) and (2,0).</p>
+          </description>
+          <latex-image>
+            \begin{tikzpicture}[scale=0.6]
+                \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                \foreach \x in {-3,-2,-1,1,2,3} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny$\x$};
+                \foreach \y in {-3,-2,-1,1,2,3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny$\y$};
+                \draw[thick, blue, &lt;-&gt;, domain=-3:3, samples=60] plot (\x, {-0.5*\x*\x + 2});
+                \draw[dashed, gvsuNavy, thick] (0,2) -- (2,0);
+                \filldraw[gvsuNavy] (0,2) circle (2.5pt);
+                \filldraw[gvsuNavy] (2,0) circle (2.5pt);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          <em>Solution:</em> Read the outputs off the graph: <m>h(0) = 2</m> and <m>h(2) = 0</m>. Then:
+          <md>
+            <mrow>\frac{h(2)-h(0)}{2-0} \amp= \frac{0-2}{2} = -1</mrow>
+          </md>
+        </p>
+        <p>
+          The average rate of change is <m>-1</m>. Notice that this is exactly the slope of the dashed line drawn through the two points on the curve, which is what the average rate of change visually measures.
+        </p>
+      </introduction>
+      <statement>
+        <p>
+          The graph of <m>f(x)</m> is shown below.
+        </p>
+        <image width="55%">
+          <description>
+            <p>An upward opening parabola passing through the points (-2,0), (0,-2), and (2,0).</p>
+          </description>
+          <latex-image>
+            \begin{tikzpicture}[scale=0.62]
+                \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                \foreach \x in {-3,-2,-1,1,2,3} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\small$\x$};
+                \foreach \y in {-3,-2,-1,1,2,3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\small$\y$};
+                \draw[thick, blue, &lt;-&gt;, domain=-3:3, samples=60] plot (\x, {0.5*\x*\x - 2});
+                \filldraw[blue] (-2,0) circle (2.5pt);
+                \filldraw[blue] (0,-2) circle (2.5pt);
+                \filldraw[blue] (2,0) circle (2.5pt);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <task workspace="1.25in">
+        <statement>
+          <p>Find the average rate of change of <m>f</m> from <m>x=-2</m> to <m>x=0</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            Reading the points from the graph, we have <m>f(0) = -2</m> and <m>f(-2) = 0</m>. Applying the formula:
+            <md>
+              <mrow>\frac{f(0)-f(-2)}{0-(-2)} \amp= \frac{-2-0}{2}</mrow>
+              <mrow>\amp= \frac{-2}{2}</mrow>
+              <mrow>\amp= -1</mrow>
+            </md>
+            The average rate of change is <m>-1</m>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.25in">
+        <statement>
+          <p>Find the average rate of change of <m>f</m> from <m>x=0</m> to <m>x=2</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            Reading the points from the graph, we have <m>f(2) = 0</m> and <m>f(0) = -2</m>. Applying the formula:
+            <md>
+              <mrow>\frac{f(2)-f(0)}{2-0} \amp= \frac{0-(-2)}{2}</mrow>
+              <mrow>\amp= \frac{2}{2}</mrow>
+              <mrow>\amp= 1</mrow>
+            </md>
+            The average rate of change is <m>1</m>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.5in">
+        <statement>
+          <p>Your two answers have opposite signs even though the graph is one smooth curve. Explain what each sign is telling you about the outputs on that interval.</p>
+        </statement>
+        <solution>
+          <p>
+            The negative answer on the first interval tells us that the outputs decreased on the way from <m>x=-2</m> to <m>x=0</m>. The positive answer on the second interval tells us that the outputs increased from <m>x=0</m> to <m>x=2</m>. Because the curve turns around at the bottom vertex, the sign of the average rate of change flips depending on which side of the low point the interval is located.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 4: CONTEXT
+       ============================================================ -->
+  <page>
+    <exercise xml:id="aroc-context-1">
+      <introduction>
+        <p>
+          <em>Worked Example:</em> Suppose <m>f(t) = 150 - 16t^2</m> is the height in feet of an object dropped from a building after <m>t</m> seconds. Find the average rate of change of <m>f</m> on <m>[0,3]</m> and describe what it means.
+        </p>
+        <p>
+          <em>Solution:</em> Evaluate at both endpoints.
+          <md>
+            <mrow>f(0) \amp= 150 - 16(0)^2 = 150</mrow>
+            <mrow>f(3) \amp= 150 - 16(3)^2 = 150 - 144 = 6</mrow>
+          </md>
+          Then apply the formula:
+          <md>
+            <mrow>\frac{f(3)-f(0)}{3-0} \amp= \frac{6-150}{3} = \frac{-144}{3} = -48</mrow>
+          </md>
+        </p>
+        <p>
+          The average rate of change is <m>-48</m> feet per second. During the first <m>3</m> seconds of the fall, the object drops an average of <m>48</m> feet each second, so its average velocity over that stretch is <m>48</m> feet per second downward.
+        </p>
+      </introduction>
+      <statement>
+        <p>Suppose <m>s(t) = 300 - 16t^2</m> is the height in feet of an object dropped from a building after <m>t</m> seconds.</p>
+      </statement>
+      <task workspace="1.5in">
+        <statement>
+          <p>Find the average rate of change of <m>s</m> on <m>[1,4]</m>, and state its units.</p>
+        </statement>
+        <solution>
+          <p>
+            Evaluate the function at <m>t = 4</m> and <m>t = 1</m>:
+            <md>
+              <mrow>s(4) \amp= 300 - 16(4)^2 = 300 - 16(16) = 300 - 256 = 44</mrow>
+              <mrow>s(1) \amp= 300 - 16(1)^2 = 300 - 16 = 284</mrow>
+            </md>
+            Apply the formula:
+            <md>
+              <mrow>\frac{s(4)-s(1)}{4-1} \amp= \frac{44-284}{3}</mrow>
+              <mrow>\amp= \frac{-240}{3}</mrow>
+              <mrow>\amp= -80</mrow>
+            </md>
+            The average rate of change is <m>-80</m> feet per second.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.25in">
+        <statement>
+          <p>Describe in words what your answer to part (a) means. Your sentence should mention the object, the time, and the direction it is moving.</p>
+        </statement>
+        <solution>
+          <p>
+            Between <m>1</m> and <m>4</m> seconds after the object was dropped, its height decreased by an average of <m>80</m> feet each second, meaning it was moving downward at an average velocity of <m>80</m> ft/s.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="aroc-context-2">
+      <statement>
+        <p>A delivery van is purchased new, and its value in dollars after <m>t</m> years is given by <m>V(t) = 32000 - 2400t</m>.</p>
+      </statement>
+      <task workspace="1.5in">
+        <statement>
+          <p>Find the average rate of change of <m>V</m> on <m>[0,3]</m>, and state its units.</p>
+        </statement>
+        <solution>
+          <p>
+            Evaluate the function at <m>t = 3</m> and <m>t = 0</m>:
+            <md>
+              <mrow>V(3) \amp= 32000 - 2400(3) = 32000 - 7200 = 24800</mrow>
+              <mrow>V(0) \amp= 32000 - 2400(0) = 32000</mrow>
+            </md>
+            Apply the formula:
+            <md>
+              <mrow>\frac{V(3)-V(0)}{3-0} \amp= \frac{24800-32000}{3}</mrow>
+              <mrow>\amp= \frac{-7200}{3}</mrow>
+              <mrow>\amp= -2400</mrow>
+            </md>
+            The average rate of change is <m>-2400</m> dollars per year.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.5in">
+        <statement>
+          <p>Find the average rate of change of <m>V</m> on <m>[5,9]</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            Evaluate the function at <m>t = 9</m> and <m>t = 5</m>:
+            <md>
+              <mrow>V(9) \amp= 32000 - 2400(9) = 32000 - 21600 = 10400</mrow>
+              <mrow>V(5) \amp= 32000 - 2400(5) = 32000 - 12000 = 20000</mrow>
+            </md>
+            Apply the formula:
+            <md>
+              <mrow>\frac{V(9)-V(5)}{9-5} \amp= \frac{10400-20000}{4}</mrow>
+              <mrow>\amp= \frac{-9600}{4}</mrow>
+              <mrow>\amp= -2400</mrow>
+            </md>
+            The average rate of change is <m>-2400</m> dollars per year.
+          </p>
+        </solution>
+      </task>
+      <task workspace="1.25in">
+        <statement>
+          <p>You should have gotten the same answer twice. What is it about this particular function that makes the average rate of change come out the same on every interval?</p>
+        </statement>
+        <solution>
+          <p>
+            <m>V</m> is a linear function, and its slope is <m>-2400</m>. For any line, the average rate of change between any two points is exactly equal to the constant slope of the line, which is why the specific interval chosen does not matter. For every other non-linear function type in this activity, the interval will change the result.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+</worksheet>

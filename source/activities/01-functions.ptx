@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="activity-function-fundamentals">
+  <title>Activity: Function Fundamentals</title>
+  
+  <!-- ============================================================
+       PAGE 1: TABLES
+       ============================================================ -->
+  <page>
+    <exercise xml:id="fn-tables">
+      <title>Function Definition and Tables</title>
+      <introduction>
+        <p>
+          A <em>function</em> is a rule that assigns to each input exactly one output. The set of all possible inputs is called the <em>domain</em>, and the set of all corresponding outputs is called the <em>range</em>. Two different inputs are allowed to share an output; a single input is never allowed to have two outputs. When working in context, identifying the units of the input and output is just as important as the arithmetic.
+        </p>
+      </introduction>
+
+      <task workspace="1.25in">
+        <statement>
+          <p>Determine whether the following table can represent a function. Make a brief note explaining why or why not.</p>
+          <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell right="minor"><m>10</m></cell>
+              <cell right="minor"><m>-2</m></cell>
+              <cell right="minor"><m>2</m></cell>
+              <cell right="minor"><m>8</m></cell>
+              <cell><m>14</m></cell>
+            </row>
+            <row>
+              <cell><m>y</m></cell>
+              <cell right="minor"><m>65</m></cell>
+              <cell right="minor"><m>50</m></cell>
+              <cell right="minor"><m>50</m></cell>
+              <cell right="minor"><m>26</m></cell>
+              <cell><m>17</m></cell>
+            </row>
+          </tabular>
+        </statement>
+        <solution>
+          <p>
+            Yes, this table can represent a function. We check the inputs (the <m>x</m>-values) to ensure that each one is assigned to exactly one output. The input <m>-2</m> maps to <m>50</m>, and the input <m>2</m> also maps to <m>50</m>. It is perfectly valid for two different inputs to share the same output. Because no single input is assigned multiple different outputs, the defining rule of a function is satisfied.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.25in">
+        <statement>
+          <p>Determine whether the following table can represent a function. Make a brief note explaining why or why not.</p>
+          <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell right="minor"><m>5</m></cell>
+              <cell right="minor"><m>0</m></cell>
+              <cell right="minor"><m>-3</m></cell>
+              <cell right="minor"><m>3</m></cell>
+              <cell><m>5</m></cell>
+            </row>
+            <row>
+              <cell><m>y</m></cell>
+              <cell right="minor"><m>-1</m></cell>
+              <cell right="minor"><m>5</m></cell>
+              <cell right="minor"><m>30</m></cell>
+              <cell right="minor"><m>-15</m></cell>
+              <cell><m>-3</m></cell>
+            </row>
+          </tabular>
+        </statement>
+        <solution>
+          <p>
+            No, this table cannot represent a function. If we examine the inputs, we see that <m>x = 5</m> appears twice in the domain row. In the first instance, the input <m>5</m> is assigned an output of <m>-1</m>. In the second instance, the same input <m>5</m> is assigned an output of <m>-3</m>. Because a single input is mapping to two distinct outputs, this relationship violates the strict definition of a function.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.25in">
+        <statement>
+          <p>Determine whether the following table can represent a function. Make a brief note explaining why or why not.</p>
+          <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell right="minor"><m>-4</m></cell>
+              <cell right="minor"><m>-1</m></cell>
+              <cell right="minor"><m>0</m></cell>
+              <cell right="minor"><m>1</m></cell>
+              <cell><m>4</m></cell>
+            </row>
+            <row>
+              <cell><m>y</m></cell>
+              <cell right="minor"><m>7</m></cell>
+              <cell right="minor"><m>7</m></cell>
+              <cell right="minor"><m>7</m></cell>
+              <cell right="minor"><m>7</m></cell>
+              <cell><m>7</m></cell>
+            </row>
+          </tabular>
+        </statement>
+        <solution>
+          <p>
+            Yes, this table can represent a function. Every input in the top row has exactly one output associated with it. The fact that every input produces the identical output of <m>7</m> means this represents a constant function. The definition of a function only prohibits one input from pointing to multiple outputs; it places no restriction on how many inputs can point to the same output.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-table-evaluation">
+      <title>Evaluating from a Table</title>
+      <introduction>
+        <p>Consider the function <m>g(x)</m> defined by the following table:</p>
+        <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+          <row bottom="medium">
+            <cell><m>x</m></cell>
+            <cell right="minor"><m>0</m></cell>
+            <cell right="minor"><m>1</m></cell>
+            <cell right="minor"><m>2</m></cell>
+            <cell right="minor"><m>3</m></cell>
+            <cell right="minor"><m>4</m></cell>
+            <cell><m>5</m></cell>
+          </row>
+          <row>
+            <cell><m>g(x)</m></cell>
+            <cell right="minor"><m>-6</m></cell>
+            <cell right="minor"><m>11</m></cell>
+            <cell right="minor"><m>17</m></cell>
+            <cell right="minor"><m>-5</m></cell>
+            <cell right="minor"><m>17</m></cell>
+            <cell><m>0</m></cell>
+          </row>
+        </tabular>
+      </introduction>
+      
+      <task workspace="1in">
+        <statement><p>Determine <m>g(0)</m>.</p></statement>
+        <solution>
+          <p>
+            The notation <m>g(0)</m> tells us to find the output when the input is <m>0</m>. Locating <m>0</m> in the <m>x</m> row, we read the corresponding value directly below it in the <m>g(x)</m> row. Therefore, <m>g(0) = -6</m>.
+          </p>
+        </solution>
+      </task>
+      
+      <task workspace="1in">
+        <statement><p>Find all <m>x</m> values such that <m>g(x)=17</m>.</p></statement>
+        <solution>
+          <p>
+            The equation <m>g(x) = 17</m> provides the output and asks us to work backwards to find the input(s). Scanning the <m>g(x)</m> row for the value <m>17</m>, we see it appears twice. Reading the corresponding inputs in the top row above these values yields <m>x = 2</m> and <m>x = 4</m>.
+          </p>
+        </solution>
+      </task>
+      
+      <task workspace="2in">
+        <statement>
+          <p>Find all <m>x</m> values such that <m>g(x)=0</m>. Is this the same question as finding <m>g(0)</m>? Explain the difference in your own words.</p>
+        </statement>
+        <solution>
+          <p>
+            Scanning the <m>g(x)</m> row for the output <m>0</m>, we find it in the final column. Reading up to the input row, the corresponding input is <m>x = 5</m>. 
+          </p>
+          <p>
+            This is an entirely different operation from finding <m>g(0)</m>. The expression <m>g(0)</m> puts <m>0</m> in the input slot, meaning we start at the top of the table and read downward. The equation <m>g(x) = 0</m> puts <m>0</m> in the output slot, meaning we start at the bottom of the table and read upward to find all matching inputs.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 2: SYMBOLIC FUNCTIONS
+       ============================================================ -->
+  <page>
+    <exercise xml:id="fn-symbolic-evaluation">
+      <title>Evaluating Symbolic Functions</title>
+      <introduction>
+        <p>
+          To evaluate a function given by a formula, replace <em>every</em> occurrence of the input variable with the value you were given, wrapping negative inputs in parentheses. Then simplify one operation at a time. If the formula contains a fraction or a square root, check whether the input is even allowed before you simplify.
+        </p>
+      </introduction>
+
+      <task workspace="2in">
+        <statement>
+          <p>Let <m>\displaystyle f(t) = -4t + \frac{20}{3t+16}</m>. Evaluate <m>f(-2)</m> and show your step-by-step simplification.</p>
+        </statement>
+        <solution>
+          <p>
+            First, substitute <m>-2</m> for every instance of <m>t</m> in the formula, making sure to use parentheses around the negative value:
+            <md>
+              <mrow>f(-2) \amp= -4(-2) + \frac{20}{3(-2) + 16}</mrow>
+            </md>
+            Next, perform the multiplications in the first term and in the denominator:
+            <md>
+              <mrow>\amp= 8 + \frac{20}{-6 + 16}</mrow>
+            </md>
+            Simplify the denominator, then reduce the fraction:
+            <md>
+              <mrow>\amp= 8 + \frac{20}{10}</mrow>
+              <mrow>\amp= 8 + 2</mrow>
+            </md>
+            Finally, combine the terms: <m>f(-2) = 10</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-quadratic-evaluation">
+      <title>Quadratic Function Evaluation</title>
+      <introduction>
+        <p>Let <m>g(x) = 3x^2 - 5x + 2</m>.</p>
+      </introduction>
+      
+      <task workspace="1.5in">
+        <statement><p>Determine <m>g(2)</m>.</p></statement>
+        <solution>
+          <p>
+            Substitute <m>2</m> for <m>x</m> and follow the order of operations, ensuring exponents are applied before multiplication:
+            <md>
+              <mrow>g(2) \amp= 3(2)^2 - 5(2) + 2</mrow>
+              <mrow>\amp= 3(4) - 10 + 2</mrow>
+              <mrow>\amp= 12 - 10 + 2</mrow>
+              <mrow>\amp= 4</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.5in">
+        <statement><p>Determine <m>g(-3)</m>.</p></statement>
+        <solution>
+          <p>
+            Substitute <m>-3</m> for <m>x</m>, being particularly careful with the signs when squaring a negative number and when multiplying two negative values:
+            <md>
+              <mrow>g(-3) \amp= 3(-3)^2 - 5(-3) + 2</mrow>
+              <mrow>\amp= 3(9) + 15 + 2</mrow>
+              <mrow>\amp= 27 + 15 + 2</mrow>
+              <mrow>\amp= 44</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-rational-domain">
+      <title>Rational Functions and Domain Restrictions</title>
+      <introduction>
+        <p>Let <m>\displaystyle h(x) = \frac{x+5}{x^2-9}</m>.</p>
+      </introduction>
+
+      <task workspace="1.5in">
+        <statement><p>Determine <m>h(-1)</m>, writing your answer as a simplified fraction.</p></statement>
+        <solution>
+          <p>
+            Substitute <m>-1</m> into both the numerator and denominator:
+            <md>
+              <mrow>h(-1) \amp= \frac{(-1)+5}{(-1)^2 - 9}</mrow>
+              <mrow>\amp= \frac{4}{1 - 9}</mrow>
+              <mrow>\amp= \frac{4}{-8}</mrow>
+              <mrow>\amp= -\frac{1}{2}</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.5in">
+        <statement><p>Are there any input values that must be excluded from the domain of <m>h</m>? If so, list them and explain what goes wrong there.</p></statement>
+        <solution>
+          <p>
+            Yes. For a rational function, any input that makes the denominator equal to zero must be excluded from the domain, because division by zero is mathematically undefined. To find these restricted values, set the denominator equal to zero and solve for <m>x</m>:
+            <md>
+              <mrow>x^2 - 9 \amp= 0</mrow>
+              <mrow>(x - 3)(x + 3) \amp= 0</mrow>
+            </md>
+            This gives the solutions <m>x = 3</m> and <m>x = -3</m>. Both of these inputs will cause division by zero, so they must be entirely excluded from the domain of <m>h</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-radical-evaluation">
+      <title>Radical Function Evaluation</title>
+      <task workspace="1.5in">
+        <statement>
+          <p>Let <m>p(x) = \sqrt{2x+7} - x</m>. Determine <m>p(1)</m> and <m>p(-3)</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            For <m>p(1)</m>, substitute <m>1</m> for <m>x</m>:
+            <md>
+              <mrow>p(1) \amp= \sqrt{2(1)+7} - 1</mrow>
+              <mrow>\amp= \sqrt{2+7} - 1</mrow>
+              <mrow>\amp= \sqrt{9} - 1</mrow>
+              <mrow>\amp= 3 - 1 = 2</mrow>
+            </md>
+            For <m>p(-3)</m>, substitute <m>-3</m> for <m>x</m>:
+            <md>
+              <mrow>p(-3) \amp= \sqrt{2(-3)+7} - (-3)</mrow>
+              <mrow>\amp= \sqrt{-6+7} + 3</mrow>
+              <mrow>\amp= \sqrt{1} + 3</mrow>
+              <mrow>\amp= 1 + 3 = 4</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-expression-substitution">
+      <title>Expression Substitution</title>
+      <task workspace="2.5in">
+        <statement>
+          <p>Let <m>f(x) = x^2 - 4x</m>. Determine <m>f(x+1)</m> and simplify your answer completely. (Substitute the entire expression <m>x+1</m> everywhere you see an <m>x</m>.)</p>
+        </statement>
+        <solution>
+          <p>
+            To evaluate <m>f(x+1)</m>, treat the entire quantity <m>(x+1)</m> as a single input block and place it into every slot where an <m>x</m> appears in the original formula:
+            <md>
+              <mrow>f(x+1) \amp= (x+1)^2 - 4(x+1)</mrow>
+            </md>
+            Next, expand the squared binomial carefully. A common pitfall is to write <m>x^2 + 1</m>, but the correct expansion requires distributing: <m>(x+1)(x+1) = x^2 + 1x + 1x + 1 = x^2 + 2x + 1</m>. Also, be sure to distribute the <m>-4</m> through the second term:
+            <md>
+              <mrow>\amp= (x^2 + 2x + 1) - 4x - 4</mrow>
+            </md>
+            Finally, combine the like terms (<m>2x</m> and <m>-4x</m>, as well as <m>1</m> and <m>-4</m>) to fully simplify:
+            <md>
+              <mrow>\amp= x^2 - 2x - 3</mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 3: GRAPHS
+       ============================================================ -->
+  <page>
+    <exercise xml:id="fn-graph-evaluation">
+      <title>Evaluating from a Graph</title>
+      <introduction>
+        <p>Consider a function <m>f(x)</m> defined by the piecewise linear graph below.</p>
+        <image width="60%">
+          <description>
+            <p>A piecewise linear graph made of three connected segments. It begins at (-4,-2), rises to a peak at (-2,2), drops back down to a valley at (2,-2), and rises again to end at (4,2).</p>
+          </description>
+          <latex-image>
+            \begin{tikzpicture}[scale=0.62]
+                \draw[step=1cm,gray,very thin] (-4,-3) grid (4,3);
+                \draw[thick,-&gt;] (-4.6,0) -- (4.6,0) node[anchor=north west] {$x$};
+                \draw[thick,-&gt;] (0,-3.6) -- (0,3.6) node[anchor=south east] {$y$};
+                \foreach \x in {-4,-3,-2,-1,1,2,3,4} \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+                \foreach \y in {-3,-2,-1,1,2,3} \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+                \draw[thick, blue] (-4,-2) -- (-2,2) -- (2,-2) -- (4,2);
+                \filldraw[blue] (-4,-2) circle (2.5pt);
+                \filldraw[blue] (-2,2) circle (2.5pt);
+                \filldraw[blue] (2,-2) circle (2.5pt);
+                \filldraw[blue] (4,2) circle (2.5pt);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+
+      <task workspace="1in">
+        <statement><p>Determine <m>f(1)</m>.</p></statement>
+        <solution>
+          <p>
+            Locate the input <m>x = 1</m> on the horizontal axis and trace vertically to the graph. The graph passes through the point <m>(1, -1)</m> on the falling segment. The output is the <m>y</m>-coordinate, so <m>f(1) = -1</m>.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1in">
+        <statement><p>Find all <m>x</m> values such that <m>f(x)=0</m>.</p></statement>
+        <solution>
+          <p>
+            We are looking for all points where the graph is at a height of zero (meaning it intersects the <m>x</m>-axis). Examining the grid, the graph crosses the horizontal axis at three distinct locations: midway up the first rising segment at <m>(-3,0)</m>, precisely at the origin <m>(0,0)</m>, and midway up the final rising segment at <m>(3,0)</m>. Therefore, the inputs are <m>x = -3</m>, <m>x = 0</m>, and <m>x = 3</m>.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.25in">
+        <statement><p>Find all <m>x</m> values such that <m>f(x)=2</m>.</p></statement>
+        <solution>
+          <p>
+            We must locate all points on the graph that sit at a height of <m>y = 2</m>. Scanning horizontally across the grid at that level, the graph reaches a height of <m>2</m> exactly twice: at the peak corner point <m>(-2, 2)</m>, and at the final endpoint on the far right at <m>(4, 2)</m>. Therefore, the inputs are <m>x = -2</m> and <m>x = 4</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-vertical-line-test">
+      <title>Graphical Function Identification</title>
+      <task workspace="2.5in">
+        <statement>
+          <p>Two of the graphs below represent functions and two do not. Assume the horizontal axis corresponds to inputs (<m>x</m>) and the vertical axis corresponds to outputs (<m>y</m>). Identify the two that are <em>not</em> functions, and explain how you decided.</p>
+          
+          <sidebyside widths="45% 45%">
+            <figure>
+              <caption>Graph A</caption>
+              <image>
+                <description>
+                  <p>A cubic function curve running smoothly from bottom left to top right, passing through the origin.</p>
+                </description>
+                <latex-image>
+                  \begin{tikzpicture}[scale=0.5]
+                      \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                      \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                      \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                      \draw[thick, blue, &lt;-&gt;, domain=-3:3, samples=60] plot (\x, {0.2*\x*\x*\x - \x});
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+            <figure>
+              <caption>Graph B</caption>
+              <image>
+                <description>
+                  <p>A sideways opening parabola facing to the right, passing through the x-axis at x=-2.</p>
+                </description>
+                <latex-image>
+                  \begin{tikzpicture}[scale=0.5]
+                      \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                      \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                      \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                      \draw[thick, blue, &lt;-&gt;, domain=-1.7:1.7, variable=\y] plot ({\y*\y - 2}, {\y});
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+          <sidebyside widths="45% 45%">
+            <figure>
+              <caption>Graph C</caption>
+              <image>
+                <description>
+                  <p>A V-shaped absolute value curve opening upwards with its vertex at (0,-1).</p>
+                </description>
+                <latex-image>
+                  \begin{tikzpicture}[scale=0.5]
+                      \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                      \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                      \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                      \draw[thick, blue, &lt;-&gt;] (-2.5,1.5) -- (0,-1) -- (2.5,1.5);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+            <figure>
+              <caption>Graph D</caption>
+              <image>
+                <description>
+                  <p>A circle centered at the origin with a radius of 2.</p>
+                </description>
+                <latex-image>
+                  \begin{tikzpicture}[scale=0.5]
+                      \draw[step=1cm,gray,very thin] (-3,-3) grid (3,3);
+                      \draw[thick,-&gt;] (-3.4,0) -- (3.4,0) node[anchor=north west] {$x$};
+                      \draw[thick,-&gt;] (0,-3.4) -- (0,3.4) node[anchor=south east] {$y$};
+                      \draw[thick, blue] (0,0) circle (2cm);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            <em>Graph B</em> and <em>Graph D</em> do not represent functions. We can determine this by applying the Vertical Line Test. In a function graph, every vertical line represents a specific input <m>x</m>, and if a line crosses the graph more than once, it means that single input is yielding multiple different outputs.
+          </p>
+          <p>
+            In Graph B (the sideways parabola), a vertical line drawn at <m>x = 2</m> will intersect the graph at two distinct points: <m>(2, 2)</m> and <m>(2, -2)</m>. Because the input <m>2</m> has two outputs, it fails to be a function. 
+          </p>
+          <p>
+            In Graph D (the circle), a vertical line drawn exactly on the <m>y</m>-axis (where <m>x = 0</m>) will hit the graph at both <m>(0, 2)</m> and <m>(0, -2)</m>. Again, a single input yields multiple outputs, so it is not a function.
+          </p>
+          <p>
+            Graphs A and C successfully pass the vertical line test. (Note for Graph C: sharp corners are entirely allowed in functions, provided there is no vertical overlap).
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PAGE 4: FUNCTIONS IN CONTEXT
+       ============================================================ -->
+  <page>
+    <exercise xml:id="fn-context-battery">
+      <title>Functions in Context: Laptop Battery</title>
+      <introduction>
+        <p>
+          A statement like <m>f(3) = 12</m> carries three pieces of information: the input value, the output value, and the units attached to each. A good interpretation is a full sentence that mentions all three and never uses the letters <m>f</m>, <m>x</m>, or <m>t</m>.
+        </p>
+        <p>
+          A laptop is unplugged from the wall and begins running on battery power. The remaining battery charge, <m>B</m> (measured as a percentage), is a function of the time <m>t</m> (measured in hours) since the laptop was unplugged. Let <m>B = f(t)</m>.
+        </p>
+      </introduction>
+
+      <task workspace="1in">
+        <statement><p>Identify the input and output variables, making sure to state their specific units.</p></statement>
+        <solution>
+          <p>
+            The <em>input variable</em> is time <m>t</m>, and its units are hours. The <em>output variable</em> is the remaining battery charge <m>B</m>, and its units are percent.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.5in">
+        <statement><p>Interpret the meaning of the statement <m>f(2.5) = 40</m> in the context of this scenario.</p></statement>
+        <solution>
+          <p>
+            Two and a half hours after the laptop was unplugged from the wall, the remaining battery charge has decreased to 40 percent.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.5in">
+        <statement><p>If we were to calculate the change in battery charge divided by the change in time, what would the units of this new value be? Briefly explain what this rate represents in this context.</p></statement>
+        <solution>
+          <p>
+            The units of this rate would be <em>percent per hour</em> (change in output units divided by change in input units). Conceptually, this rate represents the average speed at which the laptop is consuming battery power over a given time interval. Because the battery is draining, we would expect this calculated rate of change to be a negative number.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise xml:id="fn-context-coffee">
+      <title>Functions in Context: Coffee Temperature</title>
+      <introduction>
+        <p>
+          A cup of coffee is poured and left sitting on a desk. Its temperature <m>C</m> (measured in degrees Fahrenheit) is a function of the number of minutes <m>m</m> since it was poured. Let <m>C = h(m)</m>.
+        </p>
+      </introduction>
+
+      <task workspace="1in">
+        <statement><p>Identify the input and output variables, making sure to state their specific units.</p></statement>
+        <solution>
+          <p>
+            The <em>input variable</em> is time <m>m</m>, and its units are minutes. The <em>output variable</em> is the temperature of the coffee <m>C</m>, and its units are degrees Fahrenheit.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.5in">
+        <statement><p>Interpret the meaning of the statement <m>h(10) = 145</m> in the context of this scenario.</p></statement>
+        <solution>
+          <p>
+            Ten minutes after the cup of coffee was poured, it has cooled to a temperature of exactly 145 degrees Fahrenheit.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="2in">
+        <statement>
+          <p>Explain what the equation <m>h(m) = 100</m> is asking, and describe what a solution to that equation would tell you about the coffee. How is this different from the question in part (b)?</p>
+        </statement>
+        <solution>
+          <p>
+            This equation is asking us to find the specific time (or times) at which the coffee's temperature reaches exactly 100 degrees Fahrenheit. If we were to solve the equation, the resulting number would tell us how many minutes the coffee had been sitting on the desk before it hit that temperature threshold.
+          </p>
+          <p>
+            The difference between this and part (b) is the direction of the evaluation. In part (b), the input time (<m>10</m> minutes) was provided to us, and we evaluated the function to report the output temperature. Here, the output temperature (<m>100</m> degrees) is the known value, and we are working backwards to solve for the unknown input time.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+</worksheet>
