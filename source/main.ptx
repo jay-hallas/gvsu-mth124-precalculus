@@ -56,6 +56,7 @@
     <chapter xml:id="lt-practice">
       <title>Practice Learning Targets</title>
       <xi:include href="./lt-practice/lt1-functions.ptx"/>
+      <xi:include href="./lt-practice/lt2-averagechange.ptx"/>
     </chapter>
 
  

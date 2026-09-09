@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt-average-rate-of-change">
+<title>Learning Target: Average Rate of Change</title>
+<objectives>
+<ul>
+<li>I can find the average rate of change in a function on a given interval and state the units and interpret the meaning of the average rate of change in applied contexts.</li>
+</ul>
+</objectives>
+
+<page>
+<exercise xml:id="lt-aroc-formulas">
+<title>Problem 1: Functions Given by a Formula</title>
+<introduction>
+<p>Find the average rate of change of each function on the given interval. Show the endpoint outputs before you divide.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>\displaystyle f(x) = \frac{24}{x}</m> on the interval <m>[2,6]</m>.</p>
+</statement>
+<answer>
+<p>
+Evaluate at the endpoints, then divide.
+<md>
+<mrow>f(6) \amp= \frac{24}{6} = 4</mrow>
+<mrow>f(2) \amp= \frac{24}{2} = 12</mrow>
+<mrow>\frac{f(6)-f(2)}{6-2} \amp= \frac{4-12}{4} = \frac{-8}{4} = -2</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>-2</m>. The output drops by an average of <m>2</m> units for each <m>1</m> unit increase in the input across this interval.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>k(x) = x^2 + 4x</m> on the interval <m>[-3,1]</m>.</p>
+</statement>
+<answer>
+<p>
+Evaluate at the endpoints, watching the signs on the negative input.
+<md>
+<mrow>k(1) \amp= (1)^2 + 4(1) = 1 + 4 = 5</mrow>
+<mrow>k(-3) \amp= (-3)^2 + 4(-3) = 9 - 12 = -3</mrow>
+<mrow>\frac{k(1)-k(-3)}{1-(-3)} \amp= \frac{5-(-3)}{1+3} = \frac{8}{4} = 2</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>2</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>m(x) = 6\sqrt{x}</m> on the interval <m>[4,16]</m>.</p>
+</statement>
+<answer>
+<p>
+Evaluate at the endpoints, then divide.
+<md>
+<mrow>m(16) \amp= 6\sqrt{16} = 6(4) = 24</mrow>
+<mrow>m(4) \amp= 6\sqrt{4} = 6(2) = 12</mrow>
+<mrow>\frac{m(16)-m(4)}{16-4} \amp= \frac{24-12}{12} = \frac{12}{12} = 1</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>1</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-aroc-table">
+<title>Problem 2: A Function Given by a Table</title>
+<introduction>
+<p>A sugarbush collects maple sap during a run in early spring. Let <m>S(t)</m> be the total number of gallons of sap collected <m>t</m> hours after tapping began.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>t</m> (hours)</cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+<cell><m>8</m></cell>
+</row>
+<row>
+<cell><m>S(t)</m> (gallons)</cell>
+<cell><m>0</m></cell>
+<cell><m>18</m></cell>
+<cell><m>30</m></cell>
+<cell><m>54</m></cell>
+<cell><m>78</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>S</m> on the interval <m>[2,6]</m>, and state its units.</p>
+</statement>
+<answer>
+<p>
+Read the two endpoint columns, <m>S(2) = 18</m> and <m>S(6) = 54</m>.
+<md>
+<mrow>\frac{S(6)-S(2)}{6-2} \amp= \frac{54-18}{4} = \frac{36}{4} = 9</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>9</m> gallons per hour. The column at <m>t=4</m> never entered the computation.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Describe the meaning of your answer in the context of this situation. Write a full sentence that does not use the letters <m>S</m> or <m>t</m>.</p>
+</statement>
+<answer>
+<p>
+Between <m>2</m> and <m>6</m> hours after tapping began, the sugarbush collected an average of <m>9</m> gallons of sap each hour.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>S</m> on the interval <m>[6,8]</m>. Was the sap running faster during this stretch or during the earlier one? Explain how you can tell.</p>
+</statement>
+<answer>
+<p>
+Using <m>S(6) = 54</m> and <m>S(8) = 78</m>:
+<md>
+<mrow>\frac{S(8)-S(6)}{8-6} \amp= \frac{78-54}{2} = \frac{24}{2} = 12</mrow>
+</md>
+</p>
+<p>
+The sap ran faster during the later stretch, <m>12</m> gallons per hour compared with <m>9</m> gallons per hour earlier. Both rates are positive, so the larger number is the faster one here.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-aroc-graph">
+<title>Problem 3: A Function Given by a Graph</title>
+<introduction>
+<p>The function <m>f</m> is defined by the graph below.</p>
+<image width="70%">
+<shortdescription>A graph made of three line segments that falls, then runs flat, then rises.</shortdescription>
+<description>
+<p>The graph consists of three connected line segments drawn on a coordinate grid. The first segment falls from the point negative four, three to the point negative one, negative three. The second segment is horizontal, running from negative one, negative three to the point one, negative three. The third segment rises from one, negative three to the point four, three.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="lt-aroc-piecewise-graph">
+<diagram dimensions="(400,320)" margins="5">
+<coordinates bbox="(-5,-4,5,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-4,3),(-1,-3))" stroke="blue" thickness="3"/>
+<line endpoints="((-1,-3),(1,-3))" stroke="blue" thickness="3"/>
+<line endpoints="((1,-3),(4,3))" stroke="blue" thickness="3"/>
+<point p="(-4,3)" fill="blue" stroke="blue"/>
+<point p="(-1,-3)" fill="blue" stroke="blue"/>
+<point p="(1,-3)" fill="blue" stroke="blue"/>
+<point p="(4,3)" fill="blue" stroke="blue"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>f</m> on the interval <m>[-4,-1]</m>.</p>
+</statement>
+<answer>
+<p>
+Reading the graph, <m>f(-4) = 3</m> and <m>f(-1) = -3</m>.
+<md>
+<mrow>\frac{f(-1)-f(-4)}{-1-(-4)} \amp= \frac{-3-3}{-1+4} = \frac{-6}{3} = -2</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>-2</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the average rate of change of <m>f</m> on the interval <m>[1,4]</m>.</p>
+</statement>
+<answer>
+<p>
+Reading the graph, <m>f(1) = -3</m> and <m>f(4) = 3</m>.
+<md>
+<mrow>\frac{f(4)-f(1)}{4-1} \amp= \frac{3-(-3)}{3} = \frac{6}{3} = 2</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>2</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Find the average rate of change of <m>f</m> on the interval <m>[-3,3]</m>. Explain what your answer says about the outputs at the two endpoints, and why it does <em>not</em> mean the function was flat across the whole interval.</p>
+</statement>
+<answer>
+<p>
+Reading the graph, <m>f(-3) = 1</m> and <m>f(3) = 1</m>.
+<md>
+<mrow>\frac{f(3)-f(-3)}{3-(-3)} \amp= \frac{1-1}{6} = \frac{0}{6} = 0</mrow>
+</md>
+</p>
+<p>
+An average rate of change of <m>0</m> means the output ended up at the same height it started at. It says nothing about what happened in between; the graph dropped all the way down to <m>-3</m> and climbed back. Only the two endpoints go into the computation.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-aroc-context">
+<title>Problem 4: Average Rate of Change in Context</title>
+<introduction>
+<p>A ball is thrown straight up from the ground. Its height in feet after <m>t</m> seconds is given by <m>h(t) = 48t - 16t^2</m>.</p>
+</introduction>
+
+<task workspace="1.75in">
+<statement>
+<p>Find the average rate of change of <m>h</m> on <m>[0,1]</m>, and state its units.</p>
+</statement>
+<answer>
+<p>
+Evaluate at the endpoints.
+<md>
+<mrow>h(0) \amp= 48(0) - 16(0)^2 = 0</mrow>
+<mrow>h(1) \amp= 48(1) - 16(1)^2 = 48 - 16 = 32</mrow>
+<mrow>\frac{h(1)-h(0)}{1-0} \amp= \frac{32-0}{1} = 32</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>32</m> feet per second.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Describe in words what your answer means. Your sentence should mention the ball, the time, and the direction it is moving.</p>
+</statement>
+<answer>
+<p>
+During the first second after the throw, the ball rose an average of <m>32</m> feet each second, so its average velocity over that stretch was <m>32</m> feet per second upward.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Find the average rate of change of <m>h</m> on <m>[2,3]</m>. Explain what the sign of this answer tells you, and how the ball's motion on this interval differs from its motion on <m>[0,1]</m>.</p>
+</statement>
+<answer>
+<p>
+Evaluate at the endpoints.
+<md>
+<mrow>h(2) \amp= 48(2) - 16(2)^2 = 96 - 64 = 32</mrow>
+<mrow>h(3) \amp= 48(3) - 16(3)^2 = 144 - 144 = 0</mrow>
+<mrow>\frac{h(3)-h(2)}{3-2} \amp= \frac{0-32}{1} = -32</mrow>
+</md>
+</p>
+<p>
+The average rate of change is <m>-32</m> feet per second. The negative sign says the height decreased across this interval, so the ball was falling here while it was rising on <m>[0,1]</m>. It has passed the top of its flight and is on its way back to the ground.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-aroc-interpret">
+<title>Problem 5: Working Backwards from a Rate</title>
+<introduction>
+<p>A candle is lit and burns steadily. Let <m>H(x)</m> be the height of the candle in centimeters, <m>x</m> minutes after it was lit. The average rate of change of <m>H</m> on the interval <m>[10,40]</m> is <m>-0.4</m>.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>What are the units of this average rate of change?</p>
+</statement>
+<answer>
+<p>
+Centimeters per minute. The units are always the output units divided by the input units.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Interpret the meaning of <m>-0.4</m> in this context. Write a full sentence that does not use the letters <m>H</m> or <m>x</m>.</p>
+</statement>
+<answer>
+<p>
+Between <m>10</m> and <m>40</m> minutes after the candle was lit, its height dropped by an average of <m>0.4</m> centimeters each minute.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>How much shorter was the candle at <m>40</m> minutes than it was at <m>10</m> minutes? Explain how you got your answer from the rate.</p>
+</statement>
+<answer>
+<p>
+The interval is <m>40 - 10 = 30</m> minutes long, and the candle lost <m>0.4</m> centimeters per minute on average, so the total change in height was <m>(-0.4)(30) = -12</m> centimeters.
+</p>
+<p>
+The candle was <m>12</m> centimeters shorter at <m>40</m> minutes than at <m>10</m> minutes. This reverses the usual computation: instead of dividing the change in output by the change in input, we multiplied the rate by the length of the interval to recover the change in output.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>
