@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt-composition">
+<title>Learning Target: Composition of Functions</title>
+<objectives>
+<ul>
+<li>I can find and simplify values of the composition of two functions; I can do this for functions given by a formula, a table, and a graph.</li>
+</ul>
+</objectives>
+
+<page>
+<exercise xml:id="lt-comp-table">
+<title>Problem 1: Functions Given by a Table</title>
+<introduction>
+<p>The functions <m>f</m> and <m>g</m> are defined by the table below. Find each value if it exists. If a value does not exist, briefly explain why.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>0</m></cell>
+<cell><m>5</m></cell>
+<cell><m>3</m></cell>
+<cell><m>7</m></cell>
+<cell><m>2</m></cell>
+<cell><m>6</m></cell>
+</row>
+<row>
+<cell><m>g(x)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>2</m></cell>
+<cell><m>1</m></cell>
+<cell><m>3</m></cell>
+<cell><m>5</m></cell>
+<cell><m>1</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p><m>f(g(0))</m></p>
+</statement>
+<answer>
+<p>
+Work from the inside out. From the table, <m>g(0) = 4</m>, so <m>f(g(0)) = f(4) = 2</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>f(g(3))</m></p>
+</statement>
+<answer>
+<p>
+From the table, <m>g(3) = 3</m>, so <m>f(g(3)) = f(3) = 7</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>f(g(4))</m></p>
+</statement>
+<answer>
+<p>
+From the table, <m>g(4) = 5</m>, so <m>f(g(4)) = f(5) = 6</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>g(f(5))</m></p>
+</statement>
+<answer>
+<p>
+From the table, <m>f(5) = 6</m>, so <m>g(f(5)) = g(6)</m>. The input <m>6</m> does not appear in the table, so we have no value for <m>g(6)</m>. The value <m>g(f(5))</m> does not exist.
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>g(f(2))</m></p>
+</statement>
+<answer>
+<p>
+From the table, <m>f(2) = 3</m>, so <m>g(f(2)) = g(3) = 3</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-comp-formula">
+<title>Problem 2: Functions Given by a Formula</title>
+<introduction>
+<p>Let <m>f(x) = x^2 - 4</m> and <m>g(x) = 3x + 1</m>.</p>
+</introduction>
+
+<task workspace="1.75in">
+<statement>
+<p>Find and simplify <m>f(g(x))</m>.</p>
+</statement>
+<answer>
+<p>
+Substitute the whole expression <m>3x+1</m> for the input of <m>f</m>, then expand.
+<md>
+<mrow>f(g(x)) \amp= f(3x+1)</mrow>
+<mrow>\amp= (3x+1)^2 - 4</mrow>
+<mrow>\amp= 9x^2 + 6x + 1 - 4</mrow>
+<mrow>\amp= 9x^2 + 6x - 3</mrow>
+</md>
+</p>
+<p>
+Note that <m>(3x+1)^2</m> is not <m>9x^2 + 1</m>; the middle term <m>6x</m> comes from multiplying <m>(3x+1)(3x+1)</m> out completely.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find and simplify <m>g(f(x))</m>.</p>
+</statement>
+<answer>
+<p>
+Substitute the whole expression <m>x^2 - 4</m> for the input of <m>g</m>.
+<md>
+<mrow>g(f(x)) \amp= g(x^2-4)</mrow>
+<mrow>\amp= 3(x^2-4) + 1</mrow>
+<mrow>\amp= 3x^2 - 12 + 1</mrow>
+<mrow>\amp= 3x^2 - 11</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Find <m>f(g(-2))</m> and <m>g(f(-2))</m>. What do your answers tell you about the order of composition?</p>
+</statement>
+<answer>
+<p>
+Work from the inside out for each one.
+<md>
+<mrow>g(-2) \amp= 3(-2) + 1 = -5</mrow>
+<mrow>f(g(-2)) \amp= f(-5) = (-5)^2 - 4 = 21</mrow>
+<mrow>f(-2) \amp= (-2)^2 - 4 = 0</mrow>
+<mrow>g(f(-2)) \amp= g(0) = 3(0) + 1 = 1</mrow>
+</md>
+</p>
+<p>
+We get <m>f(g(-2)) = 21</m> and <m>g(f(-2)) = 1</m>. The two answers are different, so the order matters; <m>f(g(x))</m> and <m>g(f(x))</m> are usually different functions. As a check, the formula from the first part gives <m>9(-2)^2 + 6(-2) - 3 = 21</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-comp-graph">
+<title>Problem 3: Functions Given by a Graph</title>
+<introduction>
+<p>The graph of <m>f</m> is shown on the left and the graph of <m>g</m> is shown on the right.</p>
+<sidebyside widths="47% 47%">
+<image>
+<shortdescription>The graph of f, made of three line segments that rise, run flat, then fall.</shortdescription>
+<description>
+<p>The graph of f consists of three connected line segments. The first segment rises from the point negative four, negative three to the point negative one, three. The second segment is horizontal, running from negative one, three to the point two, three. The third segment falls from two, three to the point four, negative one.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="lt-comp-graph-f">
+<diagram dimensions="(300,260)" margins="5">
+<coordinates bbox="(-5,-4,5,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-4,-3),(-1,3))" stroke="blue" thickness="3"/>
+<line endpoints="((-1,3),(2,3))" stroke="blue" thickness="3"/>
+<line endpoints="((2,3),(4,-1))" stroke="blue" thickness="3"/>
+<point p="(-4,-3)" fill="blue" stroke="blue"/>
+<point p="(-1,3)" fill="blue" stroke="blue"/>
+<point p="(2,3)" fill="blue" stroke="blue"/>
+<point p="(4,-1)" fill="blue" stroke="blue"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+<image>
+<shortdescription>The graph of g, a peak shape made of two line segments.</shortdescription>
+<description>
+<p>The graph of g consists of two connected line segments. The first segment rises from the point negative four, negative two to the point zero, two. The second segment falls from zero, two to the point four, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="lt-comp-graph-g">
+<diagram dimensions="(300,260)" margins="5">
+<coordinates bbox="(-5,-4,5,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-4,-2),(0,2))" stroke="red" thickness="3"/>
+<line endpoints="((0,2),(4,-2))" stroke="red" thickness="3"/>
+<point p="(-4,-2)" fill="red" stroke="red"/>
+<point p="(0,2)" fill="red" stroke="red"/>
+<point p="(4,-2)" fill="red" stroke="red"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</sidebyside>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>f(g(-2))</m>.</p>
+</statement>
+<answer>
+<p>
+Reading the graph of <m>g</m>, <m>g(-2) = 0</m>. Reading the graph of <m>f</m>, <m>f(0) = 3</m>. So <m>f(g(-2)) = 3</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>g(f(3))</m>.</p>
+</statement>
+<answer>
+<p>
+Reading the graph of <m>f</m>, <m>f(3) = 1</m>. Reading the graph of <m>g</m>, <m>g(1) = 1</m>. So <m>g(f(3)) = 1</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>g(g(4))</m>.</p>
+</statement>
+<answer>
+<p>
+Both steps use the graph of <m>g</m>. First <m>g(4) = -2</m>, and then <m>g(-2) = 0</m>. So <m>g(g(4)) = 0</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find <m>f(g(0))</m> and <m>g(f(0))</m>. Explain which graph you read first for each one.</p>
+</statement>
+<answer>
+<p>
+For <m>f(g(0))</m>, the inside function is <m>g</m>, so read the graph of <m>g</m> first: <m>g(0) = 2</m>, and then <m>f(2) = 3</m>. So <m>f(g(0)) = 3</m>.
+</p>
+<p>
+For <m>g(f(0))</m>, the inside function is <m>f</m>, so read the graph of <m>f</m> first: <m>f(0) = 3</m>, and then <m>g(3) = -1</m>. So <m>g(f(0)) = -1</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-comp-mixed">
+<title>Problem 4: Mixing a Formula and a Table</title>
+<introduction>
+<p>Let <m>r(x) = x^2 - 3</m>, and let <m>s</m> be the function defined by the table below. Find each value if it exists. If a value does not exist, briefly explain why.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>s(x)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>0</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+<cell><m>2</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p><m>s(r(2))</m></p>
+</statement>
+<answer>
+<p>
+Use the formula first: <m>r(2) = 2^2 - 3 = 1</m>. Then use the table: <m>s(1) = 3</m>. So <m>s(r(2)) = 3</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>r(s(-1))</m></p>
+</statement>
+<answer>
+<p>
+Use the table first: <m>s(-1) = 0</m>. Then use the formula: <m>r(0) = 0^2 - 3 = -3</m>. So <m>r(s(-1)) = -3</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>r(s(3))</m></p>
+</statement>
+<answer>
+<p>
+Use the table first: <m>s(3) = 2</m>. Then use the formula: <m>r(2) = 2^2 - 3 = 1</m>. So <m>r(s(3)) = 1</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>s(r(0))</m></p>
+</statement>
+<answer>
+<p>
+Use the formula first: <m>r(0) = -3</m>. That makes the outer value <m>s(-3)</m>, but <m>-3</m> is not an input in the table. The value <m>s(r(0))</m> does not exist.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-comp-context">
+<title>Problem 5: Composition in Context</title>
+<introduction>
+<p>Let <m>m = d(t)</m> be the number of miles traveled <m>t</m> hours after starting a trip, and let <m>k = c(m) = 1.61m</m> be the function that converts <m>m</m> miles to <m>k</m> kilometers. Define a new function by <m>f(t) = c(d(t))</m>.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>What are the input and the output of <m>f</m>? Include units.</p>
+</statement>
+<answer>
+<p>
+The input of <m>f</m> is the input of <m>d</m>, time in hours. The output of <m>f</m> is the output of <m>c</m>, distance in kilometers.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Write a full sentence explaining what <m>f(t)</m> represents.</p>
+</statement>
+<answer>
+<p>
+The value <m>f(t)</m> is the number of kilometers traveled <m>t</m> hours after the trip started. The function <m>d</m> turns the time into miles, and then <m>c</m> turns those miles into kilometers.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Suppose the car travels at a steady speed, so that <m>d(t) = 60t</m>. Find and simplify a formula for <m>f(t)</m>. Then find <m>f(2)</m> and explain what it means.</p>
+</statement>
+<answer>
+<p>
+Substitute <m>60t</m> for the input of <m>c</m>.
+<md>
+<mrow>f(t) \amp= c(60t) = 1.61(60t) = 96.6t</mrow>
+<mrow>f(2) \amp= 96.6(2) = 193.2</mrow>
+</md>
+</p>
+<p>
+Two hours after the trip started, the car had traveled <m>193.2</m> kilometers.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Explain why <m>d(c(m))</m> does not make sense in this situation.</p>
+</statement>
+<answer>
+<p>
+The output of <m>c</m> is a distance in kilometers, but the input of <m>d</m> must be a time in hours. The output of the inside function does not match the kind of input the outside function expects, so the composition has no meaning here.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

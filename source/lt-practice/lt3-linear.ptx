@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt-linear-functions">
+<title>Learning Target: Linear Functions</title>
+<objectives>
+<ul>
+<li>I can find an equation for any linear function in point-slope and slope-intercept form, given appropriate data or information.</li>
+</ul>
+</objectives>
+
+<page>
+<exercise xml:id="lt-lin-two-points">
+<title>Problem 1: A Line Through Two Points</title>
+<introduction>
+<p>Find an equation of the line through each pair of points. Give your answer in point-slope form and in slope-intercept form.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>The line through <m>(-3,0)</m> and <m>(0,2)</m>.</p>
+</statement>
+<answer>
+<p>
+Find the slope first.
+<md>
+<mrow>m \amp= \frac{2-0}{0-(-3)} = \frac{2}{3}</mrow>
+</md>
+</p>
+<p>
+Using the point <m>(-3,0)</m>, the point-slope form is <m>y - 0 = \frac{2}{3}(x+3)</m>. The point <m>(0,2)</m> is the <m>y</m>-intercept, so the slope-intercept form is <m>y = \frac{2}{3}x + 2</m>. Using <m>(0,2)</m> in point-slope form, <m>y - 2 = \frac{2}{3}(x - 0)</m>, is also correct.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>The line through <m>(2,4)</m> and <m>(7,-6)</m>.</p>
+</statement>
+<answer>
+<p>
+Find the slope, then substitute a point.
+<md>
+<mrow>m \amp= \frac{-6-4}{7-2} = \frac{-10}{5} = -2</mrow>
+<mrow>y - 4 \amp= -2(x-2)</mrow>
+<mrow>y - 4 \amp= -2x + 4</mrow>
+<mrow>y \amp= -2x + 8</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y - 4 = -2(x-2)</m> and the slope-intercept form is <m>y = -2x + 8</m>. As a check, <m>-2(7) + 8 = -6</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>The line through <m>(-3,7)</m> and <m>(2,-13)</m>.</p>
+</statement>
+<answer>
+<p>
+Find the slope, then substitute a point, watching the signs.
+<md>
+<mrow>m \amp= \frac{-13-7}{2-(-3)} = \frac{-20}{5} = -4</mrow>
+<mrow>y - 7 \amp= -4(x+3)</mrow>
+<mrow>y - 7 \amp= -4x - 12</mrow>
+<mrow>y \amp= -4x - 5</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y - 7 = -4(x+3)</m> and the slope-intercept form is <m>y = -4x - 5</m>. As a check, <m>-4(2) - 5 = -13</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-lin-other-info">
+<title>Problem 2: Lines from Other Information</title>
+<introduction>
+<p>Find an equation of each line in point-slope form and in slope-intercept form.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>The line with slope <m>-\frac{5}{2}</m> that passes through the point <m>(4,-1)</m>.</p>
+</statement>
+<answer>
+<p>
+The slope and a point go straight into point-slope form.
+<md>
+<mrow>y - (-1) \amp= -\frac{5}{2}(x-4)</mrow>
+<mrow>y + 1 \amp= -\frac{5}{2}x + 10</mrow>
+<mrow>y \amp= -\frac{5}{2}x + 9</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y + 1 = -\frac{5}{2}(x-4)</m> and the slope-intercept form is <m>y = -\frac{5}{2}x + 9</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>The line parallel to <m>2y - 6x = 8</m> that passes through the point <m>(7,8)</m>.</p>
+</statement>
+<answer>
+<p>
+Solve the given equation for <m>y</m> to read off its slope.
+<md>
+<mrow>2y \amp= 6x + 8</mrow>
+<mrow>y \amp= 3x + 4</mrow>
+</md>
+</p>
+<p>
+Parallel lines have the same slope, so the new line has slope <m>3</m>.
+<md>
+<mrow>y - 8 \amp= 3(x-7)</mrow>
+<mrow>y - 8 \amp= 3x - 21</mrow>
+<mrow>y \amp= 3x - 13</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y - 8 = 3(x-7)</m> and the slope-intercept form is <m>y = 3x - 13</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>The line that has the same <m>y</m>-intercept as <m>2y - 6x = 8</m> and passes through the point <m>(2,-2)</m>.</p>
+</statement>
+<answer>
+<p>
+From the previous part, <m>2y - 6x = 8</m> is the same line as <m>y = 3x + 4</m>, so its <m>y</m>-intercept is <m>(0,4)</m>. The new line passes through <m>(0,4)</m> and <m>(2,-2)</m>.
+<md>
+<mrow>m \amp= \frac{-2-4}{2-0} = \frac{-6}{2} = -3</mrow>
+</md>
+</p>
+<p>
+The slope-intercept form is <m>y = -3x + 4</m>. Using the point <m>(2,-2)</m>, the point-slope form is <m>y + 2 = -3(x-2)</m>.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-lin-table-graph">
+<title>Problem 3: Lines Given by a Table and a Graph</title>
+<introduction>
+<p>The function <m>g</m> is defined by the table below.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>-8</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>4</m></cell>
+<cell><m>12</m></cell>
+</row>
+<row>
+<cell><m>g(x)</m></cell>
+<cell><m>-7</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>2</m></cell>
+<cell><m>8</m></cell>
+</row>
+</tabular>
+<p>The function <m>h</m> is defined by the graph below.</p>
+<image width="60%">
+<shortdescription>A straight line falling from left to right with two marked points.</shortdescription>
+<description>
+<p>A straight line is drawn on a coordinate grid. It falls from left to right and passes through the marked points negative two, four and two, negative two. It crosses the vertical axis at the point zero, one.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="lt-lin-graph-h">
+<diagram dimensions="(360,360)" margins="5">
+<coordinates bbox="(-5,-6,5,6)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-3,5.5),(4.5,-5.75))" stroke="blue" thickness="3"/>
+<point p="(-2,4)" fill="blue" stroke="blue"/>
+<point p="(2,-2)" fill="blue" stroke="blue"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Show that the table could come from a linear function by computing the rate of change between each pair of consecutive columns.</p>
+</statement>
+<answer>
+<p>
+Compute the change in output over the change in input for each pair of neighboring columns.
+<md>
+<mrow>\frac{-4-(-7)}{-4-(-8)} \amp= \frac{3}{4}</mrow>
+<mrow>\frac{2-(-4)}{4-(-4)} \amp= \frac{6}{8} = \frac{3}{4}</mrow>
+<mrow>\frac{8-2}{12-4} \amp= \frac{6}{8} = \frac{3}{4}</mrow>
+</md>
+</p>
+<p>
+The rate of change is <m>\frac{3}{4}</m> every time, which is what we expect from a linear function. Notice the inputs are not evenly spaced, so comparing the changes in output alone would not be enough.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find an equation for <m>g</m> in point-slope form and in slope-intercept form.</p>
+</statement>
+<answer>
+<p>
+The slope is <m>\frac{3}{4}</m>. Using the point <m>(4,2)</m>:
+<md>
+<mrow>y - 2 \amp= \frac{3}{4}(x-4)</mrow>
+<mrow>y - 2 \amp= \frac{3}{4}x - 3</mrow>
+<mrow>y \amp= \frac{3}{4}x - 1</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y - 2 = \frac{3}{4}(x-4)</m> and the slope-intercept form is <m>g(x) = \frac{3}{4}x - 1</m>. As a check, <m>\frac{3}{4}(12) - 1 = 8</m>.
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find an equation for <m>h</m> in point-slope form and in slope-intercept form.</p>
+</statement>
+<answer>
+<p>
+Reading the graph, the line passes through <m>(-2,4)</m> and <m>(2,-2)</m>.
+<md>
+<mrow>m \amp= \frac{-2-4}{2-(-2)} = \frac{-6}{4} = -\frac{3}{2}</mrow>
+<mrow>y - 4 \amp= -\frac{3}{2}(x+2)</mrow>
+<mrow>y - 4 \amp= -\frac{3}{2}x - 3</mrow>
+<mrow>y \amp= -\frac{3}{2}x + 1</mrow>
+</md>
+</p>
+<p>
+The point-slope form is <m>y - 4 = -\frac{3}{2}(x+2)</m> and the slope-intercept form is <m>h(x) = -\frac{3}{2}x + 1</m>. The graph crosses the vertical axis at <m>(0,1)</m>, which agrees with the intercept.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-lin-interpret">
+<title>Problem 4: Interpreting a Linear Model</title>
+<introduction>
+<p>Terry is skiing down a steep hill. Terry's elevation in feet, <m>t</m> seconds after starting, is given by <m>E(t) = 3500 - 70t</m>, where <m>t</m> can be any number from <m>0</m> to <m>10</m>.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Explain what <m>3500</m> and <m>-70</m> mean in this context. Write full sentences that do not use the letters <m>E</m> or <m>t</m>, and include units.</p>
+</statement>
+<answer>
+<p>
+Terry started the run at an elevation of <m>3500</m> feet. Terry's elevation dropped by <m>70</m> feet every second, so Terry was descending at a rate of <m>70</m> feet per second.
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Dana skis a different run. Dana's elevation is <m>2960</m> feet after <m>4</m> seconds and <m>2660</m> feet after <m>9</m> seconds. Assuming Dana's elevation changes at a constant rate, find a formula <m>D(t)</m> for Dana's elevation in slope-intercept form.</p>
+</statement>
+<answer>
+<p>
+The data give the points <m>(4,2960)</m> and <m>(9,2660)</m>.
+<md>
+<mrow>m \amp= \frac{2660-2960}{9-4} = \frac{-300}{5} = -60</mrow>
+<mrow>D - 2960 \amp= -60(t-4)</mrow>
+<mrow>D - 2960 \amp= -60t + 240</mrow>
+<mrow>D \amp= -60t + 3200</mrow>
+</md>
+</p>
+<p>
+Dana's elevation is <m>D(t) = 3200 - 60t</m> feet.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Who is descending faster, Terry or Dana? Who started at a higher elevation? Explain how you can tell from the two formulas.</p>
+</statement>
+<answer>
+<p>
+Terry is descending faster. The slopes tell us Terry drops <m>70</m> feet each second while Dana drops only <m>60</m> feet each second. Terry also started higher; the constant terms show Terry began at <m>3500</m> feet and Dana began at <m>3200</m> feet.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<page>
+<exercise xml:id="lt-lin-model">
+<title>Problem 5: Building a Linear Model</title>
+<introduction>
+<p>Let <m>C(t)</m> be the value of a car in dollars, <m>t</m> years after it is purchased. The value of the car changes at a constant rate. The car is worth <m>\$18{,}000</m> five years after purchase and <m>\$12{,}000</m> ten years after purchase.</p>
+</introduction>
+
+<task workspace="1.75in">
+<statement>
+<p>Find a formula for <m>C(t)</m> in slope-intercept form. State the units of the slope.</p>
+</statement>
+<answer>
+<p>
+The data give the points <m>(5,18000)</m> and <m>(10,12000)</m>.
+<md>
+<mrow>m \amp= \frac{12000-18000}{10-5} = \frac{-6000}{5} = -1200</mrow>
+<mrow>C - 18000 \amp= -1200(t-5)</mrow>
+<mrow>C - 18000 \amp= -1200t + 6000</mrow>
+<mrow>C \amp= -1200t + 24000</mrow>
+</md>
+</p>
+<p>
+The model is <m>C(t) = -1200t + 24000</m>. The slope is <m>-1200</m> dollars per year, so the car loses <m>\$1{,}200</m> in value each year.
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>What was the value of the car when it was purchased?</p>
+</statement>
+<answer>
+<p>
+At purchase, <m>t = 0</m>, and <m>C(0) = 24000</m>. The car was worth <m>\$24{,}000</m> when it was bought.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>When will the car have no value left?</p>
+</statement>
+<answer>
+<p>
+Set the value equal to zero and solve.
+<md>
+<mrow>0 \amp= -1200t + 24000</mrow>
+<mrow>1200t \amp= 24000</mrow>
+<mrow>t \amp= 20</mrow>
+</md>
+</p>
+<p>
+The car will have no value <m>20</m> years after it is purchased.
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Based on your answer to the previous part, what is a reasonable domain for this model? Explain.</p>
+</statement>
+<answer>
+<p>
+A reasonable domain is <m>0 \leq t \leq 20</m>. The model starts when the car is purchased, and after <m>20</m> years it would give negative values, which make no sense for the value of a car.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>
