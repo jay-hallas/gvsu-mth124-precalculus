@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="aroc-act-example-graph-h-figure" width="310" height="310" viewBox="0 0 310 310">
+  <defs>
+    <clipPath id="aroc-act-example-graph-h-__clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="aroc-act-example-graph-h-__clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="aroc-act-example-graph-h-arrow-head-end-3_None_24_60-blue" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="aroc-act-example-graph-h-arrow-head-end-3_None_24_60-blue-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="aroc-act-example-graph-h-arrow-head-start-3_None_24_60-blue" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="blue" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="aroc-act-example-graph-h-arrow-head-start-3_None_24_60-blue-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="aroc-act-example-graph-h-grid-axes">
+    <g id="aroc-act-example-graph-h-grid" stroke="#ccc" stroke-width="1">
+      <line x1="26.4" y1="305.0" x2="26.4" y2="5.0"/>
+      <line x1="69.3" y1="305.0" x2="69.3" y2="5.0"/>
+      <line x1="112.1" y1="305.0" x2="112.1" y2="5.0"/>
+      <line x1="155.0" y1="305.0" x2="155.0" y2="5.0"/>
+      <line x1="197.9" y1="305.0" x2="197.9" y2="5.0"/>
+      <line x1="240.7" y1="305.0" x2="240.7" y2="5.0"/>
+      <line x1="283.6" y1="305.0" x2="283.6" y2="5.0"/>
+      <line x1="5.0" y1="283.6" x2="305.0" y2="283.6"/>
+      <line x1="5.0" y1="240.7" x2="305.0" y2="240.7"/>
+      <line x1="5.0" y1="197.9" x2="305.0" y2="197.9"/>
+      <line x1="5.0" y1="155.0" x2="305.0" y2="155.0"/>
+      <line x1="5.0" y1="112.1" x2="305.0" y2="112.1"/>
+      <line x1="5.0" y1="69.3" x2="305.0" y2="69.3"/>
+      <line x1="5.0" y1="26.4" x2="305.0" y2="26.4"/>
+    </g>
+    <g id="aroc-act-example-graph-h-axes" stroke="black" stroke-width="2">
+      <line id="aroc-act-example-graph-h-__line-14" x1="5.0" y1="155.0" x2="305.0" y2="155.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="aroc-act-example-graph-h-__line-15" x1="69.3" y1="158.0" x2="69.3" y2="152.0"/>
+        <line id="aroc-act-example-graph-h-__line-16" x1="240.7" y1="158.0" x2="240.7" y2="152.0"/>
+      </g>
+      <line id="aroc-act-example-graph-h-__line-17" x1="155.0" y1="305.0" x2="155.0" y2="5.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="aroc-act-example-graph-h-__line-18" x1="152.0" y1="240.7" x2="158.0" y2="240.7"/>
+        <line id="aroc-act-example-graph-h-__line-19" x1="152.0" y1="69.3" x2="158.0" y2="69.3"/>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-0" transform="translate(301.0,151.0) translate(-10.4,-8.2)">
+      <g id="aroc-act-example-graph-h-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#aroc-act-example-graph-h-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-1" transform="translate(159.0,9.0) translate(0.0,-0.0)">
+      <g id="aroc-act-example-graph-h-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#aroc-act-example-graph-h-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-2" transform="translate(69.3,166.0) translate(-7.5,-0.0)">
+      <g id="aroc-act-example-graph-h-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="aroc-act-example-graph-h-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#aroc-act-example-graph-h-MJX-4-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#aroc-act-example-graph-h-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-3" transform="translate(240.7,166.0) translate(-4.5,-0.0)">
+      <g id="aroc-act-example-graph-h-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#aroc-act-example-graph-h-MJX-5-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-4" transform="translate(144.0,240.7) translate(-15.1,-6.0)">
+      <g id="aroc-act-example-graph-h-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-6-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="aroc-act-example-graph-h-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#aroc-act-example-graph-h-MJX-6-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#aroc-act-example-graph-h-MJX-6-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="aroc-act-example-graph-h-__label-5" transform="translate(144.0,69.3) translate(-9.0,-6.0)">
+      <g id="aroc-act-example-graph-h-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="aroc-act-example-graph-h-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#aroc-act-example-graph-h-MJX-7-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="aroc-act-example-graph-h-__path-0" stroke="blue" stroke-width="3" fill="none" marker-end="url(#aroc-act-example-graph-h-arrow-head-end-3_None_24_60-blue)" marker-start="url(#aroc-act-example-graph-h-arrow-head-start-3_None_24_60-blue)" d="M 69.3 155.0 L 71.0 151.6 L 72.7 148.3 L 74.4 145.0 L 76.1 141.8 L 77.9 138.7 L 79.6 135.7 L 81.3 132.7 L 83.0 129.8 L 84.7 126.9 L 86.4 124.1 L 88.1 121.4 L 89.9 118.8 L 91.6 116.2 L 93.3 113.7 L 95.0 111.3 L 96.7 108.9 L 98.4 106.6 L 100.1 104.4 L 101.9 102.2 L 103.6 100.1 L 105.3 98.1 L 107.0 96.2 L 108.7 94.3 L 110.4 92.5 L 112.1 90.7 L 113.9 89.0 L 115.6 87.4 L 117.3 85.9 L 119.0 84.4 L 120.7 83.0 L 122.4 81.7 L 124.1 80.4 L 125.9 79.2 L 127.6 78.1 L 129.3 77.0 L 131.0 76.0 L 132.7 75.1 L 134.4 74.2 L 136.1 73.4 L 137.9 72.7 L 139.6 72.1 L 141.3 71.5 L 143.0 71.0 L 144.7 70.5 L 146.4 70.1 L 148.1 69.8 L 149.9 69.6 L 151.6 69.4 L 153.3 69.3 L 155.0 69.3 L 156.7 69.3 L 158.4 69.4 L 160.1 69.6 L 161.9 69.8 L 163.6 70.1 L 165.3 70.5 L 167.0 71.0 L 168.7 71.5 L 170.4 72.1 L 172.1 72.7 L 173.9 73.4 L 175.6 74.2 L 177.3 75.1 L 179.0 76.0 L 180.7 77.0 L 182.4 78.1 L 184.1 79.2 L 185.9 80.4 L 187.6 81.7 L 189.3 83.0 L 191.0 84.4 L 192.7 85.9 L 194.4 87.4 L 196.1 89.0 L 197.9 90.7 L 199.6 92.5 L 201.3 94.3 L 203.0 96.2 L 204.7 98.1 L 206.4 100.1 L 208.1 102.2 L 209.9 104.4 L 211.6 106.6 L 213.3 108.9 L 215.0 111.3 L 216.7 113.7 L 218.4 116.2 L 220.1 118.8 L 221.9 121.4 L 223.6 124.1 L 225.3 126.9 L 227.0 129.8 L 228.7 132.7 L 230.4 135.7 L 232.1 138.7 L 233.9 141.8 L 235.6 145.0 L 237.3 148.3 L 239.0 151.6 L 240.7 155.0" clip-path="url(#aroc-act-example-graph-h-__clipPath-1)"/>
+  <line id="aroc-act-example-graph-h-__line-20" x1="155.0" y1="69.3" x2="240.7" y2="155.0" stroke="navy" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <circle id="aroc-act-example-graph-h-__circle-0" cx="155.0" cy="69.3" r="4" stroke="navy" stroke-width="2" fill="navy"/>
+  <circle id="aroc-act-example-graph-h-__circle-1" cx="240.7" cy="155.0" r="4" stroke="navy" stroke-width="2" fill="navy"/>
+</svg>
