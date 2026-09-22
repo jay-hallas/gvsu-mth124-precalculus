@@ -60,9 +60,14 @@
       <xi:include href="./lt-practice/lt2-averagechange.ptx"/>
         <xi:include href="./lt-practice/lt3-linear.ptx"/>
         <xi:include href="./lt-practice/lt4-composition.ptx"/>
+          <xi:include href="./lt-practice/lt5-inverses.ptx"/>
     </chapter>
 
- 
+    <chapter xml:id="writing">
+      <title>Writing Assignments</title>
+      <xi:include href="./homework/homework-01.ptx"/>
+    </chapter>
+
 
     <!-- Include additional chapters for other categories -->
 

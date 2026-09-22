@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt5-inverses">
+<title>Learning Target 5: Inverse Functions</title>
+<objectives>
+<ul>
+<li>I can determine whether a function has an inverse with justification and find values of the inverse given input-output pairs of the original.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: tables                                             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-tables">
+<title>Problem 1: Functions Given by a Table</title>
+<introduction>
+<p>Each table below defines a function. Decide whether the function has an inverse function, and justify your answer.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>7</m></cell>
+<cell><m>2</m></cell>
+<cell><m>9</m></cell>
+<cell><m>5</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>Yes. The outputs <m>4</m>, <m>7</m>, <m>2</m>, <m>9</m>, and <m>5</m> are all different, so each output comes from exactly one input. Reversing the table gives a function, so <m>f</m> has an inverse.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>g(x)</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+<cell><m>3</m></cell>
+<cell><m>8</m></cell>
+<cell><m>1</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>No. Two different inputs give the same output: <m>g(0) = 3</m> and <m>g(2) = 3</m>. If we reversed the table, the input <m>3</m> would have to go to both <m>0</m> and <m>2</m>, which is not a function.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+</row>
+<row>
+<cell><m>h(x)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>4</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>No. The output <m>1</m> comes from both <m>x = -1</m> and <m>x = 1</m>, and the output <m>4</m> comes from both <m>x = -2</m> and <m>x = 2</m>. Since some outputs come from more than one input, <m>h</m> does not have an inverse.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>For the function in this problem that has an inverse, find <m>f^{-1}(9)</m> and <m>f^{-1}(2)</m>.</p>
+</statement>
+<answer>
+<p>Look for each value in the output row of the table for <m>f</m>. Since <m>f(4) = 9</m>, we get <m>f^{-1}(9) = 4</m>. Since <m>f(3) = 2</m>, we get <m>f^{-1}(2) = 3</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: arrow diagrams                                     -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-arrows">
+<title>Problem 2: Relationships Given by an Arrow Diagram</title>
+<introduction>
+<p>Each arrow diagram below sends inputs on the left to outputs on the right. Decide whether the relationship is a function. If it is a function, decide whether it has an inverse function. Justify your answers.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<image width="50%">
+<shortdescription>An arrow diagram sending 1 to 8, 2 to 5, and 3 to 11.</shortdescription>
+<description><p>Two ovals, the left labeled Input and the right labeled Output. The inputs are 1, 2, and 3, and the outputs are 5, 8, and 11. Arrows go from 1 to 8, from 2 to 5, and from 3 to 11.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-arrow-a">
+<diagram dimensions="(300,240)" margins="5">
+<coordinates bbox="(0,0,5,4.4)">
+<ellipse center="(1,2)" axes="(0.6,1.5)" stroke="black"/>
+<ellipse center="(4,2)" axes="(0.6,1.5)" stroke="black"/>
+<label anchor="(1,4.1)"><m>\text{Input}</m></label>
+<label anchor="(4,4.1)"><m>\text{Output}</m></label>
+<label anchor="(1,3)"><m>1</m></label>
+<label anchor="(1,2)"><m>2</m></label>
+<label anchor="(1,1)"><m>3</m></label>
+<label anchor="(4,3)"><m>5</m></label>
+<label anchor="(4,2)"><m>8</m></label>
+<label anchor="(4,1)"><m>11</m></label>
+<line endpoints="((1.3,3),(3.65,2))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,2),(3.65,3))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,1),(3.65,1))" arrows="1" stroke="#0072CE" thickness="2"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>This is a function, since each input has exactly one arrow leaving it. It also has an inverse, since each output has exactly one arrow coming into it. Reversing the arrows sends <m>8</m> to <m>1</m>, <m>5</m> to <m>2</m>, and <m>11</m> to <m>3</m>, which is still a function.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<image width="50%">
+<shortdescription>An arrow diagram sending 1 to 6, 2 to 6, and 3 to 9.</shortdescription>
+<description><p>Two ovals, the left labeled Input and the right labeled Output. The inputs are 1, 2, and 3, and the outputs are 6 and 9. Arrows go from 1 to 6, from 2 to 6, and from 3 to 9.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-arrow-b">
+<diagram dimensions="(300,240)" margins="5">
+<coordinates bbox="(0,0,5,4.4)">
+<ellipse center="(1,2)" axes="(0.6,1.5)" stroke="black"/>
+<ellipse center="(4,2)" axes="(0.6,1.5)" stroke="black"/>
+<label anchor="(1,4.1)"><m>\text{Input}</m></label>
+<label anchor="(4,4.1)"><m>\text{Output}</m></label>
+<label anchor="(1,3)"><m>1</m></label>
+<label anchor="(1,2)"><m>2</m></label>
+<label anchor="(1,1)"><m>3</m></label>
+<label anchor="(4,2.5)"><m>6</m></label>
+<label anchor="(4,1.5)"><m>9</m></label>
+<line endpoints="((1.3,3),(3.65,2.5))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,2),(3.65,2.5))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,1),(3.65,1.5))" arrows="1" stroke="#0072CE" thickness="2"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>This is a function, since each input has exactly one arrow leaving it. It does not have an inverse, because the output <m>6</m> has two arrows coming into it, from <m>1</m> and from <m>2</m>. Reversing the arrows would send <m>6</m> to two different places.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<image width="50%">
+<shortdescription>An arrow diagram sending 1 to 4, 1 to 7, and 2 to 9.</shortdescription>
+<description><p>Two ovals, the left labeled Input and the right labeled Output. The inputs are 1 and 2, and the outputs are 4, 7, and 9. Arrows go from 1 to 4, from 1 to 7, and from 2 to 9.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-arrow-c">
+<diagram dimensions="(300,240)" margins="5">
+<coordinates bbox="(0,0,5,4.4)">
+<ellipse center="(1,2)" axes="(0.6,1.5)" stroke="black"/>
+<ellipse center="(4,2)" axes="(0.6,1.5)" stroke="black"/>
+<label anchor="(1,4.1)"><m>\text{Input}</m></label>
+<label anchor="(4,4.1)"><m>\text{Output}</m></label>
+<label anchor="(1,2.5)"><m>1</m></label>
+<label anchor="(1,1.5)"><m>2</m></label>
+<label anchor="(4,3)"><m>4</m></label>
+<label anchor="(4,2)"><m>7</m></label>
+<label anchor="(4,1)"><m>9</m></label>
+<line endpoints="((1.3,2.5),(3.65,3))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,2.5),(3.65,2))" arrows="1" stroke="#0072CE" thickness="2"/>
+<line endpoints="((1.3,1.5),(3.65,1))" arrows="1" stroke="#0072CE" thickness="2"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>This is not a function, because the input <m>1</m> has two arrows leaving it, one to <m>4</m> and one to <m>7</m>. Since it is not a function, the question of an inverse function does not apply.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: graphs                                             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-graphs">
+<title>Problem 3: Functions Given by a Graph</title>
+<introduction>
+<p>The graphs of three functions <m>p</m>, <m>q</m>, and <m>r</m> are shown below. The horizontal axis shows inputs and the vertical axis shows outputs.</p>
+<sidebyside widths="31% 31% 31%">
+<image>
+<shortdescription>The graph of p, a straight line falling from left to right.</shortdescription>
+<description><p>The graph of p is a line segment from the point negative four, three to the point four, negative three. It passes through the origin.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-graph-p">
+<diagram dimensions="(260,260)" margins="5">
+<coordinates bbox="(-5,-5,5,5)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-4,3),(4,-3))" stroke="blue" thickness="3"/>
+<point p="(-4,3)" fill="blue" stroke="blue"/>
+<point p="(4,-3)" fill="blue" stroke="blue"/>
+<label anchor="(2.5,4)"><m>y = p(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+<image>
+<shortdescription>The graph of q, a U-shaped curve.</shortdescription>
+<description><p>The graph of q is a U-shaped curve that opens upward. Its lowest point is zero, negative three, and it passes through negative two, negative one and two, negative one before rising to about negative three and a half, three and three and a half, three.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-graph-q">
+<diagram dimensions="(260,260)" margins="5">
+<definition>q(x) = 0.5*x^2 - 3</definition>
+<coordinates bbox="(-5,-5,5,5)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="q" domain="(-3.46,3.46)" stroke="red" thickness="3"/>
+<label anchor="(-2.5,4)"><m>y = q(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+<image>
+<shortdescription>The graph of r, three connected line segments that always rise.</shortdescription>
+<description><p>The graph of r consists of three connected line segments. The first rises from negative four, negative three to negative one, zero. The second rises more slowly from negative one, zero to two, one. The third rises from two, one to four, four.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-graph-r">
+<diagram dimensions="(260,260)" margins="5">
+<coordinates bbox="(-5,-5,5,5)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-4,-3),(-1,0))" stroke="green" thickness="3"/>
+<line endpoints="((-1,0),(2,1))" stroke="green" thickness="3"/>
+<line endpoints="((2,1),(4,4))" stroke="green" thickness="3"/>
+<point p="(-4,-3)" fill="green" stroke="green"/>
+<point p="(-1,0)" fill="green" stroke="green"/>
+<point p="(2,1)" fill="green" stroke="green"/>
+<point p="(4,4)" fill="green" stroke="green"/>
+<label anchor="(-2.5,4)"><m>y = r(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</sidebyside>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>Does <m>p</m> have an inverse function? Justify your answer.</p>
+</statement>
+<answer>
+<p>Yes. Every horizontal line crosses the graph of <m>p</m> at most once, so each output comes from exactly one input.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Does <m>q</m> have an inverse function? Justify your answer.</p>
+</statement>
+<answer>
+<p>No. The horizontal line <m>y = -1</m> crosses the graph twice, at <m>x = -2</m> and <m>x = 2</m>. So <m>q(-2) = q(2) = -1</m>, and the output <m>-1</m> comes from two different inputs.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Does <m>r</m> have an inverse function? Justify your answer.</p>
+</statement>
+<answer>
+<p>Yes. The graph of <m>r</m> rises the whole way from left to right, so no horizontal line crosses it more than once. Each output comes from exactly one input.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find <m>r^{-1}(0)</m> and <m>r^{-1}(1)</m>.</p>
+</statement>
+<answer>
+<p>To find <m>r^{-1}(0)</m>, look for the point on the graph with output <m>0</m>. That point is <m>(-1, 0)</m>, so <m>r^{-1}(0) = -1</m>. In the same way, the point <m>(2, 1)</m> is on the graph, so <m>r^{-1}(1) = 2</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: values of the inverse from input-output pairs      -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-values">
+<title>Problem 4: Values of an Inverse</title>
+<introduction>
+<p>The function <m>w</m> has an inverse function <m>w^{-1}</m>. Some values of <m>w</m> are given in the table below. Find each value.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+</row>
+<row>
+<cell><m>w(x)</m></cell>
+<cell><m>7</m></cell>
+<cell><m>3</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p><m>w^{-1}(3)</m> and <m>w^{-1}(0)</m></p>
+</statement>
+<answer>
+<p>The inverse takes an output of <m>w</m> back to its input. Since <m>w(0) = 3</m>, we get <m>w^{-1}(3) = 0</m>. Since <m>w(3) = 0</m>, we get <m>w^{-1}(0) = 3</m>. Notice these are not the same, even though the same two numbers appear.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p><m>w(w^{-1}(7))</m> and <m>w^{-1}(w(1))</m></p>
+</statement>
+<answer>
+<p>Work from the inside out. Since <m>w(-2) = 7</m>, we have <m>w^{-1}(7) = -2</m>, so <m>w(w^{-1}(7)) = w(-2) = 7</m>. Also <m>w(1) = -4</m>, so <m>w^{-1}(w(1)) = w^{-1}(-4) = 1</m>. In each case, the inverse undoes <m>w</m> and we get back the number we started with.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>Solve <m>w(x) = 1</m>.</p>
+</statement>
+<answer>
+<p>We need the input that gives an output of <m>1</m>. From the table, <m>w(6) = 1</m>, so <m>x = 6</m>. This is the same as <m>w^{-1}(1) = 6</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>A different function <m>m</m> has an inverse, with <m>m(5) = 12</m> and <m>m^{-1}(-3) = 8</m>. Find <m>m^{-1}(12)</m> and <m>m(8)</m>.</p>
+</statement>
+<answer>
+<p>Since <m>m</m> sends <m>5</m> to <m>12</m>, the inverse sends <m>12</m> back to <m>5</m>, so <m>m^{-1}(12) = 5</m>. Since <m>m^{-1}</m> sends <m>-3</m> to <m>8</m>, the function <m>m</m> sends <m>8</m> to <m>-3</m>, so <m>m(8) = -3</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: inverse of a linear function                       -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-linear">
+<title>Problem 5: Inverse of a Linear Function</title>
+
+<task workspace="1.75in">
+<statement>
+<p>Let <m>f(x) = 7x - 11</m>. Find the inverse function <m>f^{-1}(x)</m>. You may start by letting <m>y = f(x)</m>.</p>
+</statement>
+<answer>
+<p>Write <m>y = 7x - 11</m> and solve for <m>x</m>.
+<md>
+<mrow>y \amp= 7x - 11</mrow>
+<mrow>y + 11 \amp= 7x</mrow>
+<mrow>x \amp= \frac{y + 11}{7}</mrow>
+</md>
+</p>
+<p>Writing the inverse with <m>x</m> as its input gives <m>f^{-1}(x) = \dfrac{x + 11}{7}</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find <m>f(2)</m>. Then use your answer to check your formula for <m>f^{-1}</m>.</p>
+</statement>
+<answer>
+<p>We have <m>f(2) = 7(2) - 11 = 3</m>. The inverse should send <m>3</m> back to <m>2</m>, and it does: <m>f^{-1}(3) = \dfrac{3 + 11}{7} = \dfrac{14}{7} = 2</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Let <m>g(x) = 5 - 2x</m>. Find the inverse function <m>g^{-1}(x)</m>.</p>
+</statement>
+<answer>
+<p>Write <m>y = 5 - 2x</m> and solve for <m>x</m>.
+<md>
+<mrow>y \amp= 5 - 2x</mrow>
+<mrow>y - 5 \amp= -2x</mrow>
+<mrow>x \amp= \frac{5 - y}{2}</mrow>
+</md>
+</p>
+<p>So <m>g^{-1}(x) = \dfrac{5 - x}{2}</m>. As a check, <m>g(1) = 3</m> and <m>g^{-1}(3) = \dfrac{5 - 3}{2} = 1</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: inverse in context                                 -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-context">
+<title>Problem 6: An Inverse in Context</title>
+<introduction>
+<p>A climbing gym charges a flat fee of <m>\$40</m> to reserve its party room, plus <m>\$12</m> per guest. The total cost in dollars for <m>n</m> guests is <m>C(n) = 12n + 40</m>.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>Find <m>C(10)</m> and explain what it means in a full sentence.</p>
+</statement>
+<answer>
+<p><m>C(10) = 12(10) + 40 = 160</m>. A party with <m>10</m> guests costs <m>\$160</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Find a formula for <m>C^{-1}</m>. What are the input and the output of <m>C^{-1}</m>? Include units.</p>
+</statement>
+<answer>
+<p>Let <m>c = 12n + 40</m> be the cost and solve for <m>n</m>.
+<md>
+<mrow>c - 40 \amp= 12n</mrow>
+<mrow>n \amp= \frac{c - 40}{12}</mrow>
+</md>
+</p>
+<p>So <m>C^{-1}(c) = \dfrac{c - 40}{12}</m>. The input of <m>C^{-1}</m> is a total cost in dollars, and the output is a number of guests.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>C^{-1}(280)</m> and explain what it means in a full sentence.</p>
+</statement>
+<answer>
+<p><m>C^{-1}(280) = \dfrac{280 - 40}{12} = \dfrac{240}{12} = 20</m>. A party that costs <m>\$280</m> has <m>20</m> guests.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 7: build your own examples                            -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt5-inv-examples">
+<title>Problem 7: Creating Examples</title>
+
+<task>
+<statement>
+<p>On the grid below, sketch the graph of a function that <em>does</em> have an inverse. Assume the horizontal axis shows inputs and the vertical axis shows outputs, as usual.</p>
+<image width="55%">
+<shortdescription>A blank coordinate grid from negative five to five on each axis.</shortdescription>
+<description><p>A blank coordinate grid with x and y axes, running from negative five to five in each direction.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt5-inv-blank-grid">
+<diagram dimensions="(300,300)" margins="5">
+<coordinates bbox="(-5,-5,5,5)">
+<grid-axes xlabel="x" ylabel="y"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>Answers will vary. Any graph that always rises or always falls works, such as the line <m>y = 2x + 1</m>. Every vertical line crosses it at most once, so it is a function, and every horizontal line crosses it at most once, so it has an inverse.</p>
+</answer>
+</task>
+
+<task>
+<statement>
+<p>Complete the table so that it defines a function that <em>does not</em> have an inverse.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>Answers will vary. One example uses the inputs <m>1</m>, <m>2</m>, <m>3</m>, <m>4</m>, <m>5</m> with the outputs <m>6</m>, <m>2</m>, <m>6</m>, <m>0</m>, <m>9</m>. The inputs are all different, so it is a function.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Explain why your table is a function, but does not have an inverse.</p>
+</statement>
+<answer>
+<p>For the example above, each input appears only once, so each input has exactly one output. But the output <m>6</m> comes from two inputs, <m>1</m> and <m>3</m>, so reversing the table would send <m>6</m> to two different values.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

@@ -1,21 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-writing-assignment-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Writing Assignment 1: Average Rate of Change</title>
 
-<worksheet>
-  <title>Homework 01</title>
   <introduction>
     <p>
-      <alert>Instructions:</alert> Complete all the exercises below and submit your work by the due date.
+      This assignment covers Learning Target 2: <q>I can find the average rate of change in a
+      function on a given interval and state the units and interpret the meaning of the average
+      rate of change in applied contexts.</q>
+    </p>
+    <p>
+      <ul>
+        <li>
+          Be as detailed as possible when writing up a solution, and show all of your work.
+        </li>
+        <li>
+          You may use any resource, but do not directly copy work that is not your own.
+        </li>
+        <li>
+          You may work with a partner, but it is not required. <alert>If you work with a partner,
+          each of you should write at least two parts, and initial each part you write.</alert>
+        </li>
+        <li>
+          Every answer that asks for an explanation or interpretation should be written in complete
+          sentences, in the context of your data.
+        </li>
+        <li>Submit your final solutions on these pages.</li>
+      </ul>
     </p>
   </introduction>
 
+  <!-- ===== PAGE 1: Collecting and describing the data ===== -->
   <page>
-    <exercise>
+    <exercise xml:id="wa1-124-data-table">
+      <title>Collecting Data</title>
       <statement>
         <p>
-          This is the first homework exercise.
+          Find some data about a quantity that changes over time, and record enough entries to fill
+          in the table below. Put your input (time) in the first row, and use the first column for
+          your variable and function labels. If you want to include more values, or your numbers
+          won't fit in the space given, feel free to attach your table separately.
+        </p>
+        <tabular top="minor" left="minor" bottom="minor" right="minor">
+          <col halign="center" width="16%" right="major"/>
+          <col halign="center" width="16.8%" right="minor"/>
+          <col halign="center" width="16.8%" right="minor"/>
+          <col halign="center" width="16.8%" right="minor"/>
+          <col halign="center" width="16.8%" right="minor"/>
+          <col halign="center" width="16.8%"/>
+          <row bottom="minor">
+            <cell><m>\rule{0pt}{0.6in}</m></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\rule{0pt}{0.6in}</m></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="wa1-124-data-source" workspace="1.5in">
+      <title>Your Data Source</title>
+      <statement>
+        <p>Why did you choose this data set, and what was your source?</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="wa1-124-define-variables" workspace="1.25in">
+      <title>Defining Your Variables</title>
+      <statement>
+        <p>Write a sentence that defines your input variable and your function.</p>
+      </statement>
+    </exercise>
+  </page>
+
+  <!-- ===== PAGE 2: Function notation and average rate of change ===== -->
+  <page>
+    <exercise xml:id="wa1-124-function-notation" workspace="2.5in">
+      <title>Function Notation</title>
+      <statement>
+        <p>
+          Express the middle column of your table in function notation. Then write out in words
+          what this notation means in the context of your data.
         </p>
       </statement>
     </exercise>
 
+    <exercise xml:id="wa1-124-aroc" workspace="2.5in">
+      <title>Average Rate of Change</title>
+      <statement>
+        <p>
+          Write the second and last columns of your data set as points. Then find the average rate
+          of change (slope) between these two points.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="wa1-124-interpret" workspace="2.5in">
+      <title>Interpreting the Average Rate of Change</title>
+      <statement>
+        <p>
+          Explain what your average rate of change from the previous problem means in the context
+          of your data. Remember to address all 5 key parts of an interpretation.
+        </p>
+      </statement>
+    </exercise>
   </page>
 </worksheet>
