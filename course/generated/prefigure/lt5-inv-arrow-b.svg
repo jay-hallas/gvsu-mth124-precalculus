@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="lt5-inv-arrow-b-figure" width="310" height="250" viewBox="0 0 310 250">
+  <defs>
+    <clipPath id="lt5-inv-arrow-b-__clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="240.0"/>
+    </clipPath>
+    <clipPath id="lt5-inv-arrow-b-__clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="240.0"/>
+    </clipPath>
+    <marker id="lt5-inv-arrow-b-arrow-head-end-2_None_24_60-h0072CE" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#0072CE" stroke="none"/>
+    </marker>
+    <marker id="lt5-inv-arrow-b-arrow-head-end-2_None_24_60-h0072CE-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <path id="lt5-inv-arrow-b-__path-0" d="M 101.0 135.9 L 100.9 130.8 L 100.7 125.7 L 100.4 120.6 L 99.9 115.6 L 99.2 110.6 L 98.5 105.8 L 97.6 101.1 L 96.5 96.5 L 95.4 92.1 L 94.1 87.8 L 92.7 83.8 L 91.2 79.9 L 89.6 76.3 L 87.9 72.9 L 86.2 69.7 L 84.3 66.8 L 82.3 64.2 L 80.3 61.9 L 78.3 59.8 L 76.1 58.1 L 74.0 56.7 L 71.7 55.5 L 69.5 54.7 L 67.3 54.3 L 65.0 54.1 L 62.7 54.3 L 60.5 54.7 L 58.3 55.5 L 56.0 56.7 L 53.9 58.1 L 51.7 59.8 L 49.7 61.9 L 47.7 64.2 L 45.7 66.8 L 43.8 69.7 L 42.1 72.9 L 40.4 76.3 L 38.8 79.9 L 37.3 83.8 L 35.9 87.8 L 34.6 92.1 L 33.5 96.5 L 32.4 101.1 L 31.5 105.8 L 30.8 110.6 L 30.1 115.6 L 29.6 120.6 L 29.3 125.7 L 29.1 130.8 L 29.0 135.9 L 29.1 141.0 L 29.3 146.2 L 29.6 151.2 L 30.1 156.3 L 30.8 161.2 L 31.5 166.0 L 32.4 170.7 L 33.5 175.3 L 34.6 179.7 L 35.9 184.0 L 37.3 188.1 L 38.8 191.9 L 40.4 195.6 L 42.1 199.0 L 43.8 202.1 L 45.7 205.0 L 47.7 207.6 L 49.7 209.9 L 51.7 212.0 L 53.9 213.7 L 56.0 215.2 L 58.3 216.3 L 60.5 217.1 L 62.7 217.6 L 65.0 217.7 L 67.3 217.6 L 69.5 217.1 L 71.7 216.3 L 74.0 215.2 L 76.1 213.7 L 78.3 212.0 L 80.3 209.9 L 82.3 207.6 L 84.3 205.0 L 86.2 202.1 L 87.9 199.0 L 89.6 195.6 L 91.2 191.9 L 92.7 188.1 L 94.1 184.0 L 95.4 179.7 L 96.5 175.3 L 97.6 170.7 L 98.5 166.0 L 99.2 161.2 L 99.9 156.3 L 100.4 151.2 L 100.7 146.2 L 100.9 141.0 L 101.0 135.9 Z" stroke="black" stroke-width="2" fill="none"/>
+  <path id="lt5-inv-arrow-b-__path-1" d="M 281.0 135.9 L 280.9 130.8 L 280.7 125.7 L 280.4 120.6 L 279.9 115.6 L 279.2 110.6 L 278.5 105.8 L 277.6 101.1 L 276.5 96.5 L 275.4 92.1 L 274.1 87.8 L 272.7 83.8 L 271.2 79.9 L 269.6 76.3 L 267.9 72.9 L 266.2 69.7 L 264.3 66.8 L 262.3 64.2 L 260.3 61.9 L 258.3 59.8 L 256.1 58.1 L 254.0 56.7 L 251.7 55.5 L 249.5 54.7 L 247.3 54.3 L 245.0 54.1 L 242.7 54.3 L 240.5 54.7 L 238.3 55.5 L 236.0 56.7 L 233.9 58.1 L 231.7 59.8 L 229.7 61.9 L 227.7 64.2 L 225.7 66.8 L 223.8 69.7 L 222.1 72.9 L 220.4 76.3 L 218.8 79.9 L 217.3 83.8 L 215.9 87.8 L 214.6 92.1 L 213.5 96.5 L 212.4 101.1 L 211.5 105.8 L 210.8 110.6 L 210.1 115.6 L 209.6 120.6 L 209.3 125.7 L 209.1 130.8 L 209.0 135.9 L 209.1 141.0 L 209.3 146.2 L 209.6 151.2 L 210.1 156.3 L 210.8 161.2 L 211.5 166.0 L 212.4 170.7 L 213.5 175.3 L 214.6 179.7 L 215.9 184.0 L 217.3 188.1 L 218.8 191.9 L 220.4 195.6 L 222.1 199.0 L 223.8 202.1 L 225.7 205.0 L 227.7 207.6 L 229.7 209.9 L 231.7 212.0 L 233.9 213.7 L 236.0 215.2 L 238.3 216.3 L 240.5 217.1 L 242.7 217.6 L 245.0 217.7 L 247.3 217.6 L 249.5 217.1 L 251.7 216.3 L 254.0 215.2 L 256.1 213.7 L 258.3 212.0 L 260.3 209.9 L 262.3 207.6 L 264.3 205.0 L 266.2 202.1 L 267.9 199.0 L 269.6 195.6 L 271.2 191.9 L 272.7 188.1 L 274.1 184.0 L 275.4 179.7 L 276.5 175.3 L 277.6 170.7 L 278.5 166.0 L 279.2 161.2 L 279.9 156.3 L 280.4 151.2 L 280.7 146.2 L 280.9 141.0 L 281.0 135.9 Z" stroke="black" stroke-width="2" fill="none"/>
+  <g id="lt5-inv-arrow-b-__label-0" transform="translate(65.0,21.4) translate(-21.9,-7.9)">
+    <g id="lt5-inv-arrow-b-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="43.768px" height="15.872px" role="img" focusable="false" viewBox="0 -683 2418 877" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-2-TEX-N-49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z"/>
+          <path id="lt5-inv-arrow-b-MJX-2-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="lt5-inv-arrow-b-MJX-2-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"/>
+          <path id="lt5-inv-arrow-b-MJX-2-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"/>
+          <path id="lt5-inv-arrow-b-MJX-2-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="Input">
+              <use data-c="49" xlink:href="#lt5-inv-arrow-b-MJX-2-TEX-N-49"/>
+              <use data-c="6E" xlink:href="#lt5-inv-arrow-b-MJX-2-TEX-N-6E" transform="translate(361,0)"/>
+              <use data-c="70" xlink:href="#lt5-inv-arrow-b-MJX-2-TEX-N-70" transform="translate(917,0)"/>
+              <use data-c="75" xlink:href="#lt5-inv-arrow-b-MJX-2-TEX-N-75" transform="translate(1473,0)"/>
+              <use data-c="74" xlink:href="#lt5-inv-arrow-b-MJX-2-TEX-N-74" transform="translate(2029,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-1" transform="translate(245.0,21.4) translate(-29.2,-8.1)">
+    <g id="lt5-inv-arrow-b-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="58.352px" height="16.272px" role="img" focusable="false" viewBox="0 -705 3224 899" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-3-TEX-N-4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"/>
+          <path id="lt5-inv-arrow-b-MJX-3-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"/>
+          <path id="lt5-inv-arrow-b-MJX-3-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="lt5-inv-arrow-b-MJX-3-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="Output">
+              <use data-c="4F" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-4F"/>
+              <use data-c="75" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-75" transform="translate(778,0)"/>
+              <use data-c="74" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-74" transform="translate(1334,0)"/>
+              <use data-c="70" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-70" transform="translate(1723,0)"/>
+              <use data-c="75" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-75" transform="translate(2279,0)"/>
+              <use data-c="74" xlink:href="#lt5-inv-arrow-b-MJX-3-TEX-N-74" transform="translate(2835,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-2" transform="translate(65.0,81.4) translate(-4.5,-6.0)">
+    <g id="lt5-inv-arrow-b-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#lt5-inv-arrow-b-MJX-4-TEX-N-31"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-3" transform="translate(65.0,135.9) translate(-4.5,-6.0)">
+    <g id="lt5-inv-arrow-b-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="2">
+              <use data-c="32" xlink:href="#lt5-inv-arrow-b-MJX-5-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-4" transform="translate(65.0,190.5) translate(-4.5,-6.2)">
+    <g id="lt5-inv-arrow-b-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-6-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="3">
+              <use data-c="33" xlink:href="#lt5-inv-arrow-b-MJX-6-TEX-N-33"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-5" transform="translate(245.0,108.6) translate(-4.5,-6.2)">
+    <g id="lt5-inv-arrow-b-__g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-7-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="6">
+              <use data-c="36" xlink:href="#lt5-inv-arrow-b-MJX-7-TEX-N-36"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="lt5-inv-arrow-b-__label-6" transform="translate(245.0,163.2) translate(-4.5,-6.2)">
+    <g id="lt5-inv-arrow-b-__g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+        <defs>
+          <path id="lt5-inv-arrow-b-MJX-8-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="9">
+              <use data-c="39" xlink:href="#lt5-inv-arrow-b-MJX-8-TEX-N-39"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <line id="lt5-inv-arrow-b-__line-0" x1="83.0" y1="81.4" x2="221.6" y2="108.1" stroke="#0072CE" stroke-width="2" fill="none" marker-end="url(#lt5-inv-arrow-b-arrow-head-end-2_None_24_60-h0072CE)"/>
+  <line id="lt5-inv-arrow-b-__line-1" x1="83.0" y1="135.9" x2="221.6" y2="109.1" stroke="#0072CE" stroke-width="2" fill="none" marker-end="url(#lt5-inv-arrow-b-arrow-head-end-2_None_24_60-h0072CE)"/>
+  <line id="lt5-inv-arrow-b-__line-2" x1="83.0" y1="190.5" x2="221.6" y2="163.7" stroke="#0072CE" stroke-width="2" fill="none" marker-end="url(#lt5-inv-arrow-b-arrow-head-end-2_None_24_60-h0072CE)"/>
+</svg>
