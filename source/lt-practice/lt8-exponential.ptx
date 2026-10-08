@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt8-exponential">
+<title>Learning Target 8: Finding Exponential Functions</title>
+<objectives>
+<ul>
+<li>Given two points or an appropriate collection of features, I can find a formula for an exponential function that has those characteristics.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: initial value given, growth (table strategy)       -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-points-1">
+<title>Problem 1: Two Points, Starting Value Given</title>
+<introduction>
+<p>An exponential function <m>f(x) = ab^x</m> passes through the points <m>(0, 4)</m> and <m>(3, 108)</m>.</p>
+</introduction>
+
+<task>
+<statement>
+<p><em>Table strategy.</em> Each time <m>x</m> goes up by <m>1</m>, the output is multiplied by the same number <m>b</m>. Fill in the missing outputs so that this is true.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>4</m></cell>
+<cell/>
+<cell/>
+<cell><m>108</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>Going from <m>x = 0</m> to <m>x = 3</m> multiplies the output by <m>b</m> three times, so <m>4 \cdot b^3 = 108</m>. Trying <m>b = 3</m> gives <m>4</m>, <m>12</m>, <m>36</m>, <m>108</m>, so the missing outputs are <m>12</m> and <m>36</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p><em>Algebra strategy.</em> Use the two points to find <m>a</m> and <m>b</m>. Write the formula for <m>f(x)</m>.</p>
+</statement>
+<answer>
+<p>Since <m>f(0) = ab^0 = a</m>, the point <m>(0, 4)</m> gives <m>a = 4</m>. Substitute the second point.
+<md>
+<mrow>108 \amp= 4b^3</mrow>
+<mrow>27 \amp= b^3</mrow>
+<mrow>b \amp= 3</mrow>
+</md>
+</p>
+<p>So <m>f(x) = 4(3)^x</m>, which matches the table.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: initial value given, decay (algebra first)         -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-points-2">
+<title>Problem 2: Two Points, Starting Value Given</title>
+<introduction>
+<p>An exponential function <m>g(x) = ab^x</m> passes through the points <m>(0, 200)</m> and <m>(2, 128)</m>.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Use algebra to find <m>a</m> and <m>b</m>. Write the formula for <m>g(x)</m>.</p>
+</statement>
+<answer>
+<p>The point <m>(0, 200)</m> gives <m>a = 200</m>. Substitute the second point.
+<md>
+<mrow>128 \amp= 200b^2</mrow>
+<mrow>0.64 \amp= b^2</mrow>
+<mrow>b \amp= 0.8</mrow>
+</md>
+</p>
+<p>We use the positive square root, since the base of an exponential function must be positive. So <m>g(x) = 200(0.8)^x</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Is <m>g</m> an exponential growth or decay function? By what percent does the output change each time <m>x</m> goes up by <m>1</m>?</p>
+</statement>
+<answer>
+<p>Since <m>0 \lt 0.8 \lt 1</m>, this is exponential decay. A factor of <m>0.8</m> means each output is <m>80\%</m> of the one before it, which is a <m>20\%</m> decrease.</p>
+</answer>
+</task>
+
+<task>
+<statement>
+<p>Check your answer by completing the table.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+</row>
+<row>
+<cell><m>g(x)</m></cell>
+<cell><m>200</m></cell>
+<cell/>
+<cell><m>128</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p><m>g(1) = 200(0.8) = 160</m>, and <m>160(0.8) = 128</m>, which matches the given point.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: no initial value (table, then algebra)             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-points-3">
+<title>Problem 3: Two Points, No Starting Value</title>
+<introduction>
+<p>An exponential function <m>h(x) = ab^x</m> passes through the points <m>(1, 6)</m> and <m>(3, 54)</m>.</p>
+</introduction>
+
+<task>
+<statement>
+<p><em>Table strategy.</em> Fill in the table. Start by finding the growth factor between <m>x = 1</m> and <m>x = 3</m>, then work backward to <m>x = 0</m>.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>h(x)</m></cell>
+<cell/>
+<cell><m>6</m></cell>
+<cell/>
+<cell><m>54</m></cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>From <m>x = 1</m> to <m>x = 3</m> the output is multiplied by <m>\frac{54}{6} = 9</m> over two steps, so <m>b^2 = 9</m> and <m>b = 3</m>. Then <m>h(2) = 6 \cdot 3 = 18</m>. Working backward, <m>h(0) = \frac{6}{3} = 2</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p><em>Algebra strategy.</em> Write two equations using the two points. Divide one equation by the other to find <m>b</m>, then find <m>a</m>. Write the formula for <m>h(x)</m>.</p>
+</statement>
+<answer>
+<p>The points give <m>6 = ab^1</m> and <m>54 = ab^3</m>. Divide the second equation by the first.
+<md>
+<mrow>\frac{54}{6} \amp= \frac{ab^3}{ab}</mrow>
+<mrow>9 \amp= b^2</mrow>
+<mrow>b \amp= 3</mrow>
+</md>
+</p>
+<p>Then <m>6 = a(3)</m>, so <m>a = 2</m>, and <m>h(x) = 2(3)^x</m>. The value <m>a = 2</m> matches <m>h(0)</m> from the table.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: no initial value, negative input, fraction base    -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-points-4">
+<title>Problem 4: Two Points on Opposite Sides of the Axis</title>
+<introduction>
+<p>An exponential function <m>k(x) = ab^x</m> passes through the points <m>(-2, 80)</m> and <m>(2, 5)</m>.</p>
+</introduction>
+
+<task workspace="2in">
+<statement>
+<p>Find <m>a</m> and <m>b</m>, and write the formula for <m>k(x)</m>. You may use a table or algebra.</p>
+</statement>
+<answer>
+<p>The points give <m>80 = ab^{-2}</m> and <m>5 = ab^2</m>. Divide the second equation by the first.
+<md>
+<mrow>\frac{5}{80} \amp= \frac{ab^2}{ab^{-2}} = b^{2 - (-2)} = b^4</mrow>
+<mrow>\frac{1}{16} \amp= b^4</mrow>
+<mrow>b \amp= \frac{1}{2}</mrow>
+</md>
+</p>
+<p>Then <m>5 = a\left(\frac{1}{2}\right)^2 = \frac{a}{4}</m>, so <m>a = 20</m> and <m>k(x) = 20\left(\frac{1}{2}\right)^x</m>.</p>
+<p>With a table, the output goes from <m>80</m> to <m>5</m> over four steps, a total factor of <m>\frac{1}{16}</m>, so each step multiplies by <m>\frac{1}{2}</m>: <m>80, 40, 20, 10, 5</m>. The value at <m>x = 0</m> is <m>20</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>Check your formula using the point <m>(-2, 80)</m>.</p>
+</statement>
+<answer>
+<p><m>k(-2) = 20\left(\frac{1}{2}\right)^{-2} = 20(4) = 80</m>, which matches.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: percent decrease (caffeine)                        -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-caffeine">
+<title>Problem 5: Caffeine in the Body</title>
+<introduction>
+<p>An <m>8</m>-ounce cup of brewed coffee has about <m>95</m> milligrams of caffeine. For a typical adult, the body removes about <m>13\%</m> of the caffeine in the bloodstream each hour. Let <m>C(t)</m> be the amount of caffeine in milligrams <m>t</m> hours after drinking the coffee.</p>
+</introduction>
+
+<task workspace="0.75in">
+<statement>
+<p>What is the decay factor per hour?</p>
+</statement>
+<answer>
+<p>A <m>13\%</m> decrease leaves <m>87\%</m> each hour, so the decay factor is <m>1 - 0.13 = 0.87</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>Write a formula for <m>C(t)</m>.</p>
+</statement>
+<answer>
+<p><m>C(t) = 95(0.87)^t</m></p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>If you drink the coffee at 3 p.m., how much caffeine is left at 11 p.m.?</p>
+</statement>
+<answer>
+<p>That is <m>8</m> hours later. <m>C(8) = 95(0.87)^8 \approx 31.2</m> milligrams, about a third of the original amount.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>About how long until less than <m>20</m> milligrams remain? (Desmos may help.)</p>
+</statement>
+<answer>
+<p>Graph <m>y = 95(0.87)^t</m> and <m>y = 20</m>. They cross at <m>t \approx 11.2</m>, so it takes a little over <m>11</m> hours.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: percent increase (rent)                            -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-rent">
+<title>Problem 6: Rising Rent</title>
+<introduction>
+<p>An apartment near campus rents for <m>\$1{,}250</m> per month this year. The landlord raises the rent by <m>5\%</m> each year. Let <m>R(t)</m> be the monthly rent in dollars <m>t</m> years from now.</p>
+</introduction>
+
+<task workspace="0.75in">
+<statement>
+<p>What is the growth factor per year?</p>
+</statement>
+<answer>
+<p>A <m>5\%</m> increase means each year's rent is <m>105\%</m> of the year before, so the growth factor is <m>1 + 0.05 = 1.05</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>Write a formula for <m>R(t)</m>.</p>
+</statement>
+<answer>
+<p><m>R(t) = 1250(1.05)^t</m></p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>What will the monthly rent be in <m>4</m> years, when a first-year student would be graduating?</p>
+</statement>
+<answer>
+<p><m>R(4) = 1250(1.05)^4 \approx 1519.38</m>, so the rent will be about <m>\$1{,}519</m> per month.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>About how many years until the rent doubles to <m>\$2{,}500</m>? (Desmos may help.)</p>
+</statement>
+<answer>
+<p>Graph <m>y = 1250(1.05)^t</m> and <m>y = 2500</m>. They cross at <m>t \approx 14.2</m>, so the rent doubles in a little over <m>14</m> years.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 7: decrease over an interval (battery capacity)       -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-battery">
+<title>Problem 7: Change Over an Interval</title>
+<introduction>
+<p>A new phone battery holds <m>4{,}500</m> milliamp-hours (mAh) of charge. A typical lithium-ion battery loses about <m>20\%</m> of its capacity every <m>500</m> full charge cycles. Let <m>B(n)</m> be the battery's capacity in mAh after <m>n</m> full charge cycles.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>Write a formula for <m>B(n)</m>. Explain why the exponent is not just <m>n</m>.</p>
+</statement>
+<answer>
+<p>The decay factor is <m>1 - 0.20 = 0.8</m>, but it applies once every <m>500</m> cycles, not once every cycle. The number of <m>500</m>-cycle intervals in <m>n</m> cycles is <m>\frac{n}{500}</m>, so
+<md>
+<mrow>B(n) \amp= 4500(0.8)^{n/500}</mrow>
+</md>
+</p>
+<p>As a check, <m>B(500) = 4500(0.8)^1 = 3600</m>, which is a <m>20\%</m> loss after <m>500</m> cycles. If the exponent were just <m>n</m>, the battery would lose <m>20\%</m> after every single charge.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>If you fully charge your phone about once a day, you will reach <m>800</m> cycles in a little over two years. What will the capacity be then?</p>
+</statement>
+<answer>
+<p><m>B(800) = 4500(0.8)^{800/500} = 4500(0.8)^{1.6} \approx 3149</m> mAh.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>About how many cycles until the capacity drops to <m>3{,}000</m> mAh? (Desmos may help.)</p>
+</statement>
+<answer>
+<p>Graph <m>y = 4500(0.8)^{x/500}</m> and <m>y = 3000</m>. They cross at <m>x \approx 909</m>, so after about <m>909</m> cycles.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 8: cooling model (coffee)                             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-cooling">
+<title>Problem 8: A Cooling Model</title>
+<introduction>
+<p>A cup of coffee is poured at <m>190^\circ\text{F}</m> in a room kept at <m>70^\circ\text{F}</m>. After <m>10</m> minutes, the coffee has cooled to <m>150^\circ\text{F}</m>. Let <m>F(t)</m> be the temperature of the coffee <m>t</m> minutes after it is poured.</p>
+</introduction>
+
+<task workspace="2.25in">
+<statement>
+<p>Find a model of the form <m>F(t) = c + ae^{-kt}</m>.</p>
+</statement>
+<answer>
+<p>Over time the coffee approaches room temperature, so <m>c = 70</m>. At <m>t = 0</m>, <m>F(0) = 70 + a = 190</m>, so <m>a = 120</m>. Use the point <m>(10, 150)</m> to find <m>k</m>.
+<md>
+<mrow>150 \amp= 70 + 120e^{-10k}</mrow>
+<mrow>80 \amp= 120e^{-10k}</mrow>
+<mrow>\frac{2}{3} \amp= e^{-10k}</mrow>
+<mrow>-10k \amp= \ln\left(\frac{2}{3}\right)</mrow>
+<mrow>k \amp= -\frac{1}{10}\ln\left(\frac{2}{3}\right) \approx 0.0405</mrow>
+</md>
+</p>
+<p>The model is <m>F(t) = 70 + 120e^{-0.0405t}</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>What is the temperature of the coffee after <m>30</m> minutes?</p>
+</statement>
+<answer>
+<p><m>F(30) = 70 + 120e^{-0.0405(30)} \approx 105.6^\circ\text{F}</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Many people find coffee comfortable to drink at about <m>140^\circ\text{F}</m>. How long do you need to wait? (Desmos may help.)</p>
+</statement>
+<answer>
+<p>Graph <m>y = 70 + 120e^{-0.0405x}</m> and <m>y = 140</m>. They cross at <m>x \approx 13.3</m>, so wait about <m>13</m> minutes.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 9: heating model (cold drink warming)                 -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt8-exp-heating">
+<title>Problem 9: A Warming Model</title>
+<introduction>
+<p>A can of soda is taken out of a refrigerator at <m>38^\circ\text{F}</m> and set on a picnic table outside, where the air temperature is <m>85^\circ\text{F}</m>. After <m>15</m> minutes, the soda has warmed to <m>52^\circ\text{F}</m>. Let <m>F(t)</m> be the temperature of the soda <m>t</m> minutes after it is set outside.</p>
+</introduction>
+
+<task workspace="2.25in">
+<statement>
+<p>Find a model of the form <m>F(t) = c + ae^{-kt}</m>.</p>
+</statement>
+<answer>
+<p>The soda approaches the air temperature, so <m>c = 85</m>. At <m>t = 0</m>, <m>85 + a = 38</m>, so <m>a = -47</m>. The value of <m>a</m> is negative because the soda starts below the surrounding temperature. Use the point <m>(15, 52)</m>.
+<md>
+<mrow>52 \amp= 85 - 47e^{-15k}</mrow>
+<mrow>-33 \amp= -47e^{-15k}</mrow>
+<mrow>\frac{33}{47} \amp= e^{-15k}</mrow>
+<mrow>k \amp= -\frac{1}{15}\ln\left(\frac{33}{47}\right) \approx 0.0236</mrow>
+</md>
+</p>
+<p>The model is <m>F(t) = 85 - 47e^{-0.0236t}</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>What is the temperature of the soda after <m>45</m> minutes?</p>
+</statement>
+<answer>
+<p><m>F(45) = 85 - 47e^{-0.0236(45)} \approx 68.7^\circ\text{F}</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>How long until the soda reaches <m>70^\circ\text{F}</m>? Will it ever reach <m>85^\circ\text{F}</m>? Explain.</p>
+</statement>
+<answer>
+<p>Graph <m>y = 85 - 47e^{-0.0236x}</m> and <m>y = 70</m>. They cross at <m>x \approx 48.4</m>, so after about <m>48</m> minutes. The soda never actually reaches <m>85^\circ\text{F}</m>, since <m>47e^{-0.0236t}</m> is always positive. The temperature gets closer and closer to <m>85^\circ\text{F}</m>, which is the horizontal asymptote of the graph.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

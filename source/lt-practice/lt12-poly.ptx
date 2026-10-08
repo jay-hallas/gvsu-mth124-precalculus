@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt12-polynomials">
+<title>Learning Target 12: Polynomial Functions</title>
+<objectives>
+<ul>
+<li>I can identify the degree, zeros, turning points, and long-range behavior of a polynomial given its formula or graph, and I can find the formula of a polynomial that fits given data about its behavior.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: is it a polynomial; degree and leading coefficient -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-definition">
+<title>Problem 1: Degree and Leading Coefficient</title>
+<introduction>
+<p>For each function, decide whether it is a polynomial. If it is, state its degree and leading coefficient.</p>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p><m>f(x) = 9 - 4x^3 + 2x^5 - x</m></p>
+</statement>
+<answer>
+<p>This is a polynomial. The highest power is <m>x^5</m>, so the degree is <m>5</m> and the leading coefficient is <m>2</m>. The terms do not have to be written in order.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p><m>g(x) = 6x^2 + 3\sqrt{x} - 1</m></p>
+</statement>
+<answer>
+<p>Not a polynomial. Since <m>\sqrt{x} = x^{1/2}</m>, one term has a fractional power.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p><m>h(x) = \dfrac{5}{x^2} + x - 8</m></p>
+</statement>
+<answer>
+<p>Not a polynomial. Since <m>\frac{5}{x^2} = 5x^{-2}</m>, one term has a negative power.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p><m>k(x) = -\frac{1}{3}x^4 + \pi x^2 - 7</m></p>
+</statement>
+<answer>
+<p>This is a polynomial. Coefficients like <m>-\frac{1}{3}</m> and <m>\pi</m> are allowed, since only the powers of <m>x</m> must be whole numbers. The degree is <m>4</m> and the leading coefficient is <m>-\frac{1}{3}</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: zeros and turning points from degree               -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-counts">
+<title>Problem 2: Zeros and Turning Points</title>
+<introduction>
+<p>A polynomial of degree <m>n</m> has at most <m>n</m> real zeros and at most <m>n - 1</m> turning points.</p>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>A polynomial has degree <m>6</m>. What is the maximum number of real zeros it can have? What is the maximum number of turning points?</p>
+</statement>
+<answer>
+<p>At most <m>6</m> real zeros and at most <m>5</m> turning points.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>The graph of a polynomial has exactly <m>4</m> turning points. What is the smallest possible degree?</p>
+</statement>
+<answer>
+<p>A polynomial of degree <m>n</m> has at most <m>n - 1</m> turning points, so we need <m>n - 1 \geq 4</m>. The smallest possible degree is <m>5</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Can a polynomial of degree <m>3</m> have no real zeros? Explain using the long-range behavior.</p>
+</statement>
+<answer>
+<p>No. For an odd-degree polynomial, the two ends of the graph go in opposite directions, one toward <m>\infty</m> and one toward <m>-\infty</m>. A graph with no breaks that goes from below the <m>x</m>-axis to above it must cross the axis at least once.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: features from factored form                        -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-factored">
+<title>Problem 3: Reading a Factored Formula</title>
+<introduction>
+<p>Let <m>p(x) = -2(x - 3)(x + 1)^2(x + 4)</m>.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>List the zeros of <m>p</m> and the multiplicity of each. At which zeros does the graph cross the <m>x</m>-axis, and at which does it touch the axis and turn around?</p>
+</statement>
+<answer>
+<p>The zeros are <m>x = 3</m> (multiplicity <m>1</m>), <m>x = -1</m> (multiplicity <m>2</m>), and <m>x = -4</m> (multiplicity <m>1</m>). The graph crosses the axis at <m>x = 3</m> and <m>x = -4</m>, and touches the axis and turns around at <m>x = -1</m>, since that zero has even multiplicity.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>What are the degree and leading coefficient of <m>p</m>?</p>
+</statement>
+<answer>
+<p>Add the multiplicities: <m>1 + 2 + 1 = 4</m>, so the degree is <m>4</m>. Multiplying the leading terms gives <m>-2 \cdot x \cdot x^2 \cdot x = -2x^4</m>, so the leading coefficient is <m>-2</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>Find the <m>y</m>-intercept.</p>
+</statement>
+<answer>
+<p><m>p(0) = -2(-3)(1)^2(4) = 24</m>, so the <m>y</m>-intercept is <m>(0, 24)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find <m>\displaystyle\lim_{x \to \infty} p(x)</m> and <m>\displaystyle\lim_{x \to -\infty} p(x)</m>.</p>
+</statement>
+<answer>
+<p>For large <m>|x|</m>, <m>p(x)</m> behaves like <m>-2x^4</m>. The degree is even and the leading coefficient is negative, so both ends point down: <m>\lim_{x \to \infty} p(x) = -\infty</m> and <m>\lim_{x \to -\infty} p(x) = -\infty</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: long-range behavior from standard form             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-long-run">
+<title>Problem 4: Long-Range Behavior</title>
+<introduction>
+<p>For each polynomial, find <m>\displaystyle\lim_{x \to \infty}</m> and <m>\displaystyle\lim_{x \to -\infty}</m>. Explain using the leading term.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p><m>r(x) = 5 + x^2 - 2x^3</m></p>
+</statement>
+<answer>
+<p>The leading term is <m>-2x^3</m>: odd degree, negative leading coefficient. So <m>r(x) \to -\infty</m> as <m>x \to \infty</m>, and <m>r(x) \to \infty</m> as <m>x \to -\infty</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>s(x) = 0.1x^6 - 50x^4 + 300</m></p>
+</statement>
+<answer>
+<p>The leading term is <m>0.1x^6</m>: even degree, positive leading coefficient. So <m>s(x) \to \infty</m> in both directions. The small coefficient <m>0.1</m> does not matter for long-range behavior, since <m>x^6</m> eventually outgrows <m>50x^4</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>t(x) = (x + 2)^3(4 - x)^2</m></p>
+</statement>
+<answer>
+<p>Multiplying the leading terms gives <m>x^3 \cdot (-x)^2 = x^5</m>: odd degree, positive leading coefficient. So <m>t(x) \to \infty</m> as <m>x \to \infty</m> and <m>t(x) \to -\infty</m> as <m>x \to -\infty</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: formula from a graph                               -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-graph">
+<title>Problem 5: A Formula from a Graph</title>
+<introduction>
+<p>The graph of a polynomial <m>q</m> is shown below. The dots mark the <m>x</m>-intercepts and the <m>y</m>-intercept <m>(0, -3)</m>.</p>
+<image width="60%">
+<shortdescription>The graph of a polynomial q crossing the x-axis at negative three and four, touching it at one, with y-intercept negative three.</shortdescription>
+<description><p>The graph of q comes down from the upper left, crosses the x-axis at negative three, falls to a low point near negative two, negative thirteen point seven, rises through the y-intercept zero, negative three, and touches the x-axis at one without crossing. It falls again to a low point near three, negative six, then rises, crossing the x-axis at four and continuing up to the upper right.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt12-poly-graph-q">
+<diagram dimensions="(360,360)" margins="5">
+<definition>q(x) = 0.25*(x + 3)*(x - 1)^2*(x - 4)</definition>
+<coordinates bbox="(-5,-16,6,16)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="q" domain="(-3.4,4.4)" stroke="#0072CE" thickness="3"/>
+<point p="(-3,0)" fill="#002967" stroke="#002967"/>
+<point p="(1,0)" fill="#002967" stroke="#002967"/>
+<point p="(4,0)" fill="#002967" stroke="#002967"/>
+<point p="(0,-3)" fill="#002967" stroke="#002967"/>
+<label anchor="(2.4,12)"><m>y = q(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>List the zeros of <m>q</m>. For each one, say whether the graph crosses or touches the <m>x</m>-axis, and what that tells you about its multiplicity.</p>
+</statement>
+<answer>
+<p>The graph crosses at <m>x = -3</m> and <m>x = 4</m>, so those zeros have odd multiplicity; the simplest choice is <m>1</m>. It touches and turns around at <m>x = 1</m>, so that zero has even multiplicity; the simplest choice is <m>2</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>How many turning points does the graph have? What is the minimum degree of <m>q</m>?</p>
+</statement>
+<answer>
+<p>There are <m>3</m> turning points, so the degree is at least <m>4</m>. This agrees with the multiplicities: <m>1 + 2 + 1 = 4</m>.</p>
+</answer>
+</task>
+
+<task workspace="2in">
+<statement>
+<p>Find a formula for <m>q</m> of minimum degree. Use the <m>y</m>-intercept to find the leading coefficient, and check your answer in Desmos.</p>
+</statement>
+<answer>
+<p>The zeros give <m>q(x) = a(x + 3)(x - 1)^2(x - 4)</m>. Use the point <m>(0, -3)</m>.
+<md>
+<mrow>-3 \amp= a(3)(-1)^2(-4)</mrow>
+<mrow>-3 \amp= -12a</mrow>
+<mrow>a \amp= \frac{1}{4}</mrow>
+</md>
+</p>
+<p>So <m>q(x) = \frac{1}{4}(x + 3)(x - 1)^2(x - 4)</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>Based on the graph, find <m>\displaystyle\lim_{x \to \infty} q(x)</m> and <m>\displaystyle\lim_{x \to -\infty} q(x)</m>. Does this match your formula?</p>
+</statement>
+<answer>
+<p>Both ends go up, so both limits are <m>\infty</m>. This matches the formula: the degree is even and the leading coefficient <m>\frac{1}{4}</m> is positive.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: formula from conditions (y-intercept)              -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-conditions-1">
+<title>Problem 6: A Formula from Conditions</title>
+<introduction>
+<p>Find the polynomial of least degree that has</p>
+<p><ul>
+<li><p>a zero of multiplicity <m>3</m> at <m>x = 2</m>,</p></li>
+<li><p>a zero of multiplicity <m>2</m> at <m>x = -1</m>, and</p></li>
+<li><p>a <m>y</m>-intercept of <m>-24</m>.</p></li>
+</ul></p>
+</introduction>
+
+<task workspace="2.25in">
+<statement>
+<p>Find the formula for <m>f(x)</m>. What is its degree?</p>
+</statement>
+<answer>
+<p>The zeros require the factors <m>(x - 2)^3</m> and <m>(x + 1)^2</m>, so <m>f(x) = a(x - 2)^3(x + 1)^2</m>, with degree <m>3 + 2 = 5</m>. Use the <m>y</m>-intercept.
+<md>
+<mrow>-24 \amp= a(0 - 2)^3(0 + 1)^2</mrow>
+<mrow>-24 \amp= -8a</mrow>
+<mrow>a \amp= 3</mrow>
+</md>
+</p>
+<p>So <m>f(x) = 3(x - 2)^3(x + 1)^2</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Describe the long-range behavior of <m>f</m>.</p>
+</statement>
+<answer>
+<p>The leading term is <m>3x^5</m>: odd degree, positive leading coefficient. So <m>f(x) \to \infty</m> as <m>x \to \infty</m> and <m>f(x) \to -\infty</m> as <m>x \to -\infty</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 7: formula from conditions (other point)              -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt12-poly-conditions-2">
+<title>Problem 7: Using a Point Other Than the Intercept</title>
+<introduction>
+<p>A polynomial <m>g</m> of degree <m>4</m> has zeros at <m>x = -3</m> and <m>x = 4</m>, and a zero at <m>x = 1</m> where the graph touches the <m>x</m>-axis without crossing. The graph also passes through the point <m>(2, 30)</m>.</p>
+</introduction>
+
+<task workspace="2.25in">
+<statement>
+<p>Find the formula for <m>g(x)</m>.</p>
+</statement>
+<answer>
+<p>Touching the axis at <m>x = 1</m> means even multiplicity, and the total degree must be <m>4</m>, so <m>g(x) = a(x + 3)(x - 1)^2(x - 4)</m>. Use the point <m>(2, 30)</m>.
+<md>
+<mrow>30 \amp= a(2 + 3)(2 - 1)^2(2 - 4)</mrow>
+<mrow>30 \amp= a(5)(1)(-2) = -10a</mrow>
+<mrow>a \amp= -3</mrow>
+</md>
+</p>
+<p>So <m>g(x) = -3(x + 3)(x - 1)^2(x - 4)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Compare <m>g</m> to the polynomial <m>q</m> from Problem 5. How are the graphs related, and how is the long-range behavior different?</p>
+</statement>
+<answer>
+<p>They have the same zeros with the same multiplicities, so the graphs cross and touch the axis at the same places. Since <m>g(x) = -12q(x)</m>, the graph of <m>g</m> is the graph of <m>q</m> flipped over the <m>x</m>-axis and stretched vertically. Both ends of <m>g</m> point down: <m>g(x) \to -\infty</m> as <m>x \to \pm\infty</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

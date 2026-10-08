@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt9-graph-shape">
+<title>Learning Target 9: Increasing, Decreasing, and Concavity</title>
+<objectives>
+<ul>
+<li>I can identify the intervals where a function is increasing, decreasing, concave down, or concave up, and I can provide examples of familiar functions that have given increasing / decreasing and concave down / concave up behaviors.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: sinusoidal function with graph                     -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-sinusoid">
+<title>Problem 1: A Sinusoidal Function</title>
+<introduction>
+<p>The graph of <m>\displaystyle T(x) = -2\sin\left(\frac{\pi}{4}x\right) + 1</m> is shown below on the domain <m>[0, 8]</m>. The dots mark the minimum and maximum.</p>
+<image width="75%">
+<shortdescription>The graph of T on the interval from 0 to 8, with a minimum at 2 and a maximum at 6.</shortdescription>
+<description><p>The graph of T starts at the point zero, one, falls to a minimum at two, negative one, rises through four, one to a maximum at six, three, and falls back to eight, one.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt9-shape-graph-t">
+<diagram dimensions="(400,240)" margins="5">
+<definition>T(x) = -2*sin(pi*x/4) + 1</definition>
+<coordinates bbox="(-1,-2,9,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="T" domain="(0,8)" stroke="#0072CE" thickness="3"/>
+<point p="(2,-1)" fill="#002967" stroke="#002967"/>
+<point p="(6,3)" fill="#002967" stroke="#002967"/>
+<label anchor="(7.6,3.5)"><m>y = T(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>On which intervals is <m>T</m> increasing?</p>
+</statement>
+<answer>
+<p>The graph rises from the minimum at <m>x = 2</m> to the maximum at <m>x = 6</m>, so <m>T</m> is increasing on <m>(2, 6)</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>On which intervals is <m>T</m> decreasing?</p>
+</statement>
+<answer>
+<p><m>T</m> is decreasing on <m>(0, 2)</m> and on <m>(6, 8)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>What is the midline of <m>T</m>? Find every <m>x</m>-value in <m>[0, 8]</m> where the graph crosses the midline.</p>
+</statement>
+<answer>
+<p>The midline is <m>y = 1</m>. The graph crosses it at <m>x = 0</m>, <m>x = 4</m>, and <m>x = 8</m>. On a sinusoidal graph, the concavity changes each time the graph crosses the midline.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>On which intervals is <m>T</m> concave up? On which intervals is <m>T</m> concave down?</p>
+</statement>
+<answer>
+<p>Below the midline the graph bends like a cup, and above the midline it bends like a frown. So <m>T</m> is concave up on <m>(0, 4)</m>, where the graph is below <m>y = 1</m>, and concave down on <m>(4, 8)</m>, where the graph is above <m>y = 1</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: exponential functions from structure               -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-exponential">
+<title>Problem 2: Exponential Functions</title>
+<introduction>
+<p>Each function below has the form <m>f(x) = c + ab^x</m>. Without graphing, decide whether the function is increasing or decreasing, whether it is concave up or concave down, and whether <m>f(x)</m> approaches a value <m>c</m>, <m>\infty</m>, or <m>-\infty</m> as <m>x \to \infty</m>. Then check your answers with Desmos.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p><m>P(x) = 4(1.2)^x + 10</m></p>
+</statement>
+<answer>
+<p>Here <m>b = 1.2 \gt 1</m>, so <m>(1.2)^x</m> grows, and <m>a = 4</m> is positive. The function is increasing and concave up, and <m>P(x) \to \infty</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>Q(x) = 50 - 6(2)^x</m></p>
+</statement>
+<answer>
+<p>Here <m>b = 2 \gt 1</m>, but <m>a = -6</m> is negative, which flips the growing curve upside down. The function is decreasing and concave down, and <m>Q(x) \to -\infty</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>R(t) = 12(0.6)^t - 5</m></p>
+</statement>
+<answer>
+<p>Here <m>b = 0.6 \lt 1</m>, so <m>(0.6)^t</m> decays toward <m>0</m>, and <m>a = 12</m> is positive. The function is decreasing and concave up, and <m>R(t) \to -5</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>S(t) = 98 - 60e^{-0.4t}</m></p>
+</statement>
+<answer>
+<p>Since <m>e^{-0.4t} = \left(e^{-0.4}\right)^t</m> and <m>e^{-0.4} \approx 0.67 \lt 1</m>, this is decay, and <m>a = -60</m> flips it. The function is increasing and concave down, and <m>S(t) \to 98</m>. This is the shape of a warming model, like a cold drink approaching room temperature.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>V(t) = 20 + 8e^{0.3t}</m></p>
+</statement>
+<answer>
+<p>Since <m>e^{0.3} \approx 1.35 \gt 1</m>, this is growth, and <m>a = 8</m> is positive. The function is increasing and concave up, and <m>V(t) \to \infty</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Write your own exponential function of the form <m>c + ab^x</m> that is decreasing, concave down, and approaches <m>-\infty</m> as <m>x \to \infty</m>.</p>
+</statement>
+<answer>
+<p>Answers will vary. We need <m>b \gt 1</m> so the function grows in size, and <m>a \lt 0</m> to flip it upside down. One example is <m>f(x) = 7 - 2(3)^x</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: cubic function with graph                          -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-cubic">
+<title>Problem 3: A Cubic Function</title>
+<introduction>
+<p>The graph of a function <m>f</m> is shown below on the domain <m>[-4, 4]</m>.</p>
+<image width="60%">
+<shortdescription>The graph of a cubic function f with a local maximum at negative two and a local minimum at two.</shortdescription>
+<description><p>The graph of f starts at the point negative four, negative three, rises to a local maximum at negative two, five, falls through the point zero, one to a local minimum at two, negative three, and rises to the point four, five.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt9-shape-graph-f">
+<diagram dimensions="(300,360)" margins="5">
+<definition>f(x) = (x^3 - 12*x)/4 + 1</definition>
+<coordinates bbox="(-5,-5,5,7)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="f" domain="(-4,4)" stroke="#0072CE" thickness="3"/>
+<point p="(-2,5)" fill="#002967" stroke="#002967"/>
+<point p="(2,-3)" fill="#002967" stroke="#002967"/>
+<label anchor="(3,6.3)"><m>y = f(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>On which intervals is <m>f</m> increasing?</p>
+</statement>
+<answer>
+<p><m>f</m> is increasing on <m>(-4, -2)</m> and on <m>(2, 4)</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>On which intervals is <m>f</m> decreasing?</p>
+</statement>
+<answer>
+<p><m>f</m> is decreasing on <m>(-2, 2)</m>, from the high point down to the low point.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>At <m>x = -3</m>, is the graph concave up or concave down? Explain.</p>
+</statement>
+<answer>
+<p>Concave down. Near <m>x = -3</m> the graph is part of the hill that peaks at <m>x = -2</m>, so it bends like a frown. It is rising, but more and more slowly.</p>
+</answer>
+</task>
+
+<task workspace="0.85in">
+<statement>
+<p>At <m>x = 3</m>, is the graph concave up or concave down? Explain.</p>
+</statement>
+<answer>
+<p>Concave up. Near <m>x = 3</m> the graph is part of the valley with its low point at <m>x = 2</m>, so it bends like a cup. It is rising, and more and more quickly.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: quadratic functions                                -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-quadratic">
+<title>Problem 4: Quadratic Functions</title>
+<introduction>
+<p>Consider the two quadratic functions <m>p(x) = 5 - 2x^2</m> and <m>q(x) = 3x^2 - 12x + 1</m>.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>Is <m>p</m> always concave up or always concave down? What about the formula tells you this?</p>
+</statement>
+<answer>
+<p>Always concave down. The coefficient of <m>x^2</m> is <m>-2</m>, which is negative, so the parabola opens downward.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Is <m>q</m> always concave up or always concave down? What about the formula tells you this?</p>
+</statement>
+<answer>
+<p>Always concave up. The coefficient of <m>x^2</m> is <m>3</m>, which is positive, so the parabola opens upward.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find the vertex of <m>q</m>. Then give the intervals where <m>q</m> is increasing and where it is decreasing.</p>
+</statement>
+<answer>
+<p>The vertex is at <m>x = -\frac{b}{2a} = -\frac{-12}{2(3)} = 2</m>, and <m>q(2) = 12 - 24 + 1 = -11</m>, so the vertex is <m>(2, -11)</m>. Since the parabola opens upward, <m>q</m> is decreasing on <m>(-\infty, 2)</m> and increasing on <m>(2, \infty)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Give the intervals where <m>p</m> is increasing and where it is decreasing.</p>
+</statement>
+<answer>
+<p>The vertex of <m>p</m> is at <m>x = 0</m>, the point <m>(0, 5)</m>. Since the parabola opens downward, <m>p</m> is increasing on <m>(-\infty, 0)</m> and decreasing on <m>(0, \infty)</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: sketch from a description                          -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-sketch">
+<title>Problem 5: Sketching from a Description</title>
+
+<task>
+<statement>
+<p>On the grid below, draw a possible graph of a function <m>f</m> such that:</p>
+<p><ul>
+<li><p>the graph can be drawn without lifting your pencil (continuous) on <m>[-6, 6]</m>,</p></li>
+<li><p><m>f(-6) = -3</m>, <m>f(0) = 4</m>, and <m>f(5) = -2</m> (plot these first),</p></li>
+<li><p><m>f</m> is increasing on <m>(-6, 0)</m> and decreasing on <m>(0, 6)</m>,</p></li>
+<li><p><m>f</m> is concave up on <m>(-6, -3)</m>, concave down on <m>(-3, 3)</m>, and concave up on <m>(3, 6)</m>.</p></li>
+</ul></p>
+<image width="60%">
+<shortdescription>A blank coordinate grid from negative six to six on each axis.</shortdescription>
+<description><p>A blank coordinate grid with x and y axes, running from negative six to six in each direction.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt9-shape-blank-grid">
+<diagram dimensions="(320,320)" margins="5">
+<coordinates bbox="(-6,-6,6,6)">
+<grid-axes xlabel="x" ylabel="y"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>Answers will vary. Starting at <m>(-6, -3)</m>, the graph rises slowly at first and then more steeply, bending like a cup until <m>x = -3</m>. It keeps rising but starts to level off, bending like a frown, and reaches its highest point at <m>(0, 4)</m>. It then falls, still bending like a frown, more and more steeply until <m>x = 3</m>. After <m>x = 3</m> it keeps falling but levels out, bending like a cup, and passes through <m>(5, -2)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>At what <m>x</m>-values does your graph change concavity?</p>
+</statement>
+<answer>
+<p>At <m>x = -3</m> and <m>x = 3</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: examples of familiar functions                     -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt9-shape-examples">
+<title>Problem 6: Examples of Familiar Functions</title>
+<introduction>
+<p>For each description, give a formula for a familiar function with that behavior. Sketch a small graph to support your answer. There is more than one correct answer.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Increasing and concave up for all <m>x</m>.</p>
+</statement>
+<answer>
+<p>Answers will vary. One example is <m>f(x) = 2^x</m>, which rises more and more steeply.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Decreasing and concave up for all <m>x</m>.</p>
+</statement>
+<answer>
+<p>Answers will vary. One example is <m>f(x) = \left(\frac{1}{2}\right)^x</m>, which falls and levels off toward <m>0</m>, like a cooling model.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Increasing and concave down for <m>x \gt 0</m>.</p>
+</statement>
+<answer>
+<p>Answers will vary. Examples include <m>f(x) = \sqrt{x}</m> and <m>f(x) = 10 - 5(0.5)^x</m>. Each rises, but more and more slowly.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Concave down for all <m>x</m>, increasing for <m>x \lt 1</m>, and decreasing for <m>x \gt 1</m>.</p>
+</statement>
+<answer>
+<p>Answers will vary. A downward-opening parabola with its vertex at <m>x = 1</m> works, such as <m>f(x) = -(x - 1)^2 + 3</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

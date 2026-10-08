@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt10-exp-log-equations">
+<title>Learning Target 10: Solving Exponential and Logarithmic Equations</title>
+<objectives>
+<ul>
+<li>I can find exact solutions to equations involving exponential and logarithmic expressions in contextual settings.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: base e and base 10                                 -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-base-e-10">
+<title>Problem 1: Base <m>e</m> and Base <m>10</m></title>
+<introduction>
+<p>Solve each equation for <m>x</m>. Give the exact solution first, then round to three decimal places.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p><m>e^{3x} = 40</m></p>
+</statement>
+<answer>
+<p>Take <m>\ln</m> of both sides.
+<md>
+<mrow>\ln\left(e^{3x}\right) \amp= \ln(40)</mrow>
+<mrow>3x \amp= \ln(40)</mrow>
+<mrow>x \amp= \frac{\ln(40)}{3} \approx 1.230</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p><m>5e^{x + 2} - 7 = 18</m></p>
+</statement>
+<answer>
+<p>Isolate the exponential expression first.
+<md>
+<mrow>5e^{x + 2} \amp= 25</mrow>
+<mrow>e^{x + 2} \amp= 5</mrow>
+<mrow>x + 2 \amp= \ln(5)</mrow>
+<mrow>x \amp= \ln(5) - 2 \approx -0.391</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>10^{2x} = 500</m></p>
+</statement>
+<answer>
+<p>Take <m>\log</m> of both sides.
+<md>
+<mrow>2x \amp= \log(500)</mrow>
+<mrow>x \amp= \frac{\log(500)}{2} \approx 1.349</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p><m>4 \cdot 10^{x - 1} + 3 = 35</m></p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>4 \cdot 10^{x - 1} \amp= 32</mrow>
+<mrow>10^{x - 1} \amp= 8</mrow>
+<mrow>x - 1 \amp= \log(8)</mrow>
+<mrow>x \amp= 1 + \log(8) \approx 1.903</mrow>
+</md>
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: other bases                                        -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-other-bases">
+<title>Problem 2: Other Bases</title>
+<introduction>
+<p>Solve each equation for <m>x</m>. You can take <m>\ln</m> of both sides and use the power rule <m>\ln\left(b^x\right) = x\ln(b)</m>, or rewrite both sides with a common base when possible. Give exact solutions.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p><m>2^x = 50</m></p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>x\ln(2) \amp= \ln(50)</mrow>
+<mrow>x \amp= \frac{\ln(50)}{\ln(2)} \approx 5.644</mrow>
+</md>
+</p>
+<p>This can also be written as <m>x = \log_2(50)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p><m>6 \cdot 3^{x - 1} = 90</m></p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>3^{x - 1} \amp= 15</mrow>
+<mrow>(x - 1)\ln(3) \amp= \ln(15)</mrow>
+<mrow>x \amp= 1 + \frac{\ln(15)}{\ln(3)} \approx 3.465</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>8^x = 4^{x + 1}</m></p>
+</statement>
+<answer>
+<p>Both <m>8</m> and <m>4</m> are powers of <m>2</m>.
+<md>
+<mrow>\left(2^3\right)^x \amp= \left(2^2\right)^{x + 1}</mrow>
+<mrow>2^{3x} \amp= 2^{2x + 2}</mrow>
+<mrow>3x \amp= 2x + 2</mrow>
+<mrow>x \amp= 2</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p><m>5^{2x} = 3^{x + 1}</m></p>
+</statement>
+<answer>
+<p>There is no common base, so take <m>\ln</m> of both sides and collect the <m>x</m> terms.
+<md>
+<mrow>2x\ln(5) \amp= (x + 1)\ln(3)</mrow>
+<mrow>2x\ln(5) - x\ln(3) \amp= \ln(3)</mrow>
+<mrow>x\left(2\ln(5) - \ln(3)\right) \amp= \ln(3)</mrow>
+<mrow>x \amp= \frac{\ln(3)}{2\ln(5) - \ln(3)} \approx 0.518</mrow>
+</md>
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: logarithmic equations                              -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-logs">
+<title>Problem 3: Equations with Logarithms</title>
+<introduction>
+<p>Solve each equation for <m>x</m>. Isolate the logarithm, then rewrite the equation in exponential form. Give exact solutions.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p><m>\ln(x) = 4</m></p>
+</statement>
+<answer>
+<p>In exponential form, <m>x = e^4 \approx 54.598</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p><m>\log(3x - 2) = 2</m></p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>3x - 2 \amp= 10^2 = 100</mrow>
+<mrow>x \amp= 34</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p><m>2\ln(x + 1) - 3 = 5</m></p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>2\ln(x + 1) \amp= 8</mrow>
+<mrow>\ln(x + 1) \amp= 4</mrow>
+<mrow>x + 1 \amp= e^4</mrow>
+<mrow>x \amp= e^4 - 1 \approx 53.598</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p><m>\log_2(x) + 3 = 8</m></p>
+</statement>
+<answer>
+<p><m>\log_2(x) = 5</m>, so <m>x = 2^5 = 32</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: compound interest                                  -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-savings">
+<title>Problem 4: Saving for a Goal</title>
+<introduction>
+<p>You deposit <m>\$2{,}000</m> into a savings account that earns <m>4.5\%</m> annual interest, compounded monthly. The balance after <m>t</m> years is <m>A(t) = 2000\left(1 + \frac{0.045}{12}\right)^{12t}</m>.</p>
+</introduction>
+
+<task workspace="2in">
+<statement>
+<p>How long will it take for the balance to reach <m>\$3{,}000</m>? Give the exact answer, then round to two decimal places.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>3000 \amp= 2000\left(1 + \tfrac{0.045}{12}\right)^{12t}</mrow>
+<mrow>1.5 \amp= (1.00375)^{12t}</mrow>
+<mrow>\ln(1.5) \amp= 12t\ln(1.00375)</mrow>
+<mrow>t \amp= \frac{\ln(1.5)}{12\ln(1.00375)} \approx 9.03</mrow>
+</md>
+</p>
+<p>It takes about <m>9.03</m> years.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>About how many monthly compounding periods is that? How can you get this number without solving a new equation?</p>
+</statement>
+<answer>
+<p>Each year has <m>12</m> compounding periods, so <m>12t = \frac{\ln(1.5)}{\ln(1.00375)} \approx 108.3</m>. The balance passes <m>\$3{,}000</m> in the <m>109</m>th month.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: depreciation                                       -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-car">
+<title>Problem 5: A Used Car</title>
+<introduction>
+<p>You buy a used car for <m>\$18{,}000</m>. Its value decreases by <m>15\%</m> each year.</p>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>Write a function <m>V(t)</m> for the value of the car in dollars <m>t</m> years after you buy it.</p>
+</statement>
+<answer>
+<p><m>V(t) = 18000(0.85)^t</m></p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>How long until the car is worth half of what you paid? Give the exact answer and a decimal approximation.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>9000 \amp= 18000(0.85)^t</mrow>
+<mrow>0.5 \amp= (0.85)^t</mrow>
+<mrow>t \amp= \frac{\ln(0.5)}{\ln(0.85)} \approx 4.27</mrow>
+</md>
+</p>
+<p>The car is worth half its price after about <m>4.27</m> years. Notice the answer does not depend on the price, only on the <m>15\%</m> rate.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: bacteria doubling                                  -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-bacteria">
+<title>Problem 6: Bacteria on a Countertop</title>
+<introduction>
+<p>Under ideal conditions, <em>E. coli</em> bacteria can double about every <m>20</m> minutes. A spill on a kitchen counter starts with <m>100</m> bacteria. The number of bacteria after <m>t</m> minutes is <m>N(t) = 100 \cdot 2^{t/20}</m>.</p>
+</introduction>
+
+<task workspace="1.75in">
+<statement>
+<p>How long until there are <m>1{,}000{,}000</m> bacteria? Give the exact answer, then convert to hours.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>1{,}000{,}000 \amp= 100 \cdot 2^{t/20}</mrow>
+<mrow>10{,}000 \amp= 2^{t/20}</mrow>
+<mrow>\frac{t}{20}\ln(2) \amp= \ln(10{,}000)</mrow>
+<mrow>t \amp= \frac{20\ln(10{,}000)}{\ln(2)} \approx 265.8</mrow>
+</md>
+</p>
+<p>That is about <m>265.8</m> minutes, or about <m>4.4</m> hours. Wipe up your spills.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Explain why the exponent in the model is <m>\frac{t}{20}</m> and not <m>t</m>.</p>
+</statement>
+<answer>
+<p>The population doubles once every <m>20</m> minutes, not every minute. In <m>t</m> minutes there are <m>\frac{t}{20}</m> doubling periods, so the factor of <m>2</m> is applied <m>\frac{t}{20}</m> times.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 7: medication half-life                               -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-ibuprofen">
+<title>Problem 7: Half-Life of a Medication</title>
+<introduction>
+<p>Ibuprofen has a half-life of about <m>2</m> hours in the body. After a <m>400</m> milligram dose, the amount remaining after <m>t</m> hours is <m>A(t) = 400\left(\frac{1}{2}\right)^{t/2}</m>.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>When will <m>50</m> milligrams remain? Solve without a calculator.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>50 \amp= 400\left(\tfrac{1}{2}\right)^{t/2}</mrow>
+<mrow>\tfrac{1}{8} \amp= \left(\tfrac{1}{2}\right)^{t/2}</mrow>
+</md>
+</p>
+<p>Since <m>\frac{1}{8} = \left(\frac{1}{2}\right)^3</m>, we need <m>\frac{t}{2} = 3</m>, so <m>t = 6</m> hours.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>When will <m>30</m> milligrams remain? Give the exact answer and a decimal approximation.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>30 \amp= 400\left(\tfrac{1}{2}\right)^{t/2}</mrow>
+<mrow>0.075 \amp= (0.5)^{t/2}</mrow>
+<mrow>\frac{t}{2}\ln(0.5) \amp= \ln(0.075)</mrow>
+<mrow>t \amp= \frac{2\ln(0.075)}{\ln(0.5)} \approx 7.47</mrow>
+</md>
+</p>
+<p>About <m>7.47</m> hours after the dose.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 8: cooling model                                      -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-cooling">
+<title>Problem 8: Waiting for Coffee to Cool</title>
+<introduction>
+<p>The temperature of a cup of coffee <m>t</m> minutes after it is poured is <m>F(t) = 70 + 120e^{-0.04t}</m> degrees Fahrenheit.</p>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>What are the starting temperature of the coffee and the temperature of the room?</p>
+</statement>
+<answer>
+<p>The coffee starts at <m>F(0) = 70 + 120 = 190^\circ\text{F}</m>. The room is <m>70^\circ\text{F}</m>, the value the temperature approaches.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>When will the coffee reach <m>140^\circ\text{F}</m>? Give the exact answer, then round to the nearest tenth of a minute.</p>
+</statement>
+<answer>
+<p>
+<md>
+<mrow>140 \amp= 70 + 120e^{-0.04t}</mrow>
+<mrow>\frac{70}{120} \amp= e^{-0.04t}</mrow>
+<mrow>\ln\left(\frac{7}{12}\right) \amp= -0.04t</mrow>
+<mrow>t \amp= \frac{\ln(7/12)}{-0.04} = 25\ln\left(\frac{12}{7}\right) \approx 13.5</mrow>
+</md>
+</p>
+<p>About <m>13.5</m> minutes.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Try to solve <m>F(t) = 65</m>. What goes wrong, and what does that mean for the coffee?</p>
+</statement>
+<answer>
+<p>We get <m>120e^{-0.04t} = -5</m>, but <m>e^{-0.04t}</m> is always positive, so there is no solution. The coffee can never cool below the room temperature of <m>70^\circ\text{F}</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 9: pH (logarithmic context)                           -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt10-eq-ph">
+<title>Problem 9: Acidity and pH</title>
+<introduction>
+<p>The pH of a liquid is defined by <m>\text{pH} = -\log[H^+]</m>, where <m>[H^+]</m> is the concentration of hydrogen ions in moles per liter. Black coffee has a pH of about <m>5.0</m>, and lemon juice has a pH of about <m>2.3</m>.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Find the hydrogen ion concentration of black coffee and of lemon juice. Give exact answers.</p>
+</statement>
+<answer>
+<p>For coffee, <m>5.0 = -\log[H^+]</m>, so <m>\log[H^+] = -5</m> and <m>[H^+] = 10^{-5}</m> moles per liter. For lemon juice, <m>[H^+] = 10^{-2.3} \approx 0.0050</m> moles per liter.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>How many times more acidic is lemon juice than black coffee? (Compare the hydrogen ion concentrations.)</p>
+</statement>
+<answer>
+<p><m>\frac{10^{-2.3}}{10^{-5}} = 10^{-2.3 - (-5)} = 10^{2.7} \approx 501</m>. Lemon juice is about <m>500</m> times more acidic, even though the pH values differ by only <m>2.7</m>. Each drop of <m>1</m> in pH means <m>10</m> times more acidic.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

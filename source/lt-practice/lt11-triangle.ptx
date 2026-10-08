@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt11-right-triangles">
+<title>Learning Target 11: Right Triangles</title>
+<objectives>
+<ul>
+<li>Given a right triangle with partial information about its sides and angles, I can determine the missing information for the remaining sides and angles, even if the quantities involve an unknown variable.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: two sides given (8-15-17)                          -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-two-sides">
+<title>Problem 1: Two Sides Known</title>
+<introduction>
+<p>In the right triangle below, the right angle is at <m>C</m>. All angles are measured in degrees.</p>
+<image width="55%">
+<shortdescription>A right triangle ABC with the right angle at C, leg AC of length 8, leg BC of length a, and hypotenuse AB of length 17.</shortdescription>
+<description><p>Right triangle with vertex C at the lower left, vertex B at the lower right, and vertex A directly above C. The vertical leg from C to A has length 8. The horizontal leg from C to B is labeled a. The hypotenuse from A to B has length 17. A small square at C marks the right angle.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt11-tri-1">
+<diagram dimensions="(380,240)" margins="5">
+<coordinates bbox="(-2,-2,17,10)">
+<line endpoints="((0,0),(15,0))" stroke="black" thickness="2"/>
+<line endpoints="((0,0),(0,8))" stroke="black" thickness="2"/>
+<line endpoints="((0,8),(15,0))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((0.8,0),(0.8,0.8))" stroke="black"/>
+<line endpoints="((0,0.8),(0.8,0.8))" stroke="black"/>
+<label anchor="(-0.8,8.4)"><m>A</m></label>
+<label anchor="(15.7,-0.6)"><m>B</m></label>
+<label anchor="(-0.7,-0.7)"><m>C</m></label>
+<label anchor="(-0.9,4)"><m>8</m></label>
+<label anchor="(7.5,-0.9)"><m>a</m></label>
+<label anchor="(8.4,4.8)"><m>17</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>Find the value of <m>a</m>.</p>
+</statement>
+<answer>
+<p>By the Pythagorean Theorem,
+<md>
+<mrow>a^2 + 8^2 \amp= 17^2</mrow>
+<mrow>a^2 \amp= 289 - 64 = 225</mrow>
+<mrow>a \amp= 15</mrow>
+</md>
+</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>Find the exact values of <m>\csc(A)</m>, <m>\sec(A)</m>, <m>\tan(A)</m>, <m>\sin(B)</m>, <m>\cos(B)</m>, and <m>\cot(B)</m>.</p>
+</statement>
+<answer>
+<p>From angle <m>A</m>, the opposite side is <m>15</m>, the adjacent side is <m>8</m>, and the hypotenuse is <m>17</m>. From angle <m>B</m>, the opposite side is <m>8</m> and the adjacent side is <m>15</m>.</p>
+<p><m>\csc(A) = \frac{17}{15}</m>, <m>\sec(A) = \frac{17}{8}</m>, <m>\tan(A) = \frac{15}{8}</m>, <m>\sin(B) = \frac{8}{17}</m>, <m>\cos(B) = \frac{15}{17}</m>, and <m>\cot(B) = \frac{15}{8}</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find the angles <m>A</m> and <m>B</m> in degrees. Round to two decimal places.</p>
+</statement>
+<answer>
+<p><m>A = \tan^{-1}\left(\frac{15}{8}\right) \approx 61.93^\circ</m>. Since the angles of a triangle add to <m>180^\circ</m> and <m>C = 90^\circ</m>, <m>B = 90^\circ - A \approx 28.07^\circ</m>. As a check, <m>\sin^{-1}\left(\frac{8}{17}\right) \approx 28.07^\circ</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: one angle and one side                             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-angle-side">
+<title>Problem 2: One Angle and One Side Known</title>
+<introduction>
+<p>In the right triangle below, the right angle is at <m>C</m>, angle <m>A</m> measures <m>35^\circ</m>, and side <m>AC</m> has length <m>12</m>.</p>
+<image width="50%">
+<shortdescription>A right triangle with a 35 degree angle at A, adjacent leg 12, opposite leg y, and hypotenuse z.</shortdescription>
+<description><p>Right triangle with vertex C at the lower left, vertex A at the lower right, and vertex B directly above C. The horizontal leg from C to A has length 12. The vertical leg from C to B is labeled y. The hypotenuse from A to B is labeled z. The angle at A is 35 degrees, and a small square at C marks the right angle.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt11-tri-2">
+<diagram dimensions="(320,230)" margins="5">
+<coordinates bbox="(-2,-1.5,14,10)">
+<line endpoints="((0,0),(12,0))" stroke="black" thickness="2"/>
+<line endpoints="((0,0),(0,8.4))" stroke="black" thickness="2"/>
+<line endpoints="((0,8.4),(12,0))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((0.7,0),(0.7,0.7))" stroke="black"/>
+<line endpoints="((0,0.7),(0.7,0.7))" stroke="black"/>
+<label anchor="(12.7,-0.6)"><m>A</m></label>
+<label anchor="(-0.7,8.8)"><m>B</m></label>
+<label anchor="(-0.7,-0.7)"><m>C</m></label>
+<label anchor="(9.9,0.6)"><m>35^\circ</m></label>
+<label anchor="(6,-0.8)"><m>12</m></label>
+<label anchor="(-0.8,4.2)"><m>y</m></label>
+<label anchor="(6.6,4.9)"><m>z</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.75in">
+<statement>
+<p>Find the angle <m>B</m>.</p>
+</statement>
+<answer>
+<p><m>B = 90^\circ - 35^\circ = 55^\circ</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>y</m>. Give the exact value using a trig function, then round to two decimal places.</p>
+</statement>
+<answer>
+<p>From angle <m>A</m>, <m>y</m> is opposite and <m>12</m> is adjacent, so <m>\tan(35^\circ) = \frac{y}{12}</m>. Then <m>y = 12\tan(35^\circ) \approx 8.40</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find <m>z</m>. Give the exact value using a trig function, then round to two decimal places.</p>
+</statement>
+<answer>
+<p>From angle <m>A</m>, <m>12</m> is adjacent and <m>z</m> is the hypotenuse, so <m>\cos(35^\circ) = \frac{12}{z}</m>. Then <m>z = \frac{12}{\cos(35^\circ)} \approx 14.65</m>. As a check, <m>8.40^2 + 12^2 \approx 214.6</m> and <m>14.65^2 \approx 214.6</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: sides in terms of x (5-12-13)                      -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-variable-sides">
+<title>Problem 3: Sides in Terms of a Variable</title>
+<introduction>
+<p>The legs of a right triangle have lengths <m>x</m> and <m>x + 7</m>, and the hypotenuse has length <m>13</m>.</p>
+<image width="55%">
+<shortdescription>A right triangle with legs x and x plus 7 and hypotenuse 13.</shortdescription>
+<description><p>Right triangle with the right angle at the lower left. The vertical leg is labeled x, the horizontal leg is labeled x plus 7, and the hypotenuse is labeled 13. The angle at the lower right vertex is labeled theta.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt11-tri-3">
+<diagram dimensions="(340,176)" margins="5">
+<coordinates bbox="(-3,-1.8,14,7)">
+<line endpoints="((0,0),(12,0))" stroke="black" thickness="2"/>
+<line endpoints="((0,0),(0,5))" stroke="black" thickness="2"/>
+<line endpoints="((0,5),(12,0))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((0.6,0),(0.6,0.6))" stroke="black"/>
+<line endpoints="((0,0.6),(0.6,0.6))" stroke="black"/>
+<label anchor="(-0.9,2.5)"><m>x</m></label>
+<label anchor="(6,-0.9)"><m>x + 7</m></label>
+<label anchor="(6.6,3.4)"><m>13</m></label>
+<label anchor="(9.6,0.5)"><m>\theta</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1.75in">
+<statement>
+<p>Find <m>x</m>.</p>
+</statement>
+<answer>
+<p>By the Pythagorean Theorem,
+<md>
+<mrow>x^2 + (x + 7)^2 \amp= 13^2</mrow>
+<mrow>2x^2 + 14x + 49 \amp= 169</mrow>
+<mrow>x^2 + 7x - 60 \amp= 0</mrow>
+<mrow>(x + 12)(x - 5) \amp= 0</mrow>
+</md>
+</p>
+<p>So <m>x = 5</m> or <m>x = -12</m>. A side length cannot be negative, so <m>x = 5</m>, and the legs are <m>5</m> and <m>12</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find <m>\sin(\theta)</m>, <m>\cos(\theta)</m>, and <m>\theta</m> in degrees.</p>
+</statement>
+<answer>
+<p>The side opposite <m>\theta</m> is <m>5</m> and the adjacent side is <m>12</m>, so <m>\sin(\theta) = \frac{5}{13}</m> and <m>\cos(\theta) = \frac{12}{13}</m>. Then <m>\theta = \sin^{-1}\left(\frac{5}{13}\right) \approx 22.62^\circ</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: hypotenuse x, legs in terms of x                   -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-variable-hyp">
+<title>Problem 4: An Unknown Hypotenuse</title>
+<introduction>
+<p>A right triangle has a hypotenuse of length <m>x</m> and an angle of <m>40^\circ</m>.</p>
+<image width="45%">
+<shortdescription>A right triangle with hypotenuse x and a 40 degree angle.</shortdescription>
+<description><p>Right triangle with the right angle at the lower left. The angle at the lower right vertex is 40 degrees. The hypotenuse is labeled x. The legs are not labeled.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt11-tri-4">
+<diagram dimensions="(240,190)" margins="5">
+<coordinates bbox="(-2,-1.5,10,8)">
+<line endpoints="((0,0),(7.66,0))" stroke="black" thickness="2"/>
+<line endpoints="((0,0),(0,6.43))" stroke="black" thickness="2"/>
+<line endpoints="((0,6.43),(7.66,0))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((0.5,0),(0.5,0.5))" stroke="black"/>
+<line endpoints="((0,0.5),(0.5,0.5))" stroke="black"/>
+<label anchor="(6.1,0.5)"><m>40^\circ</m></label>
+<label anchor="(4.3,3.9)"><m>x</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Write the lengths of both legs in terms of <m>x</m>.</p>
+</statement>
+<answer>
+<p>The leg opposite the <m>40^\circ</m> angle is <m>x\sin(40^\circ)</m>, since <m>\sin(40^\circ) = \frac{\text{opposite}}{x}</m>. The leg adjacent to it is <m>x\cos(40^\circ)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>The perimeter of the triangle is <m>30</m>. Find <m>x</m>.</p>
+</statement>
+<answer>
+<p>Add the three sides and factor out <m>x</m>.
+<md>
+<mrow>x + x\sin(40^\circ) + x\cos(40^\circ) \amp= 30</mrow>
+<mrow>x\left(1 + \sin(40^\circ) + \cos(40^\circ)\right) \amp= 30</mrow>
+<mrow>x \amp= \frac{30}{1 + \sin(40^\circ) + \cos(40^\circ)} \approx 12.45</mrow>
+</md>
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: ladder                                             -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-ladder">
+<title>Problem 5: A Ladder</title>
+<introduction>
+<p>Problems 5, 7, and 8 do not include a picture. Draw one before you start.</p>
+<p>Ladder safety guidelines recommend setting up an extension ladder at an angle of about <m>75^\circ</m> with the ground. A <m>24</m>-foot ladder leans against a house at this angle.</p>
+</introduction>
+
+<task workspace="1.5in">
+<statement>
+<p>How high up the house does the ladder reach?</p>
+</statement>
+<answer>
+<p>The ladder is the hypotenuse and the height is opposite the <m>75^\circ</m> angle, so <m>\sin(75^\circ) = \frac{h}{24}</m>. Then <m>h = 24\sin(75^\circ) \approx 23.18</m> feet.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>How far from the house should the base of the ladder be placed?</p>
+</statement>
+<answer>
+<p>The distance is adjacent to the <m>75^\circ</m> angle, so it is <m>24\cos(75^\circ) \approx 6.21</m> feet. This matches the rule of thumb of about <m>1</m> foot out for every <m>4</m> feet up.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 6: two angles of elevation                            -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-two-angles">
+<title>Problem 6: Two Angles of Elevation</title>
+<introduction>
+<p>From point <m>P</m>, the angle of elevation to the top of a building is <m>40^\circ</m>. After walking <m>50</m> feet straight toward the building to point <m>Q</m>, the angle of elevation is <m>55^\circ</m>. Let <m>h</m> be the height of the building and <m>d</m> the distance from <m>Q</m> to the building.</p>
+<image width="55%">
+<shortdescription>Two sight lines from points P and Q on the ground to the top of a building of height h.</shortdescription>
+<description><p>A vertical building of height h stands at the right. Point P is on the ground at the left, and point Q is 50 feet closer to the building. The distance from Q to the building is d. A line from P to the top of the building makes a 40 degree angle with the ground, and a line from Q to the top makes a 55 degree angle.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt11-tri-6">
+<diagram dimensions="(320,260)" margins="5">
+<coordinates bbox="(-1,-1.5,15,11.5)">
+<line endpoints="((0,0),(12.12,0))" stroke="black" thickness="2"/>
+<line endpoints="((12.12,0),(12.12,10.17))" stroke="black" thickness="4"/>
+<line endpoints="((0,0),(12.12,10.17))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((5,0),(12.12,10.17))" stroke="#0072CE" thickness="2"/>
+<line endpoints="((11.52,0),(11.52,0.6))" stroke="black"/>
+<line endpoints="((11.52,0.6),(12.12,0.6))" stroke="black"/>
+<label anchor="(0,-0.8)"><m>P</m></label>
+<label anchor="(5,-0.8)"><m>Q</m></label>
+<label anchor="(1.9,0.55)"><m>40^\circ</m></label>
+<label anchor="(6.5,0.6)"><m>55^\circ</m></label>
+<label anchor="(2.5,-0.8)"><m>50</m></label>
+<label anchor="(8.6,-0.8)"><m>d</m></label>
+<label anchor="(12.9,5)"><m>h</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>Write two equations involving <m>h</m> and <m>d</m>, one for each right triangle.</p>
+</statement>
+<answer>
+<p>From <m>Q</m>, <m>\tan(55^\circ) = \frac{h}{d}</m>, so <m>h = d\tan(55^\circ)</m>. From <m>P</m>, the horizontal distance is <m>d + 50</m>, so <m>h = (d + 50)\tan(40^\circ)</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.75in">
+<statement>
+<p>Solve for <m>d</m>, then find the height of the building.</p>
+</statement>
+<answer>
+<p>Set the two expressions for <m>h</m> equal.
+<md>
+<mrow>d\tan(55^\circ) \amp= d\tan(40^\circ) + 50\tan(40^\circ)</mrow>
+<mrow>d\left(\tan(55^\circ) - \tan(40^\circ)\right) \amp= 50\tan(40^\circ)</mrow>
+<mrow>d \amp= \frac{50\tan(40^\circ)}{\tan(55^\circ) - \tan(40^\circ)} \approx 71.23</mrow>
+</md>
+</p>
+<p>Then <m>h = d\tan(55^\circ) \approx 101.72</m> feet.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 7: rocket (3-4-5)                                     -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-rocket">
+<title>Problem 7: Watching a Launch</title>
+<introduction>
+<p>A camera is set up on level ground <m>3</m> miles from a rocket's launch pad. The rocket rises straight up.</p>
+</introduction>
+
+<task workspace="1.25in">
+<statement>
+<p>What is the angle of elevation from the camera to the rocket when the rocket is <m>4</m> miles high?</p>
+</statement>
+<answer>
+<p>The height <m>4</m> is opposite the angle and the distance <m>3</m> is adjacent, so <m>\tan(\theta) = \frac{4}{3}</m> and <m>\theta = \tan^{-1}\left(\frac{4}{3}\right) \approx 53.13^\circ</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>How far is the rocket from the camera at that moment?</p>
+</statement>
+<answer>
+<p>By the Pythagorean Theorem, the distance is <m>\sqrt{3^2 + 4^2} = \sqrt{25} = 5</m> miles.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 8: wheelchair ramp                                    -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt11-tri-ramp">
+<title>Problem 8: A Wheelchair Ramp</title>
+<introduction>
+<p>The Americans with Disabilities Act (ADA) requires that a wheelchair ramp rise no more than <m>1</m> inch for every <m>12</m> inches of horizontal distance. A ramp is being built to the front door of a building, which is <m>30</m> inches above the sidewalk.</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>What is the steepest angle a ramp can make with the ground and still meet this rule?</p>
+</statement>
+<answer>
+<p>The rise is opposite the angle and the horizontal distance is adjacent, so <m>\tan(\theta) = \frac{1}{12}</m> and <m>\theta = \tan^{-1}\left(\frac{1}{12}\right) \approx 4.76^\circ</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.5in">
+<statement>
+<p>At this steepest angle, how much horizontal distance does the ramp need? How long is the ramp itself?</p>
+</statement>
+<answer>
+<p>The horizontal distance is <m>12 \cdot 30 = 360</m> inches, or <m>30</m> feet. The ramp is the hypotenuse, so its length is <m>\sqrt{360^2 + 30^2} \approx 361.25</m> inches, a little more than <m>30</m> feet. Using trig instead, the length is <m>\frac{30}{\sin(4.76^\circ)} \approx 361.2</m> inches.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

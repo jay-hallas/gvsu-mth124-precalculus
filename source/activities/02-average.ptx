@@ -105,7 +105,6 @@ Read the two endpoint columns, <m>N(3) = 210</m> and <m>N(12) = 660</m>. Then
 </example>
 
 <p>Questions 4 and 5 both refer to the following table. A large tank is being drained, and <m>W(x)</m> is the amount of water left in the tank after <m>x</m> minutes.</p>
-<sidebyside width="75%">
 <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
 <row>
 <cell right="major"><m>x</m> (minutes)</cell>
@@ -124,7 +123,6 @@ Read the two endpoint columns, <m>N(3) = 210</m> and <m>N(12) = 660</m>. Then
 <cell><m>155</m></cell>
 </row>
 </tabular>
-</sidebyside>
 </paragraphs>
 
 <exercise xml:id="aroc-act-tank-later">

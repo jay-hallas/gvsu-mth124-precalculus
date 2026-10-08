@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt7-sinusoidal">
+<title>Learning Target 7: Transformed Sine and Cosine Functions</title>
+<objectives>
+<ul>
+<li>I can find the amplitude, period, and midline of a transformed version of the basic sine or cosine function; and I can find the formulas for transformed versions of the basic sine or cosine function that have certain described properties.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: features from a cosine formula                     -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt7-sin-formula-1">
+<title>Problem 1: Features from a Formula</title>
+<introduction>
+<p>Let <m>\displaystyle f(x) = 6\cos\left(\frac{\pi}{8}x\right) + 5</m>.</p>
+</introduction>
+
+<task workspace="0.75in">
+<statement>
+<p>Find the amplitude.</p>
+</statement>
+<answer>
+<p>The amplitude is the absolute value of the number in front of cosine, so the amplitude is <m>|6| = 6</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>Find the equation of the midline.</p>
+</statement>
+<answer>
+<p>The constant added at the end shifts the wave up <m>5</m> units, so the midline is <m>y = 5</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find the period. Show your work.</p>
+</statement>
+<answer>
+<p>Here <m>B = \frac{\pi}{8}</m>, so
+<md>
+<mrow>\text{period} \amp= \frac{2\pi}{\pi/8} = 2\pi \cdot \frac{8}{\pi} = 16</mrow>
+</md>
+</p>
+<p>The period is <m>16</m>. A common mistake is to give <m>\frac{\pi}{8}</m> or <m>8</m> as the period.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>What are the maximum and minimum values of <m>f</m>?</p>
+</statement>
+<answer>
+<p>The wave goes <m>6</m> units above and below the midline. The maximum is <m>5 + 6 = 11</m> and the minimum is <m>5 - 6 = -1</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: negative A, fractional amplitude, negative midline -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt7-sin-formula-2">
+<title>Problem 2: A Flipped Wave</title>
+<introduction>
+<p>Let <m>\displaystyle g(x) = -\frac{5}{2}\sin\left(\frac{2\pi}{9}x\right) - 3</m>.</p>
+</introduction>
+
+<task workspace="0.75in">
+<statement>
+<p>Find the amplitude.</p>
+</statement>
+<answer>
+<p>The amplitude is <m>\left|-\frac{5}{2}\right| = \frac{5}{2}</m>. The negative sign flips the wave upside down, but the amplitude is still positive.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>Find the equation of the midline.</p>
+</statement>
+<answer>
+<p>The midline is <m>y = -3</m>.</p>
+</answer>
+</task>
+
+<task workspace="1.25in">
+<statement>
+<p>Find the period. Show your work.</p>
+</statement>
+<answer>
+<p>Here <m>B = \frac{2\pi}{9}</m>, so
+<md>
+<mrow>\text{period} \amp= \frac{2\pi}{2\pi/9} = 2\pi \cdot \frac{9}{2\pi} = 9</mrow>
+</md>
+</p>
+<p>The period is <m>9</m>.</p>
+</answer>
+</task>
+
+<task workspace="0.75in">
+<statement>
+<p>What are the maximum and minimum values of <m>g</m>?</p>
+</statement>
+<answer>
+<p>The maximum is <m>-3 + \frac{5}{2} = -\frac{1}{2}</m> and the minimum is <m>-3 - \frac{5}{2} = -\frac{11}{2}</m>. Even though the wave is flipped, the maximum and minimum are still found by adding and subtracting the amplitude from the midline.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: Ferris wheel                                       -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt7-sin-ferris">
+<title>Problem 3: A Ferris Wheel</title>
+<introduction>
+<p>A Ferris wheel is <m>44</m> meters in diameter and is boarded from a platform that is <m>5</m> meters above the ground. The six o'clock position on the wheel is level with the loading platform. The wheel completes one full revolution in <m>14</m> minutes. The function <m>h = f(t)</m> gives your height in meters above the ground <m>t</m> minutes after the wheel begins to turn.</p>
+</introduction>
+
+<task workspace="2.5in">
+<statement>
+<p>Write an equation for <m>h = f(t)</m>.</p>
+</statement>
+<answer>
+<p>You board at the bottom of the wheel, so you start at a minimum and the base model is <m>-\cos</m>. The radius is <m>\frac{44}{2} = 22</m>, so the amplitude is <m>22</m>. The center of the wheel is <m>5 + 22 = 27</m> meters above the ground, so the midline is <m>h = 27</m>. The period is <m>14</m> minutes.
+<md>
+<mrow>\frac{2\pi}{B} \amp= 14</mrow>
+<mrow>B \amp= \frac{2\pi}{14} = \frac{\pi}{7}</mrow>
+</md>
+</p>
+<p>The model is <m>f(t) = -22\cos\left(\frac{\pi}{7}t\right) + 27</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Use your equation to find <m>f(0)</m> and <m>f(7)</m>. Explain why these values make sense.</p>
+</statement>
+<answer>
+<p><m>f(0) = -22\cos(0) + 27 = -22 + 27 = 5</m>, which is the height of the platform where you board. <m>f(7) = -22\cos(\pi) + 27 = 22 + 27 = 49</m>. After half a revolution you are at the top of the wheel, which is <m>5 + 44 = 49</m> meters above the ground.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 4: model from a table                                 -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt7-sin-table">
+<title>Problem 4: A Model from Data</title>
+<introduction>
+<p>The table below gives values of a sinusoidal function.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row header="yes">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+<cell><m>9</m></cell>
+<cell><m>12</m></cell>
+<cell><m>15</m></cell>
+<cell><m>18</m></cell>
+</row>
+<row>
+<cell><m>y</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>1</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-7</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>1</m></cell>
+<cell><m>-3</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="2.5in">
+<statement>
+<p>Find a sinusoidal function to match the data.</p>
+</statement>
+<answer>
+<p>The largest value is <m>1</m> and the smallest is <m>-7</m>.
+<md>
+<mrow>\text{midline: } y \amp= \frac{1 + (-7)}{2} = -3</mrow>
+<mrow>\text{amplitude} \amp= \frac{1 - (-7)}{2} = 4</mrow>
+</md>
+</p>
+<p>At <m>x = 0</m> the value <m>-3</m> is on the midline, and the next value <m>1</m> is larger, so the data starts on the midline going up. The base model is <m>\sin</m>. The data is back on the midline going up at <m>x = 12</m>, so the period is <m>12</m> and <m>B = \frac{2\pi}{12} = \frac{\pi}{6}</m>. The model is <m>f(x) = 4\sin\left(\frac{\pi}{6}x\right) - 3</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Check your function using one value from the table that is not on the midline.</p>
+</statement>
+<answer>
+<p>Using <m>x = 9</m>: <m>f(9) = 4\sin\left(\frac{3\pi}{2}\right) - 3 = 4(-1) - 3 = -7</m>, which matches the table.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 5: water wheel starting on the midline                -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt7-sin-waterwheel">
+<title>Problem 5: A Water Wheel</title>
+<introduction>
+<p>A water wheel at an old mill has a diameter of <m>8</m> meters, and its center is <m>3</m> meters above the surface of the river. One bucket on the wheel starts level with the center of the wheel and is moving upward. The wheel completes one full turn every <m>20</m> seconds. The function <m>h = f(t)</m> gives the bucket's height in meters above the water <m>t</m> seconds after we start watching.</p>
+</introduction>
+
+<task workspace="2.5in">
+<statement>
+<p>Write an equation for <m>h = f(t)</m>.</p>
+</statement>
+<answer>
+<p>The bucket starts at the height of the center and is moving up, so it starts on the midline going up. The base model is <m>\sin</m>. The radius is <m>\frac{8}{2} = 4</m>, so the amplitude is <m>4</m>, and the midline is <m>h = 3</m>. The period is <m>20</m> seconds.
+<md>
+<mrow>\frac{2\pi}{B} \amp= 20</mrow>
+<mrow>B \amp= \frac{2\pi}{20} = \frac{\pi}{10}</mrow>
+</md>
+</p>
+<p>The model is <m>f(t) = 4\sin\left(\frac{\pi}{10}t\right) + 3</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>What is the minimum value of <m>f</m>? What does it tell you about the bucket?</p>
+</statement>
+<answer>
+<p>The minimum is <m>3 - 4 = -1</m>. At the bottom of each turn the bucket is <m>1</m> meter below the surface of the river, which is how it fills with water.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>

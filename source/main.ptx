@@ -61,11 +61,21 @@
         <xi:include href="./lt-practice/lt3-linear.ptx"/>
         <xi:include href="./lt-practice/lt4-composition.ptx"/>
           <xi:include href="./lt-practice/lt5-inverses.ptx"/>
+           <xi:include href="./lt-practice/lt6-circular.ptx"/>
+               <xi:include href="./lt-practice/lt7-sine.ptx"/>
+            <xi:include href="./lt-practice/lt8-exponential.ptx"/>
+                <xi:include href="./lt-practice/lt9-shape.ptx"/>  
+                 <xi:include href="./lt-practice/lt10-logeq.ptx"/> 
+                   <xi:include href="./lt-practice/lt11-triangle.ptx"/>              
+                <xi:include href="./lt-practice/lt12-poly.ptx"/>
+             
+                               
     </chapter>
 
     <chapter xml:id="writing">
       <title>Writing Assignments</title>
       <xi:include href="./homework/homework-01.ptx"/>
+      <xi:include href="./homework/homework-02.ptx"/>
     </chapter>
 
 

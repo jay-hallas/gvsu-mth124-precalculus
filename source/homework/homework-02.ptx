@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-writing-assignment-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Writing Assignment 2: Difference Quotients, Linear Models, and Inverses</title>
+
+  <introduction>
+    <p>This assignment covers Learning Targets 3 through 5.</p>
+    <p>
+      <ul>
+        <li>
+          Be as detailed as possible when writing up a solution, and show all of your work.
+        </li>
+        <li>
+          You may use any resource, but do not directly copy work that is not your own.
+        </li>
+        <li>
+          You may work with a partner, but it is not required. <alert>If you work with a partner,
+          each of you should write at least two parts, and initial each part you write.</alert>
+        </li>
+        <li>
+          Submit your final solutions on these pages, and upload a clean, high-quality scan of every
+          page to Blackboard when you are done.
+        </li>
+        <li>
+          Each question includes a short video on the same topic if you would like a refresher.
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+  <!-- ===== PAGE 1: The difference quotient ===== -->
+  <page>
+    <exercise xml:id="wa2-124-difference-quotient">
+      <title>The Difference Quotient</title>
+      <introduction>
+        <figure xml:id="wa2-124-video-difference-quotient">
+          <caption>Video: the difference quotient</caption>
+          <video youtube="UgqT2TJEk0Y" width="60%"/>
+        </figure>
+      </introduction>
+
+      <task workspace="3.25in">
+        <statement>
+          <p>
+            Find an expression for the average rate of change of <m>f(x) = 2x^2 - 3x + 1</m> on the
+            interval <m>[a, a + h]</m>. Simplify as much as possible.
+          </p>
+          <p>
+            <em>Hint: The difference quotient formula is <m>\dfrac{f(a + h) - f(a)}{h}</m>. Your
+            last step should involve canceling an <m>h</m>.</em>
+          </p>
+        </statement>
+      </task>
+
+      <task workspace="1in">
+        <statement>
+          <p>For what value of <m>h</m> do we need to be careful, and why?</p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ===== PAGE 2: A linear model for filling a gas tank ===== -->
+  <page>
+    <exercise xml:id="wa2-124-gas-tank">
+      <title>Filling a Gas Tank</title>
+      <introduction>
+        <p>
+          Suppose you start filling a vehicle's gas tank with gasoline. After <m>30</m> seconds the
+          tank has <m>7</m> gallons, and after <m>1</m> minute the tank has <m>10</m> gallons.
+          <alert>Assume the fill rate is constant.</alert>
+        </p>
+        <figure xml:id="wa2-124-video-linear-model">
+          <caption>Video: building a linear model</caption>
+          <video youtube="SPYmAWWf_NQ" width="60%"/>
+        </figure>
+      </introduction>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            Find a linear model for <m>V(t)</m>, the volume in gallons in the tank after <m>t</m>
+            <alert>minutes</alert>.
+          </p>
+        </statement>
+      </task>
+
+      <task workspace="1in">
+        <statement>
+          <p>What does the slope mean in the context of this problem?</p>
+        </statement>
+      </task>
+
+      <task workspace="1in">
+        <statement>
+          <p>How much gas was in the tank before you started filling it?</p>
+        </statement>
+      </task>
+
+      <task workspace="1.25in">
+        <statement>
+          <p>
+            Assuming the tank holds <m>16</m> gallons, how long does it take to fill the tank from
+            when you started?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ===== PAGE 3: Inverse of a rational function ===== -->
+  <page>
+    <exercise xml:id="wa2-124-inverse" workspace="3.5in">
+      <title>Finding an Inverse</title>
+      <statement>
+        <p>
+          Find the inverse of the function <m>\displaystyle f(x) = \frac{3x + 5}{x - 6}</m>. Show
+          all algebraic steps clearly.
+        </p>
+        <figure xml:id="wa2-124-video-inverse">
+          <caption>Video: finding the inverse of a function</caption>
+          <video youtube="YI30Ecfl4tc" width="60%"/>
+        </figure>
+      </statement>
+    </exercise>
+  </page>
+</worksheet>

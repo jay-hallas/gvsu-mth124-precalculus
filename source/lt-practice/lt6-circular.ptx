@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt6-circular">
+<title>Learning Target 6: Graphs of Circular Functions</title>
+<objectives>
+<ul>
+<li>I can generate an accurate, labeled graph of a circular function given appropriate information about the circle being traversed, and describe key features of the function.</li>
+</ul>
+</objectives>
+
+<!-- ============================================================ -->
+<!-- Problem 1: whole-number midline, cosine shape                 -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt6-circ-graph-1">
+<title>Problem 1: Reading a Circular Function from Its Graph</title>
+<introduction>
+<p>The graph of a circular function <m>f</m> is shown below. The dots mark the peaks and troughs of the graph.</p>
+<image width="75%">
+<shortdescription>The graph of f, a wave with peaks at height 5 and troughs at height 1.</shortdescription>
+<description><p>The graph of f is a smooth wave drawn from x equals negative three to x equals nine. It has troughs at the points negative three, one and three, one and nine, one, and peaks at the points zero, five and six, five.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt6-circ-graph-f">
+<diagram dimensions="(420,240)" margins="5">
+<definition>f(x) = 2*cos(pi*x/3) + 3</definition>
+<coordinates bbox="(-4,-1,10,7)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="f" domain="(-3,9)" stroke="#0072CE" thickness="3"/>
+<point p="(-3,1)" fill="#002967" stroke="#002967"/>
+<point p="(0,5)" fill="#002967" stroke="#002967"/>
+<point p="(3,1)" fill="#002967" stroke="#002967"/>
+<point p="(6,5)" fill="#002967" stroke="#002967"/>
+<point p="(9,1)" fill="#002967" stroke="#002967"/>
+<label anchor="(7.5,6.3)"><m>y = f(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>What is the maximum value of <m>f</m>? What is the minimum value of <m>f</m>?</p>
+</statement>
+<answer>
+<p>The highest points on the graph are at <m>y = 5</m> and the lowest points are at <m>y = 1</m>. So the maximum value is <m>5</m> and the minimum value is <m>1</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the equation of the midline. Show how you used the maximum and minimum.</p>
+</statement>
+<answer>
+<p>The midline is halfway between the maximum and minimum.
+<md>
+<mrow>\frac{5 + 1}{2} \amp= \frac{6}{2} = 3</mrow>
+</md>
+</p>
+<p>The midline is <m>y = 3</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the amplitude.</p>
+</statement>
+<answer>
+<p>The amplitude is half the distance from the minimum to the maximum.
+<md>
+<mrow>\frac{5 - 1}{2} \amp= \frac{4}{2} = 2</mrow>
+</md>
+</p>
+<p>The amplitude is <m>2</m>. This matches the graph, since the peaks are <m>2</m> units above the midline <m>y = 3</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the period. Explain how you read it from the graph.</p>
+</statement>
+<answer>
+<p>Two consecutive peaks are at <m>x = 0</m> and <m>x = 6</m>, so one full wave has a horizontal length of <m>6 - 0 = 6</m>. The period is <m>6</m>. Using two consecutive troughs, such as <m>x = -3</m> and <m>x = 3</m>, gives the same answer. The distance from a peak to the next trough is only <m>3</m>, which is half of a period.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 2: negative midline, flipped sine shape               -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt6-circ-graph-2">
+<title>Problem 2: A Graph Centered Below the Axis</title>
+<introduction>
+<p>The graph of a circular function <m>g</m> is shown below. The dots mark the peaks and troughs of the graph.</p>
+<image width="75%">
+<shortdescription>The graph of g, a wave with peaks at height 2 and troughs at height negative 4.</shortdescription>
+<description><p>The graph of g is a smooth wave drawn from x equals negative two to x equals ten. It has peaks at the points negative two, two and six, two, and troughs at the points two, negative four and ten, negative four.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt6-circ-graph-g">
+<diagram dimensions="(420,300)" margins="5">
+<definition>g(x) = -3*sin(pi*x/4) - 1</definition>
+<coordinates bbox="(-3,-6,11,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="g" domain="(-2,10)" stroke="#0072CE" thickness="3"/>
+<point p="(-2,2)" fill="#002967" stroke="#002967"/>
+<point p="(2,-4)" fill="#002967" stroke="#002967"/>
+<point p="(6,2)" fill="#002967" stroke="#002967"/>
+<point p="(10,-4)" fill="#002967" stroke="#002967"/>
+<label anchor="(8.5,3.3)"><m>y = g(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>What is the maximum value of <m>g</m>? What is the minimum value of <m>g</m>?</p>
+</statement>
+<answer>
+<p>The peaks are at <m>y = 2</m> and the troughs are at <m>y = -4</m>. So the maximum value is <m>2</m> and the minimum value is <m>-4</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the equation of the midline. Show how you used the maximum and minimum.</p>
+</statement>
+<answer>
+<p>Average the maximum and minimum.
+<md>
+<mrow>\frac{2 + (-4)}{2} \amp= \frac{-2}{2} = -1</mrow>
+</md>
+</p>
+<p>The midline is <m>y = -1</m>. Notice the midline is not the <m>x</m>-axis for this graph.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the amplitude.</p>
+</statement>
+<answer>
+<p>Take half the distance from the minimum to the maximum.
+<md>
+<mrow>\frac{2 - (-4)}{2} \amp= \frac{6}{2} = 3</mrow>
+</md>
+</p>
+<p>The amplitude is <m>3</m>. The full height of the wave is <m>6</m>, but the amplitude is only half of that.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the period. Explain how you read it from the graph.</p>
+</statement>
+<answer>
+<p>Two consecutive peaks are at <m>x = -2</m> and <m>x = 6</m>, so the period is <m>6 - (-2) = 8</m>. The troughs at <m>x = 2</m> and <m>x = 10</m> are also <m>8</m> units apart.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+<!-- ============================================================ -->
+<!-- Problem 3: fractional midline and amplitude                   -->
+<!-- ============================================================ -->
+<page>
+<exercise xml:id="lt6-circ-graph-3">
+<title>Problem 3: A Midline That Is Not a Whole Number</title>
+<introduction>
+<p>The graph of a circular function <m>h</m> is shown below. The dots mark the peaks and troughs of the graph. The midline and amplitude do not have to be whole numbers.</p>
+<image width="75%">
+<shortdescription>The graph of h, a wave with peaks at height 1 and troughs at height negative 2.</shortdescription>
+<description><p>The graph of h is a smooth wave drawn from x equals negative one to x equals eight. It has troughs at the points negative one, negative two and five, negative two, and peaks at the points two, one and eight, one.</p></description>
+<prefigure xmlns="https://prefigure.org" label="lt6-circ-graph-h">
+<diagram dimensions="(440,240)" margins="5">
+<definition>h(x) = 1.5*cos(pi*(x - 2)/3) - 0.5</definition>
+<coordinates bbox="(-2,-3,9,3)">
+<grid-axes xlabel="x" ylabel="y"/>
+<graph function="h" domain="(-1,8)" stroke="#0072CE" thickness="3"/>
+<point p="(-1,-2)" fill="#002967" stroke="#002967"/>
+<point p="(2,1)" fill="#002967" stroke="#002967"/>
+<point p="(5,-2)" fill="#002967" stroke="#002967"/>
+<point p="(8,1)" fill="#002967" stroke="#002967"/>
+<label anchor="(5,2.4)"><m>y = h(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+
+<task workspace="0.85in">
+<statement>
+<p>What is the maximum value of <m>h</m>? What is the minimum value of <m>h</m>?</p>
+</statement>
+<answer>
+<p>The peaks are at <m>y = 1</m> and the troughs are at <m>y = -2</m>. So the maximum value is <m>1</m> and the minimum value is <m>-2</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the equation of the midline. Show how you used the maximum and minimum.</p>
+</statement>
+<answer>
+<p>Average the maximum and minimum.
+<md>
+<mrow>\frac{1 + (-2)}{2} \amp= -\frac{1}{2}</mrow>
+</md>
+</p>
+<p>The midline is <m>y = -\frac{1}{2}</m>. A common mistake is to round this to <m>y = 0</m> or <m>y = -1</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the amplitude.</p>
+</statement>
+<answer>
+<p>Take half the distance from the minimum to the maximum.
+<md>
+<mrow>\frac{1 - (-2)}{2} \amp= \frac{3}{2}</mrow>
+</md>
+</p>
+<p>The amplitude is <m>\frac{3}{2}</m>. As a check, the peaks at <m>y = 1</m> are <m>\frac{3}{2}</m> units above the midline <m>y = -\frac{1}{2}</m>.</p>
+</answer>
+</task>
+
+<task workspace="1in">
+<statement>
+<p>Find the period. Explain how you read it from the graph.</p>
+</statement>
+<answer>
+<p>Two consecutive peaks are at <m>x = 2</m> and <m>x = 8</m>, so the period is <m>8 - 2 = 6</m>. The troughs at <m>x = -1</m> and <m>x = 5</m> also give <m>5 - (-1) = 6</m>. The wave does not start at a peak on the <m>y</m>-axis, so measure between two peaks or two troughs rather than starting at <m>x = 0</m>.</p>
+</answer>
+</task>
+</exercise>
+</page>
+
+</worksheet>
