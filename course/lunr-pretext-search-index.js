@@ -151,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Activity: Average Rate of Change",
-  "body": " Activity: Average Rate of Change    Average Rate of Change  The average rate of change of a function from to is the change in output divided by the change in input. Three things to keep in mind. Only the two endpoints matter, no matter what happens in between. The units are always output units per input unit. A negative answer means the output decreased across the interval, not that the function was negative.    Rate of Change from a Formula   Worked Example   Find the average rate of change of on the interval .    Evaluate at both endpoints first, then divide.   The average rate of change is . On average, the output drops by units for each unit increase in the input across this interval.       Find the average rate of change of on the interval .       and , so the average rate of change is .      Find the average rate of change of on the interval .        and , so   Watch the denominator here; students often write instead of .      Find the average rate of change of on the interval .       and , so .       Rate of Change from a Table   Worked Example   A new app is gaining subscribers. The total number of subscribers after weeks is given below. Find the average rate of change from to and interpret it.    (weeks)         (subscribers)           Read the two endpoint columns, and . Then   The average rate of change is subscribers per week. Between week and week , the app gained an average of new subscribers each week. The columns at and never entered the computation.    Questions 4 and 5 both refer to the following table. A large tank is being drained, and is the amount of water left in the tank after minutes.     (minutes)         (gallons)             Consider the interval from to .     Determine the average rate of change of the water amount on this interval, and state its units.    gal\/min    gallons per minute.      Describe the meaning of your result in the context of the question. Write a full sentence that does not use the letters or .    Between and minutes after draining began, the tank lost an average of gallons of water each minute.       Now consider the interval from to .     Determine the average rate of change of the water amount on this interval.    gal\/min    gallons per minute.      Compare your answer to the one from Question 4. During which stretch of time was the tank draining faster? Explain how you can tell from the two numbers.    The tank drained faster over the first ten minutes. It was losing gallons per minute there compared with gallons per minute on the later interval. Both are negative, so the comparison is about which is farther from zero, not which is larger as a signed number. This is a good place to point out that the average rate of change depends on the interval you choose.        Rate of Change from a Graph   Worked Example   The graph of is shown below. Find the average rate of change of from to .   A downward-opening parabola with a dashed line segment joining two points on it.   A downward-opening parabola is drawn on a coordinate grid from x equals negative three to x equals three, with its highest point at zero, two. It crosses the horizontal axis at negative two, zero and two, zero. The points zero, two and two, zero are marked, and a dashed line segment connects them.     h(x) = -0.5*x^2 + 2              Read the outputs off the graph: and . Then   The average rate of change is . Notice that this is exactly the slope of the dashed line drawn through the two points on the curve, which is what the average rate of change measures.       The graph of is shown below.   An upward-opening parabola with three marked points.   An upward-opening parabola is drawn on a coordinate grid from x equals negative three to x equals three, with its lowest point at zero, negative two. The points negative two, zero; zero, negative two; and two, zero are marked on the curve.     f(x) = 0.5*x^2 - 2               Find the average rate of change of from to .       and , so .      Find the average rate of change of from to .       and , so .      Your two answers have opposite signs even though the graph is one smooth curve. Explain what each sign is telling you about the outputs on that interval.    The negative answer says the outputs decreased on the way from to ; the positive answer says they increased from to . The curve turns around at the bottom, so the sign of the average rate of change flips depending on which side of the low point you are on.        Rate of Change in Context   Worked Example   Suppose is the height in feet of an object dropped from a building after seconds. Find the average rate of change of on and describe what it means.    Evaluate at both endpoints. Then   The average rate of change is feet per second. During the first seconds of the fall, the object drops an average of feet each second, so its average velocity over that stretch is feet per second downward.       Suppose is the height in feet of an object dropped from a building after seconds.     Find the average rate of change of on , and state its units.    ft\/s     and , so feet per second.      Describe in words what your answer to part (a) means. Your sentence should mention the object, the time, and the direction it is moving.    Between and seconds after the object was dropped, its height decreased by an average of feet each second, meaning it was moving downward.       A delivery van is purchased new, and its value in dollars after years is given by .     Find the average rate of change of on , and state its units.    dollars\/yr     and , so dollars per year.      Find the average rate of change of on .    dollars\/yr     and , so dollars per year.      You should have gotten the same answer twice. What is it about this particular function that makes the average rate of change come out the same on every interval?    is a linear function, and its slope is . For a line, the average rate of change between any two points is just the slope, so the interval does not matter. For every other function type in this activity, it does.      "
+  "body": " Activity: Average Rate of Change    Average Rate of Change  The average rate of change of a function from to is the change in output divided by the change in input. Three things to keep in mind. Only the two endpoints matter, no matter what happens in between. The units are always output units per input unit. A negative answer means the output decreased across the interval, not that the function was negative.    Rate of Change from a Formula   Worked Example   Find the average rate of change of on the interval .    Evaluate at both endpoints first, then divide.   The average rate of change is . On average, the output drops by units for each unit increase in the input across this interval.       Find the average rate of change of on the interval .       and , so the average rate of change is .      Find the average rate of change of on the interval .        and , so   Watch the denominator here; students often write instead of .      Find the average rate of change of on the interval .       and , so .       Rate of Change from a Table   Worked Example   A new app is gaining subscribers. The total number of subscribers after weeks is given below. Find the average rate of change from to and interpret it.    (weeks)         (subscribers)           Read the two endpoint columns, and . Then   The average rate of change is subscribers per week. Between week and week , the app gained an average of new subscribers each week. The columns at and never entered the computation.    Questions 4 and 5 both refer to the following table. A large tank is being drained, and is the amount of water left in the tank after minutes.    (minutes)         (gallons)            Consider the interval from to .     Determine the average rate of change of the water amount on this interval, and state its units.    gal\/min    gallons per minute.      Describe the meaning of your result in the context of the question. Write a full sentence that does not use the letters or .    Between and minutes after draining began, the tank lost an average of gallons of water each minute.       Now consider the interval from to .     Determine the average rate of change of the water amount on this interval.    gal\/min    gallons per minute.      Compare your answer to the one from Question 4. During which stretch of time was the tank draining faster? Explain how you can tell from the two numbers.    The tank drained faster over the first ten minutes. It was losing gallons per minute there compared with gallons per minute on the later interval. Both are negative, so the comparison is about which is farther from zero, not which is larger as a signed number. This is a good place to point out that the average rate of change depends on the interval you choose.        Rate of Change from a Graph   Worked Example   The graph of is shown below. Find the average rate of change of from to .   A downward-opening parabola with a dashed line segment joining two points on it.   A downward-opening parabola is drawn on a coordinate grid from x equals negative three to x equals three, with its highest point at zero, two. It crosses the horizontal axis at negative two, zero and two, zero. The points zero, two and two, zero are marked, and a dashed line segment connects them.     h(x) = -0.5*x^2 + 2              Read the outputs off the graph: and . Then   The average rate of change is . Notice that this is exactly the slope of the dashed line drawn through the two points on the curve, which is what the average rate of change measures.       The graph of is shown below.   An upward-opening parabola with three marked points.   An upward-opening parabola is drawn on a coordinate grid from x equals negative three to x equals three, with its lowest point at zero, negative two. The points negative two, zero; zero, negative two; and two, zero are marked on the curve.     f(x) = 0.5*x^2 - 2               Find the average rate of change of from to .       and , so .      Find the average rate of change of from to .       and , so .      Your two answers have opposite signs even though the graph is one smooth curve. Explain what each sign is telling you about the outputs on that interval.    The negative answer says the outputs decreased on the way from to ; the positive answer says they increased from to . The curve turns around at the bottom, so the sign of the average rate of change flips depending on which side of the low point you are on.        Rate of Change in Context   Worked Example   Suppose is the height in feet of an object dropped from a building after seconds. Find the average rate of change of on and describe what it means.    Evaluate at both endpoints. Then   The average rate of change is feet per second. During the first seconds of the fall, the object drops an average of feet each second, so its average velocity over that stretch is feet per second downward.       Suppose is the height in feet of an object dropped from a building after seconds.     Find the average rate of change of on , and state its units.    ft\/s     and , so feet per second.      Describe in words what your answer to part (a) means. Your sentence should mention the object, the time, and the direction it is moving.    Between and seconds after the object was dropped, its height decreased by an average of feet each second, meaning it was moving downward.       A delivery van is purchased new, and its value in dollars after years is given by .     Find the average rate of change of on , and state its units.    dollars\/yr     and , so dollars per year.      Find the average rate of change of on .    dollars\/yr     and , so dollars per year.      You should have gotten the same answer twice. What is it about this particular function that makes the average rate of change come out the same on every interval?    is a linear function, and its slope is . For a line, the average rate of change between any two points is just the slope, so the interval does not matter. For every other function type in this activity, it does.      "
 },
 {
   "id": "aroc-act-example-formula",
@@ -667,6 +667,555 @@ var ptx_lunr_docs = [
   "body": " Problem 7: Creating Examples    On the grid below, sketch the graph of a function that does have an inverse. Assume the horizontal axis shows inputs and the vertical axis shows outputs, as usual.   A blank coordinate grid from negative five to five on each axis.  A blank coordinate grid with x and y axes, running from negative five to five in each direction.            Answers will vary. Any graph that always rises or always falls works, such as the line . Every vertical line crosses it at most once, so it is a function, and every horizontal line crosses it at most once, so it has an inverse.      Complete the table so that it defines a function that does not have an inverse.                      Answers will vary. One example uses the inputs , , , , with the outputs , , , , . The inputs are all different, so it is a function.      Explain why your table is a function, but does not have an inverse.    For the example above, each input appears only once, so each input has exactly one output. But the output comes from two inputs, and , so reversing the table would send to two different values.    "
 },
 {
+  "id": "lt6-circular",
+  "level": "1",
+  "url": "lt6-circular.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 6: Graphs of Circular Functions",
+  "body": " Learning Target 6: Graphs of Circular Functions    I can generate an accurate, labeled graph of a circular function given appropriate information about the circle being traversed, and describe key features of the function.         Problem 1: Reading a Circular Function from Its Graph   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph.   The graph of f, a wave with peaks at height 5 and troughs at height 1.  The graph of f is a smooth wave drawn from x equals negative three to x equals nine. It has troughs at the points negative three, one and three, one and nine, one, and peaks at the points zero, five and six, five.    f(x) = 2*cos(pi*x\/3) + 3          y = f(x)         What is the maximum value of ? What is the minimum value of ?    The highest points on the graph are at and the lowest points are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    The midline is halfway between the maximum and minimum.   The midline is .      Find the amplitude.    The amplitude is half the distance from the minimum to the maximum.   The amplitude is . This matches the graph, since the peaks are units above the midline .      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so one full wave has a horizontal length of . The period is . Using two consecutive troughs, such as and , gives the same answer. The distance from a peak to the next trough is only , which is half of a period.           Problem 2: A Graph Centered Below the Axis   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph.   The graph of g, a wave with peaks at height 2 and troughs at height negative 4.  The graph of g is a smooth wave drawn from x equals negative two to x equals ten. It has peaks at the points negative two, two and six, two, and troughs at the points two, negative four and ten, negative four.    g(x) = -3*sin(pi*x\/4) - 1         y = g(x)         What is the maximum value of ? What is the minimum value of ?    The peaks are at and the troughs are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    Average the maximum and minimum.   The midline is . Notice the midline is not the -axis for this graph.      Find the amplitude.    Take half the distance from the minimum to the maximum.   The amplitude is . The full height of the wave is , but the amplitude is only half of that.      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so the period is . The troughs at and are also units apart.           Problem 3: A Midline That Is Not a Whole Number   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph. The midline and amplitude do not have to be whole numbers.   The graph of h, a wave with peaks at height 1 and troughs at height negative 2.  The graph of h is a smooth wave drawn from x equals negative one to x equals eight. It has troughs at the points negative one, negative two and five, negative two, and peaks at the points two, one and eight, one.    h(x) = 1.5*cos(pi*(x - 2)\/3) - 0.5         y = h(x)         What is the maximum value of ? What is the minimum value of ?    The peaks are at and the troughs are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    Average the maximum and minimum.   The midline is . A common mistake is to round this to or .      Find the amplitude.    Take half the distance from the minimum to the maximum.   The amplitude is . As a check, the peaks at are units above the midline .      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so the period is . The troughs at and also give . The wave does not start at a peak on the -axis, so measure between two peaks or two troughs rather than starting at .      "
+},
+{
+  "id": "lt6-circular-2",
+  "level": "2",
+  "url": "lt6-circular.html#lt6-circular-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  I can generate an accurate, labeled graph of a circular function given appropriate information about the circle being traversed, and describe key features of the function.   "
+},
+{
+  "id": "lt6-circ-graph-1",
+  "level": "2",
+  "url": "lt6-circular.html#lt6-circ-graph-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Reading a Circular Function from Its Graph.",
+  "body": " Problem 1: Reading a Circular Function from Its Graph   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph.   The graph of f, a wave with peaks at height 5 and troughs at height 1.  The graph of f is a smooth wave drawn from x equals negative three to x equals nine. It has troughs at the points negative three, one and three, one and nine, one, and peaks at the points zero, five and six, five.    f(x) = 2*cos(pi*x\/3) + 3          y = f(x)         What is the maximum value of ? What is the minimum value of ?    The highest points on the graph are at and the lowest points are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    The midline is halfway between the maximum and minimum.   The midline is .      Find the amplitude.    The amplitude is half the distance from the minimum to the maximum.   The amplitude is . This matches the graph, since the peaks are units above the midline .      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so one full wave has a horizontal length of . The period is . Using two consecutive troughs, such as and , gives the same answer. The distance from a peak to the next trough is only , which is half of a period.    "
+},
+{
+  "id": "lt6-circ-graph-2",
+  "level": "2",
+  "url": "lt6-circular.html#lt6-circ-graph-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: A Graph Centered Below the Axis.",
+  "body": " Problem 2: A Graph Centered Below the Axis   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph.   The graph of g, a wave with peaks at height 2 and troughs at height negative 4.  The graph of g is a smooth wave drawn from x equals negative two to x equals ten. It has peaks at the points negative two, two and six, two, and troughs at the points two, negative four and ten, negative four.    g(x) = -3*sin(pi*x\/4) - 1         y = g(x)         What is the maximum value of ? What is the minimum value of ?    The peaks are at and the troughs are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    Average the maximum and minimum.   The midline is . Notice the midline is not the -axis for this graph.      Find the amplitude.    Take half the distance from the minimum to the maximum.   The amplitude is . The full height of the wave is , but the amplitude is only half of that.      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so the period is . The troughs at and are also units apart.    "
+},
+{
+  "id": "lt6-circ-graph-3",
+  "level": "2",
+  "url": "lt6-circular.html#lt6-circ-graph-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: A Midline That Is Not a Whole Number.",
+  "body": " Problem 3: A Midline That Is Not a Whole Number   The graph of a circular function is shown below. The dots mark the peaks and troughs of the graph. The midline and amplitude do not have to be whole numbers.   The graph of h, a wave with peaks at height 1 and troughs at height negative 2.  The graph of h is a smooth wave drawn from x equals negative one to x equals eight. It has troughs at the points negative one, negative two and five, negative two, and peaks at the points two, one and eight, one.    h(x) = 1.5*cos(pi*(x - 2)\/3) - 0.5         y = h(x)         What is the maximum value of ? What is the minimum value of ?    The peaks are at and the troughs are at . So the maximum value is and the minimum value is .      Find the equation of the midline. Show how you used the maximum and minimum.    Average the maximum and minimum.   The midline is . A common mistake is to round this to or .      Find the amplitude.    Take half the distance from the minimum to the maximum.   The amplitude is . As a check, the peaks at are units above the midline .      Find the period. Explain how you read it from the graph.    Two consecutive peaks are at and , so the period is . The troughs at and also give . The wave does not start at a peak on the -axis, so measure between two peaks or two troughs rather than starting at .    "
+},
+{
+  "id": "lt7-sinusoidal",
+  "level": "1",
+  "url": "lt7-sinusoidal.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 7: Transformed Sine and Cosine Functions",
+  "body": " Learning Target 7: Transformed Sine and Cosine Functions    I can find the amplitude, period, and midline of a transformed version of the basic sine or cosine function; and I can find the formulas for transformed versions of the basic sine or cosine function that have certain described properties.         Problem 1: Features from a Formula   Let .     Find the amplitude.    The amplitude is the absolute value of the number in front of cosine, so the amplitude is .      Find the equation of the midline.    The constant added at the end shifts the wave up units, so the midline is .      Find the period. Show your work.    Here , so   The period is . A common mistake is to give or as the period.      What are the maximum and minimum values of ?    The wave goes units above and below the midline. The maximum is and the minimum is .           Problem 2: A Flipped Wave   Let .     Find the amplitude.    The amplitude is . The negative sign flips the wave upside down, but the amplitude is still positive.      Find the equation of the midline.    The midline is .      Find the period. Show your work.    Here , so   The period is .      What are the maximum and minimum values of ?    The maximum is and the minimum is . Even though the wave is flipped, the maximum and minimum are still found by adding and subtracting the amplitude from the midline.           Problem 3: A Ferris Wheel   A Ferris wheel is meters in diameter and is boarded from a platform that is meters above the ground. The six o'clock position on the wheel is level with the loading platform. The wheel completes one full revolution in minutes. The function gives your height in meters above the ground minutes after the wheel begins to turn.     Write an equation for .    You board at the bottom of the wheel, so you start at a minimum and the base model is . The radius is , so the amplitude is . The center of the wheel is meters above the ground, so the midline is . The period is minutes.   The model is .      Use your equation to find and . Explain why these values make sense.    , which is the height of the platform where you board. . After half a revolution you are at the top of the wheel, which is meters above the ground.           Problem 4: A Model from Data   The table below gives values of a sinusoidal function.                           Find a sinusoidal function to match the data.    The largest value is and the smallest is .   At the value is on the midline, and the next value is larger, so the data starts on the midline going up. The base model is . The data is back on the midline going up at , so the period is and . The model is .      Check your function using one value from the table that is not on the midline.    Using : , which matches the table.           Problem 5: A Water Wheel   A water wheel at an old mill has a diameter of meters, and its center is meters above the surface of the river. One bucket on the wheel starts level with the center of the wheel and is moving upward. The wheel completes one full turn every seconds. The function gives the bucket's height in meters above the water seconds after we start watching.     Write an equation for .    The bucket starts at the height of the center and is moving up, so it starts on the midline going up. The base model is . The radius is , so the amplitude is , and the midline is . The period is seconds.   The model is .      What is the minimum value of ? What does it tell you about the bucket?    The minimum is . At the bottom of each turn the bucket is meter below the surface of the river, which is how it fills with water.      "
+},
+{
+  "id": "lt7-sinusoidal-2",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sinusoidal-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  I can find the amplitude, period, and midline of a transformed version of the basic sine or cosine function; and I can find the formulas for transformed versions of the basic sine or cosine function that have certain described properties.   "
+},
+{
+  "id": "lt7-sin-formula-1",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sin-formula-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Features from a Formula.",
+  "body": " Problem 1: Features from a Formula   Let .     Find the amplitude.    The amplitude is the absolute value of the number in front of cosine, so the amplitude is .      Find the equation of the midline.    The constant added at the end shifts the wave up units, so the midline is .      Find the period. Show your work.    Here , so   The period is . A common mistake is to give or as the period.      What are the maximum and minimum values of ?    The wave goes units above and below the midline. The maximum is and the minimum is .    "
+},
+{
+  "id": "lt7-sin-formula-2",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sin-formula-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: A Flipped Wave.",
+  "body": " Problem 2: A Flipped Wave   Let .     Find the amplitude.    The amplitude is . The negative sign flips the wave upside down, but the amplitude is still positive.      Find the equation of the midline.    The midline is .      Find the period. Show your work.    Here , so   The period is .      What are the maximum and minimum values of ?    The maximum is and the minimum is . Even though the wave is flipped, the maximum and minimum are still found by adding and subtracting the amplitude from the midline.    "
+},
+{
+  "id": "lt7-sin-ferris",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sin-ferris",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: A Ferris Wheel.",
+  "body": " Problem 3: A Ferris Wheel   A Ferris wheel is meters in diameter and is boarded from a platform that is meters above the ground. The six o'clock position on the wheel is level with the loading platform. The wheel completes one full revolution in minutes. The function gives your height in meters above the ground minutes after the wheel begins to turn.     Write an equation for .    You board at the bottom of the wheel, so you start at a minimum and the base model is . The radius is , so the amplitude is . The center of the wheel is meters above the ground, so the midline is . The period is minutes.   The model is .      Use your equation to find and . Explain why these values make sense.    , which is the height of the platform where you board. . After half a revolution you are at the top of the wheel, which is meters above the ground.    "
+},
+{
+  "id": "lt7-sin-table",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sin-table",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: A Model from Data.",
+  "body": " Problem 4: A Model from Data   The table below gives values of a sinusoidal function.                           Find a sinusoidal function to match the data.    The largest value is and the smallest is .   At the value is on the midline, and the next value is larger, so the data starts on the midline going up. The base model is . The data is back on the midline going up at , so the period is and . The model is .      Check your function using one value from the table that is not on the midline.    Using : , which matches the table.    "
+},
+{
+  "id": "lt7-sin-waterwheel",
+  "level": "2",
+  "url": "lt7-sinusoidal.html#lt7-sin-waterwheel",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: A Water Wheel.",
+  "body": " Problem 5: A Water Wheel   A water wheel at an old mill has a diameter of meters, and its center is meters above the surface of the river. One bucket on the wheel starts level with the center of the wheel and is moving upward. The wheel completes one full turn every seconds. The function gives the bucket's height in meters above the water seconds after we start watching.     Write an equation for .    The bucket starts at the height of the center and is moving up, so it starts on the midline going up. The base model is . The radius is , so the amplitude is , and the midline is . The period is seconds.   The model is .      What is the minimum value of ? What does it tell you about the bucket?    The minimum is . At the bottom of each turn the bucket is meter below the surface of the river, which is how it fills with water.    "
+},
+{
+  "id": "lt8-exponential",
+  "level": "1",
+  "url": "lt8-exponential.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 8: Finding Exponential Functions",
+  "body": " Learning Target 8: Finding Exponential Functions    Given two points or an appropriate collection of features, I can find a formula for an exponential function that has those characteristics.         Problem 1: Two Points, Starting Value Given   An exponential function passes through the points and .     Table strategy. Each time goes up by , the output is multiplied by the same number . Fill in the missing outputs so that this is true.                    Going from to multiplies the output by three times, so . Trying gives , , , , so the missing outputs are and .      Algebra strategy. Use the two points to find and . Write the formula for .    Since , the point gives . Substitute the second point.   So , which matches the table.           Problem 2: Two Points, Starting Value Given   An exponential function passes through the points and .     Use algebra to find and . Write the formula for .    The point gives . Substitute the second point.   We use the positive square root, since the base of an exponential function must be positive. So .      Is an exponential growth or decay function? By what percent does the output change each time goes up by ?    Since , this is exponential decay. A factor of means each output is of the one before it, which is a decrease.      Check your answer by completing the table.                  , and , which matches the given point.           Problem 3: Two Points, No Starting Value   An exponential function passes through the points and .     Table strategy. Fill in the table. Start by finding the growth factor between and , then work backward to .                    From to the output is multiplied by over two steps, so and . Then . Working backward, .      Algebra strategy. Write two equations using the two points. Divide one equation by the other to find , then find . Write the formula for .    The points give and . Divide the second equation by the first.   Then , so , and . The value matches from the table.           Problem 4: Two Points on Opposite Sides of the Axis   An exponential function passes through the points and .     Find and , and write the formula for . You may use a table or algebra.    The points give and . Divide the second equation by the first.   Then , so and .  With a table, the output goes from to over four steps, a total factor of , so each step multiplies by : . The value at is .      Check your formula using the point .    , which matches.           Problem 5: Caffeine in the Body   An -ounce cup of brewed coffee has about milligrams of caffeine. For a typical adult, the body removes about of the caffeine in the bloodstream each hour. Let be the amount of caffeine in milligrams hours after drinking the coffee.     What is the decay factor per hour?    A decrease leaves each hour, so the decay factor is .      Write a formula for .         If you drink the coffee at 3 p.m., how much caffeine is left at 11 p.m.?    That is hours later. milligrams, about a third of the original amount.      About how long until less than milligrams remain? (Desmos may help.)    Graph and . They cross at , so it takes a little over hours.           Problem 6: Rising Rent   An apartment near campus rents for per month this year. The landlord raises the rent by each year. Let be the monthly rent in dollars years from now.     What is the growth factor per year?    A increase means each year's rent is of the year before, so the growth factor is .      Write a formula for .         What will the monthly rent be in years, when a first-year student would be graduating?    , so the rent will be about per month.      About how many years until the rent doubles to ? (Desmos may help.)    Graph and . They cross at , so the rent doubles in a little over years.           Problem 7: Change Over an Interval   A new phone battery holds milliamp-hours (mAh) of charge. A typical lithium-ion battery loses about of its capacity every full charge cycles. Let be the battery's capacity in mAh after full charge cycles.     Write a formula for . Explain why the exponent is not just .    The decay factor is , but it applies once every cycles, not once every cycle. The number of -cycle intervals in cycles is , so   As a check, , which is a loss after cycles. If the exponent were just , the battery would lose after every single charge.      If you fully charge your phone about once a day, you will reach cycles in a little over two years. What will the capacity be then?    mAh.      About how many cycles until the capacity drops to mAh? (Desmos may help.)    Graph and . They cross at , so after about cycles.           Problem 8: A Cooling Model   A cup of coffee is poured at in a room kept at . After minutes, the coffee has cooled to . Let be the temperature of the coffee minutes after it is poured.     Find a model of the form .    Over time the coffee approaches room temperature, so . At , , so . Use the point to find .   The model is .      What is the temperature of the coffee after minutes?    .      Many people find coffee comfortable to drink at about . How long do you need to wait? (Desmos may help.)    Graph and . They cross at , so wait about minutes.           Problem 9: A Warming Model   A can of soda is taken out of a refrigerator at and set on a picnic table outside, where the air temperature is . After minutes, the soda has warmed to . Let be the temperature of the soda minutes after it is set outside.     Find a model of the form .    The soda approaches the air temperature, so . At , , so . The value of is negative because the soda starts below the surrounding temperature. Use the point .   The model is .      What is the temperature of the soda after minutes?    .      How long until the soda reaches ? Will it ever reach ? Explain.    Graph and . They cross at , so after about minutes. The soda never actually reaches , since is always positive. The temperature gets closer and closer to , which is the horizontal asymptote of the graph.      "
+},
+{
+  "id": "lt8-exponential-2",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exponential-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  Given two points or an appropriate collection of features, I can find a formula for an exponential function that has those characteristics.   "
+},
+{
+  "id": "lt8-exp-points-1",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-points-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Two Points, Starting Value Given.",
+  "body": " Problem 1: Two Points, Starting Value Given   An exponential function passes through the points and .     Table strategy. Each time goes up by , the output is multiplied by the same number . Fill in the missing outputs so that this is true.                    Going from to multiplies the output by three times, so . Trying gives , , , , so the missing outputs are and .      Algebra strategy. Use the two points to find and . Write the formula for .    Since , the point gives . Substitute the second point.   So , which matches the table.    "
+},
+{
+  "id": "lt8-exp-points-2",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-points-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Two Points, Starting Value Given.",
+  "body": " Problem 2: Two Points, Starting Value Given   An exponential function passes through the points and .     Use algebra to find and . Write the formula for .    The point gives . Substitute the second point.   We use the positive square root, since the base of an exponential function must be positive. So .      Is an exponential growth or decay function? By what percent does the output change each time goes up by ?    Since , this is exponential decay. A factor of means each output is of the one before it, which is a decrease.      Check your answer by completing the table.                  , and , which matches the given point.    "
+},
+{
+  "id": "lt8-exp-points-3",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-points-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Two Points, No Starting Value.",
+  "body": " Problem 3: Two Points, No Starting Value   An exponential function passes through the points and .     Table strategy. Fill in the table. Start by finding the growth factor between and , then work backward to .                    From to the output is multiplied by over two steps, so and . Then . Working backward, .      Algebra strategy. Write two equations using the two points. Divide one equation by the other to find , then find . Write the formula for .    The points give and . Divide the second equation by the first.   Then , so , and . The value matches from the table.    "
+},
+{
+  "id": "lt8-exp-points-4",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-points-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Two Points on Opposite Sides of the Axis.",
+  "body": " Problem 4: Two Points on Opposite Sides of the Axis   An exponential function passes through the points and .     Find and , and write the formula for . You may use a table or algebra.    The points give and . Divide the second equation by the first.   Then , so and .  With a table, the output goes from to over four steps, a total factor of , so each step multiplies by : . The value at is .      Check your formula using the point .    , which matches.    "
+},
+{
+  "id": "lt8-exp-caffeine",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-caffeine",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: Caffeine in the Body.",
+  "body": " Problem 5: Caffeine in the Body   An -ounce cup of brewed coffee has about milligrams of caffeine. For a typical adult, the body removes about of the caffeine in the bloodstream each hour. Let be the amount of caffeine in milligrams hours after drinking the coffee.     What is the decay factor per hour?    A decrease leaves each hour, so the decay factor is .      Write a formula for .         If you drink the coffee at 3 p.m., how much caffeine is left at 11 p.m.?    That is hours later. milligrams, about a third of the original amount.      About how long until less than milligrams remain? (Desmos may help.)    Graph and . They cross at , so it takes a little over hours.    "
+},
+{
+  "id": "lt8-exp-rent",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-rent",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: Rising Rent.",
+  "body": " Problem 6: Rising Rent   An apartment near campus rents for per month this year. The landlord raises the rent by each year. Let be the monthly rent in dollars years from now.     What is the growth factor per year?    A increase means each year's rent is of the year before, so the growth factor is .      Write a formula for .         What will the monthly rent be in years, when a first-year student would be graduating?    , so the rent will be about per month.      About how many years until the rent doubles to ? (Desmos may help.)    Graph and . They cross at , so the rent doubles in a little over years.    "
+},
+{
+  "id": "lt8-exp-battery",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-battery",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem 7: Change Over an Interval.",
+  "body": " Problem 7: Change Over an Interval   A new phone battery holds milliamp-hours (mAh) of charge. A typical lithium-ion battery loses about of its capacity every full charge cycles. Let be the battery's capacity in mAh after full charge cycles.     Write a formula for . Explain why the exponent is not just .    The decay factor is , but it applies once every cycles, not once every cycle. The number of -cycle intervals in cycles is , so   As a check, , which is a loss after cycles. If the exponent were just , the battery would lose after every single charge.      If you fully charge your phone about once a day, you will reach cycles in a little over two years. What will the capacity be then?    mAh.      About how many cycles until the capacity drops to mAh? (Desmos may help.)    Graph and . They cross at , so after about cycles.    "
+},
+{
+  "id": "lt8-exp-cooling",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-cooling",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Problem 8: A Cooling Model.",
+  "body": " Problem 8: A Cooling Model   A cup of coffee is poured at in a room kept at . After minutes, the coffee has cooled to . Let be the temperature of the coffee minutes after it is poured.     Find a model of the form .    Over time the coffee approaches room temperature, so . At , , so . Use the point to find .   The model is .      What is the temperature of the coffee after minutes?    .      Many people find coffee comfortable to drink at about . How long do you need to wait? (Desmos may help.)    Graph and . They cross at , so wait about minutes.    "
+},
+{
+  "id": "lt8-exp-heating",
+  "level": "2",
+  "url": "lt8-exponential.html#lt8-exp-heating",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "Problem 9: A Warming Model.",
+  "body": " Problem 9: A Warming Model   A can of soda is taken out of a refrigerator at and set on a picnic table outside, where the air temperature is . After minutes, the soda has warmed to . Let be the temperature of the soda minutes after it is set outside.     Find a model of the form .    The soda approaches the air temperature, so . At , , so . The value of is negative because the soda starts below the surrounding temperature. Use the point .   The model is .      What is the temperature of the soda after minutes?    .      How long until the soda reaches ? Will it ever reach ? Explain.    Graph and . They cross at , so after about minutes. The soda never actually reaches , since is always positive. The temperature gets closer and closer to , which is the horizontal asymptote of the graph.    "
+},
+{
+  "id": "lt9-graph-shape",
+  "level": "1",
+  "url": "lt9-graph-shape.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 9: Increasing, Decreasing, and Concavity",
+  "body": " Learning Target 9: Increasing, Decreasing, and Concavity    I can identify the intervals where a function is increasing, decreasing, concave down, or concave up, and I can provide examples of familiar functions that have given increasing \/ decreasing and concave down \/ concave up behaviors.         Problem 1: A Sinusoidal Function   The graph of is shown below on the domain . The dots mark the minimum and maximum.   The graph of T on the interval from 0 to 8, with a minimum at 2 and a maximum at 6.  The graph of T starts at the point zero, one, falls to a minimum at two, negative one, rises through four, one to a maximum at six, three, and falls back to eight, one.    T(x) = -2*sin(pi*x\/4) + 1       y = T(x)         On which intervals is increasing?    The graph rises from the minimum at to the maximum at , so is increasing on .      On which intervals is decreasing?    is decreasing on and on .      What is the midline of ? Find every -value in where the graph crosses the midline.    The midline is . The graph crosses it at , , and . On a sinusoidal graph, the concavity changes each time the graph crosses the midline.      On which intervals is concave up? On which intervals is concave down?    Below the midline the graph bends like a cup, and above the midline it bends like a frown. So is concave up on , where the graph is below , and concave down on , where the graph is above .           Problem 2: Exponential Functions   Each function below has the form . Without graphing, decide whether the function is increasing or decreasing, whether it is concave up or concave down, and whether approaches a value , , or as . Then check your answers with Desmos.        Here , so grows, and is positive. The function is increasing and concave up, and .         Here , but is negative, which flips the growing curve upside down. The function is decreasing and concave down, and .         Here , so decays toward , and is positive. The function is decreasing and concave up, and .         Since and , this is decay, and flips it. The function is increasing and concave down, and . This is the shape of a warming model, like a cold drink approaching room temperature.         Since , this is growth, and is positive. The function is increasing and concave up, and .      Write your own exponential function of the form that is decreasing, concave down, and approaches as .    Answers will vary. We need so the function grows in size, and to flip it upside down. One example is .           Problem 3: A Cubic Function   The graph of a function is shown below on the domain .   The graph of a cubic function f with a local maximum at negative two and a local minimum at two.  The graph of f starts at the point negative four, negative three, rises to a local maximum at negative two, five, falls through the point zero, one to a local minimum at two, negative three, and rises to the point four, five.    f(x) = (x^3 - 12*x)\/4 + 1       y = f(x)         On which intervals is increasing?    is increasing on and on .      On which intervals is decreasing?    is decreasing on , from the high point down to the low point.      At , is the graph concave up or concave down? Explain.    Concave down. Near the graph is part of the hill that peaks at , so it bends like a frown. It is rising, but more and more slowly.      At , is the graph concave up or concave down? Explain.    Concave up. Near the graph is part of the valley with its low point at , so it bends like a cup. It is rising, and more and more quickly.           Problem 4: Quadratic Functions   Consider the two quadratic functions and .     Is always concave up or always concave down? What about the formula tells you this?    Always concave down. The coefficient of is , which is negative, so the parabola opens downward.      Is always concave up or always concave down? What about the formula tells you this?    Always concave up. The coefficient of is , which is positive, so the parabola opens upward.      Find the vertex of . Then give the intervals where is increasing and where it is decreasing.    The vertex is at , and , so the vertex is . Since the parabola opens upward, is decreasing on and increasing on .      Give the intervals where is increasing and where it is decreasing.    The vertex of is at , the point . Since the parabola opens downward, is increasing on and decreasing on .           Problem 5: Sketching from a Description    On the grid below, draw a possible graph of a function such that:   the graph can be drawn without lifting your pencil (continuous) on ,  , , and (plot these first),  is increasing on and decreasing on ,  is concave up on , concave down on , and concave up on .    A blank coordinate grid from negative six to six on each axis.  A blank coordinate grid with x and y axes, running from negative six to six in each direction.            Answers will vary. Starting at , the graph rises slowly at first and then more steeply, bending like a cup until . It keeps rising but starts to level off, bending like a frown, and reaches its highest point at . It then falls, still bending like a frown, more and more steeply until . After it keeps falling but levels out, bending like a cup, and passes through .      At what -values does your graph change concavity?    At and .           Problem 6: Examples of Familiar Functions   For each description, give a formula for a familiar function with that behavior. Sketch a small graph to support your answer. There is more than one correct answer.     Increasing and concave up for all .    Answers will vary. One example is , which rises more and more steeply.      Decreasing and concave up for all .    Answers will vary. One example is , which falls and levels off toward , like a cooling model.      Increasing and concave down for .    Answers will vary. Examples include and . Each rises, but more and more slowly.      Concave down for all , increasing for , and decreasing for .    Answers will vary. A downward-opening parabola with its vertex at works, such as .      "
+},
+{
+  "id": "lt9-graph-shape-2",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-graph-shape-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  I can identify the intervals where a function is increasing, decreasing, concave down, or concave up, and I can provide examples of familiar functions that have given increasing \/ decreasing and concave down \/ concave up behaviors.   "
+},
+{
+  "id": "lt9-shape-sinusoid",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-sinusoid",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: A Sinusoidal Function.",
+  "body": " Problem 1: A Sinusoidal Function   The graph of is shown below on the domain . The dots mark the minimum and maximum.   The graph of T on the interval from 0 to 8, with a minimum at 2 and a maximum at 6.  The graph of T starts at the point zero, one, falls to a minimum at two, negative one, rises through four, one to a maximum at six, three, and falls back to eight, one.    T(x) = -2*sin(pi*x\/4) + 1       y = T(x)         On which intervals is increasing?    The graph rises from the minimum at to the maximum at , so is increasing on .      On which intervals is decreasing?    is decreasing on and on .      What is the midline of ? Find every -value in where the graph crosses the midline.    The midline is . The graph crosses it at , , and . On a sinusoidal graph, the concavity changes each time the graph crosses the midline.      On which intervals is concave up? On which intervals is concave down?    Below the midline the graph bends like a cup, and above the midline it bends like a frown. So is concave up on , where the graph is below , and concave down on , where the graph is above .    "
+},
+{
+  "id": "lt9-shape-exponential",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-exponential",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Exponential Functions.",
+  "body": " Problem 2: Exponential Functions   Each function below has the form . Without graphing, decide whether the function is increasing or decreasing, whether it is concave up or concave down, and whether approaches a value , , or as . Then check your answers with Desmos.        Here , so grows, and is positive. The function is increasing and concave up, and .         Here , but is negative, which flips the growing curve upside down. The function is decreasing and concave down, and .         Here , so decays toward , and is positive. The function is decreasing and concave up, and .         Since and , this is decay, and flips it. The function is increasing and concave down, and . This is the shape of a warming model, like a cold drink approaching room temperature.         Since , this is growth, and is positive. The function is increasing and concave up, and .      Write your own exponential function of the form that is decreasing, concave down, and approaches as .    Answers will vary. We need so the function grows in size, and to flip it upside down. One example is .    "
+},
+{
+  "id": "lt9-shape-cubic",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-cubic",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: A Cubic Function.",
+  "body": " Problem 3: A Cubic Function   The graph of a function is shown below on the domain .   The graph of a cubic function f with a local maximum at negative two and a local minimum at two.  The graph of f starts at the point negative four, negative three, rises to a local maximum at negative two, five, falls through the point zero, one to a local minimum at two, negative three, and rises to the point four, five.    f(x) = (x^3 - 12*x)\/4 + 1       y = f(x)         On which intervals is increasing?    is increasing on and on .      On which intervals is decreasing?    is decreasing on , from the high point down to the low point.      At , is the graph concave up or concave down? Explain.    Concave down. Near the graph is part of the hill that peaks at , so it bends like a frown. It is rising, but more and more slowly.      At , is the graph concave up or concave down? Explain.    Concave up. Near the graph is part of the valley with its low point at , so it bends like a cup. It is rising, and more and more quickly.    "
+},
+{
+  "id": "lt9-shape-quadratic",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-quadratic",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Quadratic Functions.",
+  "body": " Problem 4: Quadratic Functions   Consider the two quadratic functions and .     Is always concave up or always concave down? What about the formula tells you this?    Always concave down. The coefficient of is , which is negative, so the parabola opens downward.      Is always concave up or always concave down? What about the formula tells you this?    Always concave up. The coefficient of is , which is positive, so the parabola opens upward.      Find the vertex of . Then give the intervals where is increasing and where it is decreasing.    The vertex is at , and , so the vertex is . Since the parabola opens upward, is decreasing on and increasing on .      Give the intervals where is increasing and where it is decreasing.    The vertex of is at , the point . Since the parabola opens downward, is increasing on and decreasing on .    "
+},
+{
+  "id": "lt9-shape-sketch",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-sketch",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: Sketching from a Description.",
+  "body": " Problem 5: Sketching from a Description    On the grid below, draw a possible graph of a function such that:   the graph can be drawn without lifting your pencil (continuous) on ,  , , and (plot these first),  is increasing on and decreasing on ,  is concave up on , concave down on , and concave up on .    A blank coordinate grid from negative six to six on each axis.  A blank coordinate grid with x and y axes, running from negative six to six in each direction.            Answers will vary. Starting at , the graph rises slowly at first and then more steeply, bending like a cup until . It keeps rising but starts to level off, bending like a frown, and reaches its highest point at . It then falls, still bending like a frown, more and more steeply until . After it keeps falling but levels out, bending like a cup, and passes through .      At what -values does your graph change concavity?    At and .    "
+},
+{
+  "id": "lt9-shape-examples",
+  "level": "2",
+  "url": "lt9-graph-shape.html#lt9-shape-examples",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: Examples of Familiar Functions.",
+  "body": " Problem 6: Examples of Familiar Functions   For each description, give a formula for a familiar function with that behavior. Sketch a small graph to support your answer. There is more than one correct answer.     Increasing and concave up for all .    Answers will vary. One example is , which rises more and more steeply.      Decreasing and concave up for all .    Answers will vary. One example is , which falls and levels off toward , like a cooling model.      Increasing and concave down for .    Answers will vary. Examples include and . Each rises, but more and more slowly.      Concave down for all , increasing for , and decreasing for .    Answers will vary. A downward-opening parabola with its vertex at works, such as .    "
+},
+{
+  "id": "lt10-exp-log-equations",
+  "level": "1",
+  "url": "lt10-exp-log-equations.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 10: Solving Exponential and Logarithmic Equations",
+  "body": " Learning Target 10: Solving Exponential and Logarithmic Equations    I can find exact solutions to equations involving exponential and logarithmic expressions in contextual settings.         Problem 1: Base and Base   Solve each equation for . Give the exact solution first, then round to three decimal places.        Take of both sides.          Isolate the exponential expression first.          Take of both sides.                      Problem 2: Other Bases   Solve each equation for . You can take of both sides and use the power rule , or rewrite both sides with a common base when possible. Give exact solutions.           This can also be written as .                   Both and are powers of .          There is no common base, so take of both sides and collect the terms.            Problem 3: Equations with Logarithms   Solve each equation for . Isolate the logarithm, then rewrite the equation in exponential form. Give exact solutions.        In exponential form, .                             , so .           Problem 4: Saving for a Goal   You deposit into a savings account that earns annual interest, compounded monthly. The balance after years is .     How long will it take for the balance to reach ? Give the exact answer, then round to two decimal places.       It takes about years.      About how many monthly compounding periods is that? How can you get this number without solving a new equation?    Each year has compounding periods, so . The balance passes in the th month.           Problem 5: A Used Car   You buy a used car for . Its value decreases by each year.     Write a function for the value of the car in dollars years after you buy it.         How long until the car is worth half of what you paid? Give the exact answer and a decimal approximation.       The car is worth half its price after about years. Notice the answer does not depend on the price, only on the rate.           Problem 6: Bacteria on a Countertop   Under ideal conditions, E. coli bacteria can double about every minutes. A spill on a kitchen counter starts with bacteria. The number of bacteria after minutes is .     How long until there are bacteria? Give the exact answer, then convert to hours.       That is about minutes, or about hours. Wipe up your spills.      Explain why the exponent in the model is and not .    The population doubles once every minutes, not every minute. In minutes there are doubling periods, so the factor of is applied times.           Problem 7: Half-Life of a Medication   Ibuprofen has a half-life of about hours in the body. After a milligram dose, the amount remaining after hours is .     When will milligrams remain? Solve without a calculator.       Since , we need , so hours.      When will milligrams remain? Give the exact answer and a decimal approximation.       About hours after the dose.           Problem 8: Waiting for Coffee to Cool   The temperature of a cup of coffee minutes after it is poured is degrees Fahrenheit.     What are the starting temperature of the coffee and the temperature of the room?    The coffee starts at . The room is , the value the temperature approaches.      When will the coffee reach ? Give the exact answer, then round to the nearest tenth of a minute.       About minutes.      Try to solve . What goes wrong, and what does that mean for the coffee?    We get , but is always positive, so there is no solution. The coffee can never cool below the room temperature of .           Problem 9: Acidity and pH   The pH of a liquid is defined by , where is the concentration of hydrogen ions in moles per liter. Black coffee has a pH of about , and lemon juice has a pH of about .     Find the hydrogen ion concentration of black coffee and of lemon juice. Give exact answers.    For coffee, , so and moles per liter. For lemon juice, moles per liter.      How many times more acidic is lemon juice than black coffee? (Compare the hydrogen ion concentrations.)    . Lemon juice is about times more acidic, even though the pH values differ by only . Each drop of in pH means times more acidic.      "
+},
+{
+  "id": "lt10-exp-log-equations-2",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-exp-log-equations-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  I can find exact solutions to equations involving exponential and logarithmic expressions in contextual settings.   "
+},
+{
+  "id": "lt10-eq-base-e-10",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-base-e-10",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Base <span class=\"process-math\">\\(e\\)<\/span> and Base <span class=\"process-math\">\\(10\\)<\/span>.",
+  "body": " Problem 1: Base and Base   Solve each equation for . Give the exact solution first, then round to three decimal places.        Take of both sides.          Isolate the exponential expression first.          Take of both sides.               "
+},
+{
+  "id": "lt10-eq-other-bases",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-other-bases",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Other Bases.",
+  "body": " Problem 2: Other Bases   Solve each equation for . You can take of both sides and use the power rule , or rewrite both sides with a common base when possible. Give exact solutions.           This can also be written as .                   Both and are powers of .          There is no common base, so take of both sides and collect the terms.     "
+},
+{
+  "id": "lt10-eq-logs",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-logs",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Equations with Logarithms.",
+  "body": " Problem 3: Equations with Logarithms   Solve each equation for . Isolate the logarithm, then rewrite the equation in exponential form. Give exact solutions.        In exponential form, .                             , so .    "
+},
+{
+  "id": "lt10-eq-savings",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-savings",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Saving for a Goal.",
+  "body": " Problem 4: Saving for a Goal   You deposit into a savings account that earns annual interest, compounded monthly. The balance after years is .     How long will it take for the balance to reach ? Give the exact answer, then round to two decimal places.       It takes about years.      About how many monthly compounding periods is that? How can you get this number without solving a new equation?    Each year has compounding periods, so . The balance passes in the th month.    "
+},
+{
+  "id": "lt10-eq-car",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-car",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: A Used Car.",
+  "body": " Problem 5: A Used Car   You buy a used car for . Its value decreases by each year.     Write a function for the value of the car in dollars years after you buy it.         How long until the car is worth half of what you paid? Give the exact answer and a decimal approximation.       The car is worth half its price after about years. Notice the answer does not depend on the price, only on the rate.    "
+},
+{
+  "id": "lt10-eq-bacteria",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-bacteria",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: Bacteria on a Countertop.",
+  "body": " Problem 6: Bacteria on a Countertop   Under ideal conditions, E. coli bacteria can double about every minutes. A spill on a kitchen counter starts with bacteria. The number of bacteria after minutes is .     How long until there are bacteria? Give the exact answer, then convert to hours.       That is about minutes, or about hours. Wipe up your spills.      Explain why the exponent in the model is and not .    The population doubles once every minutes, not every minute. In minutes there are doubling periods, so the factor of is applied times.    "
+},
+{
+  "id": "lt10-eq-ibuprofen",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-ibuprofen",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem 7: Half-Life of a Medication.",
+  "body": " Problem 7: Half-Life of a Medication   Ibuprofen has a half-life of about hours in the body. After a milligram dose, the amount remaining after hours is .     When will milligrams remain? Solve without a calculator.       Since , we need , so hours.      When will milligrams remain? Give the exact answer and a decimal approximation.       About hours after the dose.    "
+},
+{
+  "id": "lt10-eq-cooling",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-cooling",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Problem 8: Waiting for Coffee to Cool.",
+  "body": " Problem 8: Waiting for Coffee to Cool   The temperature of a cup of coffee minutes after it is poured is degrees Fahrenheit.     What are the starting temperature of the coffee and the temperature of the room?    The coffee starts at . The room is , the value the temperature approaches.      When will the coffee reach ? Give the exact answer, then round to the nearest tenth of a minute.       About minutes.      Try to solve . What goes wrong, and what does that mean for the coffee?    We get , but is always positive, so there is no solution. The coffee can never cool below the room temperature of .    "
+},
+{
+  "id": "lt10-eq-ph",
+  "level": "2",
+  "url": "lt10-exp-log-equations.html#lt10-eq-ph",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "Problem 9: Acidity and pH.",
+  "body": " Problem 9: Acidity and pH   The pH of a liquid is defined by , where is the concentration of hydrogen ions in moles per liter. Black coffee has a pH of about , and lemon juice has a pH of about .     Find the hydrogen ion concentration of black coffee and of lemon juice. Give exact answers.    For coffee, , so and moles per liter. For lemon juice, moles per liter.      How many times more acidic is lemon juice than black coffee? (Compare the hydrogen ion concentrations.)    . Lemon juice is about times more acidic, even though the pH values differ by only . Each drop of in pH means times more acidic.    "
+},
+{
+  "id": "lt11-right-triangles",
+  "level": "1",
+  "url": "lt11-right-triangles.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 11: Right Triangles",
+  "body": " Learning Target 11: Right Triangles    Given a right triangle with partial information about its sides and angles, I can determine the missing information for the remaining sides and angles, even if the quantities involve an unknown variable.         Problem 1: Two Sides Known   In the right triangle below, the right angle is at . All angles are measured in degrees.   A right triangle ABC with the right angle at C, leg AC of length 8, leg BC of length a, and hypotenuse AB of length 17.  Right triangle with vertex C at the lower left, vertex B at the lower right, and vertex A directly above C. The vertical leg from C to A has length 8. The horizontal leg from C to B is labeled a. The hypotenuse from A to B has length 17. A small square at C marks the right angle.          A  B  C  8  a  17         Find the value of .    By the Pythagorean Theorem,       Find the exact values of , , , , , and .    From angle , the opposite side is , the adjacent side is , and the hypotenuse is . From angle , the opposite side is and the adjacent side is .  , , , , , and .      Find the angles and in degrees. Round to two decimal places.    . Since the angles of a triangle add to and , . As a check, .           Problem 2: One Angle and One Side Known   In the right triangle below, the right angle is at , angle measures , and side has length .   A right triangle with a 35 degree angle at A, adjacent leg 12, opposite leg y, and hypotenuse z.  Right triangle with vertex C at the lower left, vertex A at the lower right, and vertex B directly above C. The horizontal leg from C to A has length 12. The vertical leg from C to B is labeled y. The hypotenuse from A to B is labeled z. The angle at A is 35 degrees, and a small square at C marks the right angle.          A  B  C  35^\\circ  12  y  z         Find the angle .    .      Find . Give the exact value using a trig function, then round to two decimal places.    From angle , is opposite and is adjacent, so . Then .      Find . Give the exact value using a trig function, then round to two decimal places.    From angle , is adjacent and is the hypotenuse, so . Then . As a check, and .           Problem 3: Sides in Terms of a Variable   The legs of a right triangle have lengths and , and the hypotenuse has length .   A right triangle with legs x and x plus 7 and hypotenuse 13.  Right triangle with the right angle at the lower left. The vertical leg is labeled x, the horizontal leg is labeled x plus 7, and the hypotenuse is labeled 13. The angle at the lower right vertex is labeled theta.          x  x + 7  13  \\theta         Find .    By the Pythagorean Theorem,   So or . A side length cannot be negative, so , and the legs are and .      Find , , and in degrees.    The side opposite is and the adjacent side is , so and . Then .           Problem 4: An Unknown Hypotenuse   A right triangle has a hypotenuse of length and an angle of .   A right triangle with hypotenuse x and a 40 degree angle.  Right triangle with the right angle at the lower left. The angle at the lower right vertex is 40 degrees. The hypotenuse is labeled x. The legs are not labeled.          40^\\circ  x         Write the lengths of both legs in terms of .    The leg opposite the angle is , since . The leg adjacent to it is .      The perimeter of the triangle is . Find .    Add the three sides and factor out .            Problem 5: A Ladder   Problems 5, 7, and 8 do not include a picture. Draw one before you start.  Ladder safety guidelines recommend setting up an extension ladder at an angle of about with the ground. A -foot ladder leans against a house at this angle.     How high up the house does the ladder reach?    The ladder is the hypotenuse and the height is opposite the angle, so . Then feet.      How far from the house should the base of the ladder be placed?    The distance is adjacent to the angle, so it is feet. This matches the rule of thumb of about foot out for every feet up.           Problem 6: Two Angles of Elevation   From point , the angle of elevation to the top of a building is . After walking feet straight toward the building to point , the angle of elevation is . Let be the height of the building and the distance from to the building.   Two sight lines from points P and Q on the ground to the top of a building of height h.  A vertical building of height h stands at the right. Point P is on the ground at the left, and point Q is 50 feet closer to the building. The distance from Q to the building is d. A line from P to the top of the building makes a 40 degree angle with the ground, and a line from Q to the top makes a 55 degree angle.           P  Q  40^\\circ  55^\\circ  50  d  h         Write two equations involving and , one for each right triangle.    From , , so . From , the horizontal distance is , so .      Solve for , then find the height of the building.    Set the two expressions for equal.   Then feet.           Problem 7: Watching a Launch   A camera is set up on level ground miles from a rocket's launch pad. The rocket rises straight up.     What is the angle of elevation from the camera to the rocket when the rocket is miles high?    The height is opposite the angle and the distance is adjacent, so and .      How far is the rocket from the camera at that moment?    By the Pythagorean Theorem, the distance is miles.           Problem 8: A Wheelchair Ramp   The Americans with Disabilities Act (ADA) requires that a wheelchair ramp rise no more than inch for every inches of horizontal distance. A ramp is being built to the front door of a building, which is inches above the sidewalk.     What is the steepest angle a ramp can make with the ground and still meet this rule?    The rise is opposite the angle and the horizontal distance is adjacent, so and .      At this steepest angle, how much horizontal distance does the ramp need? How long is the ramp itself?    The horizontal distance is inches, or feet. The ramp is the hypotenuse, so its length is inches, a little more than feet. Using trig instead, the length is inches.      "
+},
+{
+  "id": "lt11-right-triangles-2",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-right-triangles-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  Given a right triangle with partial information about its sides and angles, I can determine the missing information for the remaining sides and angles, even if the quantities involve an unknown variable.   "
+},
+{
+  "id": "lt11-tri-two-sides",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-two-sides",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Two Sides Known.",
+  "body": " Problem 1: Two Sides Known   In the right triangle below, the right angle is at . All angles are measured in degrees.   A right triangle ABC with the right angle at C, leg AC of length 8, leg BC of length a, and hypotenuse AB of length 17.  Right triangle with vertex C at the lower left, vertex B at the lower right, and vertex A directly above C. The vertical leg from C to A has length 8. The horizontal leg from C to B is labeled a. The hypotenuse from A to B has length 17. A small square at C marks the right angle.          A  B  C  8  a  17         Find the value of .    By the Pythagorean Theorem,       Find the exact values of , , , , , and .    From angle , the opposite side is , the adjacent side is , and the hypotenuse is . From angle , the opposite side is and the adjacent side is .  , , , , , and .      Find the angles and in degrees. Round to two decimal places.    . Since the angles of a triangle add to and , . As a check, .    "
+},
+{
+  "id": "lt11-tri-angle-side",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-angle-side",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: One Angle and One Side Known.",
+  "body": " Problem 2: One Angle and One Side Known   In the right triangle below, the right angle is at , angle measures , and side has length .   A right triangle with a 35 degree angle at A, adjacent leg 12, opposite leg y, and hypotenuse z.  Right triangle with vertex C at the lower left, vertex A at the lower right, and vertex B directly above C. The horizontal leg from C to A has length 12. The vertical leg from C to B is labeled y. The hypotenuse from A to B is labeled z. The angle at A is 35 degrees, and a small square at C marks the right angle.          A  B  C  35^\\circ  12  y  z         Find the angle .    .      Find . Give the exact value using a trig function, then round to two decimal places.    From angle , is opposite and is adjacent, so . Then .      Find . Give the exact value using a trig function, then round to two decimal places.    From angle , is adjacent and is the hypotenuse, so . Then . As a check, and .    "
+},
+{
+  "id": "lt11-tri-variable-sides",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-variable-sides",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Sides in Terms of a Variable.",
+  "body": " Problem 3: Sides in Terms of a Variable   The legs of a right triangle have lengths and , and the hypotenuse has length .   A right triangle with legs x and x plus 7 and hypotenuse 13.  Right triangle with the right angle at the lower left. The vertical leg is labeled x, the horizontal leg is labeled x plus 7, and the hypotenuse is labeled 13. The angle at the lower right vertex is labeled theta.          x  x + 7  13  \\theta         Find .    By the Pythagorean Theorem,   So or . A side length cannot be negative, so , and the legs are and .      Find , , and in degrees.    The side opposite is and the adjacent side is , so and . Then .    "
+},
+{
+  "id": "lt11-tri-variable-hyp",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-variable-hyp",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: An Unknown Hypotenuse.",
+  "body": " Problem 4: An Unknown Hypotenuse   A right triangle has a hypotenuse of length and an angle of .   A right triangle with hypotenuse x and a 40 degree angle.  Right triangle with the right angle at the lower left. The angle at the lower right vertex is 40 degrees. The hypotenuse is labeled x. The legs are not labeled.          40^\\circ  x         Write the lengths of both legs in terms of .    The leg opposite the angle is , since . The leg adjacent to it is .      The perimeter of the triangle is . Find .    Add the three sides and factor out .     "
+},
+{
+  "id": "lt11-tri-ladder",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-ladder",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: A Ladder.",
+  "body": " Problem 5: A Ladder   Problems 5, 7, and 8 do not include a picture. Draw one before you start.  Ladder safety guidelines recommend setting up an extension ladder at an angle of about with the ground. A -foot ladder leans against a house at this angle.     How high up the house does the ladder reach?    The ladder is the hypotenuse and the height is opposite the angle, so . Then feet.      How far from the house should the base of the ladder be placed?    The distance is adjacent to the angle, so it is feet. This matches the rule of thumb of about foot out for every feet up.    "
+},
+{
+  "id": "lt11-tri-two-angles",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-two-angles",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: Two Angles of Elevation.",
+  "body": " Problem 6: Two Angles of Elevation   From point , the angle of elevation to the top of a building is . After walking feet straight toward the building to point , the angle of elevation is . Let be the height of the building and the distance from to the building.   Two sight lines from points P and Q on the ground to the top of a building of height h.  A vertical building of height h stands at the right. Point P is on the ground at the left, and point Q is 50 feet closer to the building. The distance from Q to the building is d. A line from P to the top of the building makes a 40 degree angle with the ground, and a line from Q to the top makes a 55 degree angle.           P  Q  40^\\circ  55^\\circ  50  d  h         Write two equations involving and , one for each right triangle.    From , , so . From , the horizontal distance is , so .      Solve for , then find the height of the building.    Set the two expressions for equal.   Then feet.    "
+},
+{
+  "id": "lt11-tri-rocket",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-rocket",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem 7: Watching a Launch.",
+  "body": " Problem 7: Watching a Launch   A camera is set up on level ground miles from a rocket's launch pad. The rocket rises straight up.     What is the angle of elevation from the camera to the rocket when the rocket is miles high?    The height is opposite the angle and the distance is adjacent, so and .      How far is the rocket from the camera at that moment?    By the Pythagorean Theorem, the distance is miles.    "
+},
+{
+  "id": "lt11-tri-ramp",
+  "level": "2",
+  "url": "lt11-right-triangles.html#lt11-tri-ramp",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Problem 8: A Wheelchair Ramp.",
+  "body": " Problem 8: A Wheelchair Ramp   The Americans with Disabilities Act (ADA) requires that a wheelchair ramp rise no more than inch for every inches of horizontal distance. A ramp is being built to the front door of a building, which is inches above the sidewalk.     What is the steepest angle a ramp can make with the ground and still meet this rule?    The rise is opposite the angle and the horizontal distance is adjacent, so and .      At this steepest angle, how much horizontal distance does the ramp need? How long is the ramp itself?    The horizontal distance is inches, or feet. The ramp is the hypotenuse, so its length is inches, a little more than feet. Using trig instead, the length is inches.    "
+},
+{
+  "id": "lt12-polynomials",
+  "level": "1",
+  "url": "lt12-polynomials.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Learning Target 12: Polynomial Functions",
+  "body": " Learning Target 12: Polynomial Functions    I can identify the degree, zeros, turning points, and long-range behavior of a polynomial given its formula or graph, and I can find the formula of a polynomial that fits given data about its behavior.         Problem 1: Degree and Leading Coefficient   For each function, decide whether it is a polynomial. If it is, state its degree and leading coefficient.        This is a polynomial. The highest power is , so the degree is and the leading coefficient is . The terms do not have to be written in order.         Not a polynomial. Since , one term has a fractional power.         Not a polynomial. Since , one term has a negative power.         This is a polynomial. Coefficients like and are allowed, since only the powers of must be whole numbers. The degree is and the leading coefficient is .           Problem 2: Zeros and Turning Points   A polynomial of degree has at most real zeros and at most turning points.     A polynomial has degree . What is the maximum number of real zeros it can have? What is the maximum number of turning points?    At most real zeros and at most turning points.      The graph of a polynomial has exactly turning points. What is the smallest possible degree?    A polynomial of degree has at most turning points, so we need . The smallest possible degree is .      Can a polynomial of degree have no real zeros? Explain using the long-range behavior.    No. For an odd-degree polynomial, the two ends of the graph go in opposite directions, one toward and one toward . A graph with no breaks that goes from below the -axis to above it must cross the axis at least once.           Problem 3: Reading a Factored Formula   Let .     List the zeros of and the multiplicity of each. At which zeros does the graph cross the -axis, and at which does it touch the axis and turn around?    The zeros are (multiplicity ), (multiplicity ), and (multiplicity ). The graph crosses the axis at and , and touches the axis and turns around at , since that zero has even multiplicity.      What are the degree and leading coefficient of ?    Add the multiplicities: , so the degree is . Multiplying the leading terms gives , so the leading coefficient is .      Find the -intercept.    , so the -intercept is .      Find and .    For large , behaves like . The degree is even and the leading coefficient is negative, so both ends point down: and .           Problem 4: Long-Range Behavior   For each polynomial, find and . Explain using the leading term.        The leading term is : odd degree, negative leading coefficient. So as , and as .         The leading term is : even degree, positive leading coefficient. So in both directions. The small coefficient does not matter for long-range behavior, since eventually outgrows .         Multiplying the leading terms gives : odd degree, positive leading coefficient. So as and as .           Problem 5: A Formula from a Graph   The graph of a polynomial is shown below. The dots mark the -intercepts and the -intercept .   The graph of a polynomial q crossing the x-axis at negative three and four, touching it at one, with y-intercept negative three.  The graph of q comes down from the upper left, crosses the x-axis at negative three, falls to a low point near negative two, negative thirteen point seven, rises through the y-intercept zero, negative three, and touches the x-axis at one without crossing. It falls again to a low point near three, negative six, then rises, crossing the x-axis at four and continuing up to the upper right.    q(x) = 0.25*(x + 3)*(x - 1)^2*(x - 4)         y = q(x)         List the zeros of . For each one, say whether the graph crosses or touches the -axis, and what that tells you about its multiplicity.    The graph crosses at and , so those zeros have odd multiplicity; the simplest choice is . It touches and turns around at , so that zero has even multiplicity; the simplest choice is .      How many turning points does the graph have? What is the minimum degree of ?    There are turning points, so the degree is at least . This agrees with the multiplicities: .      Find a formula for of minimum degree. Use the -intercept to find the leading coefficient, and check your answer in Desmos.    The zeros give . Use the point .   So .      Based on the graph, find and . Does this match your formula?    Both ends go up, so both limits are . This matches the formula: the degree is even and the leading coefficient is positive.           Problem 6: A Formula from Conditions   Find the polynomial of least degree that has   a zero of multiplicity at ,  a zero of multiplicity at , and  a -intercept of .      Find the formula for . What is its degree?    The zeros require the factors and , so , with degree . Use the -intercept.   So .      Describe the long-range behavior of .    The leading term is : odd degree, positive leading coefficient. So as and as .           Problem 7: Using a Point Other Than the Intercept   A polynomial of degree has zeros at and , and a zero at where the graph touches the -axis without crossing. The graph also passes through the point .     Find the formula for .    Touching the axis at means even multiplicity, and the total degree must be , so . Use the point .   So .      Compare to the polynomial from Problem 5. How are the graphs related, and how is the long-range behavior different?    They have the same zeros with the same multiplicities, so the graphs cross and touch the axis at the same places. Since , the graph of is the graph of flipped over the -axis and stretched vertically. Both ends of point down: as .      "
+},
+{
+  "id": "lt12-polynomials-2",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-polynomials-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  I can identify the degree, zeros, turning points, and long-range behavior of a polynomial given its formula or graph, and I can find the formula of a polynomial that fits given data about its behavior.   "
+},
+{
+  "id": "lt12-poly-definition",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-definition",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Degree and Leading Coefficient.",
+  "body": " Problem 1: Degree and Leading Coefficient   For each function, decide whether it is a polynomial. If it is, state its degree and leading coefficient.        This is a polynomial. The highest power is , so the degree is and the leading coefficient is . The terms do not have to be written in order.         Not a polynomial. Since , one term has a fractional power.         Not a polynomial. Since , one term has a negative power.         This is a polynomial. Coefficients like and are allowed, since only the powers of must be whole numbers. The degree is and the leading coefficient is .    "
+},
+{
+  "id": "lt12-poly-counts",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-counts",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Zeros and Turning Points.",
+  "body": " Problem 2: Zeros and Turning Points   A polynomial of degree has at most real zeros and at most turning points.     A polynomial has degree . What is the maximum number of real zeros it can have? What is the maximum number of turning points?    At most real zeros and at most turning points.      The graph of a polynomial has exactly turning points. What is the smallest possible degree?    A polynomial of degree has at most turning points, so we need . The smallest possible degree is .      Can a polynomial of degree have no real zeros? Explain using the long-range behavior.    No. For an odd-degree polynomial, the two ends of the graph go in opposite directions, one toward and one toward . A graph with no breaks that goes from below the -axis to above it must cross the axis at least once.    "
+},
+{
+  "id": "lt12-poly-factored",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-factored",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Reading a Factored Formula.",
+  "body": " Problem 3: Reading a Factored Formula   Let .     List the zeros of and the multiplicity of each. At which zeros does the graph cross the -axis, and at which does it touch the axis and turn around?    The zeros are (multiplicity ), (multiplicity ), and (multiplicity ). The graph crosses the axis at and , and touches the axis and turns around at , since that zero has even multiplicity.      What are the degree and leading coefficient of ?    Add the multiplicities: , so the degree is . Multiplying the leading terms gives , so the leading coefficient is .      Find the -intercept.    , so the -intercept is .      Find and .    For large , behaves like . The degree is even and the leading coefficient is negative, so both ends point down: and .    "
+},
+{
+  "id": "lt12-poly-long-run",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-long-run",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Long-Range Behavior.",
+  "body": " Problem 4: Long-Range Behavior   For each polynomial, find and . Explain using the leading term.        The leading term is : odd degree, negative leading coefficient. So as , and as .         The leading term is : even degree, positive leading coefficient. So in both directions. The small coefficient does not matter for long-range behavior, since eventually outgrows .         Multiplying the leading terms gives : odd degree, positive leading coefficient. So as and as .    "
+},
+{
+  "id": "lt12-poly-graph",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-graph",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: A Formula from a Graph.",
+  "body": " Problem 5: A Formula from a Graph   The graph of a polynomial is shown below. The dots mark the -intercepts and the -intercept .   The graph of a polynomial q crossing the x-axis at negative three and four, touching it at one, with y-intercept negative three.  The graph of q comes down from the upper left, crosses the x-axis at negative three, falls to a low point near negative two, negative thirteen point seven, rises through the y-intercept zero, negative three, and touches the x-axis at one without crossing. It falls again to a low point near three, negative six, then rises, crossing the x-axis at four and continuing up to the upper right.    q(x) = 0.25*(x + 3)*(x - 1)^2*(x - 4)         y = q(x)         List the zeros of . For each one, say whether the graph crosses or touches the -axis, and what that tells you about its multiplicity.    The graph crosses at and , so those zeros have odd multiplicity; the simplest choice is . It touches and turns around at , so that zero has even multiplicity; the simplest choice is .      How many turning points does the graph have? What is the minimum degree of ?    There are turning points, so the degree is at least . This agrees with the multiplicities: .      Find a formula for of minimum degree. Use the -intercept to find the leading coefficient, and check your answer in Desmos.    The zeros give . Use the point .   So .      Based on the graph, find and . Does this match your formula?    Both ends go up, so both limits are . This matches the formula: the degree is even and the leading coefficient is positive.    "
+},
+{
+  "id": "lt12-poly-conditions-1",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-conditions-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: A Formula from Conditions.",
+  "body": " Problem 6: A Formula from Conditions   Find the polynomial of least degree that has   a zero of multiplicity at ,  a zero of multiplicity at , and  a -intercept of .      Find the formula for . What is its degree?    The zeros require the factors and , so , with degree . Use the -intercept.   So .      Describe the long-range behavior of .    The leading term is : odd degree, positive leading coefficient. So as and as .    "
+},
+{
+  "id": "lt12-poly-conditions-2",
+  "level": "2",
+  "url": "lt12-polynomials.html#lt12-poly-conditions-2",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem 7: Using a Point Other Than the Intercept.",
+  "body": " Problem 7: Using a Point Other Than the Intercept   A polynomial of degree has zeros at and , and a zero at where the graph touches the -axis without crossing. The graph also passes through the point .     Find the formula for .    Touching the axis at means even multiplicity, and the total degree must be , so . Use the point .   So .      Compare to the polynomial from Problem 5. How are the graphs related, and how is the long-range behavior different?    They have the same zeros with the same multiplicities, so the graphs cross and touch the axis at the same places. Since , the graph of is the graph of flipped over the -axis and stretched vertically. Both ends of point down: as .    "
+},
+{
   "id": "mth124-writing-assignment-1",
   "level": "1",
   "url": "mth124-writing-assignment-1.html",
@@ -728,6 +1277,42 @@ var ptx_lunr_docs = [
   "number": "6",
   "title": "Interpreting the Average Rate of Change.",
   "body": " Interpreting the Average Rate of Change   Explain what your average rate of change from the previous problem means in the context of your data. Remember to address all 5 key parts of an interpretation.   "
+},
+{
+  "id": "mth124-writing-assignment-2",
+  "level": "1",
+  "url": "mth124-writing-assignment-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Assignment 2: Difference Quotients, Linear Models, and Inverses",
+  "body": " Writing Assignment 2: Difference Quotients, Linear Models, and Inverses   This assignment covers Learning Targets 3 through 5.    Be as detailed as possible when writing up a solution, and show all of your work.  You may use any resource, but do not directly copy work that is not your own.  You may work with a partner, but it is not required. If you work with a partner, each of you should write at least two parts, and initial each part you write.   Submit your final solutions on these pages, and upload a clean, high-quality scan of every page to Blackboard when you are done.  Each question includes a short video on the same topic if you would like a refresher.        The Difference Quotient    Video: the difference quotient       Find an expression for the average rate of change of on the interval . Simplify as much as possible.   Hint: The difference quotient formula is . Your last step should involve canceling an .       For what value of do we need to be careful, and why?         Filling a Gas Tank   Suppose you start filling a vehicle's gas tank with gasoline. After seconds the tank has gallons, and after minute the tank has gallons. Assume the fill rate is constant.    Video: building a linear model       Find a linear model for , the volume in gallons in the tank after  minutes .      What does the slope mean in the context of this problem?      How much gas was in the tank before you started filling it?      Assuming the tank holds gallons, how long does it take to fill the tank from when you started?         Finding an Inverse   Find the inverse of the function . Show all algebraic steps clearly.   Video: finding the inverse of a function       "
+},
+{
+  "id": "wa2-124-difference-quotient",
+  "level": "2",
+  "url": "mth124-writing-assignment-2.html#wa2-124-difference-quotient",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "The Difference Quotient.",
+  "body": " The Difference Quotient    Video: the difference quotient       Find an expression for the average rate of change of on the interval . Simplify as much as possible.   Hint: The difference quotient formula is . Your last step should involve canceling an .       For what value of do we need to be careful, and why?    "
+},
+{
+  "id": "wa2-124-gas-tank",
+  "level": "2",
+  "url": "mth124-writing-assignment-2.html#wa2-124-gas-tank",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Filling a Gas Tank.",
+  "body": " Filling a Gas Tank   Suppose you start filling a vehicle's gas tank with gasoline. After seconds the tank has gallons, and after minute the tank has gallons. Assume the fill rate is constant.    Video: building a linear model       Find a linear model for , the volume in gallons in the tank after  minutes .      What does the slope mean in the context of this problem?      How much gas was in the tank before you started filling it?      Assuming the tank holds gallons, how long does it take to fill the tank from when you started?    "
+},
+{
+  "id": "wa2-124-inverse",
+  "level": "2",
+  "url": "mth124-writing-assignment-2.html#wa2-124-inverse",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Finding an Inverse.",
+  "body": " Finding an Inverse   Find the inverse of the function . Show all algebraic steps clearly.   Video: finding the inverse of a function     "
 }
 ]
 

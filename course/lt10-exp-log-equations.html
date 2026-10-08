@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Learning Target 10: Solving Exponential and Logarithmic Equations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Course Name (change me)">
+<meta property="og:title" content="Course Name (change me)">
+<meta property="book:title" content="Course Name (change me)">
+<meta name="twitter:description" content="MATH xxx Semester 20xx">
+<meta property="og:description" content="MATH xxx Semester 20xx">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.7e4cb14f24eb489b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.54371ed119fe41be.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.40d828091d93b733.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></div>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="lt9-graph-shape.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="lt-practice.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="lt11-right-triangles.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul id="ptx-toc-group-course-notes" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="course-notes-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul id="ptx-toc-group-notes-week-01" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul id="ptx-toc-group-notes-week-02" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="activities-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-function-fundamentals.html" class="internal"><span class="title">Activity: Function Fundamentals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-act-average-rate-of-change.html" class="internal"><span class="title">Activity: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-act-linear-functions.html" class="internal"><span class="title">Activity: Linear Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="lt-practice.html" class="internal"><span class="title">Practice Learning Targets</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-lt-practice">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-function-notation.html" class="internal"><span class="title">Learning Target 1: Function Notation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-average-rate-of-change.html" class="internal"><span class="title">Learning Target 2: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-linear-functions.html" class="internal"><span class="title">Learning Target 3: Linear Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-composition.html" class="internal"><span class="title">Learning Target 4: Composition of Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt5-inverses.html" class="internal"><span class="title">Learning Target 5: Inverse Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt6-circular.html" class="internal"><span class="title">Learning Target 6: Graphs of Circular Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt7-sinusoidal.html" class="internal"><span class="title">Learning Target 7: Transformed Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt8-exponential.html" class="internal"><span class="title">Learning Target 8: Finding Exponential Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt9-graph-shape.html" class="internal"><span class="title">Learning Target 9: Increasing, Decreasing, and Concavity</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="lt10-exp-log-equations.html" class="internal"><span class="title">Learning Target 10: Solving Exponential and Logarithmic Equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt11-right-triangles.html" class="internal"><span class="title">Learning Target 11: Right Triangles</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt12-polynomials.html" class="internal"><span class="title">Learning Target 12: Polynomial Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="writing.html" class="internal"><span class="title">Writing Assignments</span></a></div>
+<ul id="ptx-toc-group-writing" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-writing-assignment-1.html" class="internal"><span class="title">Writing Assignment 1: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-writing-assignment-2.html" class="internal"><span class="title">Writing Assignment 2: Difference Quotients, Linear Models, and Inverses</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="lt10-exp-log-equations" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Target 10: Solving Exponential and Logarithmic Equations</span><div class="print-links"><a href="?printpreview=lt10-exp-log-equations" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<article class="objectives goal-like" id="lt10-exp-log-equations-2"><h2 class="heading"><span class="type">Objectives</span></h2>
+<ul class="disc" id="lt10-exp-log-equations-2-1">
+<li id="lt10-exp-log-equations-2-1-1">
+<div class="para" id="p-derived-lt10-exp-log-equations-2-1-1">I can find exact solutions to equations involving exponential and logarithmic expressions in contextual settings.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective"><a tabindex="-1" href="#lt10-exp-log-equations-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives"><a tabindex="-1" href="#lt10-exp-log-equations-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
+</article><section class="onepage" id="lt10-exp-log-equations-3">
+<article class="exercise exercise-like" id="lt10-eq-base-e-10"><h2 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 1: Base <span class="process-math">\(e\)</span> and Base <span class="process-math">\(10\)</span>.</span>
+</h2>
+<div class="introduction" id="lt10-eq-base-e-10-2">
+<div class="para" id="lt10-eq-base-e-10-2-1">Solve each equation for <span class="process-math">\(x\text{.}\)</span> Give the exact solution first, then round to three decimal places.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-base-e-10-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-base-e-10-3-1-1">
+<span class="process-math">\(e^{3x} = 40\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-base-e-10-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-base-e-10-3-2-1">
+<div class="para">Take <span class="process-math">\(\ln\)</span> of both sides.</div>
+<div class="displaymath process-math" id="lt10-eq-base-e-10-3-2-1-2">
+\begin{align*}
+\ln\left(e^{3x}\right) \amp= \ln(40)\\
+3x \amp= \ln(40)\\
+x \amp= \frac{\ln(40)}{3} \approx 1.230
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.a.1"><a tabindex="-1" href="#lt10-eq-base-e-10-3-2" title="Copy heading and permalink for Answer 1.a.1" aria-label="Copy heading and permalink for Answer 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#lt10-eq-base-e-10-3" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-base-e-10-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-base-e-10-4-1-1">
+<span class="process-math">\(5e^{x + 2} - 7 = 18\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-base-e-10-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-base-e-10-4-2-1">
+<div class="para">Isolate the exponential expression first.</div>
+<div class="displaymath process-math" id="lt10-eq-base-e-10-4-2-1-1">
+\begin{align*}
+5e^{x + 2} \amp= 25\\
+e^{x + 2} \amp= 5\\
+x + 2 \amp= \ln(5)\\
+x \amp= \ln(5) - 2 \approx -0.391
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.b.1"><a tabindex="-1" href="#lt10-eq-base-e-10-4-2" title="Copy heading and permalink for Answer 1.b.1" aria-label="Copy heading and permalink for Answer 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#lt10-eq-base-e-10-4" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-base-e-10-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt10-eq-base-e-10-5-1-1">
+<span class="process-math">\(10^{2x} = 500\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-base-e-10-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-base-e-10-5-2-1">
+<div class="para">Take <span class="process-math">\(\log\)</span> of both sides.</div>
+<div class="displaymath process-math" id="lt10-eq-base-e-10-5-2-1-2">
+\begin{align*}
+2x \amp= \log(500)\\
+x \amp= \frac{\log(500)}{2} \approx 1.349
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.c.1"><a tabindex="-1" href="#lt10-eq-base-e-10-5-2" title="Copy heading and permalink for Answer 1.c.1" aria-label="Copy heading and permalink for Answer 1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#lt10-eq-base-e-10-5" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-base-e-10-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt10-eq-base-e-10-6-1-1">
+<span class="process-math">\(4 \cdot 10^{x - 1} + 3 = 35\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-base-e-10-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-base-e-10-6-2-1">
+<div class="displaymath process-math" id="lt10-eq-base-e-10-6-2-1-1">
+\begin{align*}
+4 \cdot 10^{x - 1} \amp= 32\\
+10^{x - 1} \amp= 8\\
+x - 1 \amp= \log(8)\\
+x \amp= 1 + \log(8) \approx 1.903
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-base-e-10-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.d.1"><a tabindex="-1" href="#lt10-eq-base-e-10-6-2" title="Copy heading and permalink for Answer 1.d.1" aria-label="Copy heading and permalink for Answer 1.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#lt10-eq-base-e-10-6" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1: Problem 1: Base e and Base 10"><a tabindex="-1" href="#lt10-eq-base-e-10" title="Copy heading and permalink for Worksheet Exercise 1: Problem 1: Base e and Base 10" aria-label="Copy heading and permalink for Worksheet Exercise 1: Problem 1: Base e and Base 10">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-4">
+<article class="exercise exercise-like" id="lt10-eq-other-bases"><h2 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 2: Other Bases.</span>
+</h2>
+<div class="introduction" id="lt10-eq-other-bases-2">
+<div class="para" id="lt10-eq-other-bases-2-1">Solve each equation for <span class="process-math">\(x\text{.}\)</span> You can take <span class="process-math">\(\ln\)</span> of both sides and use the power rule <span class="process-math">\(\ln\left(b^x\right) = x\ln(b)\text{,}\)</span> or rewrite both sides with a common base when possible. Give exact solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-other-bases-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-other-bases-3-1-1">
+<span class="process-math">\(2^x = 50\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-other-bases-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-other-bases-3-2-1">
+<div class="displaymath process-math" id="lt10-eq-other-bases-3-2-1-1">
+\begin{align*}
+x\ln(2) \amp= \ln(50)\\
+x \amp= \frac{\ln(50)}{\ln(2)} \approx 5.644
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-other-bases-3-2-2">This can also be written as <span class="process-math">\(x = \log_2(50)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.a.1"><a tabindex="-1" href="#lt10-eq-other-bases-3-2" title="Copy heading and permalink for Answer 2.a.1" aria-label="Copy heading and permalink for Answer 2.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#lt10-eq-other-bases-3" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-other-bases-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-other-bases-4-1-1">
+<span class="process-math">\(6 \cdot 3^{x - 1} = 90\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-other-bases-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-other-bases-4-2-1">
+<div class="displaymath process-math" id="lt10-eq-other-bases-4-2-1-1">
+\begin{align*}
+3^{x - 1} \amp= 15\\
+(x - 1)\ln(3) \amp= \ln(15)\\
+x \amp= 1 + \frac{\ln(15)}{\ln(3)} \approx 3.465
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.b.1"><a tabindex="-1" href="#lt10-eq-other-bases-4-2" title="Copy heading and permalink for Answer 2.b.1" aria-label="Copy heading and permalink for Answer 2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#lt10-eq-other-bases-4" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-other-bases-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt10-eq-other-bases-5-1-1">
+<span class="process-math">\(8^x = 4^{x + 1}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-other-bases-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-other-bases-5-2-1">
+<div class="para">Both <span class="process-math">\(8\)</span> and <span class="process-math">\(4\)</span> are powers of <span class="process-math">\(2\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="lt10-eq-other-bases-5-2-1-4">
+\begin{align*}
+\left(2^3\right)^x \amp= \left(2^2\right)^{x + 1}\\
+2^{3x} \amp= 2^{2x + 2}\\
+3x \amp= 2x + 2\\
+x \amp= 2
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.c.1"><a tabindex="-1" href="#lt10-eq-other-bases-5-2" title="Copy heading and permalink for Answer 2.c.1" aria-label="Copy heading and permalink for Answer 2.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#lt10-eq-other-bases-5" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-other-bases-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt10-eq-other-bases-6-1-1">
+<span class="process-math">\(5^{2x} = 3^{x + 1}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-other-bases-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-other-bases-6-2-1">
+<div class="para">There is no common base, so take <span class="process-math">\(\ln\)</span> of both sides and collect the <span class="process-math">\(x\)</span> terms.</div>
+<div class="displaymath process-math" id="lt10-eq-other-bases-6-2-1-3">
+\begin{align*}
+2x\ln(5) \amp= (x + 1)\ln(3)\\
+2x\ln(5) - x\ln(3) \amp= \ln(3)\\
+x\left(2\ln(5) - \ln(3)\right) \amp= \ln(3)\\
+x \amp= \frac{\ln(3)}{2\ln(5) - \ln(3)} \approx 0.518
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-other-bases-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.d.1"><a tabindex="-1" href="#lt10-eq-other-bases-6-2" title="Copy heading and permalink for Answer 2.d.1" aria-label="Copy heading and permalink for Answer 2.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.75in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#lt10-eq-other-bases-6" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2: Problem 2: Other Bases"><a tabindex="-1" href="#lt10-eq-other-bases" title="Copy heading and permalink for Worksheet Exercise 2: Problem 2: Other Bases" aria-label="Copy heading and permalink for Worksheet Exercise 2: Problem 2: Other Bases">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-5">
+<article class="exercise exercise-like" id="lt10-eq-logs"><h2 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 3: Equations with Logarithms.</span>
+</h2>
+<div class="introduction" id="lt10-eq-logs-2">
+<div class="para" id="lt10-eq-logs-2-1">Solve each equation for <span class="process-math">\(x\text{.}\)</span> Isolate the logarithm, then rewrite the equation in exponential form. Give exact solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-logs-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-logs-3-1-1">
+<span class="process-math">\(\ln(x) = 4\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-logs-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-logs-3-2-1">In exponential form, <span class="process-math">\(x = e^4 \approx 54.598\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.a.1"><a tabindex="-1" href="#lt10-eq-logs-3-2" title="Copy heading and permalink for Answer 3.a.1" aria-label="Copy heading and permalink for Answer 3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#lt10-eq-logs-3" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-logs-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-logs-4-1-1">
+<span class="process-math">\(\log(3x - 2) = 2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-logs-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-logs-4-2-1">
+<div class="displaymath process-math" id="lt10-eq-logs-4-2-1-1">
+\begin{align*}
+3x - 2 \amp= 10^2 = 100\\
+x \amp= 34
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.b.1"><a tabindex="-1" href="#lt10-eq-logs-4-2" title="Copy heading and permalink for Answer 3.b.1" aria-label="Copy heading and permalink for Answer 3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#lt10-eq-logs-4" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-logs-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt10-eq-logs-5-1-1">
+<span class="process-math">\(2\ln(x + 1) - 3 = 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-logs-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-logs-5-2-1">
+<div class="displaymath process-math" id="lt10-eq-logs-5-2-1-1">
+\begin{align*}
+2\ln(x + 1) \amp= 8\\
+\ln(x + 1) \amp= 4\\
+x + 1 \amp= e^4\\
+x \amp= e^4 - 1 \approx 53.598
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.c.1"><a tabindex="-1" href="#lt10-eq-logs-5-2" title="Copy heading and permalink for Answer 3.c.1" aria-label="Copy heading and permalink for Answer 3.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#lt10-eq-logs-5" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-logs-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt10-eq-logs-6-1-1">
+<span class="process-math">\(\log_2(x) + 3 = 8\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-logs-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-logs-6-2-1">
+<span class="process-math">\(\log_2(x) = 5\text{,}\)</span> so <span class="process-math">\(x = 2^5 = 32\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-logs-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.d.1"><a tabindex="-1" href="#lt10-eq-logs-6-2" title="Copy heading and permalink for Answer 3.d.1" aria-label="Copy heading and permalink for Answer 3.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#lt10-eq-logs-6" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3: Problem 3: Equations with Logarithms"><a tabindex="-1" href="#lt10-eq-logs" title="Copy heading and permalink for Worksheet Exercise 3: Problem 3: Equations with Logarithms" aria-label="Copy heading and permalink for Worksheet Exercise 3: Problem 3: Equations with Logarithms">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-6">
+<article class="exercise exercise-like" id="lt10-eq-savings"><h2 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 4: Saving for a Goal.</span>
+</h2>
+<div class="introduction" id="lt10-eq-savings-2">
+<div class="para" id="lt10-eq-savings-2-1">You deposit <span class="process-math">\(\$2{,}000\)</span> into a savings account that earns <span class="process-math">\(4.5\%\)</span> annual interest, compounded monthly. The balance after <span class="process-math">\(t\)</span> years is <span class="process-math">\(A(t) = 2000\left(1 + \frac{0.045}{12}\right)^{12t}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-savings-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-savings-3-1-1">How long will it take for the balance to reach <span class="process-math">\(\$3{,}000\text{?}\)</span> Give the exact answer, then round to two decimal places.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-savings-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-savings-3-2-1">
+<div class="displaymath process-math" id="lt10-eq-savings-3-2-1-1">
+\begin{align*}
+3000 \amp= 2000\left(1 + \tfrac{0.045}{12}\right)^{12t}\\
+1.5 \amp= (1.00375)^{12t}\\
+\ln(1.5) \amp= 12t\ln(1.00375)\\
+t \amp= \frac{\ln(1.5)}{12\ln(1.00375)} \approx 9.03
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-savings-3-2-2">It takes about <span class="process-math">\(9.03\)</span> years.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.a.1"><a tabindex="-1" href="#lt10-eq-savings-3-2" title="Copy heading and permalink for Answer 4.a.1" aria-label="Copy heading and permalink for Answer 4.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#lt10-eq-savings-3" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-savings-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-savings-4-1-1">About how many monthly compounding periods is that? How can you get this number without solving a new equation?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-savings-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-savings-4-2-1">Each year has <span class="process-math">\(12\)</span> compounding periods, so <span class="process-math">\(12t = \frac{\ln(1.5)}{\ln(1.00375)} \approx 108.3\text{.}\)</span> The balance passes <span class="process-math">\(\$3{,}000\)</span> in the <span class="process-math">\(109\)</span>th month.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-savings-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.b.1"><a tabindex="-1" href="#lt10-eq-savings-4-2" title="Copy heading and permalink for Answer 4.b.1" aria-label="Copy heading and permalink for Answer 4.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#lt10-eq-savings-4" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4: Problem 4: Saving for a Goal"><a tabindex="-1" href="#lt10-eq-savings" title="Copy heading and permalink for Worksheet Exercise 4: Problem 4: Saving for a Goal" aria-label="Copy heading and permalink for Worksheet Exercise 4: Problem 4: Saving for a Goal">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-7">
+<article class="exercise exercise-like" id="lt10-eq-car"><h2 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 5: A Used Car.</span>
+</h2>
+<div class="introduction" id="lt10-eq-car-2">
+<div class="para" id="lt10-eq-car-2-1">You buy a used car for <span class="process-math">\(\$18{,}000\text{.}\)</span> Its value decreases by <span class="process-math">\(15\%\)</span> each year.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-car-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-car-3-1-1">Write a function <span class="process-math">\(V(t)\)</span> for the value of the car in dollars <span class="process-math">\(t\)</span> years after you buy it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-car-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-car-3-2-1">
+<span class="process-math">\(V(t) = 18000(0.85)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.a.1"><a tabindex="-1" href="#lt10-eq-car-3-2" title="Copy heading and permalink for Answer 5.a.1" aria-label="Copy heading and permalink for Answer 5.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#lt10-eq-car-3" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-car-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-car-4-1-1">How long until the car is worth half of what you paid? Give the exact answer and a decimal approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-car-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-car-4-2-1">
+<div class="displaymath process-math" id="lt10-eq-car-4-2-1-1">
+\begin{align*}
+9000 \amp= 18000(0.85)^t\\
+0.5 \amp= (0.85)^t\\
+t \amp= \frac{\ln(0.5)}{\ln(0.85)} \approx 4.27
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-car-4-2-2">The car is worth half its price after about <span class="process-math">\(4.27\)</span> years. Notice the answer does not depend on the price, only on the <span class="process-math">\(15\%\)</span> rate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-car-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.b.1"><a tabindex="-1" href="#lt10-eq-car-4-2" title="Copy heading and permalink for Answer 5.b.1" aria-label="Copy heading and permalink for Answer 5.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.75in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#lt10-eq-car-4" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5: Problem 5: A Used Car"><a tabindex="-1" href="#lt10-eq-car" title="Copy heading and permalink for Worksheet Exercise 5: Problem 5: A Used Car" aria-label="Copy heading and permalink for Worksheet Exercise 5: Problem 5: A Used Car">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-8">
+<article class="exercise exercise-like" id="lt10-eq-bacteria"><h2 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 6: Bacteria on a Countertop.</span>
+</h2>
+<div class="introduction" id="lt10-eq-bacteria-2">
+<div class="para" id="lt10-eq-bacteria-2-1">Under ideal conditions, <em class="emphasis">E. coli</em> bacteria can double about every <span class="process-math">\(20\)</span> minutes. A spill on a kitchen counter starts with <span class="process-math">\(100\)</span> bacteria. The number of bacteria after <span class="process-math">\(t\)</span> minutes is <span class="process-math">\(N(t) = 100 \cdot 2^{t/20}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-bacteria-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-bacteria-3-1-1">How long until there are <span class="process-math">\(1{,}000{,}000\)</span> bacteria? Give the exact answer, then convert to hours.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-bacteria-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-bacteria-3-2-1">
+<div class="displaymath process-math" id="lt10-eq-bacteria-3-2-1-1">
+\begin{align*}
+1{,}000{,}000 \amp= 100 \cdot 2^{t/20}\\
+10{,}000 \amp= 2^{t/20}\\
+\frac{t}{20}\ln(2) \amp= \ln(10{,}000)\\
+t \amp= \frac{20\ln(10{,}000)}{\ln(2)} \approx 265.8
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-bacteria-3-2-2">That is about <span class="process-math">\(265.8\)</span> minutes, or about <span class="process-math">\(4.4\)</span> hours. Wipe up your spills.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.a.1"><a tabindex="-1" href="#lt10-eq-bacteria-3-2" title="Copy heading and permalink for Answer 6.a.1" aria-label="Copy heading and permalink for Answer 6.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.75in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#lt10-eq-bacteria-3" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-bacteria-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-bacteria-4-1-1">Explain why the exponent in the model is <span class="process-math">\(\frac{t}{20}\)</span> and not <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-bacteria-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-bacteria-4-2-1">The population doubles once every <span class="process-math">\(20\)</span> minutes, not every minute. In <span class="process-math">\(t\)</span> minutes there are <span class="process-math">\(\frac{t}{20}\)</span> doubling periods, so the factor of <span class="process-math">\(2\)</span> is applied <span class="process-math">\(\frac{t}{20}\)</span> times.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-bacteria-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.b.1"><a tabindex="-1" href="#lt10-eq-bacteria-4-2" title="Copy heading and permalink for Answer 6.b.1" aria-label="Copy heading and permalink for Answer 6.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#lt10-eq-bacteria-4" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6: Problem 6: Bacteria on a Countertop"><a tabindex="-1" href="#lt10-eq-bacteria" title="Copy heading and permalink for Worksheet Exercise 6: Problem 6: Bacteria on a Countertop" aria-label="Copy heading and permalink for Worksheet Exercise 6: Problem 6: Bacteria on a Countertop">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-9">
+<article class="exercise exercise-like" id="lt10-eq-ibuprofen"><h2 class="heading">
+<span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 7: Half-Life of a Medication.</span>
+</h2>
+<div class="introduction" id="lt10-eq-ibuprofen-2">
+<div class="para" id="lt10-eq-ibuprofen-2-1">Ibuprofen has a half-life of about <span class="process-math">\(2\)</span> hours in the body. After a <span class="process-math">\(400\)</span> milligram dose, the amount remaining after <span class="process-math">\(t\)</span> hours is <span class="process-math">\(A(t) = 400\left(\frac{1}{2}\right)^{t/2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-ibuprofen-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-ibuprofen-3-1-1">When will <span class="process-math">\(50\)</span> milligrams remain? Solve without a calculator.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-ibuprofen-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-ibuprofen-3-2-1">
+<div class="displaymath process-math" id="lt10-eq-ibuprofen-3-2-1-1">
+\begin{align*}
+50 \amp= 400\left(\tfrac{1}{2}\right)^{t/2}\\
+\tfrac{1}{8} \amp= \left(\tfrac{1}{2}\right)^{t/2}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-ibuprofen-3-2-2">Since <span class="process-math">\(\frac{1}{8} = \left(\frac{1}{2}\right)^3\text{,}\)</span> we need <span class="process-math">\(\frac{t}{2} = 3\text{,}\)</span> so <span class="process-math">\(t = 6\)</span> hours.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 7.a.1"><a tabindex="-1" href="#lt10-eq-ibuprofen-3-2" title="Copy heading and permalink for Answer 7.a.1" aria-label="Copy heading and permalink for Answer 7.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 7.a"><a tabindex="-1" href="#lt10-eq-ibuprofen-3" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-ibuprofen-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-ibuprofen-4-1-1">When will <span class="process-math">\(30\)</span> milligrams remain? Give the exact answer and a decimal approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-ibuprofen-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-ibuprofen-4-2-1">
+<div class="displaymath process-math" id="lt10-eq-ibuprofen-4-2-1-1">
+\begin{align*}
+30 \amp= 400\left(\tfrac{1}{2}\right)^{t/2}\\
+0.075 \amp= (0.5)^{t/2}\\
+\frac{t}{2}\ln(0.5) \amp= \ln(0.075)\\
+t \amp= \frac{2\ln(0.075)}{\ln(0.5)} \approx 7.47
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-ibuprofen-4-2-2">About <span class="process-math">\(7.47\)</span> hours after the dose.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ibuprofen-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 7.b.1"><a tabindex="-1" href="#lt10-eq-ibuprofen-4-2" title="Copy heading and permalink for Answer 7.b.1" aria-label="Copy heading and permalink for Answer 7.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.75in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 7.b"><a tabindex="-1" href="#lt10-eq-ibuprofen-4" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7: Problem 7: Half-Life of a Medication"><a tabindex="-1" href="#lt10-eq-ibuprofen" title="Copy heading and permalink for Worksheet Exercise 7: Problem 7: Half-Life of a Medication" aria-label="Copy heading and permalink for Worksheet Exercise 7: Problem 7: Half-Life of a Medication">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-10">
+<article class="exercise exercise-like" id="lt10-eq-cooling"><h2 class="heading">
+<span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 8: Waiting for Coffee to Cool.</span>
+</h2>
+<div class="introduction" id="lt10-eq-cooling-2">
+<div class="para" id="lt10-eq-cooling-2-1">The temperature of a cup of coffee <span class="process-math">\(t\)</span> minutes after it is poured is <span class="process-math">\(F(t) = 70 + 120e^{-0.04t}\)</span> degrees Fahrenheit.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-cooling-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-cooling-3-1-1">What are the starting temperature of the coffee and the temperature of the room?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-cooling-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-cooling-3-2-1">The coffee starts at <span class="process-math">\(F(0) = 70 + 120 = 190^\circ\text{F}\text{.}\)</span> The room is <span class="process-math">\(70^\circ\text{F}\text{,}\)</span> the value the temperature approaches.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 8.a.1"><a tabindex="-1" href="#lt10-eq-cooling-3-2" title="Copy heading and permalink for Answer 8.a.1" aria-label="Copy heading and permalink for Answer 8.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 8.a"><a tabindex="-1" href="#lt10-eq-cooling-3" title="Copy heading and permalink for Task 8.a" aria-label="Copy heading and permalink for Task 8.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-cooling-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-cooling-4-1-1">When will the coffee reach <span class="process-math">\(140^\circ\text{F}\text{?}\)</span> Give the exact answer, then round to the nearest tenth of a minute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-cooling-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="lt10-eq-cooling-4-2-1">
+<div class="displaymath process-math" id="lt10-eq-cooling-4-2-1-1">
+\begin{align*}
+140 \amp= 70 + 120e^{-0.04t}\\
+\frac{70}{120} \amp= e^{-0.04t}\\
+\ln\left(\frac{7}{12}\right) \amp= -0.04t\\
+t \amp= \frac{\ln(7/12)}{-0.04} = 25\ln\left(\frac{12}{7}\right) \approx 13.5
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="lt10-eq-cooling-4-2-2">About <span class="process-math">\(13.5\)</span> minutes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 8.b.1"><a tabindex="-1" href="#lt10-eq-cooling-4-2" title="Copy heading and permalink for Answer 8.b.1" aria-label="Copy heading and permalink for Answer 8.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.75in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 8.b"><a tabindex="-1" href="#lt10-eq-cooling-4" title="Copy heading and permalink for Task 8.b" aria-label="Copy heading and permalink for Task 8.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-cooling-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt10-eq-cooling-5-1-1">Try to solve <span class="process-math">\(F(t) = 65\text{.}\)</span> What goes wrong, and what does that mean for the coffee?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-cooling-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-cooling-5-2-1">We get <span class="process-math">\(120e^{-0.04t} = -5\text{,}\)</span> but <span class="process-math">\(e^{-0.04t}\)</span> is always positive, so there is no solution. The coffee can never cool below the room temperature of <span class="process-math">\(70^\circ\text{F}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-cooling-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 8.c.1"><a tabindex="-1" href="#lt10-eq-cooling-5-2" title="Copy heading and permalink for Answer 8.c.1" aria-label="Copy heading and permalink for Answer 8.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 8.c"><a tabindex="-1" href="#lt10-eq-cooling-5" title="Copy heading and permalink for Task 8.c" aria-label="Copy heading and permalink for Task 8.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8: Problem 8: Waiting for Coffee to Cool"><a tabindex="-1" href="#lt10-eq-cooling" title="Copy heading and permalink for Worksheet Exercise 8: Problem 8: Waiting for Coffee to Cool" aria-label="Copy heading and permalink for Worksheet Exercise 8: Problem 8: Waiting for Coffee to Cool">🔗</a></div>
+</article></section><section class="onepage" id="lt10-exp-log-equations-11">
+<article class="exercise exercise-like" id="lt10-eq-ph"><h2 class="heading">
+<span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 9: Acidity and pH.</span>
+</h2>
+<div class="introduction" id="lt10-eq-ph-2">
+<div class="para" id="lt10-eq-ph-2-1">The pH of a liquid is defined by <span class="process-math">\(\text{pH} = -\log[H^+]\text{,}\)</span> where <span class="process-math">\([H^+]\)</span> is the concentration of hydrogen ions in moles per liter. Black coffee has a pH of about <span class="process-math">\(5.0\text{,}\)</span> and lemon juice has a pH of about <span class="process-math">\(2.3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ph-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt10-eq-ph-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt10-eq-ph-3-1-1">Find the hydrogen ion concentration of black coffee and of lemon juice. Give exact answers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ph-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-ph-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-ph-3-2-1">For coffee, <span class="process-math">\(5.0 = -\log[H^+]\text{,}\)</span> so <span class="process-math">\(\log[H^+] = -5\)</span> and <span class="process-math">\([H^+] = 10^{-5}\)</span> moles per liter. For lemon juice, <span class="process-math">\([H^+] = 10^{-2.3} \approx 0.0050\)</span> moles per liter.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ph-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 9.a.1"><a tabindex="-1" href="#lt10-eq-ph-3-2" title="Copy heading and permalink for Answer 9.a.1" aria-label="Copy heading and permalink for Answer 9.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.a"><a tabindex="-1" href="#lt10-eq-ph-3" title="Copy heading and permalink for Task 9.a" aria-label="Copy heading and permalink for Task 9.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt10-eq-ph-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt10-eq-ph-4-1-1">How many times more acidic is lemon juice than black coffee? (Compare the hydrogen ion concentrations.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ph-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt10-eq-ph-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt10-eq-ph-4-2-1">
+<span class="process-math">\(\frac{10^{-2.3}}{10^{-5}} = 10^{-2.3 - (-5)} = 10^{2.7} \approx 501\text{.}\)</span> Lemon juice is about <span class="process-math">\(500\)</span> times more acidic, even though the pH values differ by only <span class="process-math">\(2.7\text{.}\)</span> Each drop of <span class="process-math">\(1\)</span> in pH means <span class="process-math">\(10\)</span> times more acidic.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt10-eq-ph-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 9.b.1"><a tabindex="-1" href="#lt10-eq-ph-4-2" title="Copy heading and permalink for Answer 9.b.1" aria-label="Copy heading and permalink for Answer 9.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.b"><a tabindex="-1" href="#lt10-eq-ph-4" title="Copy heading and permalink for Task 9.b" aria-label="Copy heading and permalink for Task 9.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 9: Problem 9: Acidity and pH"><a tabindex="-1" href="#lt10-eq-ph" title="Copy heading and permalink for Worksheet Exercise 9: Problem 9: Acidity and pH" aria-label="Copy heading and permalink for Worksheet Exercise 9: Problem 9: Acidity and pH">🔗</a></div>
+</article></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Learning Target 10: Solving Exponential and Logarithmic Equations"><a tabindex="-1" href="#lt10-exp-log-equations" title="Copy heading and permalink for Worksheet: Learning Target 10: Solving Exponential and Logarithmic Equations" aria-label="Copy heading and permalink for Worksheet: Learning Target 10: Solving Exponential and Logarithmic Equations">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="lt9-graph-shape.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="lt11-right-triangles.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

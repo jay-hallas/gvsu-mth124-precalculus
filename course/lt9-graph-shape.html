@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Learning Target 9: Increasing, Decreasing, and Concavity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Course Name (change me)">
+<meta property="og:title" content="Course Name (change me)">
+<meta property="book:title" content="Course Name (change me)">
+<meta name="twitter:description" content="MATH xxx Semester 20xx">
+<meta property="og:description" content="MATH xxx Semester 20xx">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.7e4cb14f24eb489b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.54371ed119fe41be.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.40d828091d93b733.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></div>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="lt8-exponential.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="lt-practice.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="lt10-exp-log-equations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul id="ptx-toc-group-course-notes" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="course-notes-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul id="ptx-toc-group-notes-week-01" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul id="ptx-toc-group-notes-week-02" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="activities-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-function-fundamentals.html" class="internal"><span class="title">Activity: Function Fundamentals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-act-average-rate-of-change.html" class="internal"><span class="title">Activity: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-act-linear-functions.html" class="internal"><span class="title">Activity: Linear Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="lt-practice.html" class="internal"><span class="title">Practice Learning Targets</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-lt-practice">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-function-notation.html" class="internal"><span class="title">Learning Target 1: Function Notation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-average-rate-of-change.html" class="internal"><span class="title">Learning Target 2: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-linear-functions.html" class="internal"><span class="title">Learning Target 3: Linear Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt-composition.html" class="internal"><span class="title">Learning Target 4: Composition of Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt5-inverses.html" class="internal"><span class="title">Learning Target 5: Inverse Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt6-circular.html" class="internal"><span class="title">Learning Target 6: Graphs of Circular Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt7-sinusoidal.html" class="internal"><span class="title">Learning Target 7: Transformed Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt8-exponential.html" class="internal"><span class="title">Learning Target 8: Finding Exponential Functions</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="lt9-graph-shape.html" class="internal"><span class="title">Learning Target 9: Increasing, Decreasing, and Concavity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt10-exp-log-equations.html" class="internal"><span class="title">Learning Target 10: Solving Exponential and Logarithmic Equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt11-right-triangles.html" class="internal"><span class="title">Learning Target 11: Right Triangles</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="lt12-polynomials.html" class="internal"><span class="title">Learning Target 12: Polynomial Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="writing.html" class="internal"><span class="title">Writing Assignments</span></a></div>
+<ul id="ptx-toc-group-writing" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-writing-assignment-1.html" class="internal"><span class="title">Writing Assignment 1: Average Rate of Change</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="mth124-writing-assignment-2.html" class="internal"><span class="title">Writing Assignment 2: Difference Quotients, Linear Models, and Inverses</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="lt9-graph-shape" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Target 9: Increasing, Decreasing, and Concavity</span><div class="print-links"><a href="?printpreview=lt9-graph-shape" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<article class="objectives goal-like" id="lt9-graph-shape-2"><h2 class="heading"><span class="type">Objectives</span></h2>
+<ul class="disc" id="lt9-graph-shape-2-1">
+<li id="lt9-graph-shape-2-1-1">
+<div class="para" id="p-derived-lt9-graph-shape-2-1-1">I can identify the intervals where a function is increasing, decreasing, concave down, or concave up, and I can provide examples of familiar functions that have given increasing / decreasing and concave down / concave up behaviors.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective"><a tabindex="-1" href="#lt9-graph-shape-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives"><a tabindex="-1" href="#lt9-graph-shape-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
+</article><section class="onepage" id="lt9-graph-shape-3">
+<article class="exercise exercise-like" id="lt9-shape-sinusoid"><h2 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 1: A Sinusoidal Function.</span>
+</h2>
+<div class="introduction" id="lt9-shape-sinusoid-2">
+<div class="para" id="lt9-shape-sinusoid-2-1">The graph of <span class="process-math">\(\displaystyle T(x) = -2\sin\left(\frac{\pi}{4}x\right) + 1\)</span> is shown below on the domain <span class="process-math">\([0, 8]\text{.}\)</span> The dots mark the minimum and maximum.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/prefigure/lt9-shape-graph-t.svg" role="img" class="contained" alt="The graph of T on the interval from 0 to 8, with a minimum at 2 and a maximum at 6."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="lt9-shape-sinusoid-2-2-description">
+<div class="para" id="lt9-shape-sinusoid-2-2-2-1">The graph of T starts at the point zero, one, falls to a minimum at two, negative one, rises through four, one to a maximum at six, three, and falls back to eight, one.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+</div>
+<article class="task exercise-like" id="lt9-shape-sinusoid-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-sinusoid-3-1-1">On which intervals is <span class="process-math">\(T\)</span> increasing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sinusoid-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sinusoid-3-2-1">The graph rises from the minimum at <span class="process-math">\(x = 2\)</span> to the maximum at <span class="process-math">\(x = 6\text{,}\)</span> so <span class="process-math">\(T\)</span> is increasing on <span class="process-math">\((2, 6)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.a.1"><a tabindex="-1" href="#lt9-shape-sinusoid-3-2" title="Copy heading and permalink for Answer 1.a.1" aria-label="Copy heading and permalink for Answer 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#lt9-shape-sinusoid-3" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-sinusoid-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-sinusoid-4-1-1">On which intervals is <span class="process-math">\(T\)</span> decreasing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sinusoid-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sinusoid-4-2-1">
+<span class="process-math">\(T\)</span> is decreasing on <span class="process-math">\((0, 2)\)</span> and on <span class="process-math">\((6, 8)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.b.1"><a tabindex="-1" href="#lt9-shape-sinusoid-4-2" title="Copy heading and permalink for Answer 1.b.1" aria-label="Copy heading and permalink for Answer 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#lt9-shape-sinusoid-4" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-sinusoid-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt9-shape-sinusoid-5-1-1">What is the midline of <span class="process-math">\(T\text{?}\)</span> Find every <span class="process-math">\(x\)</span>-value in <span class="process-math">\([0, 8]\)</span> where the graph crosses the midline.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sinusoid-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sinusoid-5-2-1">The midline is <span class="process-math">\(y = 1\text{.}\)</span> The graph crosses it at <span class="process-math">\(x = 0\text{,}\)</span> <span class="process-math">\(x = 4\text{,}\)</span> and <span class="process-math">\(x = 8\text{.}\)</span> On a sinusoidal graph, the concavity changes each time the graph crosses the midline.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.c.1"><a tabindex="-1" href="#lt9-shape-sinusoid-5-2" title="Copy heading and permalink for Answer 1.c.1" aria-label="Copy heading and permalink for Answer 1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#lt9-shape-sinusoid-5" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-sinusoid-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt9-shape-sinusoid-6-1-1">On which intervals is <span class="process-math">\(T\)</span> concave up? On which intervals is <span class="process-math">\(T\)</span> concave down?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sinusoid-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sinusoid-6-2-1">Below the midline the graph bends like a cup, and above the midline it bends like a frown. So <span class="process-math">\(T\)</span> is concave up on <span class="process-math">\((0, 4)\text{,}\)</span> where the graph is below <span class="process-math">\(y = 1\text{,}\)</span> and concave down on <span class="process-math">\((4, 8)\text{,}\)</span> where the graph is above <span class="process-math">\(y = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sinusoid-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.d.1"><a tabindex="-1" href="#lt9-shape-sinusoid-6-2" title="Copy heading and permalink for Answer 1.d.1" aria-label="Copy heading and permalink for Answer 1.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#lt9-shape-sinusoid-6" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1: Problem 1: A Sinusoidal Function"><a tabindex="-1" href="#lt9-shape-sinusoid" title="Copy heading and permalink for Worksheet Exercise 1: Problem 1: A Sinusoidal Function" aria-label="Copy heading and permalink for Worksheet Exercise 1: Problem 1: A Sinusoidal Function">🔗</a></div>
+</article></section><section class="onepage" id="lt9-graph-shape-4">
+<article class="exercise exercise-like" id="lt9-shape-exponential"><h2 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 2: Exponential Functions.</span>
+</h2>
+<div class="introduction" id="lt9-shape-exponential-2">
+<div class="para" id="lt9-shape-exponential-2-1">Each function below has the form <span class="process-math">\(f(x) = c + ab^x\text{.}\)</span> Without graphing, decide whether the function is increasing or decreasing, whether it is concave up or concave down, and whether <span class="process-math">\(f(x)\)</span> approaches a value <span class="process-math">\(c\text{,}\)</span> <span class="process-math">\(\infty\text{,}\)</span> or <span class="process-math">\(-\infty\)</span> as <span class="process-math">\(x \to \infty\text{.}\)</span> Then check your answers with Desmos.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt9-shape-exponential-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-exponential-3-1-1">
+<span class="process-math">\(P(x) = 4(1.2)^x + 10\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-3-2-1">Here <span class="process-math">\(b = 1.2 \gt 1\text{,}\)</span> so <span class="process-math">\((1.2)^x\)</span> grows, and <span class="process-math">\(a = 4\)</span> is positive. The function is increasing and concave up, and <span class="process-math">\(P(x) \to \infty\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.a.1"><a tabindex="-1" href="#lt9-shape-exponential-3-2" title="Copy heading and permalink for Answer 2.a.1" aria-label="Copy heading and permalink for Answer 2.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#lt9-shape-exponential-3" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-exponential-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-exponential-4-1-1">
+<span class="process-math">\(Q(x) = 50 - 6(2)^x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-4-2-1">Here <span class="process-math">\(b = 2 \gt 1\text{,}\)</span> but <span class="process-math">\(a = -6\)</span> is negative, which flips the growing curve upside down. The function is decreasing and concave down, and <span class="process-math">\(Q(x) \to -\infty\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.b.1"><a tabindex="-1" href="#lt9-shape-exponential-4-2" title="Copy heading and permalink for Answer 2.b.1" aria-label="Copy heading and permalink for Answer 2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#lt9-shape-exponential-4" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-exponential-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt9-shape-exponential-5-1-1">
+<span class="process-math">\(R(t) = 12(0.6)^t - 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-5-2-1">Here <span class="process-math">\(b = 0.6 \lt 1\text{,}\)</span> so <span class="process-math">\((0.6)^t\)</span> decays toward <span class="process-math">\(0\text{,}\)</span> and <span class="process-math">\(a = 12\)</span> is positive. The function is decreasing and concave up, and <span class="process-math">\(R(t) \to -5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.c.1"><a tabindex="-1" href="#lt9-shape-exponential-5-2" title="Copy heading and permalink for Answer 2.c.1" aria-label="Copy heading and permalink for Answer 2.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#lt9-shape-exponential-5" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-exponential-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt9-shape-exponential-6-1-1">
+<span class="process-math">\(S(t) = 98 - 60e^{-0.4t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-6-2-1">Since <span class="process-math">\(e^{-0.4t} = \left(e^{-0.4}\right)^t\)</span> and <span class="process-math">\(e^{-0.4} \approx 0.67 \lt 1\text{,}\)</span> this is decay, and <span class="process-math">\(a = -60\)</span> flips it. The function is increasing and concave down, and <span class="process-math">\(S(t) \to 98\text{.}\)</span> This is the shape of a warming model, like a cold drink approaching room temperature.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.d.1"><a tabindex="-1" href="#lt9-shape-exponential-6-2" title="Copy heading and permalink for Answer 2.d.1" aria-label="Copy heading and permalink for Answer 2.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.d"><a tabindex="-1" href="#lt9-shape-exponential-6" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-exponential-7"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<div class="para" id="lt9-shape-exponential-7-1-1">
+<span class="process-math">\(V(t) = 20 + 8e^{0.3t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-7-2-1">Since <span class="process-math">\(e^{0.3} \approx 1.35 \gt 1\text{,}\)</span> this is growth, and <span class="process-math">\(a = 8\)</span> is positive. The function is increasing and concave up, and <span class="process-math">\(V(t) \to \infty\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.e.1"><a tabindex="-1" href="#lt9-shape-exponential-7-2" title="Copy heading and permalink for Answer 2.e.1" aria-label="Copy heading and permalink for Answer 2.e.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.e"><a tabindex="-1" href="#lt9-shape-exponential-7" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-exponential-8"><h3 class="heading"><span class="codenumber">(f)</span></h3>
+<div class="para" id="lt9-shape-exponential-8-1-1">Write your own exponential function of the form <span class="process-math">\(c + ab^x\)</span> that is decreasing, concave down, and approaches <span class="process-math">\(-\infty\)</span> as <span class="process-math">\(x \to \infty\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-exponential-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-exponential-8-2-1">Answers will vary. We need <span class="process-math">\(b \gt 1\)</span> so the function grows in size, and <span class="process-math">\(a \lt 0\)</span> to flip it upside down. One example is <span class="process-math">\(f(x) = 7 - 2(3)^x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-exponential-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 2.f.1"><a tabindex="-1" href="#lt9-shape-exponential-8-2" title="Copy heading and permalink for Answer 2.f.1" aria-label="Copy heading and permalink for Answer 2.f.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.f"><a tabindex="-1" href="#lt9-shape-exponential-8" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2: Problem 2: Exponential Functions"><a tabindex="-1" href="#lt9-shape-exponential" title="Copy heading and permalink for Worksheet Exercise 2: Problem 2: Exponential Functions" aria-label="Copy heading and permalink for Worksheet Exercise 2: Problem 2: Exponential Functions">🔗</a></div>
+</article></section><section class="onepage" id="lt9-graph-shape-5">
+<article class="exercise exercise-like" id="lt9-shape-cubic"><h2 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 3: A Cubic Function.</span>
+</h2>
+<div class="introduction" id="lt9-shape-cubic-2">
+<div class="para" id="lt9-shape-cubic-2-1">The graph of a function <span class="process-math">\(f\)</span> is shown below on the domain <span class="process-math">\([-4, 4]\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="generated/prefigure/lt9-shape-graph-f.svg" role="img" class="contained" alt="The graph of a cubic function f with a local maximum at negative two and a local minimum at two."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="lt9-shape-cubic-2-2-description">
+<div class="para" id="lt9-shape-cubic-2-2-2-1">The graph of f starts at the point negative four, negative three, rises to a local maximum at negative two, five, falls through the point zero, one to a local minimum at two, negative three, and rises to the point four, five.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+</div>
+<article class="task exercise-like" id="lt9-shape-cubic-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-cubic-3-1-1">On which intervals is <span class="process-math">\(f\)</span> increasing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-cubic-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-cubic-3-2-1">
+<span class="process-math">\(f\)</span> is increasing on <span class="process-math">\((-4, -2)\)</span> and on <span class="process-math">\((2, 4)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.a.1"><a tabindex="-1" href="#lt9-shape-cubic-3-2" title="Copy heading and permalink for Answer 3.a.1" aria-label="Copy heading and permalink for Answer 3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#lt9-shape-cubic-3" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-cubic-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-cubic-4-1-1">On which intervals is <span class="process-math">\(f\)</span> decreasing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-cubic-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-cubic-4-2-1">
+<span class="process-math">\(f\)</span> is decreasing on <span class="process-math">\((-2, 2)\text{,}\)</span> from the high point down to the low point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.b.1"><a tabindex="-1" href="#lt9-shape-cubic-4-2" title="Copy heading and permalink for Answer 3.b.1" aria-label="Copy heading and permalink for Answer 3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#lt9-shape-cubic-4" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-cubic-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt9-shape-cubic-5-1-1">At <span class="process-math">\(x = -3\text{,}\)</span> is the graph concave up or concave down? Explain.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-cubic-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-cubic-5-2-1">Concave down. Near <span class="process-math">\(x = -3\)</span> the graph is part of the hill that peaks at <span class="process-math">\(x = -2\text{,}\)</span> so it bends like a frown. It is rising, but more and more slowly.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.c.1"><a tabindex="-1" href="#lt9-shape-cubic-5-2" title="Copy heading and permalink for Answer 3.c.1" aria-label="Copy heading and permalink for Answer 3.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#lt9-shape-cubic-5" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-cubic-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt9-shape-cubic-6-1-1">At <span class="process-math">\(x = 3\text{,}\)</span> is the graph concave up or concave down? Explain.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-cubic-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-cubic-6-2-1">Concave up. Near <span class="process-math">\(x = 3\)</span> the graph is part of the valley with its low point at <span class="process-math">\(x = 2\text{,}\)</span> so it bends like a cup. It is rising, and more and more quickly.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-cubic-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.d.1"><a tabindex="-1" href="#lt9-shape-cubic-6-2" title="Copy heading and permalink for Answer 3.d.1" aria-label="Copy heading and permalink for Answer 3.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="0.85in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#lt9-shape-cubic-6" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3: Problem 3: A Cubic Function"><a tabindex="-1" href="#lt9-shape-cubic" title="Copy heading and permalink for Worksheet Exercise 3: Problem 3: A Cubic Function" aria-label="Copy heading and permalink for Worksheet Exercise 3: Problem 3: A Cubic Function">🔗</a></div>
+</article></section><section class="onepage" id="lt9-graph-shape-6">
+<article class="exercise exercise-like" id="lt9-shape-quadratic"><h2 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 4: Quadratic Functions.</span>
+</h2>
+<div class="introduction" id="lt9-shape-quadratic-2">
+<div class="para" id="lt9-shape-quadratic-2-1">Consider the two quadratic functions <span class="process-math">\(p(x) = 5 - 2x^2\)</span> and <span class="process-math">\(q(x) = 3x^2 - 12x + 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt9-shape-quadratic-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-quadratic-3-1-1">Is <span class="process-math">\(p\)</span> always concave up or always concave down? What about the formula tells you this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-quadratic-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-quadratic-3-2-1">Always concave down. The coefficient of <span class="process-math">\(x^2\)</span> is <span class="process-math">\(-2\text{,}\)</span> which is negative, so the parabola opens downward.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.a.1"><a tabindex="-1" href="#lt9-shape-quadratic-3-2" title="Copy heading and permalink for Answer 4.a.1" aria-label="Copy heading and permalink for Answer 4.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#lt9-shape-quadratic-3" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-quadratic-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-quadratic-4-1-1">Is <span class="process-math">\(q\)</span> always concave up or always concave down? What about the formula tells you this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-quadratic-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-quadratic-4-2-1">Always concave up. The coefficient of <span class="process-math">\(x^2\)</span> is <span class="process-math">\(3\text{,}\)</span> which is positive, so the parabola opens upward.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.b.1"><a tabindex="-1" href="#lt9-shape-quadratic-4-2" title="Copy heading and permalink for Answer 4.b.1" aria-label="Copy heading and permalink for Answer 4.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#lt9-shape-quadratic-4" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-quadratic-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt9-shape-quadratic-5-1-1">Find the vertex of <span class="process-math">\(q\text{.}\)</span> Then give the intervals where <span class="process-math">\(q\)</span> is increasing and where it is decreasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-quadratic-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-quadratic-5-2-1">The vertex is at <span class="process-math">\(x = -\frac{b}{2a} = -\frac{-12}{2(3)} = 2\text{,}\)</span> and <span class="process-math">\(q(2) = 12 - 24 + 1 = -11\text{,}\)</span> so the vertex is <span class="process-math">\((2, -11)\text{.}\)</span> Since the parabola opens upward, <span class="process-math">\(q\)</span> is decreasing on <span class="process-math">\((-\infty, 2)\)</span> and increasing on <span class="process-math">\((2, \infty)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.c.1"><a tabindex="-1" href="#lt9-shape-quadratic-5-2" title="Copy heading and permalink for Answer 4.c.1" aria-label="Copy heading and permalink for Answer 4.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#lt9-shape-quadratic-5" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-quadratic-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt9-shape-quadratic-6-1-1">Give the intervals where <span class="process-math">\(p\)</span> is increasing and where it is decreasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-quadratic-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-quadratic-6-2-1">The vertex of <span class="process-math">\(p\)</span> is at <span class="process-math">\(x = 0\text{,}\)</span> the point <span class="process-math">\((0, 5)\text{.}\)</span> Since the parabola opens downward, <span class="process-math">\(p\)</span> is increasing on <span class="process-math">\((-\infty, 0)\)</span> and decreasing on <span class="process-math">\((0, \infty)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-quadratic-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 4.d.1"><a tabindex="-1" href="#lt9-shape-quadratic-6-2" title="Copy heading and permalink for Answer 4.d.1" aria-label="Copy heading and permalink for Answer 4.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.d"><a tabindex="-1" href="#lt9-shape-quadratic-6" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4: Problem 4: Quadratic Functions"><a tabindex="-1" href="#lt9-shape-quadratic" title="Copy heading and permalink for Worksheet Exercise 4: Problem 4: Quadratic Functions" aria-label="Copy heading and permalink for Worksheet Exercise 4: Problem 4: Quadratic Functions">🔗</a></div>
+</article></section><section class="onepage" id="lt9-graph-shape-7">
+<article class="exercise exercise-like" id="lt9-shape-sketch"><h2 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 5: Sketching from a Description.</span>
+</h2>
+<article class="task exercise-like" id="lt9-shape-sketch-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-sketch-2-1-1">On the grid below, draw a possible graph of a function <span class="process-math">\(f\)</span> such that:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="lt9-shape-sketch-2-1-2">
+<ul class="disc" id="lt9-shape-sketch-2-1-2-1">
+<li id="lt9-shape-sketch-2-1-2-1-1">
+<div class="para" id="lt9-shape-sketch-2-1-2-1-1-1">the graph can be drawn without lifting your pencil (continuous) on <span class="process-math">\([-6, 6]\text{,}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="lt9-shape-sketch-2-1-2-1-2">
+<div class="para" id="lt9-shape-sketch-2-1-2-1-2-1">
+<span class="process-math">\(f(-6) = -3\text{,}\)</span> <span class="process-math">\(f(0) = 4\text{,}\)</span> and <span class="process-math">\(f(5) = -2\)</span> (plot these first),<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="lt9-shape-sketch-2-1-2-1-3">
+<div class="para" id="lt9-shape-sketch-2-1-2-1-3-1">
+<span class="process-math">\(f\)</span> is increasing on <span class="process-math">\((-6, 0)\)</span> and decreasing on <span class="process-math">\((0, 6)\text{,}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="lt9-shape-sketch-2-1-2-1-4">
+<div class="para" id="lt9-shape-sketch-2-1-2-1-4-1">
+<span class="process-math">\(f\)</span> is concave up on <span class="process-math">\((-6, -3)\text{,}\)</span> concave down on <span class="process-math">\((-3, 3)\text{,}\)</span> and concave up on <span class="process-math">\((3, 6)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+<img src="generated/prefigure/lt9-shape-blank-grid.svg" role="img" class="contained" alt="A blank coordinate grid from negative six to six on each axis."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="lt9-shape-sketch-2-1-3-description">
+<div class="para" id="lt9-shape-sketch-2-1-3-2-1">A blank coordinate grid with x and y axes, running from negative six to six in each direction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sketch-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sketch-2-2-1">Answers will vary. Starting at <span class="process-math">\((-6, -3)\text{,}\)</span> the graph rises slowly at first and then more steeply, bending like a cup until <span class="process-math">\(x = -3\text{.}\)</span> It keeps rising but starts to level off, bending like a frown, and reaches its highest point at <span class="process-math">\((0, 4)\text{.}\)</span> It then falls, still bending like a frown, more and more steeply until <span class="process-math">\(x = 3\text{.}\)</span> After <span class="process-math">\(x = 3\)</span> it keeps falling but levels out, bending like a cup, and passes through <span class="process-math">\((5, -2)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.a.1"><a tabindex="-1" href="#lt9-shape-sketch-2-2" title="Copy heading and permalink for Answer 5.a.1" aria-label="Copy heading and permalink for Answer 5.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#lt9-shape-sketch-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-sketch-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-sketch-3-1-1">At what <span class="process-math">\(x\)</span>-values does your graph change concavity?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-sketch-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-sketch-3-2-1">At <span class="process-math">\(x = -3\)</span> and <span class="process-math">\(x = 3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-sketch-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.b.1"><a tabindex="-1" href="#lt9-shape-sketch-3-2" title="Copy heading and permalink for Answer 5.b.1" aria-label="Copy heading and permalink for Answer 5.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#lt9-shape-sketch-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5: Problem 5: Sketching from a Description"><a tabindex="-1" href="#lt9-shape-sketch" title="Copy heading and permalink for Worksheet Exercise 5: Problem 5: Sketching from a Description" aria-label="Copy heading and permalink for Worksheet Exercise 5: Problem 5: Sketching from a Description">🔗</a></div>
+</article></section><section class="onepage" id="lt9-graph-shape-8">
+<article class="exercise exercise-like" id="lt9-shape-examples"><h2 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 6: Examples of Familiar Functions.</span>
+</h2>
+<div class="introduction" id="lt9-shape-examples-2">
+<div class="para" id="lt9-shape-examples-2-1">For each description, give a formula for a familiar function with that behavior. Sketch a small graph to support your answer. There is more than one correct answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="lt9-shape-examples-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="lt9-shape-examples-3-1-1">Increasing and concave up for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-examples-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-examples-3-2-1">Answers will vary. One example is <span class="process-math">\(f(x) = 2^x\text{,}\)</span> which rises more and more steeply.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.a.1"><a tabindex="-1" href="#lt9-shape-examples-3-2" title="Copy heading and permalink for Answer 6.a.1" aria-label="Copy heading and permalink for Answer 6.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#lt9-shape-examples-3" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-examples-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="lt9-shape-examples-4-1-1">Decreasing and concave up for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-examples-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-examples-4-2-1">Answers will vary. One example is <span class="process-math">\(f(x) = \left(\frac{1}{2}\right)^x\text{,}\)</span> which falls and levels off toward <span class="process-math">\(0\text{,}\)</span> like a cooling model.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.b.1"><a tabindex="-1" href="#lt9-shape-examples-4-2" title="Copy heading and permalink for Answer 6.b.1" aria-label="Copy heading and permalink for Answer 6.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#lt9-shape-examples-4" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-examples-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="lt9-shape-examples-5-1-1">Increasing and concave down for <span class="process-math">\(x \gt 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-examples-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-examples-5-2-1">Answers will vary. Examples include <span class="process-math">\(f(x) = \sqrt{x}\)</span> and <span class="process-math">\(f(x) = 10 - 5(0.5)^x\text{.}\)</span> Each rises, but more and more slowly.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.c.1"><a tabindex="-1" href="#lt9-shape-examples-5-2" title="Copy heading and permalink for Answer 6.c.1" aria-label="Copy heading and permalink for Answer 6.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.c"><a tabindex="-1" href="#lt9-shape-examples-5" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="lt9-shape-examples-6"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="lt9-shape-examples-6-1-1">Concave down for all <span class="process-math">\(x\text{,}\)</span> increasing for <span class="process-math">\(x \lt 1\text{,}\)</span> and decreasing for <span class="process-math">\(x \gt 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="lt9-shape-examples-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="lt9-shape-examples-6-2-1">Answers will vary. A downward-opening parabola with its vertex at <span class="process-math">\(x = 1\)</span> works, such as <span class="process-math">\(f(x) = -(x - 1)^2 + 3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lt9-shape-examples-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 6.d.1"><a tabindex="-1" href="#lt9-shape-examples-6-2" title="Copy heading and permalink for Answer 6.d.1" aria-label="Copy heading and permalink for Answer 6.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.d"><a tabindex="-1" href="#lt9-shape-examples-6" title="Copy heading and permalink for Task 6.d" aria-label="Copy heading and permalink for Task 6.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6: Problem 6: Examples of Familiar Functions"><a tabindex="-1" href="#lt9-shape-examples" title="Copy heading and permalink for Worksheet Exercise 6: Problem 6: Examples of Familiar Functions" aria-label="Copy heading and permalink for Worksheet Exercise 6: Problem 6: Examples of Familiar Functions">🔗</a></div>
+</article></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Learning Target 9: Increasing, Decreasing, and Concavity"><a tabindex="-1" href="#lt9-graph-shape" title="Copy heading and permalink for Worksheet: Learning Target 9: Increasing, Decreasing, and Concavity" aria-label="Copy heading and permalink for Worksheet: Learning Target 9: Increasing, Decreasing, and Concavity">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="lt8-exponential.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="lt10-exp-log-equations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

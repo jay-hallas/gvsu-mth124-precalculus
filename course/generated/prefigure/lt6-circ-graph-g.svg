@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="lt6-circ-graph-g-figure" width="430" height="310" viewBox="0 0 430 310">
+  <defs>
+    <clipPath id="lt6-circ-graph-g-__clipPath-0">
+      <rect x="5.0" y="5.0" width="420.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="lt6-circ-graph-g-__clipPath-1">
+      <rect x="5.0" y="5.0" width="420.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="lt6-circ-graph-g-grid-axes">
+    <g id="lt6-circ-graph-g-grid" stroke="#ccc" stroke-width="1">
+      <line x1="20.0" y1="305.0" x2="20.0" y2="5.0"/>
+      <line x1="95.0" y1="305.0" x2="95.0" y2="5.0"/>
+      <line x1="170.0" y1="305.0" x2="170.0" y2="5.0"/>
+      <line x1="245.0" y1="305.0" x2="245.0" y2="5.0"/>
+      <line x1="320.0" y1="305.0" x2="320.0" y2="5.0"/>
+      <line x1="395.0" y1="305.0" x2="395.0" y2="5.0"/>
+      <line x1="5.0" y1="305.0" x2="425.0" y2="305.0"/>
+      <line x1="5.0" y1="275.0" x2="425.0" y2="275.0"/>
+      <line x1="5.0" y1="245.0" x2="425.0" y2="245.0"/>
+      <line x1="5.0" y1="215.0" x2="425.0" y2="215.0"/>
+      <line x1="5.0" y1="185.0" x2="425.0" y2="185.0"/>
+      <line x1="5.0" y1="155.0" x2="425.0" y2="155.0"/>
+      <line x1="5.0" y1="125.0" x2="425.0" y2="125.0"/>
+      <line x1="5.0" y1="95.0" x2="425.0" y2="95.0"/>
+      <line x1="5.0" y1="65.0" x2="425.0" y2="65.0"/>
+      <line x1="5.0" y1="35.0" x2="425.0" y2="35.0"/>
+      <line x1="5.0" y1="5.0" x2="425.0" y2="5.0"/>
+    </g>
+    <g id="lt6-circ-graph-g-axes" stroke="black" stroke-width="2">
+      <line id="lt6-circ-graph-g-__line-17" x1="5.0" y1="125.0" x2="425.0" y2="125.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="lt6-circ-graph-g-__line-18" x1="245.0" y1="128.0" x2="245.0" y2="122.0"/>
+        <line id="lt6-circ-graph-g-__line-19" x1="395.0" y1="128.0" x2="395.0" y2="122.0"/>
+      </g>
+      <line id="lt6-circ-graph-g-__line-20" x1="95.0" y1="305.0" x2="95.0" y2="5.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="lt6-circ-graph-g-__line-21" x1="92.0" y1="245.0" x2="98.0" y2="245.0"/>
+        <line id="lt6-circ-graph-g-__line-22" x1="92.0" y1="185.0" x2="98.0" y2="185.0"/>
+        <line id="lt6-circ-graph-g-__line-23" x1="92.0" y1="65.0" x2="98.0" y2="65.0"/>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-0" transform="translate(421.0,121.0) translate(-10.4,-8.2)">
+      <g id="lt6-circ-graph-g-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#lt6-circ-graph-g-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-1" transform="translate(99.0,9.0) translate(0.0,-0.0)">
+      <g id="lt6-circ-graph-g-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#lt6-circ-graph-g-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-2" transform="translate(245.0,136.0) translate(-4.5,-0.0)">
+      <g id="lt6-circ-graph-g-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-4-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="5">
+                <use data-c="35" xlink:href="#lt6-circ-graph-g-MJX-4-TEX-N-35"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-3" transform="translate(395.0,136.0) translate(-9.0,-0.0)">
+      <g id="lt6-circ-graph-g-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="lt6-circ-graph-g-MJX-5-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="10">
+                <use data-c="31" xlink:href="#lt6-circ-graph-g-MJX-5-TEX-N-31"/>
+                <use data-c="30" xlink:href="#lt6-circ-graph-g-MJX-5-TEX-N-30" transform="translate(500,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-4" transform="translate(84.0,245.0) translate(-15.1,-6.1)">
+      <g id="lt6-circ-graph-g-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.256px" role="img" focusable="false" viewBox="0 -677 833 677" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-6-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="lt6-circ-graph-g-MJX-6-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 4">
+                <use data-c="2D" xlink:href="#lt6-circ-graph-g-MJX-6-TEX-N-2D"/>
+                <use data-c="34" xlink:href="#lt6-circ-graph-g-MJX-6-TEX-N-34" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-5" transform="translate(84.0,185.0) translate(-15.1,-6.0)">
+      <g id="lt6-circ-graph-g-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-7-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="lt6-circ-graph-g-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#lt6-circ-graph-g-MJX-7-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#lt6-circ-graph-g-MJX-7-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="lt6-circ-graph-g-__label-6" transform="translate(84.0,65.0) translate(-9.0,-6.0)">
+      <g id="lt6-circ-graph-g-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="lt6-circ-graph-g-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#lt6-circ-graph-g-MJX-8-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="lt6-circ-graph-g-__path-0" stroke="#0072CE" stroke-width="3" fill="none" d="M 35.0 65.0 L 38.6 65.4 L 42.2 66.6 L 45.8 68.6 L 49.4 71.3 L 53.0 74.8 L 56.6 79.0 L 60.2 83.9 L 63.8 89.4 L 67.4 95.5 L 71.0 102.1 L 74.6 109.2 L 78.2 116.7 L 81.8 124.5 L 85.4 132.6 L 89.0 140.9 L 92.6 149.3 L 96.2 157.8 L 99.8 166.3 L 103.4 174.6 L 107.0 182.8 L 110.6 190.7 L 114.2 198.4 L 117.8 205.6 L 121.4 212.4 L 125.0 218.6 L 128.6 224.3 L 132.2 229.4 L 135.8 233.9 L 139.4 237.6 L 143.0 240.6 L 146.6 242.8 L 150.2 244.3 L 153.8 245.0 L 157.4 244.8 L 161.0 243.9 L 164.6 242.2 L 168.2 239.7 L 171.8 236.4 L 175.4 232.5 L 179.0 227.8 L 182.6 222.5 L 186.2 216.6 L 189.8 210.2 L 193.4 203.2 L 197.0 195.9 L 200.6 188.1 L 204.2 180.1 L 207.8 171.9 L 211.4 163.5 L 215.0 155.0 L 218.6 146.5 L 222.2 138.1 L 225.8 129.9 L 229.4 121.9 L 233.0 114.1 L 236.6 106.8 L 240.2 99.8 L 243.8 93.4 L 247.4 87.5 L 251.0 82.2 L 254.6 77.5 L 258.2 73.6 L 261.8 70.3 L 265.4 67.8 L 269.0 66.1 L 272.6 65.2 L 276.2 65.0 L 279.8 65.7 L 283.4 67.2 L 287.0 69.4 L 290.6 72.4 L 294.2 76.1 L 297.8 80.6 L 301.4 85.7 L 305.0 91.4 L 308.6 97.6 L 312.2 104.4 L 315.8 111.6 L 319.4 119.3 L 323.0 127.2 L 326.6 135.4 L 330.2 143.7 L 333.8 152.2 L 337.4 160.7 L 341.0 169.1 L 344.6 177.4 L 348.2 185.5 L 351.8 193.3 L 355.4 200.8 L 359.0 207.9 L 362.6 214.5 L 366.2 220.6 L 369.8 226.1 L 373.4 231.0 L 377.0 235.2 L 380.6 238.7 L 384.2 241.4 L 387.8 243.4 L 391.4 244.6 L 395.0 245.0" clip-path="url(#lt6-circ-graph-g-__clipPath-1)"/>
+  <circle id="lt6-circ-graph-g-__circle-0" cx="35.0" cy="65.0" r="4" stroke="#002967" stroke-width="2" fill="#002967"/>
+  <circle id="lt6-circ-graph-g-__circle-1" cx="155.0" cy="245.0" r="4" stroke="#002967" stroke-width="2" fill="#002967"/>
+  <circle id="lt6-circ-graph-g-__circle-2" cx="275.0" cy="65.0" r="4" stroke="#002967" stroke-width="2" fill="#002967"/>
+  <circle id="lt6-circ-graph-g-__circle-3" cx="395.0" cy="245.0" r="4" stroke="#002967" stroke-width="2" fill="#002967"/>
+  <g id="lt6-circ-graph-g-__label-7" transform="translate(350.0,26.0) translate(-33.0,-9.0)">
+    <g id="lt6-circ-graph-g-__g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="66.072px" height="18.096px" role="img" focusable="false" viewBox="0 -750 3650.6 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-N-2061" d=""/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="lt6-circ-graph-g-MJX-9-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="9" data-semantic-children="0,8" data-semantic-content="1" data-semantic-speech="y equals g left parenthesis x right parenthesis">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="9" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="9" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-children="2,6" data-semantic-content="7,2" data-semantic-parent="9" data-semantic-speech="g left parenthesis x right parenthesis" transform="translate(1823.6,0)">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="8" data-semantic-operator="appl" data-semantic-speech="g">
+                <use data-c="1D454" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-I-1D454"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="7" data-semantic-parent="8" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(477,0)">
+                <use data-c="2061" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="6" data-semantic-children="4" data-semantic-content="3,5" data-semantic-parent="8" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(477,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="3" data-semantic-parent="6" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="6" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#lt6-circ-graph-g-MJX-9-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>
