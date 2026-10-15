@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mr-sinusoid-figure" width="430" height="250" viewBox="0 0 430 250">
+  <defs>
+    <clipPath id="mr-sinusoid-__clipPath-0">
+      <rect x="5.0" y="5.0" width="420.0" height="240.0"/>
+    </clipPath>
+    <clipPath id="mr-sinusoid-__clipPath-1">
+      <rect x="5.0" y="5.0" width="420.0" height="240.0"/>
+    </clipPath>
+  </defs>
+  <g id="mr-sinusoid-grid" stroke="#ccc" stroke-width="1">
+    <line x1="35.0" y1="245.0" x2="35.0" y2="5.0"/>
+    <line x1="110.0" y1="245.0" x2="110.0" y2="5.0"/>
+    <line x1="185.0" y1="245.0" x2="185.0" y2="5.0"/>
+    <line x1="260.0" y1="245.0" x2="260.0" y2="5.0"/>
+    <line x1="335.0" y1="245.0" x2="335.0" y2="5.0"/>
+    <line x1="410.0" y1="245.0" x2="410.0" y2="5.0"/>
+    <line x1="5.0" y1="245.0" x2="425.0" y2="245.0"/>
+    <line x1="5.0" y1="213.0" x2="425.0" y2="213.0"/>
+    <line x1="5.0" y1="181.0" x2="425.0" y2="181.0"/>
+    <line x1="5.0" y1="149.0" x2="425.0" y2="149.0"/>
+    <line x1="5.0" y1="117.0" x2="425.0" y2="117.0"/>
+    <line x1="5.0" y1="85.0" x2="425.0" y2="85.0"/>
+    <line x1="5.0" y1="53.0" x2="425.0" y2="53.0"/>
+    <line x1="5.0" y1="21.0" x2="425.0" y2="21.0"/>
+  </g>
+  <g id="mr-sinusoid-axes" stroke="black" stroke-width="2">
+    <line id="mr-sinusoid-__line-14" x1="5.0" y1="213.0" x2="425.0" y2="213.0" stroke="black" stroke-width="2"/>
+    <g>
+      <line id="mr-sinusoid-__line-15" x1="185.0" y1="216.0" x2="185.0" y2="210.0"/>
+      <line id="mr-sinusoid-__line-16" x1="335.0" y1="216.0" x2="335.0" y2="210.0"/>
+    </g>
+    <line id="mr-sinusoid-__line-17" x1="35.0" y1="245.0" x2="35.0" y2="5.0" stroke="black" stroke-width="2"/>
+    <g>
+      <line id="mr-sinusoid-__line-18" x1="32.0" y1="149.0" x2="38.0" y2="149.0"/>
+      <line id="mr-sinusoid-__line-19" x1="32.0" y1="85.0" x2="38.0" y2="85.0"/>
+      <line id="mr-sinusoid-__line-20" x1="32.0" y1="21.0" x2="38.0" y2="21.0"/>
+    </g>
+  </g>
+  <g id="mr-sinusoid-__label-0" transform="translate(185.0,224.0) translate(-4.5,-0.0)">
+    <g id="mr-sinusoid-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-sinusoid-MJX-2-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="5">
+              <use data-c="35" xlink:href="#mr-sinusoid-MJX-2-TEX-N-35"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-sinusoid-__label-1" transform="translate(335.0,224.0) translate(-9.0,-0.0)">
+    <g id="mr-sinusoid-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="18.096px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1000 688" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-sinusoid-MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="mr-sinusoid-MJX-3-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="10">
+              <use data-c="31" xlink:href="#mr-sinusoid-MJX-3-TEX-N-31"/>
+              <use data-c="30" xlink:href="#mr-sinusoid-MJX-3-TEX-N-30" transform="translate(500,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-sinusoid-__label-2" transform="translate(24.0,149.0) translate(-9.0,-6.0)">
+    <g id="mr-sinusoid-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-sinusoid-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+              <use data-c="32" xlink:href="#mr-sinusoid-MJX-4-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-sinusoid-__label-3" transform="translate(24.0,85.0) translate(-9.0,-6.1)">
+    <g id="mr-sinusoid-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-sinusoid-MJX-5-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+              <use data-c="34" xlink:href="#mr-sinusoid-MJX-5-TEX-N-34"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-sinusoid-__label-4" transform="translate(24.0,21.0) translate(-9.0,-6.2)">
+    <g id="mr-sinusoid-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-sinusoid-MJX-6-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="6">
+              <use data-c="36" xlink:href="#mr-sinusoid-MJX-6-TEX-N-36"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="mr-sinusoid-__path-0" stroke="#0072CE" stroke-width="2" fill="none" d="M 35.0 181.0 L 38.6 180.5 L 42.2 179.0 L 45.8 176.5 L 49.4 173.1 L 53.0 168.8 L 56.6 163.7 L 60.2 157.8 L 63.8 151.3 L 67.4 144.2 L 71.0 136.8 L 74.6 129.0 L 78.2 121.0 L 81.8 113.0 L 85.4 105.0 L 89.0 97.2 L 92.6 89.8 L 96.2 82.7 L 99.8 76.2 L 103.4 70.3 L 107.0 65.2 L 110.6 60.9 L 114.2 57.5 L 117.8 55.0 L 121.4 53.5 L 125.0 53.0 L 128.6 53.5 L 132.2 55.0 L 135.8 57.5 L 139.4 60.9 L 143.0 65.2 L 146.6 70.3 L 150.2 76.2 L 153.8 82.7 L 157.4 89.8 L 161.0 97.2 L 164.6 105.0 L 168.2 113.0 L 171.8 121.0 L 175.4 129.0 L 179.0 136.8 L 182.6 144.2 L 186.2 151.3 L 189.8 157.8 L 193.4 163.7 L 197.0 168.8 L 200.6 173.1 L 204.2 176.5 L 207.8 179.0 L 211.4 180.5 L 215.0 181.0 L 218.6 180.5 L 222.2 179.0 L 225.8 176.5 L 229.4 173.1 L 233.0 168.8 L 236.6 163.7 L 240.2 157.8 L 243.8 151.3 L 247.4 144.2 L 251.0 136.8 L 254.6 129.0 L 258.2 121.0 L 261.8 113.0 L 265.4 105.0 L 269.0 97.2 L 272.6 89.8 L 276.2 82.7 L 279.8 76.2 L 283.4 70.3 L 287.0 65.2 L 290.6 60.9 L 294.2 57.5 L 297.8 55.0 L 301.4 53.5 L 305.0 53.0 L 308.6 53.5 L 312.2 55.0 L 315.8 57.5 L 319.4 60.9 L 323.0 65.2 L 326.6 70.3 L 330.2 76.2 L 333.8 82.7 L 337.4 89.8 L 341.0 97.2 L 344.6 105.0 L 348.2 113.0 L 351.8 121.0 L 355.4 129.0 L 359.0 136.8 L 362.6 144.2 L 366.2 151.3 L 369.8 157.8 L 373.4 163.7 L 377.0 168.8 L 380.6 173.1 L 384.2 176.5 L 387.8 179.0 L 391.4 180.5 L 395.0 181.0" clip-path="url(#mr-sinusoid-__clipPath-1)"/>
+</svg>

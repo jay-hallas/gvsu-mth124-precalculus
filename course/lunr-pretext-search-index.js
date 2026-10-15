@@ -334,6 +334,105 @@ var ptx_lunr_docs = [
   "body": "  Suppose years after buying a new car it is worth $21,250, and when it is years old it is worth $10,000. Assume the price of the car depreciates linearly.     Determine a linear function that gives the price years after the car was purchased.       Find the slope using and , then use point-slope form.       What was the initial value of the car when it was purchased?    $25,000    The initial value corresponds to , which is the vertical intercept. The car was originally purchased for $25,000.      When will the car have no value? Based on this, what is a practical domain for your function?    years,    The car has no value when .   The car has no value after about years. The practical domain restricts the model to times before the car's value becomes negative: .    "
 },
 {
+  "id": "midterm-review-f26",
+  "level": "1",
+  "url": "midterm-review-f26.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Midterm Review: Fall 2026",
+  "body": " Midterm Review: Fall 2026   This review covers evaluating functions, composition and inverses, average rate of change, linear functions, and circular functions. Show your work on each problem.        Problem 1: Evaluating a Function   Let .     Find .    .      Find and simplify.    Replace every with , then expand.   As a check, gives , and .           Problem 2: Functions Given by a Table   The table below gives some values of the functions and .                                         Find and .    and .      Find , , and .    Work from the inside out.  .  .  .      Which of or has an inverse? Explain how you know. For the function that has an inverse, find its inverse evaluated at .    has an inverse because every input gives a different output. does not, since and ; two different inputs give the same output.  Since , we have .           Problem 3: Functions and Inverses from Graphs   Use the four graphs below to answer the questions.     Graph (a): an upward opening parabola.  An upward opening parabola with vertex at (0, -2), crossing the x-axis near -1.4 and 1.4.    f(x) = x^2 - 2      (a)       Graph (b): a circle centered at the origin.  A circle centered at the origin with radius 2.5.        (b)         Graph (c): a decreasing line.  A straight line with negative slope, crossing the y-axis at 1 and the x-axis at 2.    h(x) = -0.5*x + 1      (c)       Graph (d): a parabola opening to the right.  A parabola opening to the right with vertex at (-2, 0), crossing the y-axis near -1.4 and 1.4.    k(t) = (t^2 - 2, t)      (d)           Which graphs are not functions? Explain how you know.    Graphs (b) and (d) are not functions. Each fails the vertical line test; for example, the line crosses each of them twice.      Which graphs are functions that have an inverse? Explain how you know.    Graph (c) is a function with an inverse. It passes the vertical line test, and every horizontal line crosses it exactly once, so it passes the horizontal line test.      Which graphs are functions that do not have an inverse? Explain how you know.    Graph (a) is a function, but it fails the horizontal line test. For example, the line crosses it at and , so it has no inverse.           Problem 4: Average Rate of Change of a Function   Let .     Find the average rate of change of on the interval .    and , so       Find the average rate of change of on the interval .    and , so            Problem 5: Average Rate of Change in Context   A cup of hot tea is left to cool on a counter. The table gives the temperature of the tea, in degrees Fahrenheit, minutes after it was poured.          (minutes)         ( )            Find the average rate of change of from to . Include units. Then write a sentence explaining what your answer means in this context.    degrees Fahrenheit per minute.  Over the first 10 minutes, the tea cooled by an average of 4.8 degrees per minute.      Find the average rate of change of from to . Include units. Then write a sentence explaining what your answer means in this context.    degrees Fahrenheit per minute.  Between 10 and 20 minutes after it was poured, the tea cooled by an average of 2.4 degrees per minute.      Compare your two answers. What do they tell you about how the tea is cooling?    The tea is still cooling, but more slowly as time goes on; it lost about half as many degrees per minute in the second 10 minutes as in the first.           Problem 6: A Line Through Two Points   A linear function passes through the points and .     Write an equation for in point-slope form.    The slope is . Using the point ,       Write an equation for in slope-intercept form.    Distribute and solve for .   As a check, .      Find a formula for .    Swap and , then solve for .   So . As a check, and .           Problem 7: A Draining Tank   A tank holds gallons of water. A valve is opened, and water drains out at a constant rate of gallons per minute. Let be the amount of water in the tank, in gallons, minutes after the valve is opened.     Find a formula for .    The initial value is and the rate of change is gallons per minute, so .      Find and explain what it means in this context.    . After 12 minutes, there are 270 gallons of water left in the tank.      How long does it take for the tank to empty?    Set : , so . The tank is empty after 30 minutes.           Problem 8: Cab Fare   A cab company charges a fixed fee plus a set amount per mile. A -mile ride costs , and a -mile ride costs . Let be the cost, in dollars, of an -mile ride.     Find a formula for .    The slope is . Then , and using ,   So .      Write a sentence explaining what the slope means in this context. Include units.    Each additional mile adds to the cost of the ride.      What does the vertical intercept of mean in this context? How much does a -mile ride cost?    The vertical intercept, , is the fixed fee charged for every ride before any miles are driven. A 15-mile ride costs .           Problem 9: Reading a Circular Function Graph   The graph of a circular function is shown below.   A wave that oscillates between y = 1 and y = 5 for x from 0 to 12.  A smooth wave on a grid. It starts at the point (0, 1), rises to a maximum at (3, 5), falls to a minimum at (6, 1), rises to a maximum at (9, 5), and falls back to (12, 1).    f(x) = -2*cos(pi*x\/3) + 3             Find the maximum value and the minimum value of .    The maximum value is (at and ). The minimum value is (at , , and ).      Find the equation of the midline and the amplitude.    The midline is halfway between the max and min: . The amplitude is the distance from the midline to the max: .      Find the period.    The graph goes from one minimum at to the next at , so the period is .           Problem 10: A Ferris Wheel   This problem does not include a picture. Draw one before you start.  A Ferris wheel has a diameter of feet, and its center is feet above the ground. The wheel makes one full turn every minutes. You board at the lowest point of the wheel at time . Let be your height above the ground, in feet, after minutes.     Find the amplitude, midline, and period of .    The amplitude is the radius, feet. The midline is the height of the center, . The period is minutes.      Should the model start with , , , or ? Explain your choice.    . At you are at the lowest point, and is the one that starts at its minimum.      Write a formula for . Then find your height after minutes.    With period , , so   feet. This makes sense; after a quarter turn you are level with the center.      Suppose instead that at you are level with the center of the wheel and moving upward. Which of , , , or would you use now? Write the new formula.    , since it starts on the midline and increases. The new formula is .      "
+},
+{
+  "id": "mr-evaluate",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-evaluate",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Evaluating a Function.",
+  "body": " Problem 1: Evaluating a Function   Let .     Find .    .      Find and simplify.    Replace every with , then expand.   As a check, gives , and .    "
+},
+{
+  "id": "mr-tables",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-tables",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Functions Given by a Table.",
+  "body": " Problem 2: Functions Given by a Table   The table below gives some values of the functions and .                                         Find and .    and .      Find , , and .    Work from the inside out.  .  .  .      Which of or has an inverse? Explain how you know. For the function that has an inverse, find its inverse evaluated at .    has an inverse because every input gives a different output. does not, since and ; two different inputs give the same output.  Since , we have .    "
+},
+{
+  "id": "mr-graphs",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-graphs",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Functions and Inverses from Graphs.",
+  "body": " Problem 3: Functions and Inverses from Graphs   Use the four graphs below to answer the questions.     Graph (a): an upward opening parabola.  An upward opening parabola with vertex at (0, -2), crossing the x-axis near -1.4 and 1.4.    f(x) = x^2 - 2      (a)       Graph (b): a circle centered at the origin.  A circle centered at the origin with radius 2.5.        (b)         Graph (c): a decreasing line.  A straight line with negative slope, crossing the y-axis at 1 and the x-axis at 2.    h(x) = -0.5*x + 1      (c)       Graph (d): a parabola opening to the right.  A parabola opening to the right with vertex at (-2, 0), crossing the y-axis near -1.4 and 1.4.    k(t) = (t^2 - 2, t)      (d)           Which graphs are not functions? Explain how you know.    Graphs (b) and (d) are not functions. Each fails the vertical line test; for example, the line crosses each of them twice.      Which graphs are functions that have an inverse? Explain how you know.    Graph (c) is a function with an inverse. It passes the vertical line test, and every horizontal line crosses it exactly once, so it passes the horizontal line test.      Which graphs are functions that do not have an inverse? Explain how you know.    Graph (a) is a function, but it fails the horizontal line test. For example, the line crosses it at and , so it has no inverse.    "
+},
+{
+  "id": "mr-aroc-formula",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-aroc-formula",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Average Rate of Change of a Function.",
+  "body": " Problem 4: Average Rate of Change of a Function   Let .     Find the average rate of change of on the interval .    and , so       Find the average rate of change of on the interval .    and , so     "
+},
+{
+  "id": "mr-aroc-table",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-aroc-table",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: Average Rate of Change in Context.",
+  "body": " Problem 5: Average Rate of Change in Context   A cup of hot tea is left to cool on a counter. The table gives the temperature of the tea, in degrees Fahrenheit, minutes after it was poured.          (minutes)         ( )            Find the average rate of change of from to . Include units. Then write a sentence explaining what your answer means in this context.    degrees Fahrenheit per minute.  Over the first 10 minutes, the tea cooled by an average of 4.8 degrees per minute.      Find the average rate of change of from to . Include units. Then write a sentence explaining what your answer means in this context.    degrees Fahrenheit per minute.  Between 10 and 20 minutes after it was poured, the tea cooled by an average of 2.4 degrees per minute.      Compare your two answers. What do they tell you about how the tea is cooling?    The tea is still cooling, but more slowly as time goes on; it lost about half as many degrees per minute in the second 10 minutes as in the first.    "
+},
+{
+  "id": "mr-line-inverse",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-line-inverse",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem 6: A Line Through Two Points.",
+  "body": " Problem 6: A Line Through Two Points   A linear function passes through the points and .     Write an equation for in point-slope form.    The slope is . Using the point ,       Write an equation for in slope-intercept form.    Distribute and solve for .   As a check, .      Find a formula for .    Swap and , then solve for .   So . As a check, and .    "
+},
+{
+  "id": "mr-linear-rate",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-linear-rate",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem 7: A Draining Tank.",
+  "body": " Problem 7: A Draining Tank   A tank holds gallons of water. A valve is opened, and water drains out at a constant rate of gallons per minute. Let be the amount of water in the tank, in gallons, minutes after the valve is opened.     Find a formula for .    The initial value is and the rate of change is gallons per minute, so .      Find and explain what it means in this context.    . After 12 minutes, there are 270 gallons of water left in the tank.      How long does it take for the tank to empty?    Set : , so . The tank is empty after 30 minutes.    "
+},
+{
+  "id": "mr-linear-points",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-linear-points",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Problem 8: Cab Fare.",
+  "body": " Problem 8: Cab Fare   A cab company charges a fixed fee plus a set amount per mile. A -mile ride costs , and a -mile ride costs . Let be the cost, in dollars, of an -mile ride.     Find a formula for .    The slope is . Then , and using ,   So .      Write a sentence explaining what the slope means in this context. Include units.    Each additional mile adds to the cost of the ride.      What does the vertical intercept of mean in this context? How much does a -mile ride cost?    The vertical intercept, , is the fixed fee charged for every ride before any miles are driven. A 15-mile ride costs .    "
+},
+{
+  "id": "mr-circular-graph",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-circular-graph",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "Problem 9: Reading a Circular Function Graph.",
+  "body": " Problem 9: Reading a Circular Function Graph   The graph of a circular function is shown below.   A wave that oscillates between y = 1 and y = 5 for x from 0 to 12.  A smooth wave on a grid. It starts at the point (0, 1), rises to a maximum at (3, 5), falls to a minimum at (6, 1), rises to a maximum at (9, 5), and falls back to (12, 1).    f(x) = -2*cos(pi*x\/3) + 3             Find the maximum value and the minimum value of .    The maximum value is (at and ). The minimum value is (at , , and ).      Find the equation of the midline and the amplitude.    The midline is halfway between the max and min: . The amplitude is the distance from the midline to the max: .      Find the period.    The graph goes from one minimum at to the next at , so the period is .    "
+},
+{
+  "id": "mr-circular-model",
+  "level": "2",
+  "url": "midterm-review-f26.html#mr-circular-model",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "Problem 10: A Ferris Wheel.",
+  "body": " Problem 10: A Ferris Wheel   This problem does not include a picture. Draw one before you start.  A Ferris wheel has a diameter of feet, and its center is feet above the ground. The wheel makes one full turn every minutes. You board at the lowest point of the wheel at time . Let be your height above the ground, in feet, after minutes.     Find the amplitude, midline, and period of .    The amplitude is the radius, feet. The midline is the height of the center, . The period is minutes.      Should the model start with , , , or ? Explain your choice.    . At you are at the lowest point, and is the one that starts at its minimum.      Write a formula for . Then find your height after minutes.    With period , , so   feet. This makes sense; after a quarter turn you are level with the center.      Suppose instead that at you are level with the center of the wheel and moving upward. Which of , , , or would you use now? Write the new formula.    , since it starts on the midline and increases. The new formula is .    "
+},
+{
   "id": "lt-function-notation",
   "level": "1",
   "url": "lt-function-notation.html",

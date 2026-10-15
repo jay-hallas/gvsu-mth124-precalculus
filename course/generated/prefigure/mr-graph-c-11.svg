@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mr-graph-c-figure" width="230" height="230" viewBox="0 0 230 230">
+  <defs>
+    <clipPath id="mr-graph-c-__clipPath-0">
+      <rect x="5.0" y="5.0" width="220.0" height="220.0"/>
+    </clipPath>
+    <clipPath id="mr-graph-c-__clipPath-1">
+      <rect x="5.0" y="5.0" width="220.0" height="220.0"/>
+    </clipPath>
+  </defs>
+  <g id="mr-graph-c-grid" stroke="#ccc" stroke-width="1">
+    <line x1="5.0" y1="225.0" x2="5.0" y2="5.0"/>
+    <line x1="32.5" y1="225.0" x2="32.5" y2="5.0"/>
+    <line x1="60.0" y1="225.0" x2="60.0" y2="5.0"/>
+    <line x1="87.5" y1="225.0" x2="87.5" y2="5.0"/>
+    <line x1="115.0" y1="225.0" x2="115.0" y2="5.0"/>
+    <line x1="142.5" y1="225.0" x2="142.5" y2="5.0"/>
+    <line x1="170.0" y1="225.0" x2="170.0" y2="5.0"/>
+    <line x1="197.5" y1="225.0" x2="197.5" y2="5.0"/>
+    <line x1="225.0" y1="225.0" x2="225.0" y2="5.0"/>
+    <line x1="5.0" y1="225.0" x2="225.0" y2="225.0"/>
+    <line x1="5.0" y1="197.5" x2="225.0" y2="197.5"/>
+    <line x1="5.0" y1="170.0" x2="225.0" y2="170.0"/>
+    <line x1="5.0" y1="142.5" x2="225.0" y2="142.5"/>
+    <line x1="5.0" y1="115.0" x2="225.0" y2="115.0"/>
+    <line x1="5.0" y1="87.5" x2="225.0" y2="87.5"/>
+    <line x1="5.0" y1="60.0" x2="225.0" y2="60.0"/>
+    <line x1="5.0" y1="32.5" x2="225.0" y2="32.5"/>
+    <line x1="5.0" y1="5.0" x2="225.0" y2="5.0"/>
+  </g>
+  <g id="mr-graph-c-axes" stroke="black" stroke-width="2">
+    <line id="mr-graph-c-__line-18" x1="5.0" y1="115.0" x2="225.0" y2="115.0" stroke="black" stroke-width="2"/>
+    <g>
+      <line id="mr-graph-c-__line-19" x1="60.0" y1="118.0" x2="60.0" y2="112.0"/>
+      <line id="mr-graph-c-__line-20" x1="170.0" y1="118.0" x2="170.0" y2="112.0"/>
+    </g>
+    <line id="mr-graph-c-__line-21" x1="115.0" y1="225.0" x2="115.0" y2="5.0" stroke="black" stroke-width="2"/>
+    <g>
+      <line id="mr-graph-c-__line-22" x1="112.0" y1="170.0" x2="118.0" y2="170.0"/>
+      <line id="mr-graph-c-__line-23" x1="112.0" y1="60.0" x2="118.0" y2="60.0"/>
+    </g>
+  </g>
+  <g id="mr-graph-c-__label-0" transform="translate(60.0,126.0) translate(-7.5,-0.0)">
+    <g id="mr-graph-c-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-graph-c-MJX-2-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+          <path id="mr-graph-c-MJX-2-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+              <use data-c="2D" xlink:href="#mr-graph-c-MJX-2-TEX-N-2D"/>
+              <use data-c="32" xlink:href="#mr-graph-c-MJX-2-TEX-N-32" transform="translate(333,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-graph-c-__label-1" transform="translate(170.0,126.0) translate(-4.5,-0.0)">
+    <g id="mr-graph-c-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-graph-c-MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+              <use data-c="32" xlink:href="#mr-graph-c-MJX-3-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-graph-c-__label-2" transform="translate(104.0,170.0) translate(-15.1,-6.0)">
+    <g id="mr-graph-c-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-graph-c-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+          <path id="mr-graph-c-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+              <use data-c="2D" xlink:href="#mr-graph-c-MJX-4-TEX-N-2D"/>
+              <use data-c="32" xlink:href="#mr-graph-c-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="mr-graph-c-__label-3" transform="translate(104.0,60.0) translate(-9.0,-6.0)">
+    <g id="mr-graph-c-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="mr-graph-c-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+              <use data-c="32" xlink:href="#mr-graph-c-MJX-5-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="mr-graph-c-__path-0" stroke="#0072CE" stroke-width="2" fill="none" d="M 5.0 32.5 L 7.2 33.6 L 9.4 34.7 L 11.6 35.8 L 13.8 36.9 L 16.0 38.0 L 18.2 39.1 L 20.4 40.2 L 22.6 41.3 L 24.8 42.4 L 27.0 43.5 L 29.2 44.6 L 31.4 45.7 L 33.6 46.8 L 35.8 47.9 L 38.0 49.0 L 40.2 50.1 L 42.4 51.2 L 44.6 52.3 L 46.8 53.4 L 49.0 54.5 L 51.2 55.6 L 53.4 56.7 L 55.6 57.8 L 57.8 58.9 L 60.0 60.0 L 62.2 61.1 L 64.4 62.2 L 66.6 63.3 L 68.8 64.4 L 71.0 65.5 L 73.2 66.6 L 75.4 67.7 L 77.6 68.8 L 79.8 69.9 L 82.0 71.0 L 84.2 72.1 L 86.4 73.2 L 88.6 74.3 L 90.8 75.4 L 93.0 76.5 L 95.2 77.6 L 97.4 78.7 L 99.6 79.8 L 101.8 80.9 L 104.0 82.0 L 106.2 83.1 L 108.4 84.2 L 110.6 85.3 L 112.8 86.4 L 115.0 87.5 L 117.2 88.6 L 119.4 89.7 L 121.6 90.8 L 123.8 91.9 L 126.0 93.0 L 128.2 94.1 L 130.4 95.2 L 132.6 96.3 L 134.8 97.4 L 137.0 98.5 L 139.2 99.6 L 141.4 100.7 L 143.6 101.8 L 145.8 102.9 L 148.0 104.0 L 150.2 105.1 L 152.4 106.2 L 154.6 107.3 L 156.8 108.4 L 159.0 109.5 L 161.2 110.6 L 163.4 111.7 L 165.6 112.8 L 167.8 113.9 L 170.0 115.0 L 172.2 116.1 L 174.4 117.2 L 176.6 118.3 L 178.8 119.4 L 181.0 120.5 L 183.2 121.6 L 185.4 122.7 L 187.6 123.8 L 189.8 124.9 L 192.0 126.0 L 194.2 127.1 L 196.4 128.2 L 198.6 129.3 L 200.8 130.4 L 203.0 131.5 L 205.2 132.6 L 207.4 133.7 L 209.6 134.8 L 211.8 135.9 L 214.0 137.0 L 216.2 138.1 L 218.4 139.2 L 220.6 140.3 L 222.8 141.4 L 225.0 142.5" clip-path="url(#mr-graph-c-__clipPath-1)"/>
+  <g id="mr-graph-c-__label-4" transform="translate(24.2,24.2) translate(-9.3,-6.2)">
+    <g id="mr-graph-c-__g-4">
+      <text font-family="sans-serif" font-size="14" x="0.0" y="10.6">(c)</text>
+    </g>
+  </g>
+</svg>
