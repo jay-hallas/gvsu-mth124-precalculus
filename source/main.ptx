@@ -53,7 +53,7 @@
     <xi:include href="./activities/03-linear.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
-
+ <xi:include href="./lt-practice/midterm-practice-fall26.ptx"/>
     <chapter xml:id="lt-practice">
       <title>Practice Learning Targets</title>
       <xi:include href="./lt-practice/lt1-functions.ptx"/>
