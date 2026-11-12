@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-exp-log-review">
+<title>Review Activity: Exponentials and Logarithms</title>
+
+<introduction>
+<p>This review covers exponential models, logarithms, and solving exponential and logarithmic equations, including equations that come from applications and from heating and cooling problems. Each section starts with a short summary and worked examples, then moves from basic problems to harder ones. A mixed set of additional practice is at the end.</p>
+<p>
+<ul>
+<li>Throughout this activity, <m>\ln(x)</m> means the logarithm base <m>e</m> and <m>\log(x)</m> means the logarithm base <m>10</m>.</li>
+<li>The only logarithm rule you need is the exponent rule, <m>\ln(M^p) = p\ln(M)</m>, which holds whenever <m>M \gt 0</m>. It works the same way for <m>\log</m> and for any other base.</li>
+<li>Avoid rounding in the middle of a problem. Keep exact values like <m>\ln(5/3)</m>, or store them in your calculator, and round only your final answer.</li>
+<li>Several sections include a short video if you would like a refresher.</li>
+</ul>
+</p>
+</introduction>
+
+<!-- ===== EXPONENTIAL MODELS: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Exponential Models</title>
+<assemblage xml:id="explog-review-exp-functions">
+<title>Exponential Functions</title>
+<p>An exponential function has the form <m>f(x) = a\cdot b^x</m>, where <m>a</m> is the initial value (the output when <m>x = 0</m>) and <m>b</m> is the growth or decay factor. Each time <m>x</m> increases by <m>1</m>, the output is multiplied by <m>b</m>.</p>
+<p>
+<ul>
+<li>If <m>b \gt 1</m>, the function is growing. If <m>0 \lt b \lt 1</m>, the function is decaying.</li>
+<li>If a quantity increases by a percent rate <m>r</m> (written as a decimal) each time period, then <m>b = 1 + r</m>. If it decreases by a percent rate <m>r</m>, then <m>b = 1 - r</m>.</li>
+<li>A linear function <em>adds</em> the same amount each step. An exponential function <em>multiplies</em> by the same factor each step.</li>
+<li>Some models use the number <m>e \approx 2.71828</m> as the base and are written <m>f(x) = a e^{kx}</m>. These grow when <m>k \gt 0</m> and decay when <m>k \lt 0</m>.</li>
+</ul>
+</p>
+</assemblage>
+</paragraphs>
+
+<figure xml:id="explog-video-exp-models">
+<caption>Video: basic exponential models</caption>
+<video youtube="Z3YVZzCEi_A" width="60%"/>
+</figure>
+
+<example xml:id="explog-example-growth">
+<title>Worked Example</title>
+<statement>
+<p>A town has 4,200 residents, and its population grows by <m>3\%</m> each year. Write an exponential model <m>P(x)</m> for the population <m>x</m> years from now. Then use it to predict the population in <m>10</m> years.</p>
+</statement>
+<solution>
+<p>The initial value is <m>a = 4200</m>. The population grows by <m>3\%</m>, so <m>r = 0.03</m> and the growth factor is <m>b = 1 + 0.03 = 1.03</m>. The model is <m>P(x) = 4200(1.03)^x</m>.</p>
+<p>
+To predict the population in <m>10</m> years, substitute <m>x = 10</m>.
+<md>
+<mrow>P(10) \amp= 4200(1.03)^{10}</mrow>
+<mrow>\amp\approx 5644.45</mrow>
+</md>
+</p>
+<p>The town will have about 5,644 residents in <m>10</m> years.</p>
+<p>A common error is to use <m>b = 0.03</m> or <m>b = 3</m>. The factor <m>1.03</m> says that each year the town keeps all of its current population (the <m>1</m>) and adds <m>3\%</m> more (the <m>0.03</m>).</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-table">
+<title>Worked Example</title>
+<statement>
+<p>Could the table below represent a linear function, an exponential function, or neither? If it is linear or exponential, write a formula for <m>f(x)</m>.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell right="major"><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell right="major"><m>f(x)</m></cell>
+<cell><m>2000</m></cell>
+<cell><m>1600</m></cell>
+<cell><m>1280</m></cell>
+<cell><m>1024</m></cell>
+</row>
+</tabular>
+</statement>
+<solution>
+<p>The <m>x</m>-values go up by <m>1</m> each time, so we can compare consecutive outputs directly.</p>
+<p>
+<alert>Check for linear (differences):</alert>
+<md>
+<mrow>1600 - 2000 \amp= -400</mrow>
+<mrow>1280 - 1600 \amp= -320</mrow>
+<mrow>1024 - 1280 \amp= -256</mrow>
+</md>
+</p>
+<p>The differences are not constant, so <m>f</m> is not linear.</p>
+<p>
+<alert>Check for exponential (ratios):</alert>
+<md>
+<mrow>\frac{1600}{2000} \amp= 0.8</mrow>
+<mrow>\frac{1280}{1600} \amp= 0.8</mrow>
+<mrow>\frac{1024}{1280} \amp= 0.8</mrow>
+</md>
+</p>
+<p>Every ratio is <m>0.8</m>, so <m>f</m> could be exponential with decay factor <m>b = 0.8</m>. The output at <m>x = 0</m> is <m>2000</m>, so <m>a = 2000</m> and <m>f(x) = 2000(0.8)^x</m>. A factor of <m>0.8 = 1 - 0.2</m> means the output loses <m>20\%</m> each step.</p>
+<p>Just like with linear tables, be careful when the <m>x</m>-values are not evenly spaced. Comparing ratios of consecutive outputs only works this simply when the inputs go up by the same amount each time.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== EXPONENTIAL MODELS: practice ===== -->
+<page>
+<exercise xml:id="explog-identify">
+<introduction>
+<p>For each function, give the initial value and the growth or decay factor, say whether the function is growing or decaying, and give the percent rate of change.</p>
+</introduction>
+
+<task workspace="1.25cm">
+<statement>
+<p><m>f(x) = 300(1.06)^x</m></p>
+</statement>
+<answer>
+<p>Initial value <m>300</m>, factor <m>1.06</m>, growing by <m>6\%</m></p>
+</answer>
+<solution>
+<p>Here <m>a = 300</m> and <m>b = 1.06</m>. Since <m>b \gt 1</m>, the function is growing, and <m>b = 1 + 0.06</m> means it grows by <m>6\%</m> each step.</p>
+</solution>
+</task>
+
+<task workspace="1.25cm">
+<statement>
+<p><m>g(x) = 45(0.82)^x</m></p>
+</statement>
+<answer>
+<p>Initial value <m>45</m>, factor <m>0.82</m>, decaying by <m>18\%</m></p>
+</answer>
+<solution>
+<p>Here <m>a = 45</m> and <m>b = 0.82</m>. Since <m>0 \lt b \lt 1</m>, the function is decaying. Writing <m>b = 1 - 0.18</m> shows it loses <m>18\%</m> each step. A common error is to say the rate is <m>82\%</m>; that is the percent that remains, not the percent lost.</p>
+</solution>
+</task>
+
+<task workspace="1.25cm">
+<statement>
+<p><m>h(x) = 1200(1.5)^x</m></p>
+</statement>
+<answer>
+<p>Initial value <m>1200</m>, factor <m>1.5</m>, growing by <m>50\%</m></p>
+</answer>
+<solution>
+<p>Here <m>a = 1200</m> and <m>b = 1.5 = 1 + 0.5</m>, so the function grows by <m>50\%</m> each step.</p>
+</solution>
+</task>
+
+<task workspace="1.25cm">
+<statement>
+<p><m>A(x) = 8(0.995)^x</m></p>
+</statement>
+<answer>
+<p>Initial value <m>8</m>, factor <m>0.995</m>, decaying by <m>0.5\%</m></p>
+</answer>
+<solution>
+<p>Here <m>a = 8</m> and <m>b = 0.995 = 1 - 0.005</m>. The decimal <m>0.005</m> is <m>0.5\%</m>, so the function decays by half a percent each step.</p>
+</solution>
+</task>
+
+<task workspace="1.25cm">
+<statement>
+<p><m>y = 75(2)^x</m></p>
+</statement>
+<answer>
+<p>Initial value <m>75</m>, factor <m>2</m>, growing by <m>100\%</m> (doubling)</p>
+</answer>
+<solution>
+<p>Here <m>a = 75</m> and <m>b = 2 = 1 + 1</m>. Adding <m>100\%</m> each step is the same as doubling each step.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-build-savings">
+<introduction>
+<p>A savings account starts with $2,500 and earns <m>4\%</m> interest each year.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement>
+<p>Write an exponential model <m>A(x)</m> for the balance <m>x</m> years after the account is opened.</p>
+</statement>
+<answer>
+<p><m>A(x) = 2500(1.04)^x</m></p>
+</answer>
+<solution>
+<p>The initial value is <m>2500</m>, and the balance grows by <m>4\%</m>, so <m>b = 1.04</m>. The model is <m>A(x) = 2500(1.04)^x</m>.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>What will the balance be after <m>8</m> years?</p>
+</statement>
+<answer>
+<p>About $3,421.42</p>
+</answer>
+<solution>
+<p><m>A(8) = 2500(1.04)^8 \approx 3421.42</m>, so the balance will be about $3,421.42.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-build-trout">
+<introduction>
+<p>A lake has 9,000 trout, and the trout population is decreasing by <m>6\%</m> each year.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement>
+<p>Write an exponential model <m>F(x)</m> for the number of trout <m>x</m> years from now.</p>
+</statement>
+<answer>
+<p><m>F(x) = 9000(0.94)^x</m></p>
+</answer>
+<solution>
+<p>The initial value is <m>9000</m>. The population is decreasing by <m>6\%</m>, so <m>b = 1 - 0.06 = 0.94</m>. The model is <m>F(x) = 9000(0.94)^x</m>.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>About how many trout will be in the lake after <m>5</m> years?</p>
+</statement>
+<answer>
+<p>About 6,605 trout</p>
+</answer>
+<solution>
+<p><m>F(5) = 9000(0.94)^5 \approx 6605.14</m>, so there will be about 6,605 trout.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-table-practice">
+<introduction>
+<p>Use the table below.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell right="major"><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell right="major"><m>f(x)</m></cell>
+<cell><m>80</m></cell>
+<cell><m>100</m></cell>
+<cell><m>125</m></cell>
+<cell><m>156.25</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="1.5cm">
+<statement>
+<p>Show that the table does not represent a linear function.</p>
+</statement>
+<solution>
+<p>The differences between consecutive outputs are <m>100 - 80 = 20</m>, <m>125 - 100 = 25</m>, and <m>156.25 - 125 = 31.25</m>. Since the inputs go up by <m>1</m> each time and the differences are not constant, the rate of change is not constant, so the function is not linear.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>Show that the table could represent an exponential function, and write a formula for <m>f(x)</m>.</p>
+</statement>
+<answer>
+<p><m>f(x) = 80(1.25)^x</m></p>
+</answer>
+<solution>
+<p>The ratios are <m>\frac{100}{80} = 1.25</m>, <m>\frac{125}{100} = 1.25</m>, and <m>\frac{156.25}{125} = 1.25</m>. The ratio is constant, so the function could be exponential with <m>b = 1.25</m>. The initial value is <m>f(0) = 80</m>, so <m>f(x) = 80(1.25)^x</m>.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>Use your formula to find <m>f(6)</m>.</p>
+</statement>
+<answer>
+<p><m>f(6) \approx 305.18</m></p>
+</answer>
+<solution>
+<p><m>f(6) = 80(1.25)^6 \approx 305.18</m>.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== LOGARITHMS AS INVERSES: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Logarithms as Inverses of Exponentials</title>
+<assemblage xml:id="explog-review-logs">
+<title>Logarithms</title>
+<p>A logarithm is an exponent. The expression <m>\log_b(y)</m> asks: what power do we raise <m>b</m> to in order to get <m>y</m>?</p>
+<p>
+<md>
+<mrow>\log_b(y) = x \quad \text{means the same thing as} \quad b^x = y</mrow>
+</md>
+</p>
+<p>In both forms, the base stays the base. In log form, the logarithm is equal to the exponent.</p>
+<p>
+<ul>
+<li>Two bases have their own notation: <m>\log(x)</m> means <m>\log_{10}(x)</m>, and <m>\ln(x)</m> (the natural log) means <m>\log_e(x)</m>.</li>
+<li>The function <m>\log_b(x)</m> is the inverse of <m>b^x</m>, so each one undoes the other: <m>\log_b(b^x) = x</m> and <m>b^{\log_b(x)} = x</m>. In particular, <m>\ln(e^x) = x</m> and <m>e^{\ln(x)} = x</m>.</li>
+<li>The base of a logarithm must be positive and cannot be <m>1</m>. Because <m>b^x</m> is always positive, the input of a logarithm must also be positive. The output of a logarithm can be positive, negative, or zero.</li>
+<li>Two values worth knowing: <m>\log_b(1) = 0</m> because <m>b^0 = 1</m>, and <m>\log_b(b) = 1</m> because <m>b^1 = b</m>.</li>
+</ul>
+</p>
+</assemblage>
+</paragraphs>
+
+<example xml:id="explog-example-inverse-table">
+<title>Worked Example</title>
+<statement>
+<p>The table on the left shows some values of <m>f(x) = 2^x</m>. Use it to fill in a table for the inverse function, <m>f^{-1}(x) = \log_2(x)</m>.</p>
+<sidebyside widths="45% 45%">
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell right="major"><m>x</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell right="major"><m>2^x</m></cell>
+<cell><m>\frac{1}{2}</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>8</m></cell>
+</row>
+</tabular>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell right="major"><m>x</m></cell>
+<cell><m>\frac{1}{2}</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>8</m></cell>
+</row>
+<row>
+<cell right="major"><m>\log_2(x)</m></cell>
+<cell></cell>
+<cell></cell>
+<cell></cell>
+<cell></cell>
+<cell></cell>
+</row>
+</tabular>
+</sidebyside>
+</statement>
+<solution>
+<p>An inverse function swaps inputs and outputs. Since <m>2^3 = 8</m>, the inverse sends <m>8</m> back to <m>3</m>, so <m>\log_2(8) = 3</m>. Doing the same for each column gives <m>\log_2\left(\frac{1}{2}\right) = -1</m>, <m>\log_2(1) = 0</m>, <m>\log_2(2) = 1</m>, <m>\log_2(4) = 2</m>, and <m>\log_2(8) = 3</m>.</p>
+<p>Notice that every output of <m>2^x</m> is positive, so every input of <m>\log_2(x)</m> is positive. The outputs of <m>\log_2(x)</m>, on the other hand, include <m>-1</m> and <m>0</m>.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-convert">
+<title>Worked Example</title>
+<statement>
+<p>Rewrite each equation in the other form.</p>
+<p>
+<ol marker="(a)">
+<li><m>2^5 = 32</m></li>
+<li><m>4^{-1} = \frac{1}{4}</m></li>
+<li><m>\log_3(81) = 4</m></li>
+<li><m>\ln(x) = 5</m></li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>
+<ol marker="(a)">
+<li>The base is <m>2</m> and the exponent is <m>5</m>. The log equals the exponent, so <m>\log_2(32) = 5</m>.</li>
+<li>The base is <m>4</m> and the exponent is <m>-1</m>, so <m>\log_4\left(\frac{1}{4}\right) = -1</m>.</li>
+<li>The base is <m>3</m> and the log value <m>4</m> is the exponent, so <m>3^4 = 81</m>. It can help to read <m>\log_3(81) = 4</m> out loud as <q>3 to the 4th is 81.</q></li>
+<li>Since <m>\ln</m> is the log base <m>e</m>, this says <m>\log_e(x) = 5</m>, so <m>e^5 = x</m>.</li>
+</ol>
+</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-evaluate">
+<title>Worked Example</title>
+<statement>
+<p>Evaluate each expression without a calculator.</p>
+<p>
+<ol marker="(a)">
+<li><m>\log_2(16)</m></li>
+<li><m>\log(1000)</m></li>
+<li><m>\log_5\left(\frac{1}{25}\right)</m></li>
+<li><m>\log_9(3)</m></li>
+<li><m>\log_7(1)</m></li>
+<li><m>\ln(e^4)</m></li>
+<li><m>10^{\log(6)}</m></li>
+</ol>
+</p>
+</statement>
+<solution>
+<title>Method 1: Ask <q>what power?</q></title>
+<p>
+<ol marker="(a)">
+<li><m>2</m> to what power is <m>16</m>? Since <m>2^4 = 16</m>, <m>\log_2(16) = 4</m>.</li>
+<li>This is base <m>10</m>. Since <m>10^3 = 1000</m>, <m>\log(1000) = 3</m>.</li>
+<li>Since <m>5^2 = 25</m>, we have <m>5^{-2} = \frac{1}{25}</m>, so <m>\log_5\left(\frac{1}{25}\right) = -2</m>.</li>
+<li>Since <m>\sqrt{9} = 3</m>, we have <m>9^{1/2} = 3</m>, so <m>\log_9(3) = \frac{1}{2}</m>.</li>
+<li>Any base to the <m>0</m> power is <m>1</m>, so <m>\log_7(1) = 0</m>.</li>
+<li>By the inverse property, <m>\ln(e^4) = 4</m>.</li>
+<li>By the inverse property, <m>10^{\log(6)} = 6</m>.</li>
+</ol>
+</p>
+</solution>
+<solution>
+<title>Method 2: Set it equal to <m>x</m> and match bases</title>
+<p>When the answer is not obvious, set the log equal to <m>x</m>, rewrite in exponential form, and write both sides with the same base. For part (d):
+<md>
+<mrow>\log_9(3) \amp= x</mrow>
+<mrow>9^x \amp= 3</mrow>
+<mrow>(3^2)^x \amp= 3^1</mrow>
+<mrow>3^{2x} \amp= 3^1</mrow>
+<mrow>2x \amp= 1</mrow>
+<mrow>x \amp= \frac{1}{2}</mrow>
+</md>
+</p>
+<p>The same idea works for part (c): <m>5^x = \frac{1}{25} = 5^{-2}</m>, so <m>x = -2</m>. This is exactly the matching bases method we will use to solve exponential equations in the next section.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== LOGARITHMS AS INVERSES: practice ===== -->
+<page>
+<exercise xml:id="explog-exp-to-log">
+<introduction>
+<p>Rewrite each equation in logarithmic form.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement><p><m>6^2 = 36</m></p></statement>
+<answer><p><m>\log_6(36) = 2</m></p></answer>
+<solution><p>The base is <m>6</m> and the exponent is <m>2</m>, so <m>\log_6(36) = 2</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>10^{-2} = 0.01</m></p></statement>
+<answer><p><m>\log(0.01) = -2</m></p></answer>
+<solution><p>The base is <m>10</m>, so we can use the common log: <m>\log(0.01) = -2</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>5^0 = 1</m></p></statement>
+<answer><p><m>\log_5(1) = 0</m></p></answer>
+<solution><p><m>\log_5(1) = 0</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>16^{1/2} = 4</m></p></statement>
+<answer><p><m>\log_{16}(4) = \frac{1}{2}</m></p></answer>
+<solution><p>The base is <m>16</m> and the exponent is <m>\frac{1}{2}</m>, so <m>\log_{16}(4) = \frac{1}{2}</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>e^x = 12</m></p></statement>
+<answer><p><m>\ln(12) = x</m></p></answer>
+<solution><p>The base is <m>e</m>, so we use the natural log: <m>\ln(12) = x</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-log-to-exp">
+<introduction>
+<p>Rewrite each equation in exponential form.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement><p><m>\log_2(64) = 6</m></p></statement>
+<answer><p><m>2^6 = 64</m></p></answer>
+<solution><p>The base is <m>2</m> and the log value <m>6</m> is the exponent, so <m>2^6 = 64</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log(100000) = 5</m></p></statement>
+<answer><p><m>10^5 = 100000</m></p></answer>
+<solution><p>With no base written, the base is <m>10</m>, so <m>10^5 = 100000</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_7\left(\frac{1}{49}\right) = -2</m></p></statement>
+<answer><p><m>7^{-2} = \frac{1}{49}</m></p></answer>
+<solution><p><m>7^{-2} = \frac{1}{49}</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_8(2) = \frac{1}{3}</m></p></statement>
+<answer><p><m>8^{1/3} = 2</m></p></answer>
+<solution><p><m>8^{1/3} = 2</m>, which makes sense because the cube root of <m>8</m> is <m>2</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\ln(x) = 3</m></p></statement>
+<answer><p><m>e^3 = x</m></p></answer>
+<solution><p>The natural log has base <m>e</m>, so <m>e^3 = x</m>.</p></solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-evaluate-practice">
+<introduction>
+<p>Evaluate each expression without a calculator.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement><p><m>\log_2(8)</m></p></statement>
+<answer><p><m>3</m></p></answer>
+<solution><p><m>2^3 = 8</m>, so <m>\log_2(8) = 3</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log(10000)</m></p></statement>
+<answer><p><m>4</m></p></answer>
+<solution><p><m>10^4 = 10000</m>, so <m>\log(10000) = 4</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_2\left(\frac{1}{8}\right)</m></p></statement>
+<answer><p><m>-3</m></p></answer>
+<solution><p><m>2^{-3} = \frac{1}{2^3} = \frac{1}{8}</m>, so <m>\log_2\left(\frac{1}{8}\right) = -3</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_6(1)</m></p></statement>
+<answer><p><m>0</m></p></answer>
+<solution><p><m>6^0 = 1</m>, so <m>\log_6(1) = 0</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_4(4)</m></p></statement>
+<answer><p><m>1</m></p></answer>
+<solution><p><m>4^1 = 4</m>, so <m>\log_4(4) = 1</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_{25}(5)</m></p></statement>
+<answer><p><m>\frac{1}{2}</m></p></answer>
+<solution><p>Since <m>\sqrt{25} = 5</m>, <m>25^{1/2} = 5</m> and <m>\log_{25}(5) = \frac{1}{2}</m>. Matching bases also works: <m>25^x = 5</m> becomes <m>5^{2x} = 5^1</m>, so <m>2x = 1</m> and <m>x = \frac{1}{2}</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\ln(e^7)</m></p></statement>
+<answer><p><m>7</m></p></answer>
+<solution><p>By the inverse property, <m>\ln(e^7) = 7</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>e^{\ln(9)}</m></p></statement>
+<answer><p><m>9</m></p></answer>
+<solution><p>By the inverse property, <m>e^{\ln(9)} = 9</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log(0.001)</m></p></statement>
+<answer><p><m>-3</m></p></answer>
+<solution><p><m>0.001 = \frac{1}{1000} = 10^{-3}</m>, so <m>\log(0.001) = -3</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-log-concepts">
+<task workspace="1.5cm">
+<statement>
+<p>Explain why <m>\log_2(-8)</m> is undefined.</p>
+</statement>
+<solution>
+<p><m>\log_2(-8)</m> asks for a power of <m>2</m> that equals <m>-8</m>. Every power of <m>2</m> is positive (for example <m>2^3 = 8</m> and <m>2^{-3} = \frac{1}{8}</m>), so no exponent works. The input of a logarithm must be positive.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Without a calculator, decide which two consecutive whole numbers <m>\log_3(50)</m> is between. Explain how you know.</p>
+</statement>
+<answer>
+<p>Between <m>3</m> and <m>4</m></p>
+</answer>
+<solution>
+<p><m>3^3 = 27</m> and <m>3^4 = 81</m>. Since <m>50</m> is between <m>27</m> and <m>81</m>, the exponent we need is between <m>3</m> and <m>4</m>. In the next section we will find this value exactly; it is about <m>3.56</m>.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== SOLVING EXPONENTIAL EQUATIONS: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Solving Exponential Equations</title>
+<assemblage xml:id="explog-review-solve-exp">
+<title>Solving Exponential Equations</title>
+<p><alert>Step 1: Isolate the exponential part.</alert> Use the same steps you would use on a linear equation: undo addition or subtraction first, then undo multiplication or division. Do not combine a coefficient with the base. For example, <m>3\cdot 2^x</m> is <em>not</em> <m>6^x</m>, because the exponent only applies to the <m>2</m>.</p>
+<p><alert>Step 2: Choose a method.</alert>
+<ul>
+<li><alert>Matching bases.</alert> If both sides can be written as powers of the same base, set the exponents equal: if <m>b^M = b^N</m>, then <m>M = N</m>.</li>
+<li><alert>Taking a log of both sides.</alert> Take <m>\ln</m> (or <m>\log</m>) of both sides and use the exponent rule <m>\ln(M^p) = p\ln(M)</m> to bring the exponent down. This works even when the bases cannot be matched, as long as the isolated exponential equals a positive number. If it equals zero or a negative number, the equation has no solution.</li>
+<li><alert>Rewriting in log form.</alert> If <m>b^x = y</m>, then <m>x = \log_b(y)</m>. This is especially quick for base <m>e</m>: if <m>e^x = y</m>, then <m>x = \ln(y)</m>.</li>
+</ul>
+</p>
+<p>Give the exact answer, such as <m>\frac{\ln(11)}{\ln(2)}</m>, and then round at the very end if a decimal is needed.</p>
+</assemblage>
+</paragraphs>
+
+<figure xml:id="explog-video-solve-exp">
+<caption>Video: solving basic exponential equations</caption>
+<video youtube="7Ig6kVZaWoU" width="60%"/>
+</figure>
+
+<example xml:id="explog-example-match-bases">
+<title>Worked Example</title>
+<statement>
+<p>Solve each equation.</p>
+<p>
+<ol marker="(a)">
+<li><m>3^{x+1} = 81</m></li>
+<li><m>4^x = 8</m></li>
+</ol>
+</p>
+</statement>
+<solution>
+<title>Method 1: Matching bases</title>
+<p>
+(a) Since <m>81 = 3^4</m>, we can write both sides as powers of <m>3</m>.
+<md>
+<mrow>3^{x+1} \amp= 3^4</mrow>
+<mrow>x + 1 \amp= 4</mrow>
+<mrow>x \amp= 3</mrow>
+</md>
+</p>
+<p>
+(b) Neither <m>8</m> nor <m>4</m> is a power of the other, but both are powers of <m>2</m>: <m>4 = 2^2</m> and <m>8 = 2^3</m>.
+<md>
+<mrow>(2^2)^x \amp= 2^3</mrow>
+<mrow>2^{2x} \amp= 2^3</mrow>
+<mrow>2x \amp= 3</mrow>
+<mrow>x \amp= \frac{3}{2}</mrow>
+</md>
+</p>
+</solution>
+<solution>
+<title>Method 2: Taking <m>\ln</m> of both sides</title>
+<p>
+(a) Take <m>\ln</m> of both sides and bring the exponent down. Keep parentheses around <m>x + 1</m>, since the whole exponent comes down.
+<md>
+<mrow>\ln\left(3^{x+1}\right) \amp= \ln(81)</mrow>
+<mrow>(x+1)\ln(3) \amp= \ln(81)</mrow>
+<mrow>x + 1 \amp= \frac{\ln(81)}{\ln(3)} = 4</mrow>
+<mrow>x \amp= 3</mrow>
+</md>
+</p>
+<p>
+(b)
+<md>
+<mrow>\ln(4^x) \amp= \ln(8)</mrow>
+<mrow>x\ln(4) \amp= \ln(8)</mrow>
+<mrow>x \amp= \frac{\ln(8)}{\ln(4)} = 1.5</mrow>
+</md>
+</p>
+<p>Both methods give the same answers. Matching bases is quicker when it works, but taking a log of both sides works even when the bases cannot be matched.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-isolate-exp">
+<title>Worked Example</title>
+<statement>
+<p>Solve <m>2\cdot 5^x - 3 = 17</m>. Give an exact answer and a decimal rounded to two places.</p>
+</statement>
+<solution>
+<title>Method 1: Isolate, then take <m>\ln</m></title>
+<p>
+First isolate the exponential part, undoing the subtraction and then the multiplication.
+<md>
+<mrow>2\cdot 5^x - 3 \amp= 17</mrow>
+<mrow>2\cdot 5^x \amp= 20</mrow>
+<mrow>5^x \amp= 10</mrow>
+</md>
+</p>
+<p>
+Since <m>10</m> is not a power of <m>5</m>, matching bases will not work. Take <m>\ln</m> of both sides.
+<md>
+<mrow>\ln(5^x) \amp= \ln(10)</mrow>
+<mrow>x\ln(5) \amp= \ln(10)</mrow>
+<mrow>x \amp= \frac{\ln(10)}{\ln(5)} \approx 1.43</mrow>
+</md>
+</p>
+<p>This is reasonable: <m>5^1 = 5</m> and <m>5^2 = 25</m>, so the exponent that gives <m>10</m> should be between <m>1</m> and <m>2</m>.</p>
+</solution>
+<solution>
+<title>Method 2: Isolate, then take <m>\log</m></title>
+<p>
+Any logarithm works as long as we use the same one on both sides. Starting from <m>5^x = 10</m>:
+<md>
+<mrow>\log(5^x) \amp= \log(10)</mrow>
+<mrow>x\log(5) \amp= 1</mrow>
+<mrow>x \amp= \frac{1}{\log(5)} \approx 1.43</mrow>
+</md>
+</p>
+<p>The exact answer looks different, but <m>\frac{1}{\log(5)}</m> and <m>\frac{\ln(10)}{\ln(5)}</m> are the same number.</p>
+</solution>
+<solution>
+<title>Method 3: Isolate, then rewrite in log form</title>
+<p>Starting from <m>5^x = 10</m>, log form gives the exact answer <m>x = \log_5(10)</m> right away. To get a decimal, either use a calculator that allows a base <m>5</m> log, or go back to Method 1.</p>
+<p>A common error is to combine the <m>2</m> and the <m>5</m> into <m>10^x</m>. The exponent is only on the <m>5</m>, so the <m>2</m> has to be divided off first.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-base-e">
+<title>Worked Example</title>
+<statement>
+<p>Solve <m>3e^{2x} + 4 = 25</m>. Give an exact answer and a decimal rounded to two places.</p>
+</statement>
+<solution>
+<p>
+Isolate <m>e^{2x}</m>, then take <m>\ln</m> of both sides.
+<md>
+<mrow>3e^{2x} + 4 \amp= 25</mrow>
+<mrow>3e^{2x} \amp= 21</mrow>
+<mrow>e^{2x} \amp= 7</mrow>
+<mrow>\ln\left(e^{2x}\right) \amp= \ln(7)</mrow>
+<mrow>2x \amp= \ln(7)</mrow>
+<mrow>x \amp= \frac{\ln(7)}{2} \approx 0.97</mrow>
+</md>
+</p>
+<p>There are two ways to see that <m>\ln\left(e^{2x}\right) = 2x</m>. One is the inverse property. The other is the exponent rule: <m>\ln\left(e^{2x}\right) = 2x\ln(e) = 2x\cdot 1 = 2x</m>, since <m>\ln(e) = 1</m>. You could also skip the <m>\ln</m> step and rewrite <m>e^{2x} = 7</m> in log form as <m>2x = \ln(7)</m>.</p>
+<p>A common error is to divide by <m>2</m> too early and write <m>e^x = \frac{7}{2}</m>. The <m>2</m> is in the exponent, so it can only be dealt with after the <m>\ln</m> brings it down.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== SOLVING EXPONENTIAL EQUATIONS: practice ===== -->
+<page>
+<exercise xml:id="explog-match-practice">
+<introduction>
+<p>Solve each equation by matching bases.</p>
+</introduction>
+
+<task workspace="1.25cm">
+<statement><p><m>3^x = 243</m></p></statement>
+<answer><p><m>x = 5</m></p></answer>
+<solution><p><m>243 = 3^5</m>, so <m>3^x = 3^5</m> and <m>x = 5</m>.</p></solution>
+</task>
+
+<task workspace="1.25cm">
+<statement><p><m>2^{x-1} = 64</m></p></statement>
+<answer><p><m>x = 7</m></p></answer>
+<solution><p><m>64 = 2^6</m>, so <m>x - 1 = 6</m> and <m>x = 7</m>.</p></solution>
+</task>
+
+<task workspace="1.25cm">
+<statement><p><m>5^{2x} = \frac{1}{25}</m></p></statement>
+<answer><p><m>x = -1</m></p></answer>
+<solution><p><m>\frac{1}{25} = 5^{-2}</m>, so <m>2x = -2</m> and <m>x = -1</m>.</p></solution>
+</task>
+
+<task workspace="1.25cm">
+<statement><p><m>9^x = 27</m></p></statement>
+<answer><p><m>x = \frac{3}{2}</m></p></answer>
+<solution><p>Write both sides as powers of <m>3</m>: <m>(3^2)^x = 3^3</m>, so <m>3^{2x} = 3^3</m>, <m>2x = 3</m>, and <m>x = \frac{3}{2}</m>.</p></solution>
+</task>
+
+<task workspace="1.25cm">
+<statement><p><m>10^{x+4} = 0.001</m></p></statement>
+<answer><p><m>x = -7</m></p></answer>
+<solution><p><m>0.001 = 10^{-3}</m>, so <m>x + 4 = -3</m> and <m>x = -7</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-ln-practice">
+<introduction>
+<p>Solve each equation using logarithms. Give an exact answer and a decimal rounded to two places.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement><p><m>2^x = 11</m></p></statement>
+<answer><p><m>x = \frac{\ln(11)}{\ln(2)} \approx 3.46</m></p></answer>
+<solution><p>Take <m>\ln</m> of both sides: <m>x\ln(2) = \ln(11)</m>, so <m>x = \frac{\ln(11)}{\ln(2)} \approx 3.46</m>. Check that this is reasonable: <m>2^3 = 8</m> and <m>2^4 = 16</m>, and <m>11</m> is between them.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>e^x = 20</m></p></statement>
+<answer><p><m>x = \ln(20) \approx 3.00</m></p></answer>
+<solution><p>Rewrite in log form (or take <m>\ln</m> of both sides): <m>x = \ln(20) \approx 3.00</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>7^x = 0.4</m></p></statement>
+<answer><p><m>x = \frac{\ln(0.4)}{\ln(7)} \approx -0.47</m></p></answer>
+<solution><p><m>x\ln(7) = \ln(0.4)</m>, so <m>x = \frac{\ln(0.4)}{\ln(7)} \approx -0.47</m>. A negative answer makes sense here, since <m>0.4</m> is less than <m>7^0 = 1</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>e^{3x} = 50</m></p></statement>
+<answer><p><m>x = \frac{\ln(50)}{3} \approx 1.30</m></p></answer>
+<solution><p><m>3x = \ln(50)</m>, so <m>x = \frac{\ln(50)}{3} \approx 1.30</m>.</p></solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-isolate-practice">
+<introduction>
+<p>Isolate the exponential part first, then solve. Use matching bases when it works and logarithms otherwise. Give exact answers and decimals rounded to two places where needed.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement><p><m>4\cdot 2^x = 96</m></p></statement>
+<answer><p><m>x = \frac{\ln(24)}{\ln(2)} \approx 4.58</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>4\cdot 2^x \amp= 96</mrow>
+<mrow>2^x \amp= 24</mrow>
+<mrow>x\ln(2) \amp= \ln(24)</mrow>
+<mrow>x \amp= \frac{\ln(24)}{\ln(2)} \approx 4.58</mrow>
+</md>
+</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement><p><m>6\cdot 3^x + 4 = 166</m></p></statement>
+<answer><p><m>x = 3</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>6\cdot 3^x + 4 \amp= 166</mrow>
+<mrow>6\cdot 3^x \amp= 162</mrow>
+<mrow>3^x \amp= 27</mrow>
+<mrow>3^x \amp= 3^3</mrow>
+<mrow>x \amp= 3</mrow>
+</md>
+</p>
+<p>Notice that matching bases only became possible after isolating. Using <m>\ln</m> instead gives <m>x = \frac{\ln(27)}{\ln(3)} = 3</m>, the same answer.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement><p><m>500(0.9)^x = 200</m></p></statement>
+<answer><p><m>x = \frac{\ln(0.4)}{\ln(0.9)} \approx 8.70</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>500(0.9)^x \amp= 200</mrow>
+<mrow>(0.9)^x \amp= 0.4</mrow>
+<mrow>x\ln(0.9) \amp= \ln(0.4)</mrow>
+<mrow>x \amp= \frac{\ln(0.4)}{\ln(0.9)} \approx 8.70</mrow>
+</md>
+</p>
+<p>Both logs are negative, so the answer is positive.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement><p><m>2e^{0.5x} - 3 = 15</m></p></statement>
+<answer><p><m>x = 2\ln(9) \approx 4.39</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>2e^{0.5x} - 3 \amp= 15</mrow>
+<mrow>2e^{0.5x} \amp= 18</mrow>
+<mrow>e^{0.5x} \amp= 9</mrow>
+<mrow>0.5x \amp= \ln(9)</mrow>
+<mrow>x \amp= \frac{\ln(9)}{0.5} = 2\ln(9) \approx 4.39</mrow>
+</md>
+</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement><p><m>12 - 4e^{-x} = 2</m></p></statement>
+<answer><p><m>x = -\ln(2.5) \approx -0.92</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>12 - 4e^{-x} \amp= 2</mrow>
+<mrow>-4e^{-x} \amp= -10</mrow>
+<mrow>e^{-x} \amp= 2.5</mrow>
+<mrow>-x \amp= \ln(2.5)</mrow>
+<mrow>x \amp= -\ln(2.5) \approx -0.92</mrow>
+</md>
+</p>
+<p>Watch the signs: subtracting <m>12</m> leaves <m>-4e^{-x}</m>, and dividing by <m>-4</m> makes both sides positive.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-exp-errors">
+<task workspace="2cm">
+<statement>
+<p>A student solved <m>3\cdot 2^x = 48</m> by first writing <m>6^x = 48</m>. Explain the mistake, then solve the equation correctly.</p>
+</statement>
+<answer>
+<p><m>x = 4</m></p>
+</answer>
+<solution>
+<p>The exponent applies only to the <m>2</m>, not to the <m>3</m>, so <m>3\cdot 2^x</m> is not <m>6^x</m>. For example, when <m>x = 2</m>, <m>3\cdot 2^2 = 12</m> but <m>6^2 = 36</m>. Divide first: <m>2^x = 16 = 2^4</m>, so <m>x = 4</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>A student solving <m>e^x + 5 = 12</m> took <m>\ln</m> of both sides right away and wrote <m>x + \ln(5) = \ln(12)</m>. Explain the mistake, then solve the equation correctly.</p>
+</statement>
+<answer>
+<p><m>x = \ln(7) \approx 1.95</m></p>
+</answer>
+<solution>
+<p>The log of a sum does not split apart, so <m>\ln(e^x + 5)</m> is not <m>x + \ln(5)</m>. Isolate first: <m>e^x = 7</m>, so <m>x = \ln(7) \approx 1.95</m>.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Explain why <m>2^x = -8</m> has no solution.</p>
+</statement>
+<solution>
+<p>Every power of <m>2</m> is positive, so <m>2^x</m> can never equal <m>-8</m>. If you try to take <m>\ln</m> of both sides, you get <m>\ln(-8)</m>, which is undefined.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Earlier you estimated that <m>\log_3(50)</m> is between <m>3</m> and <m>4</m>. Find its value by solving <m>3^x = 50</m>.</p>
+</statement>
+<answer>
+<p><m>x = \frac{\ln(50)}{\ln(3)} \approx 3.56</m></p>
+</answer>
+<solution>
+<p><m>x\ln(3) = \ln(50)</m>, so <m>x = \frac{\ln(50)}{\ln(3)} \approx 3.56</m>, which is between <m>3</m> and <m>4</m> as expected.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== SOLVING LOGARITHMIC EQUATIONS: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Solving Logarithmic Equations</title>
+<assemblage xml:id="explog-review-solve-log">
+<title>Solving Logarithmic Equations</title>
+<p><alert>Step 1: Isolate the logarithm.</alert> Undo addition or subtraction first, then multiplication or division.</p>
+<p><alert>Step 2: Rewrite in exponential form.</alert> If <m>\log_b(M) = c</m>, then <m>M = b^c</m>. For the natural log, <m>\ln(M) = c</m> means <m>M = e^c</m>. For the common log, <m>\log(M) = c</m> means <m>M = 10^c</m>. Some people call this step <q>exponentiating both sides,</q> since <m>e^{\ln(M)} = e^c</m> simplifies to <m>M = e^c</m> by the inverse property. Either way, you get the same equation.</p>
+<p><alert>Step 3: Solve what is left.</alert> This is usually a linear equation.</p>
+<p><alert>Step 4: Check.</alert> The input of each logarithm must be positive. The solution itself is allowed to be negative; only the input to the log matters.</p>
+<p>If there is a power inside the log, you may use the exponent rule <m>\ln(M^p) = p\ln(M)</m>. Be careful: a logarithm does not distribute over addition or subtraction, so <m>\ln(3x - 1)</m> is not <m>\ln(3x) - \ln(1)</m>.</p>
+</assemblage>
+</paragraphs>
+
+<figure xml:id="explog-video-solve-log">
+<caption>Video: solving basic logarithmic equations</caption>
+<video youtube="fnhFneOz6n8" width="60%"/>
+</figure>
+
+<example xml:id="explog-example-basic-log">
+<title>Worked Example</title>
+<statement>
+<p>Solve each equation.</p>
+<p>
+<ol marker="(a)">
+<li><m>\log_3(x) = 4</m></li>
+<li><m>\log_2(x + 5) = 3</m></li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>(a) The log is already isolated. Rewriting in exponential form gives <m>x = 3^4 = 81</m>.</p>
+<p>
+(b) Rewrite in exponential form with base <m>2</m>, then solve the linear equation.
+<md>
+<mrow>\log_2(x + 5) \amp= 3</mrow>
+<mrow>x + 5 \amp= 2^3</mrow>
+<mrow>x + 5 \amp= 8</mrow>
+<mrow>x \amp= 3</mrow>
+</md>
+</p>
+<p>Check: <m>\log_2(3 + 5) = \log_2(8) = 3</m>. The input <m>8</m> is positive, so <m>x = 3</m> is a valid solution.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-isolate-log">
+<title>Worked Example</title>
+<statement>
+<p>Solve <m>2\ln(3x - 1) + 5 = 9</m>. Give an exact answer and a decimal rounded to two places.</p>
+</statement>
+<solution>
+<p>
+Isolate the log, rewrite in exponential form, and solve.
+<md>
+<mrow>2\ln(3x - 1) + 5 \amp= 9</mrow>
+<mrow>2\ln(3x - 1) \amp= 4</mrow>
+<mrow>\ln(3x - 1) \amp= 2</mrow>
+<mrow>3x - 1 \amp= e^2</mrow>
+<mrow>3x \amp= e^2 + 1</mrow>
+<mrow>x \amp= \frac{e^2 + 1}{3} \approx 2.80</mrow>
+</md>
+</p>
+<p>Check: <m>3x - 1 = e^2</m>, which is positive, so the solution is valid.</p>
+<p>Common errors include rewriting before the log is isolated (for example, writing <m>2(3x-1) + 5 = e^9</m>), and typing <m>e^2</m> into a calculator as <m>e\cdot 2</m>.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-log-power">
+<title>Worked Example</title>
+<statement>
+<p>Solve <m>\log_2(x^3) = 12</m>.</p>
+</statement>
+<solution>
+<title>Method 1: Rewrite in exponential form first</title>
+<p>
+<md>
+<mrow>\log_2(x^3) \amp= 12</mrow>
+<mrow>x^3 \amp= 2^{12}</mrow>
+<mrow>x^3 \amp= 4096</mrow>
+<mrow>x \amp= \sqrt[3]{4096} = 16</mrow>
+</md>
+</p>
+</solution>
+<solution>
+<title>Method 2: Use the exponent rule first</title>
+<p>
+<md>
+<mrow>\log_2(x^3) \amp= 12</mrow>
+<mrow>3\log_2(x) \amp= 12</mrow>
+<mrow>\log_2(x) \amp= 4</mrow>
+<mrow>x \amp= 2^4 = 16</mrow>
+</md>
+</p>
+<p>Both methods give <m>x = 16</m>. Method 2 avoids the cube root, which is why bringing the exponent down can be handy.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== SOLVING LOGARITHMIC EQUATIONS: practice ===== -->
+<page>
+<exercise xml:id="explog-basic-log-practice">
+<introduction>
+<p>Solve each equation. Give exact answers, and include a decimal rounded to two places when the answer involves <m>e</m>.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement><p><m>\log_5(x) = 3</m></p></statement>
+<answer><p><m>x = 125</m></p></answer>
+<solution><p><m>x = 5^3 = 125</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log(x) = -2</m></p></statement>
+<answer><p><m>x = 0.01</m></p></answer>
+<solution><p><m>x = 10^{-2} = 0.01</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\ln(x) = 4</m></p></statement>
+<answer><p><m>x = e^4 \approx 54.60</m></p></answer>
+<solution><p><m>x = e^4 \approx 54.60</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_4(x) = \frac{1}{2}</m></p></statement>
+<answer><p><m>x = 2</m></p></answer>
+<solution><p><m>x = 4^{1/2} = \sqrt{4} = 2</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p><m>\log_7(x) = 0</m></p></statement>
+<answer><p><m>x = 1</m></p></answer>
+<solution><p><m>x = 7^0 = 1</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-linear-inside-practice">
+<introduction>
+<p>Solve each equation and check that the input of the log is positive.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement><p><m>\log_2(x - 3) = 5</m></p></statement>
+<answer><p><m>x = 35</m></p></answer>
+<solution><p><m>x - 3 = 2^5 = 32</m>, so <m>x = 35</m>. Check: <m>\log_2(32) = 5</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>\log(4x) = 3</m></p></statement>
+<answer><p><m>x = 250</m></p></answer>
+<solution><p><m>4x = 10^3 = 1000</m>, so <m>x = 250</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>\ln(2x + 1) = 3</m></p></statement>
+<answer><p><m>x = \frac{e^3 - 1}{2} \approx 9.54</m></p></answer>
+<solution><p><m>2x + 1 = e^3</m>, so <m>2x = e^3 - 1</m> and <m>x = \frac{e^3 - 1}{2} \approx 9.54</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>\log_3(5 - x) = 2</m></p></statement>
+<answer><p><m>x = -4</m></p></answer>
+<solution><p><m>5 - x = 3^2 = 9</m>, so <m>-x = 4</m> and <m>x = -4</m>. Check: the input is <m>5 - (-4) = 9</m>, which is positive, so <m>x = -4</m> is a valid solution. A negative value of <m>x</m> is fine; only the input of the log has to be positive.</p></solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-isolate-log-practice">
+<introduction>
+<p>Isolate the log first, then solve. Give exact answers, and include a decimal rounded to two places when the answer involves <m>e</m>.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement><p><m>3\log_2(x) = 15</m></p></statement>
+<answer><p><m>x = 32</m></p></answer>
+<solution><p>Divide by <m>3</m>: <m>\log_2(x) = 5</m>, so <m>x = 2^5 = 32</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>4\ln(x) - 7 = 5</m></p></statement>
+<answer><p><m>x = e^3 \approx 20.09</m></p></answer>
+<solution><p><m>4\ln(x) = 12</m>, so <m>\ln(x) = 3</m> and <m>x = e^3 \approx 20.09</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>2\log(x + 6) + 1 = 7</m></p></statement>
+<answer><p><m>x = 994</m></p></answer>
+<solution><p><m>2\log(x + 6) = 6</m>, so <m>\log(x + 6) = 3</m>. Then <m>x + 6 = 10^3 = 1000</m> and <m>x = 994</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>10 - 3\ln(2x) = 4</m></p></statement>
+<answer><p><m>x = \frac{e^2}{2} \approx 3.69</m></p></answer>
+<solution><p><m>-3\ln(2x) = -6</m>, so <m>\ln(2x) = 2</m>. Then <m>2x = e^2</m> and <m>x = \frac{e^2}{2} \approx 3.69</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-log-concepts-2">
+<task workspace="2cm">
+<statement>
+<p>Solve <m>\ln(x^5) = 10</m> in two different ways.</p>
+</statement>
+<answer>
+<p><m>x = e^2 \approx 7.39</m></p>
+</answer>
+<solution>
+<p><alert>Exponent rule first:</alert> <m>5\ln(x) = 10</m>, so <m>\ln(x) = 2</m> and <m>x = e^2 \approx 7.39</m>.</p>
+<p><alert>Exponential form first:</alert> <m>x^5 = e^{10}</m>, so <m>x = \left(e^{10}\right)^{1/5} = e^2 \approx 7.39</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>A student says that <m>\ln(x) = -1</m> has no solution because <q>you can't have a negative log.</q> Is the student right? Explain, and solve the equation if it has a solution.</p>
+</statement>
+<answer>
+<p><m>x = e^{-1} \approx 0.37</m></p>
+</answer>
+<solution>
+<p>The student is mixing up the input and the output. The <em>input</em> of a log must be positive, but the <em>output</em> can be negative. Rewriting in exponential form gives <m>x = e^{-1} = \frac{1}{e} \approx 0.37</m>, which is positive, so it is a valid input. Any number between <m>0</m> and <m>1</m> has a negative log.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== EXPONENTIAL APPLICATIONS: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Applications of Exponential Models</title>
+<assemblage xml:id="explog-review-applications">
+<title>Solving Exponential Applications</title>
+<p>Read the question carefully to see what is unknown.</p>
+<p>
+<ul>
+<li>If you are given a time and asked for the amount, substitute the time for <m>x</m> and evaluate.</li>
+<li>If you are given an amount and asked <q>when,</q> set the function equal to that amount and solve for <m>x</m>: isolate the exponential part (usually by dividing by the initial value), take <m>\ln</m> of both sides, and solve.</li>
+<li>For <alert>doubling time</alert>, set the function equal to twice the initial value. For <alert>half-life</alert>, set it equal to half the initial value. The initial value always divides out, so doubling time and half-life do not depend on the starting amount.</li>
+<li>Avoid rounding until the end. Keep ratios such as <m>\frac{5}{3}</m> as fractions, and keep log values stored in your calculator. Small rounding errors in the middle of a problem can grow into noticeable errors in the final answer.</li>
+<li>Finish with a sentence that answers the question, including units.</li>
+</ul>
+</p>
+</assemblage>
+</paragraphs>
+
+<figure xml:id="explog-video-applications">
+<caption>Video: exponential applications with logarithms</caption>
+<video youtube="wp1ieR2JGxQ" width="60%"/>
+</figure>
+
+<example xml:id="explog-example-savings">
+<title>Worked Example</title>
+<statement>
+<p>Asami deposits $3,000 into an account that earns <m>5\%</m> interest each year, so the balance <m>x</m> years after the deposit is <m>A(x) = 3000(1.05)^x</m>. How long will it take for the balance to reach $5,000?</p>
+</statement>
+<solution>
+<p>
+Set <m>A(x) = 5000</m> and solve.
+<md>
+<mrow>3000(1.05)^x \amp= 5000</mrow>
+<mrow>(1.05)^x \amp= \frac{5}{3}</mrow>
+<mrow>x\ln(1.05) \amp= \ln\left(\frac{5}{3}\right)</mrow>
+<mrow>x \amp= \frac{\ln(5/3)}{\ln(1.05)} \approx 10.47</mrow>
+</md>
+</p>
+<p>The balance reaches $5,000 after about <m>10.47</m> years. (If the bank adds interest only once a year, the balance first passes $5,000 when the interest is added at the end of year <m>11</m>.)</p>
+<p>In log form, the exact answer can also be written <m>x = \log_{1.05}\left(\frac{5}{3}\right)</m>. It is the same number.</p>
+<p>To see why early rounding matters, suppose we rounded <m>\ln(1.05) \approx 0.0488</m> to <m>0.05</m>. Then we would get <m>\frac{\ln(5/3)}{0.05} \approx 10.22</m> years, which is off by about three months.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-medication">
+<title>Worked Example</title>
+<statement>
+<p>The amount of a medication in a patient's body <m>x</m> hours after a dose is <m>A(x) = 250e^{-0.2x}</m> milligrams.</p>
+<p>
+<ol marker="(a)">
+<li>When will the amount drop to <m>50</m> mg?</li>
+<li>What is the half-life of the medication?</li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>
+(a) Set <m>A(x) = 50</m> and solve.
+<md>
+<mrow>250e^{-0.2x} \amp= 50</mrow>
+<mrow>e^{-0.2x} \amp= 0.2</mrow>
+<mrow>-0.2x \amp= \ln(0.2)</mrow>
+<mrow>x \amp= \frac{\ln(0.2)}{-0.2} \approx 8.05</mrow>
+</md>
+</p>
+<p>The amount drops to <m>50</m> mg after about <m>8.05</m> hours. Both <m>\ln(0.2)</m> and <m>-0.2</m> are negative, so the answer is positive, which makes sense for a time.</p>
+<p>
+(b) Half of the initial <m>250</m> mg is <m>125</m> mg.
+<md>
+<mrow>250e^{-0.2x} \amp= 125</mrow>
+<mrow>e^{-0.2x} \amp= 0.5</mrow>
+<mrow>-0.2x \amp= \ln(0.5)</mrow>
+<mrow>x \amp= \frac{\ln(0.5)}{-0.2} \approx 3.47</mrow>
+</md>
+</p>
+<p>The half-life is about <m>3.47</m> hours. Notice that the <m>250</m> divided out, so any starting dose would have the same half-life.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== EXPONENTIAL APPLICATIONS: practice ===== -->
+<page>
+<exercise xml:id="explog-bacteria">
+<introduction>
+<p>The number of bacteria in a culture <m>x</m> hours after it is started is <m>N(x) = 600(1.8)^x</m>.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement>
+<p>What is the initial number of bacteria, and by what percent does the population grow each hour?</p>
+</statement>
+<answer>
+<p><m>600</m> bacteria, growing <m>80\%</m> per hour</p>
+</answer>
+<solution>
+<p>The initial value is <m>600</m>. The factor is <m>1.8 = 1 + 0.8</m>, so the population grows by <m>80\%</m> each hour.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>How many bacteria are there after <m>3</m> hours?</p>
+</statement>
+<answer>
+<p>About 3,499</p>
+</answer>
+<solution>
+<p><m>N(3) = 600(1.8)^3 = 3499.2</m>, so there are about 3,499 bacteria.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will there be 10,000 bacteria?</p>
+</statement>
+<answer>
+<p>After about <m>4.79</m> hours</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>600(1.8)^x \amp= 10000</mrow>
+<mrow>(1.8)^x \amp= \frac{50}{3}</mrow>
+<mrow>x\ln(1.8) \amp= \ln\left(\frac{50}{3}\right)</mrow>
+<mrow>x \amp= \frac{\ln(50/3)}{\ln(1.8)} \approx 4.79</mrow>
+</md>
+</p>
+<p>There will be 10,000 bacteria after about <m>4.79</m> hours. This fits with the previous part: at <m>3</m> hours there are about 3,499, so reaching 10,000 should take longer than <m>3</m> hours.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>What is the doubling time for this population?</p>
+</statement>
+<answer>
+<p>About <m>1.18</m> hours</p>
+</answer>
+<solution>
+<p>Set <m>N(x) = 1200</m>: <m>600(1.8)^x = 1200</m>, so <m>(1.8)^x = 2</m> and <m>x = \frac{\ln(2)}{\ln(1.8)} \approx 1.18</m>. The population doubles about every <m>1.18</m> hours.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-car-value">
+<introduction>
+<p>The value of a car <m>x</m> years after it is purchased is <m>V(x) = 32000(0.85)^x</m> dollars.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement>
+<p>By what percent does the car lose value each year?</p>
+</statement>
+<answer>
+<p><m>15\%</m></p>
+</answer>
+<solution>
+<p><m>0.85 = 1 - 0.15</m>, so the car loses <m>15\%</m> of its value each year.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>What is the car worth after <m>4</m> years?</p>
+</statement>
+<answer>
+<p>$16,704.20</p>
+</answer>
+<solution>
+<p><m>V(4) = 32000(0.85)^4 = 16704.20</m>, so the car is worth $16,704.20.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the car be worth $10,000?</p>
+</statement>
+<answer>
+<p>After about <m>7.16</m> years</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>32000(0.85)^x \amp= 10000</mrow>
+<mrow>(0.85)^x \amp= 0.3125</mrow>
+<mrow>x\ln(0.85) \amp= \ln(0.3125)</mrow>
+<mrow>x \amp= \frac{\ln(0.3125)}{\ln(0.85)} \approx 7.16</mrow>
+</md>
+</p>
+<p>The car will be worth $10,000 after about <m>7.16</m> years.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the car be worth half of what it was purchased for?</p>
+</statement>
+<answer>
+<p>After about <m>4.27</m> years</p>
+</answer>
+<solution>
+<p>Half of $32,000 is $16,000. Then <m>(0.85)^x = 0.5</m>, so <m>x = \frac{\ln(0.5)}{\ln(0.85)} \approx 4.27</m> years. This fits with the earlier part, since after <m>4</m> years the car is worth a little more than $16,000.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-savings-doubling">
+<introduction>
+<p>Ulrich deposits $1,800 into an account that earns <m>3.5\%</m> interest each year.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement>
+<p>Write an exponential model <m>A(x)</m> for the balance <m>x</m> years after the deposit.</p>
+</statement>
+<answer>
+<p><m>A(x) = 1800(1.035)^x</m></p>
+</answer>
+<solution>
+<p>The initial value is <m>1800</m> and <m>b = 1 + 0.035 = 1.035</m>, so <m>A(x) = 1800(1.035)^x</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>How long will it take for the balance to reach $2,500?</p>
+</statement>
+<answer>
+<p>About <m>9.55</m> years</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>1800(1.035)^x \amp= 2500</mrow>
+<mrow>(1.035)^x \amp= \frac{25}{18}</mrow>
+<mrow>x \amp= \frac{\ln(25/18)}{\ln(1.035)} \approx 9.55</mrow>
+</md>
+</p>
+<p>The balance reaches $2,500 after about <m>9.55</m> years.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>How long will it take for Ulrich's money to double?</p>
+</statement>
+<answer>
+<p>About <m>20.15</m> years</p>
+</answer>
+<solution>
+<p>Set <m>A(x) = 3600</m>: <m>(1.035)^x = 2</m>, so <m>x = \frac{\ln(2)}{\ln(1.035)} \approx 20.15</m> years.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Would the doubling time change if Ulrich had deposited $5,000 instead? Explain.</p>
+</statement>
+<solution>
+<p>No. With $5,000 the equation is <m>5000(1.035)^x = 10000</m>, and dividing by <m>5000</m> gives <m>(1.035)^x = 2</m> again. The initial value always divides out, so only the growth factor affects the doubling time.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-radioactive">
+<introduction>
+<p>The amount of a radioactive substance remaining <m>x</m> years from now is <m>A(x) = 80e^{-0.0125x}</m> grams.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>When will there be <m>20</m> grams remaining?</p>
+</statement>
+<answer>
+<p>After about <m>110.90</m> years</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>80e^{-0.0125x} \amp= 20</mrow>
+<mrow>e^{-0.0125x} \amp= 0.25</mrow>
+<mrow>-0.0125x \amp= \ln(0.25)</mrow>
+<mrow>x \amp= \frac{\ln(0.25)}{-0.0125} \approx 110.90</mrow>
+</md>
+</p>
+<p>There will be <m>20</m> grams left after about <m>110.90</m> years.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>What is the half-life of the substance?</p>
+</statement>
+<answer>
+<p>About <m>55.45</m> years</p>
+</answer>
+<solution>
+<p><m>e^{-0.0125x} = 0.5</m>, so <m>x = \frac{\ln(0.5)}{-0.0125} \approx 55.45</m> years.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Your answer to the first part should be exactly twice your answer to the second part. Explain why.</p>
+</statement>
+<solution>
+<p>Going from <m>80</m> grams to <m>20</m> grams means cutting the amount in half twice (<m>80</m> to <m>40</m>, then <m>40</m> to <m>20</m>). That takes two half-lives, and <m>2(55.45) = 110.90</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-find-k">
+<introduction>
+<p>The population of a town <m>x</m> years after 2020 is modeled by <m>P(x) = 12000e^{kx}</m>, where <m>k</m> is a constant. In 2025, the population was 15,000.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>Use the 2025 population to find <m>k</m>. Give the exact value and a decimal rounded to four places.</p>
+<p><em>Hint: In 2025, <m>x = 5</m>. Set <m>P(5) = 15000</m> and solve for <m>k</m> the same way you would solve for <m>x</m>.</em></p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(1.25)}{5} \approx 0.0446</m></p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>12000e^{5k} \amp= 15000</mrow>
+<mrow>e^{5k} \amp= 1.25</mrow>
+<mrow>5k \amp= \ln(1.25)</mrow>
+<mrow>k \amp= \frac{\ln(1.25)}{5} \approx 0.0446</mrow>
+</md>
+</p>
+<p>Store the unrounded value of <m>k</m> in your calculator for the next parts.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Use your model to predict the population in 2030.</p>
+</statement>
+<answer>
+<p>18,750</p>
+</answer>
+<solution>
+<p>In 2030, <m>x = 10</m>, and <m>P(10) = 12000e^{10k} = 18750</m> using the stored value of <m>k</m>. You can also see this exactly: <m>e^{10k} = \left(e^{5k}\right)^2 = 1.25^2 = 1.5625</m>, and <m>12000(1.5625) = 18750</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the population reach 20,000?</p>
+</statement>
+<answer>
+<p>About <m>11.45</m> years after 2020, during 2031</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>12000e^{kx} \amp= 20000</mrow>
+<mrow>e^{kx} \amp= \frac{5}{3}</mrow>
+<mrow>kx \amp= \ln\left(\frac{5}{3}\right)</mrow>
+<mrow>x \amp= \frac{\ln(5/3)}{k} \approx 11.45</mrow>
+</md>
+</p>
+<p>The population reaches 20,000 about <m>11.45</m> years after 2020, which is during 2031.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Suppose someone rounded <m>k</m> to <m>0.04</m> before solving the previous part. What answer would they get, and how far off would it be?</p>
+</statement>
+<answer>
+<p>About <m>12.77</m> years, off by more than a year</p>
+</answer>
+<solution>
+<p>With <m>k = 0.04</m>, <m>x = \frac{\ln(5/3)}{0.04} \approx 12.77</m> years, which would put the answer in 2032 instead of 2031. Rounding <m>k</m> early changed the answer by more than a year.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== HEATING AND COOLING: review and worked examples ===== -->
+<page>
+<paragraphs>
+<title>Heating and Cooling</title>
+<assemblage xml:id="explog-review-cooling">
+<title>Newton's Law of Cooling</title>
+<p>When an object is placed in surroundings that stay at a constant temperature, the temperature of the object <m>x</m> minutes after it is placed there is
+<md>
+<mrow>F(x) = ae^{-kx} + c</mrow>
+</md>
+for some constants <m>a</m>, <m>c</m>, and <m>k</m>, where <m>k \gt 0</m>.</p>
+<p>
+<ul>
+<li><m>c</m> is the temperature of the surroundings. As <m>x</m> gets larger, <m>e^{-kx}</m> gets closer to <m>0</m>, so <m>F(x)</m> gets closer and closer to <m>c</m>. The object never passes the surrounding temperature.</li>
+<li><m>a + c</m> is the initial temperature of the object, since <m>F(0) = ae^0 + c = a + c</m>. That means <m>a</m> is the initial temperature minus <m>c</m>, or how far the object starts from the surrounding temperature.</li>
+<li>The same formula works for cooling and for warming. A cooling object starts above <m>c</m>, so <m>a</m> is positive. A warming object starts below <m>c</m>, so <m>a</m> is negative.</li>
+<li>Be careful: in this model <m>a</m> is <em>not</em> the initial temperature, even though <m>a</m> was the initial value in <m>f(x) = a\cdot b^x</m>. Adding <m>c</m> shifts the graph up, so the initial temperature is <m>a + c</m>.</li>
+<li>Once you know <m>a</m> and <m>c</m>, one more temperature reading is enough to find <m>k</m>. To solve for <m>x</m> or for <m>k</m>, isolate the exponential part in this order: subtract <m>c</m>, then divide by <m>a</m>, then take <m>\ln</m> of both sides. Do not combine <m>a</m> and <m>c</m>; they are not like terms.</li>
+</ul>
+</p>
+</assemblage>
+</paragraphs>
+
+<example xml:id="explog-example-coffee">
+<title>Worked Example</title>
+<statement>
+<p>A cup of coffee at <m>190^\circ</m>F is set on a table in a room that is <m>70^\circ</m>F. For this cup, <m>k = 0.05</m> per minute.</p>
+<p>
+<ol marker="(a)">
+<li>Write a model <m>F(x)</m> for the temperature of the coffee <m>x</m> minutes after it is set on the table.</li>
+<li>What is the temperature of the coffee after <m>10</m> minutes?</li>
+<li>When will the coffee be <m>120^\circ</m>F?</li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>(a) The room is <m>70^\circ</m>F, so <m>c = 70</m>. The coffee starts at <m>190^\circ</m>F, so <m>a + c = 190</m> and <m>a = 190 - 70 = 120</m>. The model is <m>F(x) = 120e^{-0.05x} + 70</m>.</p>
+<p>A common error is to use <m>a = 190</m>. The initial temperature is <m>a + c</m>, so <m>a</m> is the difference between the coffee and the room.</p>
+<p>(b) <m>F(10) = 120e^{-0.5} + 70 \approx 142.78</m>. After <m>10</m> minutes the coffee is about <m>142.78^\circ</m>F.</p>
+<p>
+(c) Set <m>F(x) = 120</m>. Subtract <m>70</m> first, then divide by <m>120</m>.
+<md>
+<mrow>120e^{-0.05x} + 70 \amp= 120</mrow>
+<mrow>120e^{-0.05x} \amp= 50</mrow>
+<mrow>e^{-0.05x} \amp= \frac{5}{12}</mrow>
+<mrow>-0.05x \amp= \ln\left(\frac{5}{12}\right)</mrow>
+<mrow>x \amp= \frac{\ln(5/12)}{-0.05} \approx 17.51</mrow>
+</md>
+</p>
+<p>The coffee reaches <m>120^\circ</m>F after about <m>17.51</m> minutes.</p>
+<p>Another way to think about this: the term <m>120e^{-0.05x}</m> is how many degrees the coffee is <em>above room temperature</em>. Asking when the coffee is <m>120^\circ</m>F is the same as asking when it is <m>50</m> degrees above the room, which is exactly the second line above.</p>
+<p>Another common error is to combine <m>120</m> and <m>70</m> and write <m>190e^{-0.05x}</m>. The <m>120</m> is multiplied by <m>e^{-0.05x}</m> and the <m>70</m> is added afterward, so they are not like terms, and the <m>70</m> has to be subtracted first.</p>
+</solution>
+</example>
+
+<example xml:id="explog-example-pie">
+<title>Worked Example</title>
+<statement>
+<p>A pie is taken out of a <m>350^\circ</m>F oven and set on the counter in a <m>72^\circ</m>F kitchen. Let <m>F(x)</m> be the temperature of the pie <m>x</m> minutes after it comes out of the oven. After <m>15</m> minutes, the pie is <m>220^\circ</m>F.</p>
+<p>
+<ol marker="(a)">
+<li>Find the value of <m>k</m>.</li>
+<li>When will the pie be <m>100^\circ</m>F?</li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>
+(a) The kitchen is <m>72^\circ</m>F, so <m>c = 72</m>. The pie starts at <m>350^\circ</m>F, so <m>a = 350 - 72 = 278</m> and <m>F(x) = 278e^{-kx} + 72</m>. We know <m>F(15) = 220</m>, so substitute <m>x = 15</m> and solve for <m>k</m>.
+<md>
+<mrow>278e^{-15k} + 72 \amp= 220</mrow>
+<mrow>278e^{-15k} \amp= 148</mrow>
+<mrow>e^{-15k} \amp= \frac{148}{278}</mrow>
+<mrow>-15k \amp= \ln\left(\frac{148}{278}\right)</mrow>
+<mrow>k \amp= \frac{\ln(148/278)}{-15} \approx 0.04203</mrow>
+</md>
+</p>
+<p>Store the unrounded value of <m>k</m> in your calculator.</p>
+<p>
+(b) Set <m>F(x) = 100</m> and solve for <m>x</m>, using the stored value of <m>k</m>.
+<md>
+<mrow>278e^{-kx} + 72 \amp= 100</mrow>
+<mrow>278e^{-kx} \amp= 28</mrow>
+<mrow>e^{-kx} \amp= \frac{28}{278}</mrow>
+<mrow>-kx \amp= \ln\left(\frac{28}{278}\right)</mrow>
+<mrow>x \amp= \frac{\ln(28/278)}{-k} \approx 54.62</mrow>
+</md>
+</p>
+<p>The pie will be <m>100^\circ</m>F after about <m>54.62</m> minutes.</p>
+<p>If you would rather not store <m>k</m>, you can substitute its exact value and enter everything at once: <m>x = \frac{15\ln(28/278)}{\ln(148/278)} \approx 54.62</m>.</p>
+<p>To see why early rounding matters here, suppose we rounded <m>k</m> to <m>0.04</m>. Then <m>x = \frac{\ln(28/278)}{-0.04} \approx 57.39</m> minutes, which is almost three minutes off.</p>
+</solution>
+</example>
+</page>
+
+<!-- ===== HEATING AND COOLING: practice ===== -->
+<page>
+<exercise xml:id="explog-soup">
+<introduction>
+<p>Sabine heats a bowl of soup to <m>180^\circ</m>F and sets it on the table in a <m>68^\circ</m>F kitchen. For this bowl, <m>k = 0.04</m> per minute.</p>
+</introduction>
+
+<task workspace="1cm">
+<statement>
+<p>Write a model <m>F(x)</m> for the temperature of the soup <m>x</m> minutes after it is set on the table.</p>
+</statement>
+<answer>
+<p><m>F(x) = 112e^{-0.04x} + 68</m></p>
+</answer>
+<solution>
+<p><m>c = 68</m> and <m>a = 180 - 68 = 112</m>, so <m>F(x) = 112e^{-0.04x} + 68</m>.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>What is the temperature of the soup after <m>20</m> minutes?</p>
+</statement>
+<answer>
+<p>About <m>118.32^\circ</m>F</p>
+</answer>
+<solution>
+<p><m>F(20) = 112e^{-0.8} + 68 \approx 118.32</m>, so the soup is about <m>118.32^\circ</m>F.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the soup be <m>100^\circ</m>F?</p>
+</statement>
+<answer>
+<p>After about <m>31.32</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>112e^{-0.04x} + 68 \amp= 100</mrow>
+<mrow>112e^{-0.04x} \amp= 32</mrow>
+<mrow>e^{-0.04x} \amp= \frac{2}{7}</mrow>
+<mrow>-0.04x \amp= \ln\left(\frac{2}{7}\right)</mrow>
+<mrow>x \amp= \frac{\ln(2/7)}{-0.04} \approx 31.32</mrow>
+</md>
+</p>
+<p>The soup reaches <m>100^\circ</m>F after about <m>31.32</m> minutes.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Will the soup ever cool to <m>60^\circ</m>F? Explain.</p>
+</statement>
+<solution>
+<p>No. The soup's temperature gets closer and closer to the kitchen temperature of <m>68^\circ</m>F but never goes below it. Algebraically, <m>112e^{-0.04x} + 68 = 60</m> leads to <m>e^{-0.04x} = -\frac{1}{14}</m>, which has no solution because <m>e^{-0.04x}</m> is always positive.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-milk">
+<introduction>
+<p>A carton of milk at <m>36^\circ</m>F is taken out of the refrigerator and left on the counter in a <m>72^\circ</m>F kitchen. For this carton, <m>k = 0.03</m> per minute.</p>
+</introduction>
+
+<task workspace="1.25cm">
+<statement>
+<p>Write a model <m>F(x)</m> for the temperature of the milk <m>x</m> minutes after it is taken out of the refrigerator.</p>
+</statement>
+<answer>
+<p><m>F(x) = -36e^{-0.03x} + 72</m></p>
+</answer>
+<solution>
+<p><m>c = 72</m> and <m>a = 36 - 72 = -36</m>, so <m>F(x) = -36e^{-0.03x} + 72</m>. The value of <m>a</m> is negative because the milk starts below room temperature and is warming up toward it. A common error is to use <m>a = 36</m>, which would give a starting temperature of <m>36 + 72 = 108^\circ</m>F.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>What is the temperature of the milk after <m>10</m> minutes?</p>
+</statement>
+<answer>
+<p>About <m>45.33^\circ</m>F</p>
+</answer>
+<solution>
+<p><m>F(10) = -36e^{-0.3} + 72 \approx 45.33</m>, so the milk is about <m>45.33^\circ</m>F.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the milk reach <m>50^\circ</m>F?</p>
+</statement>
+<answer>
+<p>After about <m>16.42</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>-36e^{-0.03x} + 72 \amp= 50</mrow>
+<mrow>-36e^{-0.03x} \amp= -22</mrow>
+<mrow>e^{-0.03x} \amp= \frac{11}{18}</mrow>
+<mrow>-0.03x \amp= \ln\left(\frac{11}{18}\right)</mrow>
+<mrow>x \amp= \frac{\ln(11/18)}{-0.03} \approx 16.42</mrow>
+</md>
+</p>
+<p>The milk reaches <m>50^\circ</m>F after about <m>16.42</m> minutes. Dividing by <m>-36</m> makes both sides positive, which has to happen before we can take <m>\ln</m>.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>If the milk is left out for a very long time, what temperature will it approach?</p>
+</statement>
+<answer>
+<p><m>72^\circ</m>F</p>
+</answer>
+<solution>
+<p>As <m>x</m> gets large, <m>e^{-0.03x}</m> approaches <m>0</m>, so <m>F(x)</m> approaches <m>c = 72</m>. The milk approaches <m>72^\circ</m>F, the temperature of the kitchen.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-tea">
+<introduction>
+<p>Dash pours a cup of tea at <m>200^\circ</m>F and sets it on a desk in a <m>70^\circ</m>F room. Let <m>F(x)</m> be the temperature of the tea <m>x</m> minutes after it is poured. After <m>5</m> minutes, the tea is <m>170^\circ</m>F.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>Find the value of <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(10/13)}{-5} \approx 0.0525</m></p>
+</answer>
+<solution>
+<p>
+Here <m>c = 70</m> and <m>a = 200 - 70 = 130</m>, so <m>F(x) = 130e^{-kx} + 70</m>. Substitute <m>x = 5</m> and <m>F(5) = 170</m>.
+<md>
+<mrow>130e^{-5k} + 70 \amp= 170</mrow>
+<mrow>130e^{-5k} \amp= 100</mrow>
+<mrow>e^{-5k} \amp= \frac{10}{13}</mrow>
+<mrow>-5k \amp= \ln\left(\frac{10}{13}\right)</mrow>
+<mrow>k \amp= \frac{\ln(10/13)}{-5} \approx 0.0525</mrow>
+</md>
+</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>What is the temperature of the tea after <m>20</m> minutes?</p>
+</statement>
+<answer>
+<p>About <m>115.52^\circ</m>F</p>
+</answer>
+<solution>
+<p>Using the stored value of <m>k</m>, <m>F(20) = 130e^{-20k} + 70 \approx 115.52^\circ</m>F. There is also an exact way to see this: <m>e^{-20k} = \left(e^{-5k}\right)^4 = \left(\frac{10}{13}\right)^4</m>, so <m>F(20) = 130\left(\frac{10}{13}\right)^4 + 70 \approx 115.52</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the tea be <m>120^\circ</m>F?</p>
+</statement>
+<answer>
+<p>After about <m>18.21</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>130e^{-kx} + 70 \amp= 120</mrow>
+<mrow>130e^{-kx} \amp= 50</mrow>
+<mrow>e^{-kx} \amp= \frac{5}{13}</mrow>
+<mrow>-kx \amp= \ln\left(\frac{5}{13}\right)</mrow>
+<mrow>x \amp= \frac{\ln(5/13)}{-k} \approx 18.21</mrow>
+</md>
+</p>
+<p>The tea is <m>120^\circ</m>F after about <m>18.21</m> minutes. This fits with the previous part, since <m>120^\circ</m>F is warmer than the <m>115.52^\circ</m>F reading at <m>20</m> minutes.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-water-bottle">
+<introduction>
+<p>A bottle of water at <m>40^\circ</m>F is taken out of a refrigerator and left in a car where the temperature is <m>85^\circ</m>F. After <m>10</m> minutes, the water is <m>55^\circ</m>F.</p>
+</introduction>
+
+<task workspace="1.25cm">
+<statement>
+<p>Write a model <m>F(x)</m> for the temperature of the water <m>x</m> minutes after it is left in the car. Leave <m>k</m> as an unknown for now.</p>
+</statement>
+<answer>
+<p><m>F(x) = -45e^{-kx} + 85</m></p>
+</answer>
+<solution>
+<p><m>c = 85</m> and <m>a = 40 - 85 = -45</m>, so <m>F(x) = -45e^{-kx} + 85</m>. The water is warming, so <m>a</m> is negative.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>Find the value of <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(2/3)}{-10} \approx 0.0405</m></p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>-45e^{-10k} + 85 \amp= 55</mrow>
+<mrow>-45e^{-10k} \amp= -30</mrow>
+<mrow>e^{-10k} \amp= \frac{2}{3}</mrow>
+<mrow>-10k \amp= \ln\left(\frac{2}{3}\right)</mrow>
+<mrow>k \amp= \frac{\ln(2/3)}{-10} \approx 0.0405</mrow>
+</md>
+</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the water reach <m>75^\circ</m>F?</p>
+</statement>
+<answer>
+<p>After about <m>37.10</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>-45e^{-kx} + 85 \amp= 75</mrow>
+<mrow>-45e^{-kx} \amp= -10</mrow>
+<mrow>e^{-kx} \amp= \frac{2}{9}</mrow>
+<mrow>-kx \amp= \ln\left(\frac{2}{9}\right)</mrow>
+<mrow>x \amp= \frac{\ln(2/9)}{-k} \approx 37.10</mrow>
+</md>
+</p>
+<p>The water reaches <m>75^\circ</m>F after about <m>37.10</m> minutes. As a check, after <m>30</m> minutes the water is <m>-45\left(\frac{2}{3}\right)^3 + 85 \approx 71.67^\circ</m>F, so it should take a little longer than <m>30</m> minutes to reach <m>75^\circ</m>F.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<!-- ===== ADDITIONAL PRACTICE ===== -->
+<page>
+<paragraphs>
+<title>Additional Practice</title>
+<p>These problems mix all of the topics above. Give exact answers, and round decimals to two places unless the problem says otherwise.</p>
+</paragraphs>
+
+<exercise xml:id="explog-mixed-convert">
+<task workspace="1cm">
+<statement><p>Rewrite <m>7^3 = 343</m> in logarithmic form.</p></statement>
+<answer><p><m>\log_7(343) = 3</m></p></answer>
+<solution><p><m>\log_7(343) = 3</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p>Rewrite <m>\ln(x) = 0.5</m> in exponential form.</p></statement>
+<answer><p><m>e^{0.5} = x</m></p></answer>
+<solution><p><m>e^{0.5} = x</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p>Evaluate <m>\log_3\left(\frac{1}{27}\right)</m> without a calculator.</p></statement>
+<answer><p><m>-3</m></p></answer>
+<solution><p><m>3^{-3} = \frac{1}{27}</m>, so the value is <m>-3</m>.</p></solution>
+</task>
+
+<task workspace="1cm">
+<statement><p>Evaluate <m>e^{\ln(4)} + \log(100)</m> without a calculator.</p></statement>
+<answer><p><m>6</m></p></answer>
+<solution><p><m>e^{\ln(4)} = 4</m> by the inverse property and <m>\log(100) = 2</m>, so the total is <m>6</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-mixed-exp">
+<introduction>
+<p>Solve each equation.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement><p><m>2^{x+3} = 4^x</m></p></statement>
+<answer><p><m>x = 3</m></p></answer>
+<solution>
+<p><alert>Matching bases:</alert> <m>4^x = (2^2)^x = 2^{2x}</m>, so <m>2^{x+3} = 2^{2x}</m>. Then <m>x + 3 = 2x</m> and <m>x = 3</m>.</p>
+<p>
+<alert>Using <m>\ln</m>:</alert> This also works, but takes more algebra.
+<md>
+<mrow>(x + 3)\ln(2) \amp= x\ln(4)</mrow>
+<mrow>x\ln(2) + 3\ln(2) \amp= x\ln(4)</mrow>
+<mrow>3\ln(2) \amp= x\ln(4) - x\ln(2)</mrow>
+<mrow>3\ln(2) \amp= x\left(\ln(4) - \ln(2)\right)</mrow>
+<mrow>x \amp= \frac{3\ln(2)}{\ln(4) - \ln(2)} = 3</mrow>
+</md>
+</p>
+<p>The last step uses the exponent rule once more: <m>\ln(4) = \ln(2^2) = 2\ln(2)</m>, so the denominator is <m>2\ln(2) - \ln(2) = \ln(2)</m>, and <m>x = \frac{3\ln(2)}{\ln(2)} = 3</m>. When matching bases is possible, it is usually the faster route.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>5^x = 3</m></p></statement>
+<answer><p><m>x = \frac{\ln(3)}{\ln(5)} \approx 0.68</m></p></answer>
+<solution><p><m>x\ln(5) = \ln(3)</m>, so <m>x = \frac{\ln(3)}{\ln(5)} \approx 0.68</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>100(1.02)^x - 40 = 60</m></p></statement>
+<answer><p><m>x = 0</m></p></answer>
+<solution><p><m>100(1.02)^x = 100</m>, so <m>(1.02)^x = 1</m>. Since any base to the <m>0</m> power is <m>1</m>, <m>x = 0</m>. (Using <m>\ln</m> gives <m>x = \frac{\ln(1)}{\ln(1.02)} = \frac{0}{\ln(1.02)} = 0</m>.)</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>3e^x + 7 = 4</m></p></statement>
+<answer><p>No solution</p></answer>
+<solution><p><m>3e^x = -3</m>, so <m>e^x = -1</m>. Since <m>e^x</m> is always positive, there is no solution.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>5e^{-0.1x} = 2</m></p></statement>
+<answer><p><m>x = \frac{\ln(0.4)}{-0.1} \approx 9.16</m></p></answer>
+<solution><p><m>e^{-0.1x} = 0.4</m>, so <m>-0.1x = \ln(0.4)</m> and <m>x = \frac{\ln(0.4)}{-0.1} \approx 9.16</m>.</p></solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-mixed-log">
+<introduction>
+<p>Solve each equation.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement><p><m>\log_6(2x - 10) = 2</m></p></statement>
+<answer><p><m>x = 23</m></p></answer>
+<solution><p><m>2x - 10 = 6^2 = 36</m>, so <m>2x = 46</m> and <m>x = 23</m>. Check: <m>2(23) - 10 = 36 \gt 0</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>\ln(x - 4) + 3 = 3</m></p></statement>
+<answer><p><m>x = 5</m></p></answer>
+<solution><p><m>\ln(x - 4) = 0</m>, so <m>x - 4 = e^0 = 1</m> and <m>x = 5</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>5\log(x) = -10</m></p></statement>
+<answer><p><m>x = 0.01</m></p></answer>
+<solution><p><m>\log(x) = -2</m>, so <m>x = 10^{-2} = 0.01</m>.</p></solution>
+</task>
+
+<task workspace="1.5cm">
+<statement><p><m>7 + 2\log_2(x + 1) = 13</m></p></statement>
+<answer><p><m>x = 7</m></p></answer>
+<solution><p><m>2\log_2(x + 1) = 6</m>, so <m>\log_2(x + 1) = 3</m>. Then <m>x + 1 = 2^3 = 8</m> and <m>x = 7</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-mixed-linear-vs-exp">
+<introduction>
+<p>Two towns each have 5,000 residents. Town A gains 200 residents each year, and Town B grows by <m>3.5\%</m> each year.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement>
+<p>Write a model for the population of each town <m>x</m> years from now.</p>
+</statement>
+<answer>
+<p>Town A: <m>L(x) = 5000 + 200x</m>; Town B: <m>E(x) = 5000(1.035)^x</m></p>
+</answer>
+<solution>
+<p>Town A adds the same amount each year, so it is linear with slope <m>200</m> and vertical intercept <m>5000</m>: <m>L(x) = 5000 + 200x</m>. Town B multiplies by the same factor each year, so it is exponential with <m>a = 5000</m> and <m>b = 1.035</m>: <m>E(x) = 5000(1.035)^x</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will each town reach 8,000 residents?</p>
+</statement>
+<answer>
+<p>Town A: <m>15</m> years; Town B: about <m>13.66</m> years</p>
+</answer>
+<solution>
+<p>Town A: <m>5000 + 200x = 8000</m>, so <m>200x = 3000</m> and <m>x = 15</m> years.</p>
+<p>Town B: <m>5000(1.035)^x = 8000</m>, so <m>(1.035)^x = 1.6</m> and <m>x = \frac{\ln(1.6)}{\ln(1.035)} \approx 13.66</m> years.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Which town grows by more people in the first year? Does that town stay ahead? Explain.</p>
+</statement>
+<solution>
+<p>In the first year, Town A gains <m>200</m> people and Town B gains <m>5000(0.035) = 175</m> people, so Town A grows more at first. Town A does not stay ahead, though. Town B's yearly gain keeps getting larger while Town A's stays at <m>200</m>, so Town B catches up and passes Town A. After <m>8</m> years, Town A has 6,600 residents and Town B has about 6,584. After <m>9</m> years, Town A has 6,800 and Town B has about 6,814. This is also why Town B reaches 8,000 first.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="explog-mixed-views">
+<introduction>
+<p>The number of views of an online video <m>x</m> days after it is posted is modeled by <m>V(x) = 1500e^{0.35x}</m>.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>When will the video reach 100,000 views?</p>
+</statement>
+<answer>
+<p>After about <m>12.00</m> days</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>1500e^{0.35x} \amp= 100000</mrow>
+<mrow>e^{0.35x} \amp= \frac{200}{3}</mrow>
+<mrow>0.35x \amp= \ln\left(\frac{200}{3}\right)</mrow>
+<mrow>x \amp= \frac{\ln(200/3)}{0.35} \approx 12.00</mrow>
+</md>
+</p>
+<p>The video reaches 100,000 views after about <m>12</m> days.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>How long does it take for the number of views to double?</p>
+</statement>
+<answer>
+<p>About <m>1.98</m> days</p>
+</answer>
+<solution>
+<p><m>e^{0.35x} = 2</m>, so <m>x = \frac{\ln(2)}{0.35} \approx 1.98</m> days.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-mixed-bread">
+<introduction>
+<p>A loaf of bread comes out of a <m>350^\circ</m>F oven into a <m>75^\circ</m>F kitchen. Let <m>F(x)</m> be the temperature of the bread <m>x</m> minutes after it comes out of the oven. After <m>10</m> minutes, the bread is <m>250^\circ</m>F.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>Find the value of <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(7/11)}{-10} \approx 0.0452</m></p>
+</answer>
+<solution>
+<p>
+Here <m>c = 75</m> and <m>a = 350 - 75 = 275</m>, so <m>F(x) = 275e^{-kx} + 75</m>.
+<md>
+<mrow>275e^{-10k} + 75 \amp= 250</mrow>
+<mrow>275e^{-10k} \amp= 175</mrow>
+<mrow>e^{-10k} \amp= \frac{7}{11}</mrow>
+<mrow>k \amp= \frac{\ln(7/11)}{-10} \approx 0.0452</mrow>
+</md>
+</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>The bread is easiest to slice once it cools to <m>120^\circ</m>F. When will that happen?</p>
+</statement>
+<answer>
+<p>After about <m>40.05</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>275e^{-kx} + 75 \amp= 120</mrow>
+<mrow>275e^{-kx} \amp= 45</mrow>
+<mrow>e^{-kx} \amp= \frac{9}{55}</mrow>
+<mrow>x \amp= \frac{\ln(9/55)}{-k} \approx 40.05</mrow>
+</md>
+</p>
+<p>The bread will be ready to slice after about <m>40</m> minutes.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="explog-mixed-thermometer">
+<introduction>
+<p>A thermometer reading <m>70^\circ</m>F is carried outside on a winter day, where the temperature is <m>-5^\circ</m>F. Let <m>F(x)</m> be the reading <m>x</m> minutes after the thermometer is carried outside. After <m>2</m> minutes, the thermometer reads <m>40^\circ</m>F.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>Find the value of <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(0.6)}{-2} \approx 0.2554</m></p>
+</answer>
+<solution>
+<p>
+Here <m>c = -5</m> and <m>a = 70 - (-5) = 75</m>, so <m>F(x) = 75e^{-kx} - 5</m>. Since <m>c = -5</m>, subtracting <m>c</m> means adding <m>5</m> to both sides.
+<md>
+<mrow>75e^{-2k} - 5 \amp= 40</mrow>
+<mrow>75e^{-2k} \amp= 45</mrow>
+<mrow>e^{-2k} \amp= 0.6</mrow>
+<mrow>k \amp= \frac{\ln(0.6)}{-2} \approx 0.2554</mrow>
+</md>
+</p>
+<p>A common error is to compute <m>a</m> as <m>70 - 5 = 65</m>. Subtracting a negative temperature means adding.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>When will the thermometer read <m>32^\circ</m>F, the freezing point of water?</p>
+</statement>
+<answer>
+<p>After about <m>2.77</m> minutes</p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>75e^{-kx} - 5 \amp= 32</mrow>
+<mrow>75e^{-kx} \amp= 37</mrow>
+<mrow>e^{-kx} \amp= \frac{37}{75}</mrow>
+<mrow>x \amp= \frac{\ln(37/75)}{-k} \approx 2.77</mrow>
+</md>
+</p>
+<p>The thermometer reads <m>32^\circ</m>F after about <m>2.77</m> minutes. This fits with the given reading: the thermometer is at <m>40^\circ</m>F after <m>2</m> minutes, so it should take a little longer than <m>2</m> minutes to reach <m>32^\circ</m>F.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+</worksheet>

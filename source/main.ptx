@@ -51,6 +51,7 @@
       <xi:include href="./activities/01-functions.ptx"/>
   <xi:include href="./activities/02-average.ptx"/>
     <xi:include href="./activities/03-linear.ptx"/>
+    <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
  <xi:include href="./lt-practice/midterm-practice-fall26.ptx"/>
