@@ -334,6 +334,474 @@ var ptx_lunr_docs = [
   "body": "  Suppose years after buying a new car it is worth $21,250, and when it is years old it is worth $10,000. Assume the price of the car depreciates linearly.     Determine a linear function that gives the price years after the car was purchased.       Find the slope using and , then use point-slope form.       What was the initial value of the car when it was purchased?    $25,000    The initial value corresponds to , which is the vertical intercept. The car was originally purchased for $25,000.      When will the car have no value? Based on this, what is a practical domain for your function?    years,    The car has no value when .   The car has no value after about years. The practical domain restricts the model to times before the car's value becomes negative: .    "
 },
 {
+  "id": "mth124-act-exp-log-review",
+  "level": "1",
+  "url": "mth124-act-exp-log-review.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Review Activity: Exponentials and Logarithms",
+  "body": " Review Activity: Exponentials and Logarithms   This review covers exponential models, logarithms, and solving exponential and logarithmic equations, including equations that come from applications and from heating and cooling problems. Each section starts with a short summary and worked examples, then moves from basic problems to harder ones. A mixed set of additional practice is at the end.    Throughout this activity, means the logarithm base and means the logarithm base .  The only logarithm rule you need is the exponent rule, , which holds whenever . It works the same way for and for any other base.  Avoid rounding in the middle of a problem. Keep exact values like , or store them in your calculator, and round only your final answer.  Several sections include a short video if you would like a refresher.        Exponential Models   Exponential Functions  An exponential function has the form , where is the initial value (the output when ) and is the growth or decay factor. Each time increases by , the output is multiplied by .    If , the function is growing. If , the function is decaying.  If a quantity increases by a percent rate (written as a decimal) each time period, then . If it decreases by a percent rate , then .  A linear function adds the same amount each step. An exponential function multiplies by the same factor each step.  Some models use the number as the base and are written . These grow when and decay when .       Video: basic exponential models     Worked Example   A town has 4,200 residents, and its population grows by each year. Write an exponential model for the population years from now. Then use it to predict the population in years.    The initial value is . The population grows by , so and the growth factor is . The model is .  To predict the population in years, substitute .   The town will have about 5,644 residents in years.  A common error is to use or . The factor says that each year the town keeps all of its current population (the ) and adds more (the ).     Worked Example   Could the table below represent a linear function, an exponential function, or neither? If it is linear or exponential, write a formula for .                    The -values go up by each time, so we can compare consecutive outputs directly.   Check for linear (differences):    The differences are not constant, so is not linear.   Check for exponential (ratios):    Every ratio is , so could be exponential with decay factor . The output at is , so and . A factor of means the output loses each step.  Just like with linear tables, be careful when the -values are not evenly spaced. Comparing ratios of consecutive outputs only works this simply when the inputs go up by the same amount each time.         For each function, give the initial value and the growth or decay factor, say whether the function is growing or decaying, and give the percent rate of change.        Initial value , factor , growing by    Here and . Since , the function is growing, and means it grows by each step.         Initial value , factor , decaying by    Here and . Since , the function is decaying. Writing shows it loses each step. A common error is to say the rate is ; that is the percent that remains, not the percent lost.         Initial value , factor , growing by    Here and , so the function grows by each step.         Initial value , factor , decaying by    Here and . The decimal is , so the function decays by half a percent each step.         Initial value , factor , growing by (doubling)    Here and . Adding each step is the same as doubling each step.       A savings account starts with $2,500 and earns interest each year.     Write an exponential model for the balance years after the account is opened.       The initial value is , and the balance grows by , so . The model is .      What will the balance be after years?    About $3,421.42    , so the balance will be about $3,421.42.         A lake has 9,000 trout, and the trout population is decreasing by each year.     Write an exponential model for the number of trout years from now.       The initial value is . The population is decreasing by , so . The model is .      About how many trout will be in the lake after years?    About 6,605 trout    , so there will be about 6,605 trout.       Use the table below.                     Show that the table does not represent a linear function.    The differences between consecutive outputs are , , and . Since the inputs go up by each time and the differences are not constant, the rate of change is not constant, so the function is not linear.      Show that the table could represent an exponential function, and write a formula for .       The ratios are , , and . The ratio is constant, so the function could be exponential with . The initial value is , so .      Use your formula to find .       .         Logarithms as Inverses of Exponentials   Logarithms  A logarithm is an exponent. The expression asks: what power do we raise to in order to get ?     In both forms, the base stays the base. In log form, the logarithm is equal to the exponent.    Two bases have their own notation: means , and (the natural log) means .  The function is the inverse of , so each one undoes the other: and . In particular, and .  The base of a logarithm must be positive and cannot be . Because is always positive, the input of a logarithm must also be positive. The output of a logarithm can be positive, negative, or zero.  Two values worth knowing: because , and because .       Worked Example   The table on the left shows some values of . Use it to fill in a table for the inverse function, .                                          An inverse function swaps inputs and outputs. Since , the inverse sends back to , so . Doing the same for each column gives , , , , and .  Notice that every output of is positive, so every input of is positive. The outputs of , on the other hand, include and .     Worked Example   Rewrite each equation in the other form.              The base is and the exponent is . The log equals the exponent, so .  The base is and the exponent is , so .  The base is and the log value is the exponent, so . It can help to read out loud as 3 to the 4th is 81.  Since is the log base , this says , so .       Worked Example   Evaluate each expression without a calculator.               Method 1: Ask what power?    to what power is ? Since , .  This is base . Since , .  Since , we have , so .  Since , we have , so .  Any base to the power is , so .  By the inverse property, .  By the inverse property, .      Method 2: Set it equal to and match bases  When the answer is not obvious, set the log equal to , rewrite in exponential form, and write both sides with the same base. For part (d):   The same idea works for part (c): , so . This is exactly the matching bases method we will use to solve exponential equations in the next section.         Rewrite each equation in logarithmic form.      The base is and the exponent is , so .      The base is , so we can use the common log: .      .      The base is and the exponent is , so .      The base is , so we use the natural log: .      Rewrite each equation in exponential form.      The base is and the log value is the exponent, so .      With no base written, the base is , so .      .      , which makes sense because the cube root of is .      The natural log has base , so .        Evaluate each expression without a calculator.      , so .      , so .      , so .      , so .      , so .      Since , and . Matching bases also works: becomes , so and .      By the inverse property, .      By the inverse property, .      , so .       Explain why is undefined.    asks for a power of that equals . Every power of is positive (for example and ), so no exponent works. The input of a logarithm must be positive.      Without a calculator, decide which two consecutive whole numbers is between. Explain how you know.    Between and    and . Since is between and , the exponent we need is between and . In the next section we will find this value exactly; it is about .         Solving Exponential Equations   Solving Exponential Equations  Step 1: Isolate the exponential part. Use the same steps you would use on a linear equation: undo addition or subtraction first, then undo multiplication or division. Do not combine a coefficient with the base. For example, is not  , because the exponent only applies to the .  Step 2: Choose a method.   Matching bases. If both sides can be written as powers of the same base, set the exponents equal: if , then .  Taking a log of both sides. Take (or ) of both sides and use the exponent rule to bring the exponent down. This works even when the bases cannot be matched, as long as the isolated exponential equals a positive number. If it equals zero or a negative number, the equation has no solution.  Rewriting in log form. If , then . This is especially quick for base : if , then .    Give the exact answer, such as , and then round at the very end if a decimal is needed.     Video: solving basic exponential equations     Worked Example   Solve each equation.          Method 1: Matching bases  (a) Since , we can write both sides as powers of .   (b) Neither nor is a power of the other, but both are powers of : and .     Method 2: Taking of both sides  (a) Take of both sides and bring the exponent down. Keep parentheses around , since the whole exponent comes down.   (b)   Both methods give the same answers. Matching bases is quicker when it works, but taking a log of both sides works even when the bases cannot be matched.     Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Method 1: Isolate, then take  First isolate the exponential part, undoing the subtraction and then the multiplication.   Since is not a power of , matching bases will not work. Take of both sides.   This is reasonable: and , so the exponent that gives should be between and .    Method 2: Isolate, then take  Any logarithm works as long as we use the same one on both sides. Starting from :   The exact answer looks different, but and are the same number.    Method 3: Isolate, then rewrite in log form  Starting from , log form gives the exact answer right away. To get a decimal, either use a calculator that allows a base log, or go back to Method 1.  A common error is to combine the and the into . The exponent is only on the , so the has to be divided off first.     Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Isolate , then take of both sides.   There are two ways to see that . One is the inverse property. The other is the exponent rule: , since . You could also skip the step and rewrite in log form as .  A common error is to divide by too early and write . The is in the exponent, so it can only be dealt with after the brings it down.         Solve each equation by matching bases.      , so and .      , so and .      , so and .      Write both sides as powers of : , so , , and .      , so and .      Solve each equation using logarithms. Give an exact answer and a decimal rounded to two places.      Take of both sides: , so . Check that this is reasonable: and , and is between them.      Rewrite in log form (or take of both sides): .      , so . A negative answer makes sense here, since is less than .      , so .        Isolate the exponential part first, then solve. Use matching bases when it works and logarithms otherwise. Give exact answers and decimals rounded to two places where needed.                   Notice that matching bases only became possible after isolating. Using instead gives , the same answer.           Both logs are negative, so the answer is positive.                    Watch the signs: subtracting leaves , and dividing by makes both sides positive.          A student solved by first writing . Explain the mistake, then solve the equation correctly.       The exponent applies only to the , not to the , so is not . For example, when , but . Divide first: , so .      A student solving took of both sides right away and wrote . Explain the mistake, then solve the equation correctly.       The log of a sum does not split apart, so is not . Isolate first: , so .      Explain why has no solution.    Every power of is positive, so can never equal . If you try to take of both sides, you get , which is undefined.      Earlier you estimated that is between and . Find its value by solving .       , so , which is between and as expected.         Solving Logarithmic Equations   Solving Logarithmic Equations  Step 1: Isolate the logarithm. Undo addition or subtraction first, then multiplication or division.  Step 2: Rewrite in exponential form. If , then . For the natural log, means . For the common log, means . Some people call this step exponentiating both sides, since simplifies to by the inverse property. Either way, you get the same equation.  Step 3: Solve what is left. This is usually a linear equation.  Step 4: Check. The input of each logarithm must be positive. The solution itself is allowed to be negative; only the input to the log matters.  If there is a power inside the log, you may use the exponent rule . Be careful: a logarithm does not distribute over addition or subtraction, so is not .     Video: solving basic logarithmic equations     Worked Example   Solve each equation.          (a) The log is already isolated. Rewriting in exponential form gives .  (b) Rewrite in exponential form with base , then solve the linear equation.   Check: . The input is positive, so is a valid solution.     Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Isolate the log, rewrite in exponential form, and solve.   Check: , which is positive, so the solution is valid.  Common errors include rewriting before the log is isolated (for example, writing ), and typing into a calculator as .     Worked Example   Solve .    Method 1: Rewrite in exponential form first       Method 2: Use the exponent rule first     Both methods give . Method 2 avoids the cube root, which is why bringing the exponent down can be handy.         Solve each equation. Give exact answers, and include a decimal rounded to two places when the answer involves .      .      .      .      .      .      Solve each equation and check that the input of the log is positive.      , so . Check: .      , so .      , so and .      , so and . Check: the input is , which is positive, so is a valid solution. A negative value of is fine; only the input of the log has to be positive.        Isolate the log first, then solve. Give exact answers, and include a decimal rounded to two places when the answer involves .      Divide by : , so .      , so and .      , so . Then and .      , so . Then and .       Solve in two different ways.       Exponent rule first:  , so and .  Exponential form first:  , so .      A student says that has no solution because you can't have a negative log. Is the student right? Explain, and solve the equation if it has a solution.       The student is mixing up the input and the output. The input of a log must be positive, but the output can be negative. Rewriting in exponential form gives , which is positive, so it is a valid input. Any number between and has a negative log.         Applications of Exponential Models   Solving Exponential Applications  Read the question carefully to see what is unknown.    If you are given a time and asked for the amount, substitute the time for and evaluate.  If you are given an amount and asked when, set the function equal to that amount and solve for : isolate the exponential part (usually by dividing by the initial value), take of both sides, and solve.  For doubling time , set the function equal to twice the initial value. For half-life , set it equal to half the initial value. The initial value always divides out, so doubling time and half-life do not depend on the starting amount.  Avoid rounding until the end. Keep ratios such as as fractions, and keep log values stored in your calculator. Small rounding errors in the middle of a problem can grow into noticeable errors in the final answer.  Finish with a sentence that answers the question, including units.       Video: exponential applications with logarithms     Worked Example   Asami deposits $3,000 into an account that earns interest each year, so the balance years after the deposit is . How long will it take for the balance to reach $5,000?    Set and solve.   The balance reaches $5,000 after about years. (If the bank adds interest only once a year, the balance first passes $5,000 when the interest is added at the end of year .)  In log form, the exact answer can also be written . It is the same number.  To see why early rounding matters, suppose we rounded to . Then we would get years, which is off by about three months.     Worked Example   The amount of a medication in a patient's body hours after a dose is milligrams.    When will the amount drop to mg?  What is the half-life of the medication?      (a) Set and solve.   The amount drops to mg after about hours. Both and are negative, so the answer is positive, which makes sense for a time.  (b) Half of the initial mg is mg.   The half-life is about hours. Notice that the divided out, so any starting dose would have the same half-life.         The number of bacteria in a culture hours after it is started is .     What is the initial number of bacteria, and by what percent does the population grow each hour?    bacteria, growing per hour    The initial value is . The factor is , so the population grows by each hour.      How many bacteria are there after hours?    About 3,499    , so there are about 3,499 bacteria.      When will there be 10,000 bacteria?    After about hours       There will be 10,000 bacteria after about hours. This fits with the previous part: at hours there are about 3,499, so reaching 10,000 should take longer than hours.      What is the doubling time for this population?    About hours    Set : , so and . The population doubles about every hours.       The value of a car years after it is purchased is dollars.     By what percent does the car lose value each year?       , so the car loses of its value each year.      What is the car worth after years?    $16,704.20    , so the car is worth $16,704.20.      When will the car be worth $10,000?    After about years       The car will be worth $10,000 after about years.      When will the car be worth half of what it was purchased for?    After about years    Half of $32,000 is $16,000. Then , so years. This fits with the earlier part, since after years the car is worth a little more than $16,000.         Ulrich deposits $1,800 into an account that earns interest each year.     Write an exponential model for the balance years after the deposit.       The initial value is and , so .      How long will it take for the balance to reach $2,500?    About years       The balance reaches $2,500 after about years.      How long will it take for Ulrich's money to double?    About years    Set : , so years.      Would the doubling time change if Ulrich had deposited $5,000 instead? Explain.    No. With $5,000 the equation is , and dividing by gives again. The initial value always divides out, so only the growth factor affects the doubling time.       The amount of a radioactive substance remaining years from now is grams.     When will there be grams remaining?    After about years       There will be grams left after about years.      What is the half-life of the substance?    About years    , so years.      Your answer to the first part should be exactly twice your answer to the second part. Explain why.    Going from grams to grams means cutting the amount in half twice ( to , then to ). That takes two half-lives, and .         The population of a town years after 2020 is modeled by , where is a constant. In 2025, the population was 15,000.     Use the 2025 population to find . Give the exact value and a decimal rounded to four places.  Hint: In 2025, . Set and solve for the same way you would solve for .          Store the unrounded value of in your calculator for the next parts.      Use your model to predict the population in 2030.    18,750    In 2030, , and using the stored value of . You can also see this exactly: , and .      When will the population reach 20,000?    About years after 2020, during 2031       The population reaches 20,000 about years after 2020, which is during 2031.      Suppose someone rounded to before solving the previous part. What answer would they get, and how far off would it be?    About years, off by more than a year    With , years, which would put the answer in 2032 instead of 2031. Rounding early changed the answer by more than a year.         Heating and Cooling   Newton's Law of Cooling  When an object is placed in surroundings that stay at a constant temperature, the temperature of the object minutes after it is placed there is for some constants , , and , where .    is the temperature of the surroundings. As gets larger, gets closer to , so gets closer and closer to . The object never passes the surrounding temperature.  is the initial temperature of the object, since . That means is the initial temperature minus , or how far the object starts from the surrounding temperature.  The same formula works for cooling and for warming. A cooling object starts above , so is positive. A warming object starts below , so is negative.  Be careful: in this model is not the initial temperature, even though was the initial value in . Adding shifts the graph up, so the initial temperature is .  Once you know and , one more temperature reading is enough to find . To solve for or for , isolate the exponential part in this order: subtract , then divide by , then take of both sides. Do not combine and ; they are not like terms.       Worked Example   A cup of coffee at F is set on a table in a room that is F. For this cup, per minute.    Write a model for the temperature of the coffee minutes after it is set on the table.  What is the temperature of the coffee after minutes?  When will the coffee be F?      (a) The room is F, so . The coffee starts at F, so and . The model is .  A common error is to use . The initial temperature is , so is the difference between the coffee and the room.  (b) . After minutes the coffee is about F.  (c) Set . Subtract first, then divide by .   The coffee reaches F after about minutes.  Another way to think about this: the term is how many degrees the coffee is above room temperature . Asking when the coffee is F is the same as asking when it is degrees above the room, which is exactly the second line above.  Another common error is to combine and and write . The is multiplied by and the is added afterward, so they are not like terms, and the has to be subtracted first.     Worked Example   A pie is taken out of a F oven and set on the counter in a F kitchen. Let be the temperature of the pie minutes after it comes out of the oven. After minutes, the pie is F.    Find the value of .  When will the pie be F?      (a) The kitchen is F, so . The pie starts at F, so and . We know , so substitute and solve for .   Store the unrounded value of in your calculator.  (b) Set and solve for , using the stored value of .   The pie will be F after about minutes.  If you would rather not store , you can substitute its exact value and enter everything at once: .  To see why early rounding matters here, suppose we rounded to . Then minutes, which is almost three minutes off.         Sabine heats a bowl of soup to F and sets it on the table in a F kitchen. For this bowl, per minute.     Write a model for the temperature of the soup minutes after it is set on the table.       and , so .      What is the temperature of the soup after minutes?    About F    , so the soup is about F.      When will the soup be F?    After about minutes       The soup reaches F after about minutes.      Will the soup ever cool to F? Explain.    No. The soup's temperature gets closer and closer to the kitchen temperature of F but never goes below it. Algebraically, leads to , which has no solution because is always positive.       A carton of milk at F is taken out of the refrigerator and left on the counter in a F kitchen. For this carton, per minute.     Write a model for the temperature of the milk minutes after it is taken out of the refrigerator.       and , so . The value of is negative because the milk starts below room temperature and is warming up toward it. A common error is to use , which would give a starting temperature of F.      What is the temperature of the milk after minutes?    About F    , so the milk is about F.      When will the milk reach F?    After about minutes       The milk reaches F after about minutes. Dividing by makes both sides positive, which has to happen before we can take .      If the milk is left out for a very long time, what temperature will it approach?    F    As gets large, approaches , so approaches . The milk approaches F, the temperature of the kitchen.         Dash pours a cup of tea at F and sets it on a desk in a F room. Let be the temperature of the tea minutes after it is poured. After minutes, the tea is F.     Find the value of .       Here and , so . Substitute and .       What is the temperature of the tea after minutes?    About F    Using the stored value of , F. There is also an exact way to see this: , so .      When will the tea be F?    After about minutes       The tea is F after about minutes. This fits with the previous part, since F is warmer than the F reading at minutes.       A bottle of water at F is taken out of a refrigerator and left in a car where the temperature is F. After minutes, the water is F.     Write a model for the temperature of the water minutes after it is left in the car. Leave as an unknown for now.       and , so . The water is warming, so is negative.      Find the value of .              When will the water reach F?    After about minutes       The water reaches F after about minutes. As a check, after minutes the water is F, so it should take a little longer than minutes to reach F.         Additional Practice  These problems mix all of the topics above. Give exact answers, and round decimals to two places unless the problem says otherwise.     Rewrite in logarithmic form.   .    Rewrite in exponential form.   .    Evaluate without a calculator.   , so the value is .    Evaluate without a calculator.   by the inverse property and , so the total is .      Solve each equation.       Matching bases:  , so . Then and .   Using : This also works, but takes more algebra.   The last step uses the exponent rule once more: , so the denominator is , and . When matching bases is possible, it is usually the faster route.       , so .      , so . Since any base to the power is , . (Using gives .)     No solution  , so . Since is always positive, there is no solution.      , so and .        Solve each equation.      , so and . Check: .      , so and .      , so .      , so . Then and .      Two towns each have 5,000 residents. Town A gains 200 residents each year, and Town B grows by each year.     Write a model for the population of each town years from now.    Town A: ; Town B:    Town A adds the same amount each year, so it is linear with slope and vertical intercept : . Town B multiplies by the same factor each year, so it is exponential with and : .      When will each town reach 8,000 residents?    Town A: years; Town B: about years    Town A: , so and years.  Town B: , so and years.      Which town grows by more people in the first year? Does that town stay ahead? Explain.    In the first year, Town A gains people and Town B gains people, so Town A grows more at first. Town A does not stay ahead, though. Town B's yearly gain keeps getting larger while Town A's stays at , so Town B catches up and passes Town A. After years, Town A has 6,600 residents and Town B has about 6,584. After years, Town A has 6,800 and Town B has about 6,814. This is also why Town B reaches 8,000 first.         The number of views of an online video days after it is posted is modeled by .     When will the video reach 100,000 views?    After about days       The video reaches 100,000 views after about days.      How long does it take for the number of views to double?    About days    , so days.       A loaf of bread comes out of a F oven into a F kitchen. Let be the temperature of the bread minutes after it comes out of the oven. After minutes, the bread is F.     Find the value of .       Here and , so .       The bread is easiest to slice once it cools to F. When will that happen?    After about minutes       The bread will be ready to slice after about minutes.       A thermometer reading F is carried outside on a winter day, where the temperature is F. Let be the reading minutes after the thermometer is carried outside. After minutes, the thermometer reads F.     Find the value of .       Here and , so . Since , subtracting means adding to both sides.   A common error is to compute as . Subtracting a negative temperature means adding.      When will the thermometer read F, the freezing point of water?    After about minutes       The thermometer reads F after about minutes. This fits with the given reading: the thermometer is at F after minutes, so it should take a little longer than minutes to reach F.      "
+},
+{
+  "id": "explog-video-exp-models",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-video-exp-models",
+  "type": "Figure",
+  "number": "10",
+  "title": "",
+  "body": " Video: basic exponential models   "
+},
+{
+  "id": "explog-example-growth",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-growth",
+  "type": "Example",
+  "number": "11",
+  "title": "Worked Example.",
+  "body": " Worked Example   A town has 4,200 residents, and its population grows by each year. Write an exponential model for the population years from now. Then use it to predict the population in years.    The initial value is . The population grows by , so and the growth factor is . The model is .  To predict the population in years, substitute .   The town will have about 5,644 residents in years.  A common error is to use or . The factor says that each year the town keeps all of its current population (the ) and adds more (the ).   "
+},
+{
+  "id": "explog-example-table",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-table",
+  "type": "Example",
+  "number": "12",
+  "title": "Worked Example.",
+  "body": " Worked Example   Could the table below represent a linear function, an exponential function, or neither? If it is linear or exponential, write a formula for .                    The -values go up by each time, so we can compare consecutive outputs directly.   Check for linear (differences):    The differences are not constant, so is not linear.   Check for exponential (ratios):    Every ratio is , so could be exponential with decay factor . The output at is , so and . A factor of means the output loses each step.  Just like with linear tables, be careful when the -values are not evenly spaced. Comparing ratios of consecutive outputs only works this simply when the inputs go up by the same amount each time.   "
+},
+{
+  "id": "explog-identify",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-identify",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For each function, give the initial value and the growth or decay factor, say whether the function is growing or decaying, and give the percent rate of change.        Initial value , factor , growing by    Here and . Since , the function is growing, and means it grows by each step.         Initial value , factor , decaying by    Here and . Since , the function is decaying. Writing shows it loses each step. A common error is to say the rate is ; that is the percent that remains, not the percent lost.         Initial value , factor , growing by    Here and , so the function grows by each step.         Initial value , factor , decaying by    Here and . The decimal is , so the function decays by half a percent each step.         Initial value , factor , growing by (doubling)    Here and . Adding each step is the same as doubling each step.    "
+},
+{
+  "id": "explog-build-savings",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-build-savings",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A savings account starts with $2,500 and earns interest each year.     Write an exponential model for the balance years after the account is opened.       The initial value is , and the balance grows by , so . The model is .      What will the balance be after years?    About $3,421.42    , so the balance will be about $3,421.42.    "
+},
+{
+  "id": "explog-build-trout",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-build-trout",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  A lake has 9,000 trout, and the trout population is decreasing by each year.     Write an exponential model for the number of trout years from now.       The initial value is . The population is decreasing by , so . The model is .      About how many trout will be in the lake after years?    About 6,605 trout    , so there will be about 6,605 trout.    "
+},
+{
+  "id": "explog-table-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-table-practice",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Use the table below.                     Show that the table does not represent a linear function.    The differences between consecutive outputs are , , and . Since the inputs go up by each time and the differences are not constant, the rate of change is not constant, so the function is not linear.      Show that the table could represent an exponential function, and write a formula for .       The ratios are , , and . The ratio is constant, so the function could be exponential with . The initial value is , so .      Use your formula to find .       .    "
+},
+{
+  "id": "explog-example-inverse-table",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-inverse-table",
+  "type": "Example",
+  "number": "13",
+  "title": "Worked Example.",
+  "body": " Worked Example   The table on the left shows some values of . Use it to fill in a table for the inverse function, .                                          An inverse function swaps inputs and outputs. Since , the inverse sends back to , so . Doing the same for each column gives , , , , and .  Notice that every output of is positive, so every input of is positive. The outputs of , on the other hand, include and .   "
+},
+{
+  "id": "explog-example-convert",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-convert",
+  "type": "Example",
+  "number": "14",
+  "title": "Worked Example.",
+  "body": " Worked Example   Rewrite each equation in the other form.              The base is and the exponent is . The log equals the exponent, so .  The base is and the exponent is , so .  The base is and the log value is the exponent, so . It can help to read out loud as 3 to the 4th is 81.  Since is the log base , this says , so .     "
+},
+{
+  "id": "explog-example-evaluate",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-evaluate",
+  "type": "Example",
+  "number": "15",
+  "title": "Worked Example.",
+  "body": " Worked Example   Evaluate each expression without a calculator.               Method 1: Ask what power?    to what power is ? Since , .  This is base . Since , .  Since , we have , so .  Since , we have , so .  Any base to the power is , so .  By the inverse property, .  By the inverse property, .      Method 2: Set it equal to and match bases  When the answer is not obvious, set the log equal to , rewrite in exponential form, and write both sides with the same base. For part (d):   The same idea works for part (c): , so . This is exactly the matching bases method we will use to solve exponential equations in the next section.   "
+},
+{
+  "id": "explog-exp-to-log",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-exp-to-log",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Rewrite each equation in logarithmic form.      The base is and the exponent is , so .      The base is , so we can use the common log: .      .      The base is and the exponent is , so .      The base is , so we use the natural log: .   "
+},
+{
+  "id": "explog-log-to-exp",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-log-to-exp",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Rewrite each equation in exponential form.      The base is and the log value is the exponent, so .      With no base written, the base is , so .      .      , which makes sense because the cube root of is .      The natural log has base , so .   "
+},
+{
+  "id": "explog-evaluate-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-evaluate-practice",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Evaluate each expression without a calculator.      , so .      , so .      , so .      , so .      , so .      Since , and . Matching bases also works: becomes , so and .      By the inverse property, .      By the inverse property, .      , so .   "
+},
+{
+  "id": "explog-log-concepts",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-log-concepts",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "   Explain why is undefined.    asks for a power of that equals . Every power of is positive (for example and ), so no exponent works. The input of a logarithm must be positive.      Without a calculator, decide which two consecutive whole numbers is between. Explain how you know.    Between and    and . Since is between and , the exponent we need is between and . In the next section we will find this value exactly; it is about .    "
+},
+{
+  "id": "explog-video-solve-exp",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-video-solve-exp",
+  "type": "Figure",
+  "number": "16",
+  "title": "",
+  "body": " Video: solving basic exponential equations   "
+},
+{
+  "id": "explog-example-match-bases",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-match-bases",
+  "type": "Example",
+  "number": "17",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve each equation.          Method 1: Matching bases  (a) Since , we can write both sides as powers of .   (b) Neither nor is a power of the other, but both are powers of : and .     Method 2: Taking of both sides  (a) Take of both sides and bring the exponent down. Keep parentheses around , since the whole exponent comes down.   (b)   Both methods give the same answers. Matching bases is quicker when it works, but taking a log of both sides works even when the bases cannot be matched.   "
+},
+{
+  "id": "explog-example-isolate-exp",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-isolate-exp",
+  "type": "Example",
+  "number": "18",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Method 1: Isolate, then take  First isolate the exponential part, undoing the subtraction and then the multiplication.   Since is not a power of , matching bases will not work. Take of both sides.   This is reasonable: and , so the exponent that gives should be between and .    Method 2: Isolate, then take  Any logarithm works as long as we use the same one on both sides. Starting from :   The exact answer looks different, but and are the same number.    Method 3: Isolate, then rewrite in log form  Starting from , log form gives the exact answer right away. To get a decimal, either use a calculator that allows a base log, or go back to Method 1.  A common error is to combine the and the into . The exponent is only on the , so the has to be divided off first.   "
+},
+{
+  "id": "explog-example-base-e",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-base-e",
+  "type": "Example",
+  "number": "19",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Isolate , then take of both sides.   There are two ways to see that . One is the inverse property. The other is the exponent rule: , since . You could also skip the step and rewrite in log form as .  A common error is to divide by too early and write . The is in the exponent, so it can only be dealt with after the brings it down.   "
+},
+{
+  "id": "explog-match-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-match-practice",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  Solve each equation by matching bases.      , so and .      , so and .      , so and .      Write both sides as powers of : , so , , and .      , so and .   "
+},
+{
+  "id": "explog-ln-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-ln-practice",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "",
+  "body": "  Solve each equation using logarithms. Give an exact answer and a decimal rounded to two places.      Take of both sides: , so . Check that this is reasonable: and , and is between them.      Rewrite in log form (or take of both sides): .      , so . A negative answer makes sense here, since is less than .      , so .   "
+},
+{
+  "id": "explog-isolate-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-isolate-practice",
+  "type": "Worksheet Exercise",
+  "number": "11",
+  "title": "",
+  "body": "  Isolate the exponential part first, then solve. Use matching bases when it works and logarithms otherwise. Give exact answers and decimals rounded to two places where needed.                   Notice that matching bases only became possible after isolating. Using instead gives , the same answer.           Both logs are negative, so the answer is positive.                    Watch the signs: subtracting leaves , and dividing by makes both sides positive.    "
+},
+{
+  "id": "explog-exp-errors",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-exp-errors",
+  "type": "Worksheet Exercise",
+  "number": "12",
+  "title": "",
+  "body": "   A student solved by first writing . Explain the mistake, then solve the equation correctly.       The exponent applies only to the , not to the , so is not . For example, when , but . Divide first: , so .      A student solving took of both sides right away and wrote . Explain the mistake, then solve the equation correctly.       The log of a sum does not split apart, so is not . Isolate first: , so .      Explain why has no solution.    Every power of is positive, so can never equal . If you try to take of both sides, you get , which is undefined.      Earlier you estimated that is between and . Find its value by solving .       , so , which is between and as expected.    "
+},
+{
+  "id": "explog-video-solve-log",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-video-solve-log",
+  "type": "Figure",
+  "number": "20",
+  "title": "",
+  "body": " Video: solving basic logarithmic equations   "
+},
+{
+  "id": "explog-example-basic-log",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-basic-log",
+  "type": "Example",
+  "number": "21",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve each equation.          (a) The log is already isolated. Rewriting in exponential form gives .  (b) Rewrite in exponential form with base , then solve the linear equation.   Check: . The input is positive, so is a valid solution.   "
+},
+{
+  "id": "explog-example-isolate-log",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-isolate-log",
+  "type": "Example",
+  "number": "22",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve . Give an exact answer and a decimal rounded to two places.    Isolate the log, rewrite in exponential form, and solve.   Check: , which is positive, so the solution is valid.  Common errors include rewriting before the log is isolated (for example, writing ), and typing into a calculator as .   "
+},
+{
+  "id": "explog-example-log-power",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-log-power",
+  "type": "Example",
+  "number": "23",
+  "title": "Worked Example.",
+  "body": " Worked Example   Solve .    Method 1: Rewrite in exponential form first       Method 2: Use the exponent rule first     Both methods give . Method 2 avoids the cube root, which is why bringing the exponent down can be handy.   "
+},
+{
+  "id": "explog-basic-log-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-basic-log-practice",
+  "type": "Worksheet Exercise",
+  "number": "13",
+  "title": "",
+  "body": "  Solve each equation. Give exact answers, and include a decimal rounded to two places when the answer involves .      .      .      .      .      .   "
+},
+{
+  "id": "explog-linear-inside-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-linear-inside-practice",
+  "type": "Worksheet Exercise",
+  "number": "14",
+  "title": "",
+  "body": "  Solve each equation and check that the input of the log is positive.      , so . Check: .      , so .      , so and .      , so and . Check: the input is , which is positive, so is a valid solution. A negative value of is fine; only the input of the log has to be positive.   "
+},
+{
+  "id": "explog-isolate-log-practice",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-isolate-log-practice",
+  "type": "Worksheet Exercise",
+  "number": "15",
+  "title": "",
+  "body": "  Isolate the log first, then solve. Give exact answers, and include a decimal rounded to two places when the answer involves .      Divide by : , so .      , so and .      , so . Then and .      , so . Then and .   "
+},
+{
+  "id": "explog-log-concepts-2",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-log-concepts-2",
+  "type": "Worksheet Exercise",
+  "number": "16",
+  "title": "",
+  "body": "   Solve in two different ways.       Exponent rule first:  , so and .  Exponential form first:  , so .      A student says that has no solution because you can't have a negative log. Is the student right? Explain, and solve the equation if it has a solution.       The student is mixing up the input and the output. The input of a log must be positive, but the output can be negative. Rewriting in exponential form gives , which is positive, so it is a valid input. Any number between and has a negative log.    "
+},
+{
+  "id": "explog-video-applications",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-video-applications",
+  "type": "Figure",
+  "number": "24",
+  "title": "",
+  "body": " Video: exponential applications with logarithms   "
+},
+{
+  "id": "explog-example-savings",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-savings",
+  "type": "Example",
+  "number": "25",
+  "title": "Worked Example.",
+  "body": " Worked Example   Asami deposits $3,000 into an account that earns interest each year, so the balance years after the deposit is . How long will it take for the balance to reach $5,000?    Set and solve.   The balance reaches $5,000 after about years. (If the bank adds interest only once a year, the balance first passes $5,000 when the interest is added at the end of year .)  In log form, the exact answer can also be written . It is the same number.  To see why early rounding matters, suppose we rounded to . Then we would get years, which is off by about three months.   "
+},
+{
+  "id": "explog-example-medication",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-medication",
+  "type": "Example",
+  "number": "26",
+  "title": "Worked Example.",
+  "body": " Worked Example   The amount of a medication in a patient's body hours after a dose is milligrams.    When will the amount drop to mg?  What is the half-life of the medication?      (a) Set and solve.   The amount drops to mg after about hours. Both and are negative, so the answer is positive, which makes sense for a time.  (b) Half of the initial mg is mg.   The half-life is about hours. Notice that the divided out, so any starting dose would have the same half-life.   "
+},
+{
+  "id": "explog-bacteria",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-bacteria",
+  "type": "Worksheet Exercise",
+  "number": "17",
+  "title": "",
+  "body": "  The number of bacteria in a culture hours after it is started is .     What is the initial number of bacteria, and by what percent does the population grow each hour?    bacteria, growing per hour    The initial value is . The factor is , so the population grows by each hour.      How many bacteria are there after hours?    About 3,499    , so there are about 3,499 bacteria.      When will there be 10,000 bacteria?    After about hours       There will be 10,000 bacteria after about hours. This fits with the previous part: at hours there are about 3,499, so reaching 10,000 should take longer than hours.      What is the doubling time for this population?    About hours    Set : , so and . The population doubles about every hours.    "
+},
+{
+  "id": "explog-car-value",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-car-value",
+  "type": "Worksheet Exercise",
+  "number": "18",
+  "title": "",
+  "body": "  The value of a car years after it is purchased is dollars.     By what percent does the car lose value each year?       , so the car loses of its value each year.      What is the car worth after years?    $16,704.20    , so the car is worth $16,704.20.      When will the car be worth $10,000?    After about years       The car will be worth $10,000 after about years.      When will the car be worth half of what it was purchased for?    After about years    Half of $32,000 is $16,000. Then , so years. This fits with the earlier part, since after years the car is worth a little more than $16,000.    "
+},
+{
+  "id": "explog-savings-doubling",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-savings-doubling",
+  "type": "Worksheet Exercise",
+  "number": "19",
+  "title": "",
+  "body": "  Ulrich deposits $1,800 into an account that earns interest each year.     Write an exponential model for the balance years after the deposit.       The initial value is and , so .      How long will it take for the balance to reach $2,500?    About years       The balance reaches $2,500 after about years.      How long will it take for Ulrich's money to double?    About years    Set : , so years.      Would the doubling time change if Ulrich had deposited $5,000 instead? Explain.    No. With $5,000 the equation is , and dividing by gives again. The initial value always divides out, so only the growth factor affects the doubling time.    "
+},
+{
+  "id": "explog-radioactive",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-radioactive",
+  "type": "Worksheet Exercise",
+  "number": "20",
+  "title": "",
+  "body": "  The amount of a radioactive substance remaining years from now is grams.     When will there be grams remaining?    After about years       There will be grams left after about years.      What is the half-life of the substance?    About years    , so years.      Your answer to the first part should be exactly twice your answer to the second part. Explain why.    Going from grams to grams means cutting the amount in half twice ( to , then to ). That takes two half-lives, and .    "
+},
+{
+  "id": "explog-find-k",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-find-k",
+  "type": "Worksheet Exercise",
+  "number": "21",
+  "title": "",
+  "body": "  The population of a town years after 2020 is modeled by , where is a constant. In 2025, the population was 15,000.     Use the 2025 population to find . Give the exact value and a decimal rounded to four places.  Hint: In 2025, . Set and solve for the same way you would solve for .          Store the unrounded value of in your calculator for the next parts.      Use your model to predict the population in 2030.    18,750    In 2030, , and using the stored value of . You can also see this exactly: , and .      When will the population reach 20,000?    About years after 2020, during 2031       The population reaches 20,000 about years after 2020, which is during 2031.      Suppose someone rounded to before solving the previous part. What answer would they get, and how far off would it be?    About years, off by more than a year    With , years, which would put the answer in 2032 instead of 2031. Rounding early changed the answer by more than a year.    "
+},
+{
+  "id": "explog-example-coffee",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-coffee",
+  "type": "Example",
+  "number": "27",
+  "title": "Worked Example.",
+  "body": " Worked Example   A cup of coffee at F is set on a table in a room that is F. For this cup, per minute.    Write a model for the temperature of the coffee minutes after it is set on the table.  What is the temperature of the coffee after minutes?  When will the coffee be F?      (a) The room is F, so . The coffee starts at F, so and . The model is .  A common error is to use . The initial temperature is , so is the difference between the coffee and the room.  (b) . After minutes the coffee is about F.  (c) Set . Subtract first, then divide by .   The coffee reaches F after about minutes.  Another way to think about this: the term is how many degrees the coffee is above room temperature . Asking when the coffee is F is the same as asking when it is degrees above the room, which is exactly the second line above.  Another common error is to combine and and write . The is multiplied by and the is added afterward, so they are not like terms, and the has to be subtracted first.   "
+},
+{
+  "id": "explog-example-pie",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-example-pie",
+  "type": "Example",
+  "number": "28",
+  "title": "Worked Example.",
+  "body": " Worked Example   A pie is taken out of a F oven and set on the counter in a F kitchen. Let be the temperature of the pie minutes after it comes out of the oven. After minutes, the pie is F.    Find the value of .  When will the pie be F?      (a) The kitchen is F, so . The pie starts at F, so and . We know , so substitute and solve for .   Store the unrounded value of in your calculator.  (b) Set and solve for , using the stored value of .   The pie will be F after about minutes.  If you would rather not store , you can substitute its exact value and enter everything at once: .  To see why early rounding matters here, suppose we rounded to . Then minutes, which is almost three minutes off.   "
+},
+{
+  "id": "explog-soup",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-soup",
+  "type": "Worksheet Exercise",
+  "number": "22",
+  "title": "",
+  "body": "  Sabine heats a bowl of soup to F and sets it on the table in a F kitchen. For this bowl, per minute.     Write a model for the temperature of the soup minutes after it is set on the table.       and , so .      What is the temperature of the soup after minutes?    About F    , so the soup is about F.      When will the soup be F?    After about minutes       The soup reaches F after about minutes.      Will the soup ever cool to F? Explain.    No. The soup's temperature gets closer and closer to the kitchen temperature of F but never goes below it. Algebraically, leads to , which has no solution because is always positive.    "
+},
+{
+  "id": "explog-milk",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-milk",
+  "type": "Worksheet Exercise",
+  "number": "23",
+  "title": "",
+  "body": "  A carton of milk at F is taken out of the refrigerator and left on the counter in a F kitchen. For this carton, per minute.     Write a model for the temperature of the milk minutes after it is taken out of the refrigerator.       and , so . The value of is negative because the milk starts below room temperature and is warming up toward it. A common error is to use , which would give a starting temperature of F.      What is the temperature of the milk after minutes?    About F    , so the milk is about F.      When will the milk reach F?    After about minutes       The milk reaches F after about minutes. Dividing by makes both sides positive, which has to happen before we can take .      If the milk is left out for a very long time, what temperature will it approach?    F    As gets large, approaches , so approaches . The milk approaches F, the temperature of the kitchen.    "
+},
+{
+  "id": "explog-tea",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-tea",
+  "type": "Worksheet Exercise",
+  "number": "24",
+  "title": "",
+  "body": "  Dash pours a cup of tea at F and sets it on a desk in a F room. Let be the temperature of the tea minutes after it is poured. After minutes, the tea is F.     Find the value of .       Here and , so . Substitute and .       What is the temperature of the tea after minutes?    About F    Using the stored value of , F. There is also an exact way to see this: , so .      When will the tea be F?    After about minutes       The tea is F after about minutes. This fits with the previous part, since F is warmer than the F reading at minutes.    "
+},
+{
+  "id": "explog-water-bottle",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-water-bottle",
+  "type": "Worksheet Exercise",
+  "number": "25",
+  "title": "",
+  "body": "  A bottle of water at F is taken out of a refrigerator and left in a car where the temperature is F. After minutes, the water is F.     Write a model for the temperature of the water minutes after it is left in the car. Leave as an unknown for now.       and , so . The water is warming, so is negative.      Find the value of .              When will the water reach F?    After about minutes       The water reaches F after about minutes. As a check, after minutes the water is F, so it should take a little longer than minutes to reach F.    "
+},
+{
+  "id": "explog-mixed-convert",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-convert",
+  "type": "Worksheet Exercise",
+  "number": "26",
+  "title": "",
+  "body": "  Rewrite in logarithmic form.   .    Rewrite in exponential form.   .    Evaluate without a calculator.   , so the value is .    Evaluate without a calculator.   by the inverse property and , so the total is .   "
+},
+{
+  "id": "explog-mixed-exp",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-exp",
+  "type": "Worksheet Exercise",
+  "number": "27",
+  "title": "",
+  "body": "  Solve each equation.       Matching bases:  , so . Then and .   Using : This also works, but takes more algebra.   The last step uses the exponent rule once more: , so the denominator is , and . When matching bases is possible, it is usually the faster route.       , so .      , so . Since any base to the power is , . (Using gives .)     No solution  , so . Since is always positive, there is no solution.      , so and .   "
+},
+{
+  "id": "explog-mixed-log",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-log",
+  "type": "Worksheet Exercise",
+  "number": "28",
+  "title": "",
+  "body": "  Solve each equation.      , so and . Check: .      , so and .      , so .      , so . Then and .   "
+},
+{
+  "id": "explog-mixed-linear-vs-exp",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-linear-vs-exp",
+  "type": "Worksheet Exercise",
+  "number": "29",
+  "title": "",
+  "body": "  Two towns each have 5,000 residents. Town A gains 200 residents each year, and Town B grows by each year.     Write a model for the population of each town years from now.    Town A: ; Town B:    Town A adds the same amount each year, so it is linear with slope and vertical intercept : . Town B multiplies by the same factor each year, so it is exponential with and : .      When will each town reach 8,000 residents?    Town A: years; Town B: about years    Town A: , so and years.  Town B: , so and years.      Which town grows by more people in the first year? Does that town stay ahead? Explain.    In the first year, Town A gains people and Town B gains people, so Town A grows more at first. Town A does not stay ahead, though. Town B's yearly gain keeps getting larger while Town A's stays at , so Town B catches up and passes Town A. After years, Town A has 6,600 residents and Town B has about 6,584. After years, Town A has 6,800 and Town B has about 6,814. This is also why Town B reaches 8,000 first.    "
+},
+{
+  "id": "explog-mixed-views",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-views",
+  "type": "Worksheet Exercise",
+  "number": "30",
+  "title": "",
+  "body": "  The number of views of an online video days after it is posted is modeled by .     When will the video reach 100,000 views?    After about days       The video reaches 100,000 views after about days.      How long does it take for the number of views to double?    About days    , so days.    "
+},
+{
+  "id": "explog-mixed-bread",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-bread",
+  "type": "Worksheet Exercise",
+  "number": "31",
+  "title": "",
+  "body": "  A loaf of bread comes out of a F oven into a F kitchen. Let be the temperature of the bread minutes after it comes out of the oven. After minutes, the bread is F.     Find the value of .       Here and , so .       The bread is easiest to slice once it cools to F. When will that happen?    After about minutes       The bread will be ready to slice after about minutes.    "
+},
+{
+  "id": "explog-mixed-thermometer",
+  "level": "2",
+  "url": "mth124-act-exp-log-review.html#explog-mixed-thermometer",
+  "type": "Worksheet Exercise",
+  "number": "32",
+  "title": "",
+  "body": "  A thermometer reading F is carried outside on a winter day, where the temperature is F. Let be the reading minutes after the thermometer is carried outside. After minutes, the thermometer reads F.     Find the value of .       Here and , so . Since , subtracting means adding to both sides.   A common error is to compute as . Subtracting a negative temperature means adding.      When will the thermometer read F, the freezing point of water?    After about minutes       The thermometer reads F after about minutes. This fits with the given reading: the thermometer is at F after minutes, so it should take a little longer than minutes to reach F.    "
+},
+{
   "id": "midterm-review-f26",
   "level": "1",
   "url": "midterm-review-f26.html",
