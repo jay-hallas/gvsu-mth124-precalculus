@@ -64,6 +64,9 @@
     <xi:include href="./activities/14-exponential-practice.ptx"/>
     <xi:include href="./activities/15-group-quiz5-practice.ptx"/>
     <xi:include href="./activities/16-increasing-decreasing-concavity.ptx"/>
+    <xi:include href="./activities/17-introducing-logarithms.ptx"/>
+    <xi:include href="./activities/18-checkpoint5-practice.ptx"/>
+    <xi:include href="./activities/19-solving-exp-log-equations.ptx"/>
     <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>

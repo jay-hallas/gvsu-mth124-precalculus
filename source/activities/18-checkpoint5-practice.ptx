@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-cq5-practice">
+<title>Activity: Checkpoint Quiz 5 Practice</title>
+
+<page>
+<paragraphs>
+<title>Essential Practice</title>
+<p>Start here. These match the problem types on the checkpoint quiz.</p>
+</paragraphs>
+<exercise xml:id="cq5p-ferris">
+<introduction>
+<p>A Ferris wheel has a diameter of <m>60</m> feet, and its lowest point is <m>3</m> feet above the ground. A rider boards at the lowest point at <m>t = 0</m> minutes, and the wheel makes one full turn every <m>12</m> minutes. Let <m>h(t)</m> be the rider's height above the ground, in feet, <m>t</m> minutes after boarding.</p>
+</introduction>
+<task workspace="0.2in">
+<statement>
+<p>At <m>t = 0</m>, where does the model start? Choose one.</p>
+<p><ul><li><p>maximum, <m>\cos(Bt)</m></p></li><li><p>minimum, <m>-\cos(Bt)</m></p></li><li><p>midline going up, <m>\sin(Bt)</m></p></li><li><p>midline going down, <m>-\sin(Bt)</m></p></li></ul></p>
+</statement>
+<answer>
+<p>Minimum, <m>-\cos(Bt)</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the maximum and minimum heights of the rider. Use them to find the midline and the amplitude.</p>
+</statement>
+<answer>
+<p>Max <m>63</m>, min <m>3</m>, midline <m>y = 33</m>, amplitude <m>30</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the period and <m>B</m>, then write a formula for <m>h(t)</m>.</p>
+</statement>
+<answer>
+<p>Period <m>12</m>, <m>B = \frac{\pi}{6}</m>, <m>h(t) = -30\cos\left(\frac{\pi}{6}t\right) + 33</m></p>
+</answer>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Set up the calculation you would use to find <m>h(1)</m>. Then find the value in radian mode, rounded to two decimal places.</p>
+</statement>
+<answer>
+<p><m>h(1) = -30\cos\left(\frac{\pi}{6}\right) + 33 \approx 7.02</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>How many minutes after boarding does the rider first reach the top of the wheel? Explain how you know.</p>
+</statement>
+<answer>
+<p><m>6</m> minutes; the top is half a turn after boarding, and half of the <m>12</m> minute period is <m>6</m>.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="cq5p-two-points" workspace="1.8in">
+<statement>
+<p>Find a formula for the exponential function <m>f(x) = a \cdot b^x</m> whose graph passes through the points <m>(1, 54)</m> and <m>(4, 2)</m>. Show how you find <m>b</m> and how you find <m>a</m>.</p>
+</statement>
+<answer>
+<p><m>f(x) = 162\left(\frac13\right)^x</m></p>
+</answer>
+<solution>
+<p><m>\frac{ab^4}{ab} = \frac{2}{54}</m>, so <m>b^3 = \frac{1}{27}</m> and <m>b = \frac13</m>. Then <m>54 = a \cdot \frac13</m> gives <m>a = 162</m>.</p>
+</solution>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="cq5p-fish">
+<introduction>
+<p>A lake has a population of <m>4{,}800</m> fish. The fish population decreases by <m>9\%</m> each year. Let <m>P(t)</m> be the number of fish in the lake <m>t</m> years from now.</p>
+</introduction>
+<task workspace="0.6in">
+<statement>
+<p>What is the decay factor <m>b</m>? Explain in a complete sentence where it comes from.</p>
+</statement>
+<answer>
+<p><m>b = 0.91</m>; the lake keeps <m>91\%</m> of its fish each year.</p>
+</answer>
+</task>
+<task workspace="1in">
+<statement>
+<p>Write a formula for <m>P(t)</m>, then find the number of fish <m>6</m> years from now, rounded to the nearest whole fish.</p>
+</statement>
+<answer>
+<p><m>P(t) = 4800(0.91)^t</m>; about <m>2{,}726</m> fish</p>
+</answer>
+</task>
+</exercise>
+<paragraphs>
+<title>Additional Practice</title>
+<p>More problems of the same types.</p>
+</paragraphs>
+<exercise xml:id="cq5p-tide">
+<introduction>
+<p>The depth of the water at the end of a dock rises and falls with the tide. At low tide the water is <m>2</m> feet deep, and at high tide it is <m>10</m> feet deep. At <m>t = 0</m> hours (midnight), the water is at its average depth and rising, and the tide repeats every <m>12</m> hours. Let <m>d(t)</m> be the depth of the water, in feet, <m>t</m> hours after midnight.</p>
+</introduction>
+<task workspace="1in">
+<statement>
+<p>Write a formula for <m>d(t)</m>.</p>
+</statement>
+<answer>
+<p><m>d(t) = 4\sin\left(\frac{\pi}{6}t\right) + 6</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>How many hours after midnight is the water first at low tide? Explain how you know.</p>
+</statement>
+<answer>
+<p><m>9</m> hours; the water rises to high tide at <m>3</m> hours, returns to the midline at <m>6</m>, and reaches low tide three quarters of the way through the cycle.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="cq5p-coins">
+<introduction>
+<p>A coin collection is worth <m>\$2{,}500</m>. Its value increases by <m>8\%</m> every <m>3</m> years. Let <m>V(t)</m> be the value of the collection <m>t</m> years from now.</p>
+</introduction>
+<task workspace="0.6in">
+<statement>
+<p>Write a formula for <m>V(t)</m>.</p>
+</statement>
+<answer>
+<p><m>V(t) = 2500(1.08)^{t/3}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Find the value of the collection <m>10</m> years from now, rounded to the nearest cent.</p>
+</statement>
+<answer>
+<p><m>\approx \$3{,}231.12</m></p>
+</answer>
+</task>
+</exercise>
+
+</page>
+</worksheet>
