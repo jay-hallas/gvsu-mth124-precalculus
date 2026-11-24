@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-inverses">
+<title>Activity: Inverse Functions</title>
+
+<page>
+<assemblage xml:id="inv-act-review">
+<title>Overview</title>
+<p>
+A relation is a <alert>function</alert> if each input has exactly one output. A function has an <alert>inverse function</alert> when each output comes from exactly one input, so that <m>f^{-1}</m> can send every output back to the input it came from. On a table, a repeated input means the relation is not a function, and a repeated output means the function has no inverse. On a graph, the Vertical Line Test checks for a function and the Horizontal Line Test checks for an inverse. For a linear function, the inverse comes from swapping <m>x</m> and <m>y</m> and solving for <m>y</m>.
+</p>
+</assemblage>
+
+<paragraphs>
+<title>We Will Do These Together</title>
+</paragraphs>
+
+<exercise xml:id="inv-act-tables-together">
+<introduction>
+<p>Classify each table as <em>not a function</em>, a <em>function with no inverse</em>, or a <em>function with an inverse</em>.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>2</m></cell><cell><m>4</m></cell><cell><m>5</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>3</m></cell><cell><m>5</m></cell><cell><m>9</m></cell><cell><m>7</m></cell><cell><m>1</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Not a function</p></answer>
+<solution><p>The input <m>x = 2</m> appears twice with two different outputs, <m>5</m> and <m>9</m>.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>-3</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell><cell><m>2</m></cell><cell><m>4</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>6</m></cell><cell><m>2</m></cell><cell><m>5</m></cell><cell><m>2</m></cell><cell><m>1</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Function with no inverse</p></answer>
+<solution><p>Every input appears once, so it is a function. The output <m>2</m> comes from both <m>x = -1</m> and <m>x = 2</m>, so there is no inverse.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell><cell><m>4</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>7</m></cell><cell><m>4</m></cell><cell><m>2</m></cell><cell><m>-3</m></cell><cell><m>-5</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Function with an inverse</p></answer>
+<solution><p>No input repeats and no output repeats.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="inv-act-graphs-together">
+<introduction>
+<p>Use the Vertical Line Test and the Horizontal Line Test to classify each graph as <em>not a function</em>, a <em>function with no inverse</em>, or a <em>function with an inverse</em>.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>A circle centered at the origin.</shortdescription>
+<description><p>A circle of radius three centered at the origin.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g1">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<circle center="(0,0)" radius="3" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Not a function</p></answer>
+<solution><p>A vertical line such as <m>x = 0</m> crosses the circle twice.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>A parabola opening downward.</shortdescription>
+<description><p>A parabola opening downward with its vertex at the point one, three.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g2">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = -(x-1)^2+3</definition>
+<graph function="f" domain="(-1.2,3.2)" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Function with no inverse</p></answer>
+<solution><p>Every vertical line crosses the graph at most once, but a horizontal line such as <m>y = 2</m> crosses it twice.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>An S-shaped curve that always rises.</shortdescription>
+<description><p>A curve passing through the origin that rises from left to right the whole way, flattening slightly near the origin.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g3">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = x^3/6+x/2</definition>
+<graph function="f" domain="(-2.4,2.4)" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Function with an inverse</p></answer>
+<solution><p>The graph always rises, so every horizontal line crosses it at most once.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="inv-act-linear-together">
+<introduction>
+<p>Let <m>f(x) = 3x - 5</m>. Find <m>f^{-1}(x)</m> by following the steps.</p>
+</introduction>
+<task workspace="0.5in">
+<statement><p>Write <m>f(x)</m> as <m>y</m>.</p></statement>
+<answer><p><m>y = 3x - 5</m></p></answer>
+</task>
+<task workspace="0.5in">
+<statement><p>Swap <m>x</m> and <m>y</m>.</p></statement>
+<answer><p><m>x = 3y - 5</m></p></answer>
+</task>
+<task workspace="0.8in">
+<statement><p>Solve for <m>y</m>.</p></statement>
+<answer><p><m>y = \dfrac{x + 5}{3}</m></p></answer>
+<solution><p>Add <m>5</m> to both sides to get <m>x + 5 = 3y</m>, then divide by <m>3</m>.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement><p>Write the answer in inverse notation.</p></statement>
+<answer><p><m>f^{-1}(x) = \dfrac{x+5}{3}</m>, which can also be written <m>\frac{1}{3}x + \frac{5}{3}</m>.</p></answer>
+</task>
+<task workspace="0.6in">
+<statement><p>Compute <m>f(4)</m>. Then apply <m>f^{-1}</m> to that output. What do you notice?</p></statement>
+<answer><p><m>f(4) = 7</m> and <m>f^{-1}(7) = 4</m>.</p></answer>
+<solution><p><m>f(4) = 12 - 5 = 7</m> and <m>f^{-1}(7) = \frac{12}{3} = 4</m>. The inverse sends the output <m>7</m> back to the input <m>4</m> it came from.</p></solution>
+</task>
+</exercise>
+</page>
+
+<page>
+<paragraphs>
+<title>Now You Try</title>
+</paragraphs>
+
+<exercise xml:id="inv-act-tables">
+<introduction>
+<p>Classify each table as <em>not a function</em>, a <em>function with no inverse</em>, or a <em>function with an inverse</em>.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>-2</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>3</m></cell><cell><m>5</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>4</m></cell><cell><m>1</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>6</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Function with no inverse</p></answer>
+<solution><p>Every input appears once, but the output <m>1</m> comes from both <m>x = 0</m> and <m>x = 3</m>.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>10</m></cell><cell><m>20</m></cell><cell><m>30</m></cell><cell><m>40</m></cell><cell><m>50</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>8</m></cell><cell><m>-5</m></cell><cell><m>3</m></cell><cell><m>-1</m></cell><cell><m>-12</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Function with an inverse</p></answer>
+<solution><p>No input repeats and no output repeats.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell><cell><m>3</m></cell><cell><m>3</m></cell><cell><m>6</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>2</m></cell><cell><m>5</m></cell><cell><m>1</m></cell><cell><m>4</m></cell><cell><m>0</m></cell></row>
+</tabular>
+</statement>
+<answer><p>Not a function</p></answer>
+<solution><p>The input <m>x = 3</m> appears twice with outputs <m>1</m> and <m>4</m>.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="inv-act-graphs">
+<introduction>
+<p>Classify each graph as <em>not a function</em>, a <em>function with no inverse</em>, or a <em>function with an inverse</em>.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>An exponential curve that always rises.</shortdescription>
+<description><p>An increasing exponential curve that levels off near the horizontal line y equals negative two on the left and rises steeply on the right, crossing the y-axis at negative one.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g4">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = 2^x-2</definition>
+<graph function="f" domain="(-3.5,2.5)" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Function with an inverse</p></answer>
+<solution><p>The graph always rises, so it passes both the Vertical Line Test and the Horizontal Line Test.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>A parabola opening to the left.</shortdescription>
+<description><p>A parabola opening to the left with its vertex at the point two, zero.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g5">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(t) = (2-t^2/2, t)</definition>
+<parametric-curve function="f" domain="(-2.5,2.5)" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Not a function</p></answer>
+<solution><p>A vertical line such as <m>x = 0</m> crosses the graph twice.</p></solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<image width="40%">
+<shortdescription>A cubic curve that rises, falls, then rises.</shortdescription>
+<description><p>A cubic curve through the origin that rises to a peak on the left, falls through the origin to a low point on the right, and then rises again.</p></description>
+<prefigure xmlns="https://prefigure.org" label="inv-act-g6">
+<diagram dimensions="(240,240)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = x^3/2-2*x</definition>
+<graph function="f" domain="(-2.3,2.3)" stroke="black" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer><p>Function with no inverse</p></answer>
+<solution><p>It is a function, but a horizontal line such as <m>y = 0</m> crosses the graph three times.</p></solution>
+</task>
+</exercise>
+
+<exercise xml:id="inv-act-linear">
+<introduction>
+<p>Find the inverse of each function. Show your steps.</p>
+</introduction>
+<task workspace="1.2in">
+<statement><p><m>g(x) = -3x + 9</m></p></statement>
+<answer><p><m>g^{-1}(x) = -\frac{1}{3}x + 3</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>x \amp = -3y + 9</mrow>
+<mrow>x - 9 \amp = -3y</mrow>
+<mrow>y \amp = \frac{x - 9}{-3} = -\frac{1}{3}x + 3</mrow>
+</md>
+</p>
+<p>Watch the sign when dividing by <m>-3</m>.</p>
+</solution>
+</task>
+<task workspace="1.2in">
+<statement><p><m>h(x) = \dfrac{2}{3}x + 4</m></p></statement>
+<answer><p><m>h^{-1}(x) = \frac{3}{2}x - 6</m></p></answer>
+<solution>
+<p>
+<md>
+<mrow>x \amp = \frac{2}{3}y + 4</mrow>
+<mrow>x - 4 \amp = \frac{2}{3}y</mrow>
+<mrow>y \amp = \frac{3}{2}(x - 4) = \frac{3}{2}x - 6</mrow>
+</md>
+</p>
+<p>A common slip is distributing only to the <m>x</m>, giving <m>\frac{3}{2}x - 4</m>.</p>
+</solution>
+</task>
+</exercise>
+</page>
+</worksheet>
