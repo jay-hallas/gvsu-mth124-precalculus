@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-takehome-packet1">
+<title>Take-Home Packet: Lines, Composition, Inverses</title>
+<introduction>
+<p>Read each worked example first and use it as a model. Do the work before you open the answers.</p>
+</introduction>
+
+<page>
+<assemblage xml:id="pk1-review-linear">
+<title>Linear Functions</title>
+<p>A linear function can be written as <m>y = mx + b</m>. The <alert>slope</alert> <m>m</m> is the rate of change, and the <alert>vertical intercept</alert> <m>b</m> is the output when the input is <m>0</m>. Given two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>,</p>
+<p><md>
+<mrow>m = \frac{y_2 - y_1}{x_2 - x_1} \qquad\text{and}\qquad y - y_1 = m(x - x_1) \text{ (point-slope form)}.</mrow>
+</md></p>
+</assemblage>
+<paragraphs>
+<title>The Equation of a Line Through Two Points</title>
+<example xml:id="pk1-ex-two-points">
+<title>Worked Example</title>
+<statement>
+<p>Find the equation of the line through <m>(2,5)</m> and <m>(6,13)</m>.</p>
+</statement>
+<solution>
+<p>Find the slope, then put it and the first point into point-slope form and solve for <m>y</m>.</p>
+<p><md>
+<mrow>m \amp = \frac{13-5}{6-2} = \frac{8}{4} = 2</mrow>
+<mrow>y - 5 \amp = 2(x - 2)</mrow>
+<mrow>y - 5 \amp = 2x - 4</mrow>
+<mrow>y \amp = 2x + 1</mrow>
+</md></p>
+<p>Check with the other point: <m>2(6) + 1 = 13</m>, so the line is correct.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-two-points-steps">
+<introduction>
+<p>Find the equation of the line through <m>(1,4)</m> and <m>(5,-8)</m> by following the steps below.</p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Label the points: <m>x_1 =</m> <fillin characters="4"/>, <m>y_1 =</m> <fillin characters="4"/>, <m>x_2 =</m> <fillin characters="4"/>, <m>y_2 =</m> <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p><m>x_1 = 1</m>, <m>y_1 = 4</m>, <m>x_2 = 5</m>, <m>y_2 = -8</m></p>
+</answer>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Fill in the slope formula and simplify.</p>
+</statement>
+<answer>
+<p><m>m = \frac{-8-4}{5-1} = \frac{-12}{4} = -3</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Put your slope and the point <m>(1,4)</m> into point-slope form.</p>
+</statement>
+<answer>
+<p><m>y - 4 = -3(x - 1)</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Distribute and solve for <m>y</m>.</p>
+</statement>
+<answer>
+<p><m>y = -3x + 7</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Check your answer by plugging in <m>x = 5</m>. Do you get <m>y = -8</m>?</p>
+</statement>
+<answer>
+<p><m>-3(5) + 7 = -8</m>, so yes.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="pk1-two-points" workspace="2.2in">
+<statement>
+<p>Find the equation of the line through <m>(-2,7)</m> and <m>(4,-2)</m>. Write your final answer in the form <m>y = mx + b</m>.</p>
+</statement>
+<answer>
+<p><m>y = -\frac{3}{2}x + 4</m></p>
+</answer>
+<solution>
+<p><m>m = \dfrac{-2-7}{4-(-2)} = \dfrac{-9}{6} = -\dfrac{3}{2}</m>. Then</p>
+<p><md>
+<mrow>y - 7 \amp = -\tfrac{3}{2}(x + 2)</mrow>
+<mrow>y \amp = -\tfrac{3}{2}x - 3 + 7 = -\tfrac{3}{2}x + 4</mrow>
+</md></p>
+<p>Hint for students: in the denominator you subtract a negative number, so <m>4 - (-2) = 4 + 2</m>. Leave the slope as a fraction.</p>
+</solution>
+</exercise>
+<paragraphs>
+<title>Interpreting Slope and Vertical Intercept</title>
+<example xml:id="pk1-ex-interpret">
+<title>Worked Example</title>
+<statement>
+<p>The cost in dollars of renting a moving truck for one day and driving it <m>d</m> miles is <m>C(d) = 0.35d + 45</m>. Interpret the slope and the vertical intercept.</p>
+</statement>
+<solution>
+<p>The slope is <m>0.35</m> dollars per mile (output units per input unit).</p>
+<p><ul><li><p><em>Slope sentence:</em> For each additional mile driven, the cost of the rental increases by <m>\$0.35</m>.</p></li><li><p><em>Intercept sentence:</em> If the truck is driven <m>0</m> miles, the rental still costs <m>\$45</m>.</p></li></ul></p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-gift-card">
+<introduction>
+<p>A gift card is used to buy coffee each week. The balance on the card, in dollars, <m>w</m> weeks after it is first used is <m>B(w) = 60 - 7.5w</m>.</p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>The slope is <fillin characters="4"/> and its units are <fillin characters="4"/> per <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p><m>-7.5</m>; dollars per week</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Complete the sentence: For each additional <fillin characters="4"/>, the balance on the card <fillin characters="4"/> by <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p>For each additional week, the balance on the card decreases by <m>\$7.50</m>.</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>The vertical intercept is <fillin characters="4"/>. It is the value of <m>B</m> when <m>w =</m> <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p><m>60</m>; <m>w = 0</m></p>
+</answer>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Write a sentence explaining what the vertical intercept means for the gift card.</p>
+</statement>
+<answer>
+<p>The card started with <m>\$60</m> on it.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="pk1-followers" workspace="1in">
+<statement>
+<p>A new social media account has <m>F(d) = 1200 + 85d</m> followers <m>d</m> days after the owner started tracking it. Write one sentence interpreting the slope and one sentence interpreting the vertical intercept. Include units in both.</p>
+</statement>
+<answer>
+<p>Slope: the account gains <m>85</m> followers each day. Intercept: the account had <m>1200</m> followers when tracking began.</p>
+</answer>
+</exercise>
+<paragraphs>
+<title>Writing an Equation from a Rate and a Starting Value</title>
+<example xml:id="pk1-ex-rate">
+<title>Worked Example</title>
+<statement>
+<p>A plumber charges a <m>\$65</m> fee to come to your house, plus <m>\$48</m> for each hour of work. Write a function <m>C(h)</m> for the total cost of <m>h</m> hours of work, then find the cost of a <m>2.5</m> hour job.</p>
+</statement>
+<solution>
+<p>The starting value (what you pay at <m>h = 0</m>) is <m>65</m>, so <m>b = 65</m>. The rate is <m>48</m> dollars per hour, and cost goes up as time goes up, so <m>m = 48</m>. That gives</p>
+<p><md>
+<mrow>C(h) = 48h + 65, \qquad C(2.5) = 48(2.5) + 65 = 120 + 65 = 185.</mrow>
+</md></p>
+<p>A <m>2.5</m> hour job costs <m>\$185</m>. If a quantity goes <em>down</em> over time, the slope is negative.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-candle">
+<introduction>
+<p>A candle is <m>30</m> cm tall when it is lit, and it burns down at a steady rate of <m>1.5</m> cm per hour. Let <m>H(t)</m> be the height of the candle <m>t</m> hours after it is lit.</p>
+</introduction>
+<task workspace="0.2in">
+<statement>
+<p>The starting value is <m>b =</m> <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p><m>30</m></p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Is the height going up or down as time passes? So the slope is <m>m =</m> <fillin characters="4"/>.</p>
+</statement>
+<answer>
+<p>Down; <m>m = -1.5</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Write the function <m>H(t)</m>.</p>
+</statement>
+<answer>
+<p><m>H(t) = 30 - 1.5t</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the height of the candle <m>8</m> hours after it is lit.</p>
+</statement>
+<answer>
+<p><m>H(8) = 18</m> cm</p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>How many hours will it take for the candle to burn all the way down? (Set <m>H(t) = 0</m> and solve.)</p>
+</statement>
+<answer>
+<p><m>20</m> hours</p>
+</answer>
+<solution>
+<p><m>30 - 1.5t = 0</m> gives <m>t = 30/1.5 = 20</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Writing an Equation from Two Data Points</title>
+<example xml:id="pk1-ex-data">
+<title>Worked Example</title>
+<statement>
+<p>A <m>4</m> mile taxi ride costs <m>\$13</m>, and a <m>10</m> mile ride costs <m>\$28</m>. Assuming the cost is linear, write a function <m>C(x)</m> for the cost of an <m>x</m> mile ride.</p>
+</statement>
+<solution>
+<p>The input is miles and the output is cost, so the two points are <m>(4,13)</m> and <m>(10,28)</m>.</p>
+<p><md>
+<mrow>m \amp = \frac{28-13}{10-4} = \frac{15}{6} = 2.5</mrow>
+<mrow>C - 13 \amp = 2.5(x - 4)</mrow>
+<mrow>C(x) \amp = 2.5x + 3</mrow>
+</md></p>
+<p>The taxi charges <m>\$2.50</m> per mile plus a <m>\$3</m> base fare.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-plant">
+<introduction>
+<p>A plant is <m>11</m> cm tall <m>3</m> weeks after you start measuring it, and <m>23</m> cm tall <m>7</m> weeks after you start. Assume it grows at a constant rate.</p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Write the information as two points (weeks, height).</p>
+</statement>
+<answer>
+<p><m>(3,11)</m> and <m>(7,23)</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the slope and state its units.</p>
+</statement>
+<answer>
+<p><m>m = 3</m> cm per week</p>
+</answer>
+<solution>
+<p><m>m = \dfrac{23-11}{7-3} = \dfrac{12}{4} = 3</m> cm per week.</p>
+</solution>
+</task>
+<task workspace="1.1in">
+<statement>
+<p>Use point-slope form to write a function <m>H(w)</m> for the height <m>w</m> weeks after you start measuring.</p>
+</statement>
+<answer>
+<p><m>H(w) = 3w + 2</m></p>
+</answer>
+<solution>
+<p><m>H - 11 = 3(w - 3)</m>, so <m>H = 3w - 9 + 11 = 3w + 2</m>.</p>
+</solution>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>What does the vertical intercept of <m>H</m> tell you about the plant?</p>
+</statement>
+<answer>
+<p>The plant was <m>2</m> cm tall when you started measuring.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="pk1-gas">
+<introduction>
+<p>A driver fills up the gas tank and starts a road trip. After driving <m>60</m> miles, there are <m>13</m> gallons left in the tank. After <m>240</m> miles, there are <m>7</m> gallons left. Assume gas is used at a constant rate.</p>
+</introduction>
+<task workspace="1in">
+<statement>
+<p>Find the slope and state its units. (Your slope will be a small fraction.)</p>
+</statement>
+<answer>
+<p><m>m = -\frac{1}{30}</m> gallon per mile</p>
+</answer>
+<solution>
+<p><m>m = \dfrac{7-13}{240-60} = \dfrac{-6}{180} = -\dfrac{1}{30}</m> gallon per mile.</p>
+</solution>
+</task>
+<task workspace="1.1in">
+<statement>
+<p>Write a function <m>G(x)</m> for the gallons left after <m>x</m> miles of driving.</p>
+</statement>
+<answer>
+<p><m>G(x) = 15 - \frac{1}{30}x</m></p>
+</answer>
+<solution>
+<p><m>G - 13 = -\frac{1}{30}(x - 60)</m>, so <m>G = -\frac{1}{30}x + 2 + 13 = 15 - \frac{1}{30}x</m>. The tank held <m>15</m> gallons when it was filled.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p>How many miles can the car go before the tank is empty?</p>
+</statement>
+<answer>
+<p><m>450</m> miles</p>
+</answer>
+<solution>
+<p><m>15 - \frac{1}{30}x = 0</m> gives <m>x = 450</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Composition Using a Table</title>
+<p>The <alert>composition</alert> <m>(f \circ g)(x)</m> means <m>f(g(x))</m>. Always work from the inside out: find <m>g(x)</m> first, then use that result as the input to <m>f</m>. The example and the next problem use this table.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell><cell><m>4</m></cell></row>
+<row><cell right="major"><m>f(x)</m></cell><cell><m>3</m></cell><cell><m>4</m></cell><cell><m>0</m></cell><cell><m>2</m></cell><cell><m>1</m></cell></row>
+<row><cell right="major"><m>g(x)</m></cell><cell><m>2</m></cell><cell><m>0</m></cell><cell><m>4</m></cell><cell><m>1</m></cell><cell><m>3</m></cell></row>
+</tabular>
+<example xml:id="pk1-ex-comp-table">
+<title>Worked Example</title>
+<statement>
+<p>Find <m>f(g(1))</m> and <m>g(f(2))</m>.</p>
+</statement>
+<solution>
+<p>For <m>f(g(1))</m>, start inside. Find <m>x = 1</m> in the top row and read down to the <m>g</m> row: <m>g(1) = 0</m>. Now find <m>x = 0</m> in the top row and read the <m>f</m> row: <m>f(0) = 3</m>. So <m>f(g(1)) = 3</m>. For <m>g(f(2))</m>, the inside is <m>f(2) = 0</m>. Then <m>g(0) = 2</m>, so <m>g(f(2)) = 2</m>.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-comp-table">
+<introduction>
+<p>Use the table above to find each value.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p><m>f(g(0))</m></p>
+</statement>
+<answer>
+<p><m>g(0) = 2</m> and <m>f(2) = 0</m>, so <m>f(g(0)) = 0</m>.</p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p><m>g(f(0))</m></p>
+</statement>
+<answer>
+<p><m>f(0) = 3</m> and <m>g(3) = 1</m>, so <m>g(f(0)) = 1</m>.</p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p><m>f(f(1))</m></p>
+</statement>
+<answer>
+<p><m>f(1) = 4</m> and <m>f(4) = 1</m>, so <m>f(f(1)) = 1</m>.</p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p><m>g(g(2))</m>, <m>(f \circ g)(3)</m>, and <m>f(g(4))</m></p>
+</statement>
+<answer>
+<p><m>3</m>, <m>4</m>, <m>2</m></p>
+</answer>
+</task>
+</exercise>
+<paragraphs>
+<title>Composing a Linear and a Quadratic Function</title>
+<example xml:id="pk1-ex-comp-formula">
+<title>Worked Example</title>
+<statement>
+<p>Let <m>f(x) = 2x + 1</m> and <m>g(x) = x^2 - 3</m>. Find <m>f(g(x))</m> and <m>g(f(x))</m>.</p>
+</statement>
+<solution>
+<p>For <m>f(g(x))</m>, replace every <m>x</m> in <m>f</m> with the entire expression <m>x^2 - 3</m>.</p>
+<p><md>
+<mrow>f(g(x)) = 2(x^2 - 3) + 1 = 2x^2 - 6 + 1 = 2x^2 - 5</mrow>
+</md></p>
+<p>For <m>g(f(x))</m>, replace the <m>x</m> in <m>g</m> with <m>2x + 1</m>. The square applies to the whole binomial, so expand it with FOIL.</p>
+<p><md>
+<mrow>g(f(x)) = (2x+1)^2 - 3 = (4x^2 + 4x + 1) - 3 = 4x^2 + 4x - 2</mrow>
+</md></p>
+<p>Notice that <m>f(g(x))</m> and <m>g(f(x))</m> are different.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-comp-formula">
+<introduction>
+<p>Let <m>f(x) = 3x - 2</m> and <m>g(x) = x^2 + 4</m>.</p>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find and simplify <m>f(g(x)) = 3(\ \ ?\ \ ) - 2</m>.</p>
+</statement>
+<answer>
+<p><m>3x^2 + 10</m></p>
+</answer>
+</task>
+<task workspace="1.2in">
+<statement>
+<p>Find and simplify <m>g(f(x)) = (\ \ ?\ \ )^2 + 4</m>.</p>
+<p><em>Careful: <m>(3x-2)^2</m> means <m>(3x-2)(3x-2)</m>. It is not <m>9x^2 + 4</m>.</em></p>
+</statement>
+<answer>
+<p><m>9x^2 - 12x + 8</m></p>
+</answer>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Check both answers with <m>x = 2</m>. Work inside out, then plug <m>x = 2</m> into your formulas from the first two parts. The results should match.</p>
+</statement>
+<answer>
+<p><m>g(2) = 8</m> and <m>f(8) = 22</m>; <m>f(2) = 4</m> and <m>g(4) = 20</m>.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="pk1-comp-hk" workspace="2in">
+<statement>
+<p>Let <m>h(x) = x^2 - 2x</m> and <m>k(x) = x + 5</m>. Find and simplify <m>h(k(x))</m> and <m>k(h(x))</m>.</p>
+</statement>
+<answer>
+<p><m>h(k(x)) = x^2 + 8x + 15</m> and <m>k(h(x)) = x^2 - 2x + 5</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>h(k(x)) \amp = (x+5)^2 - 2(x+5) = x^2 + 10x + 25 - 2x - 10 = x^2 + 8x + 15</mrow>
+<mrow>k(h(x)) \amp = (x^2 - 2x) + 5 = x^2 - 2x + 5</mrow>
+</md></p>
+</solution>
+</exercise>
+
+</page>
+
+<page>
+<assemblage xml:id="pk1-review-inverse">
+<title>Inverse Functions</title>
+<p>A function has an inverse exactly when it is <alert>one-to-one</alert>: each output comes from only one input.</p>
+<p><ul><li><p><em>From a table:</em> look for a repeated output. If any output shows up twice, there is no inverse.</p></li><li><p><em>From a graph:</em> use the Horizontal Line Test. If some horizontal line crosses the graph more than once, there is no inverse.</p></li></ul></p>
+<p>The inverse <m>f^{-1}</m> switches inputs and outputs: if <m>f(a) = b</m>, then <m>f^{-1}(b) = a</m>.</p>
+</assemblage>
+<paragraphs>
+<title>Does the Function Have an Inverse?</title>
+<example xml:id="pk1-ex-inverse">
+<title>Worked Example</title>
+<statement>
+<p>Decide whether each function has an inverse.</p>
+<sidebyside widths="45% 45%" margins="auto"><tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>-2</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell></row>
+<row><cell right="major"><m>p(x)</m></cell><cell><m>4</m></cell><cell><m>1</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>4</m></cell></row>
+</tabular><tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>-2</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell></row>
+<row><cell right="major"><m>q(x)</m></cell><cell><m>-8</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>8</m></cell></row>
+</tabular></sidebyside>
+</statement>
+<solution>
+<p>The function <m>p</m> does <em>not</em> have an inverse, since the output <m>1</m> comes from both <m>x = -1</m> and <m>x = 1</m>. The function <m>q</m> <em>does</em> have an inverse, because no output repeats. For example, <m>q(2) = 8</m>, so <m>q^{-1}(8) = 2</m>.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="pk1-has-inverse">
+<introduction>
+<p>Decide whether each function has an inverse. Answer <em>Yes</em> or <em>No</em> and give a one-line reason.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell><cell><m>4</m></cell><cell><m>5</m></cell></row>
+<row><cell right="major"><m>g(x)</m></cell><cell><m>7</m></cell><cell><m>3</m></cell><cell><m>9</m></cell><cell><m>-1</m></cell><cell><m>0</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>Yes; no output repeats.</p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>2</m></cell><cell><m>4</m></cell><cell><m>6</m></cell><cell><m>8</m></cell></row>
+<row><cell right="major"><m>h(x)</m></cell><cell><m>5</m></cell><cell><m>8</m></cell><cell><m>5</m></cell><cell><m>1</m></cell><cell><m>3</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>No; the output <m>5</m> comes from <m>x = 0</m> and <m>x = 4</m>.</p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Use the table in the first part to find <m>g^{-1}(3)</m> and <m>g^{-1}(9)</m>.</p>
+</statement>
+<answer>
+<p><m>g^{-1}(3) = 2</m> and <m>g^{-1}(9) = 3</m></p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Draw a few horizontal lines on the graph.</p>
+<image width="40%">
+<shortdescription>A cubic curve that always rises.</shortdescription>
+<description>
+<p>A cubic curve through the origin that rises from the lower left to the upper right the whole way.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="pk1-graph-cubic">
+<diagram dimensions="(220,220)" margins="5">
+<coordinates bbox="(-3,-3,3,3)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = 0.25*x^3</definition>
+<graph function="f" domain="(-2.25,2.25)" stroke="#0072CE" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>Yes; every horizontal line crosses the graph once.</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Draw a few horizontal lines on the graph.</p>
+<image width="40%">
+<shortdescription>A V-shaped graph.</shortdescription>
+<description>
+<p>A V-shaped graph with its corner at the point one, negative two, crossing the x-axis at negative one and three.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="pk1-graph-abs">
+<diagram dimensions="(220,220)" margins="5">
+<coordinates bbox="(-3,-3,3,3)">
+<grid-axes xlabel="x" ylabel="y"/>
+<definition>f(x) = abs(x-1)-2</definition>
+<graph function="f" domain="(-2,3)" stroke="#0072CE" thickness="3"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<answer>
+<p>No; for example, <m>y = 0</m> crosses at <m>x = -1</m> and <m>x = 3</m>.</p>
+</answer>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<example xml:id="pk1-ex-inverse-linear">
+<title>Worked Example: The Inverse of a Linear Function</title>
+<statement>
+<p>Find the inverse of <m>f(x) = 4x - 7</m>.</p>
+</statement>
+<solution>
+<p>Replace <m>f(x)</m> with <m>y</m>, switch <m>x</m> and <m>y</m>, then solve for <m>y</m>.</p>
+<p><md>
+<mrow>y \amp = 4x - 7</mrow>
+<mrow>x \amp = 4y - 7</mrow>
+<mrow>x + 7 \amp = 4y</mrow>
+<mrow>y \amp = \frac{x + 7}{4}</mrow>
+</md></p>
+<p>So <m>f^{-1}(x) = \dfrac{x+7}{4}</m>. To check, pick an input: <m>f(3) = 5</m>, and <m>f^{-1}(5) = \dfrac{5+7}{4} = 3</m>.</p>
+</solution>
+</example>
+<exercise xml:id="pk1-inverse-steps">
+<introduction>
+<p>Find the inverse of <m>f(x) = 5x + 3</m> by following the steps.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Replace <m>f(x)</m> with <m>y</m>, then switch <m>x</m> and <m>y</m>.</p>
+</statement>
+<answer>
+<p><m>y = 5x + 3</m> becomes <m>x = 5y + 3</m>.</p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Solve your new equation for <m>y</m>. (Undo the <m>+3</m> first, then undo the multiplication by <m>5</m>.)</p>
+</statement>
+<answer>
+<p><m>y = \frac{x - 3}{5}</m></p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Write your answer in inverse notation.</p>
+</statement>
+<answer>
+<p><m>f^{-1}(x) = \frac{x - 3}{5}</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Check: find <m>f(2)</m>, then apply <m>f^{-1}</m> to that output. Did you get back to <m>2</m>?</p>
+</statement>
+<answer>
+<p><m>f(2) = 13</m> and <m>f^{-1}(13) = 2</m>.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="pk1-inverse">
+<introduction>
+<p>Find the inverse of each function, then check your answer with the given input.</p>
+</introduction>
+<task workspace="1.3in">
+<statement>
+<p><m>g(x) = -2x + 8</m>; check with <m>x = 1</m>.</p>
+</statement>
+<answer>
+<p><m>g^{-1}(x) = \frac{8 - x}{2}</m>, or <m>-\frac{1}{2}x + 4</m></p>
+</answer>
+<solution>
+<p>Check: <m>g(1) = 6</m> and <m>g^{-1}(6) = 1</m>.</p>
+</solution>
+</task>
+<task workspace="1.3in">
+<statement>
+<p><m>h(x) = \frac{2}{3}x - 4</m>; check with <m>x = 6</m>.</p>
+<p><em>Hint: to undo multiplying by <m>\frac{2}{3}</m>, multiply both sides by <m>\frac{3}{2}</m>.</em></p>
+</statement>
+<answer>
+<p><m>h^{-1}(x) = \frac{3}{2}(x + 4) = \frac{3}{2}x + 6</m></p>
+</answer>
+<solution>
+<p>Check: <m>h(6) = 0</m> and <m>h^{-1}(0) = 6</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

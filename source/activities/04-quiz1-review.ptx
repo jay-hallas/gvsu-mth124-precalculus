@@ -6,11 +6,11 @@
 <assemblage xml:id="q1rev-review-functions">
 <title>Function Basics (LT1)</title>
 <p>A relation is a <alert>function</alert> if every input in the domain is mapped to exactly one output.</p>
-<ul>
+<p><ul>
 <li><p><em>Tables:</em> No <m>x</m>-value can be paired with more than one <m>y</m>-value.</p></li>
 <li><p><em>Graphs:</em> The curve must pass the Vertical Line Test.</p></li>
 <li><p><em>Notation:</em> In <m>f(x) = y</m>, <m>x</m> is the input and <m>y</m> is the output.</p></li>
-</ul>
+</ul></p>
 </assemblage>
 
 <exercise xml:id="q1rev-evaluate" workspace="1.5in">

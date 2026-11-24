@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-quiz2-review">
+<title>Activity: Quiz Review and Composition</title>
+
+<page>
+<assemblage xml:id="qrc-review">
+<title>Finding a Linear Function</title>
+<p>The slope through <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> is <m>m = \dfrac{y_2 - y_1}{x_2 - x_1}</m>. Once you have the slope, write the line in <alert>point-slope form</alert>, <m>y - y_1 = m(x - x_1)</m>, or in <alert>slope-intercept form</alert>, <m>y = mx + b</m>. In a story problem, the constant rate of change is the slope, and the starting value (the output when the input is <m>0</m>) is the vertical intercept <m>b</m>.</p>
+</assemblage>
+<exercise xml:id="qrc-line" workspace="1.4in">
+<statement>
+<p>Find an equation of the line through the points <m>(1, 6)</m> and <m>(4, -3)</m>. You may write your answer in slope-intercept or point-slope form.</p>
+</statement>
+<answer>
+<p><m>y = -3x + 9</m></p>
+</answer>
+<solution>
+<p><m>m = \dfrac{-3-6}{4-1} = \dfrac{-9}{3} = -3</m>, so <m>y - 6 = -3(x - 1)</m>, which simplifies to <m>y = -3x + 9</m>.</p>
+<p>Check with <m>(4,-3)</m>: <m>-12 + 9 = -3</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="qrc-plumber" workspace="1.3in">
+<statement>
+<p>A plumber charges a one-time fee of <m>\$60</m> for a house call plus <m>\$45</m> for each hour of work. Let <m>P(h)</m> be the total cost, in dollars, of a job that takes <m>h</m> hours. Find a function <m>P(h)</m> for the total cost.</p>
+</statement>
+<answer>
+<p><m>P(h) = 45h + 60</m></p>
+</answer>
+<solution>
+<p>The starting value is the <m>\$60</m> fee and the rate is <m>\$45</m> per hour. Watch for the two numbers swapped, <m>60h + 45</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="qrc-candle">
+<introduction>
+<p>A candle burns at a <em>constant</em> rate. Let <m>H(t)</m> be the height of the candle, in centimeters, <m>t</m> hours after it is lit. The candle is <m>18</m> cm tall <m>3</m> hours after it is lit and <m>10</m> cm tall <m>7</m> hours after it is lit.</p>
+</introduction>
+<task workspace="1.6in">
+<statement>
+<p>Find a model <m>H(t)</m> for the height of the candle. You may write your answer in slope-intercept or point-slope form.</p>
+</statement>
+<answer>
+<p><m>H(t) = -2t + 24</m></p>
+</answer>
+<solution>
+<p>The points are <m>(3, 18)</m> and <m>(7, 10)</m>, so <m>m = \dfrac{10-18}{7-3} = -2</m> cm per hour.</p>
+<p><m>H - 18 = -2(t - 3)</m> gives <m>H(t) = -2t + 24</m>. The candle was <m>24</m> cm tall when it was lit.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p>When will the candle burn out?</p>
+</statement>
+<answer>
+<p><m>12</m> hours after it is lit</p>
+</answer>
+<solution>
+<p><m>-2t + 24 = 0</m> gives <m>t = 12</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Review: Composition of Functions</title>
+<example xml:id="qrc-ex-comp">
+<title>Worked Example</title>
+<p>The composition <m>f(g(x))</m> means we apply <m>g</m> first and then apply <m>f</m> to the result. To write a formula, replace every <m>x</m> in the formula for <m>f</m> with the entire expression <m>g(x)</m>. Let <m>f(x) = x^2 - 3x + 5</m> and <m>g(x) = 2x + 1</m>. Then</p>
+<p><md>
+<mrow>f(g(x)) = f(2x+1) = (2x+1)^2 - 3(2x+1) + 5.</mrow>
+</md></p>
+<p>Expand the square first, then distribute, then combine like terms:</p>
+<p><md>
+<mrow>(2x+1)^2 - 3(2x+1) + 5 \amp = 4x^2 + 4x + 1 - 6x - 3 + 5</mrow>
+<mrow>\amp = 4x^2 - 2x + 3</mrow>
+</md></p>
+<p>Check with <m>x = 2</m>: <m>g(2) = 5</m> and <m>f(5) = 25 - 15 + 5 = 15</m>. The formula gives <m>4(4) - 2(2) + 3 = 15</m>, so the two agree.</p>
+</example>
+
+</paragraphs>
+<exercise xml:id="qrc-comp1">
+<introduction>
+<p>Let <m>f(x) = x^2 - 4x + 3</m> and <m>g(x) = 3x - 2</m>.</p>
+</introduction>
+<task workspace="0.7in">
+<statement>
+<p>Evaluate <m>f(g(2))</m> and <m>g(f(2))</m>.</p>
+</statement>
+<answer>
+<p><m>3</m> and <m>-5</m></p>
+</answer>
+<solution>
+<p><m>g(2) = 4</m> and <m>f(4) = 16 - 16 + 3 = 3</m>. Also <m>f(2) = 4 - 8 + 3 = -1</m> and <m>g(-1) = -5</m>.</p>
+</solution>
+</task>
+<task workspace="1.1in">
+<statement>
+<p>Find a formula for <m>f(g(x))</m> and simplify.</p>
+</statement>
+<answer>
+<p><m>9x^2 - 24x + 15</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>f(g(x)) \amp = (3x-2)^2 - 4(3x-2) + 3</mrow>
+<mrow>\amp = 9x^2 - 12x + 4 - 12x + 8 + 3</mrow>
+<mrow>\amp = 9x^2 - 24x + 15</mrow>
+</md></p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p>Use your formula from the previous part to solve <m>f(g(x)) = 0</m>.</p>
+</statement>
+<answer>
+<p><m>x = 1</m> and <m>x = \frac{5}{3}</m></p>
+</answer>
+<solution>
+<p><m>9x^2 - 24x + 15 = 3(3x^2 - 8x + 5) = 3(3x - 5)(x - 1)</m>, so <m>x = \frac{5}{3}</m> or <m>x = 1</m>.</p>
+<p>The quadratic formula works too. A quick check: <m>g(1) = 1</m> and <m>f(1) = 0</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="qrc-comp2" workspace="1.3in">
+<statement>
+<p>Let <m>f(x) = 2x^2 - x + 4</m> and <m>g(x) = x + 3</m>. Find a formula for <m>f(g(x))</m> and simplify.</p>
+</statement>
+<answer>
+<p><m>2x^2 + 11x + 19</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>f(g(x)) \amp = 2(x+3)^2 - (x+3) + 4</mrow>
+<mrow>\amp = 2x^2 + 12x + 18 - x - 3 + 4</mrow>
+<mrow>\amp = 2x^2 + 11x + 19</mrow>
+</md></p>
+</solution>
+</exercise>
+<exercise xml:id="qrc-patio">
+<introduction>
+<p>The side length of a square patio grows as it is built. The side length <m>t</m> weeks after construction starts is <m>s(t) = 2t + 5</m> feet, and the area of a square with side length <m>s</m> is <m>A(s) = s^2</m>.</p>
+</introduction>
+<task workspace="0.8in">
+<statement>
+<p>Find a formula for <m>A(s(t))</m> and explain in words what it measures.</p>
+</statement>
+<answer>
+<p><m>4t^2 + 20t + 25</m></p>
+</answer>
+<solution>
+<p><m>A(s(t)) = (2t+5)^2 = 4t^2 + 20t + 25</m>. It gives the area of the patio, in square feet, <m>t</m> weeks after construction starts.</p>
+</solution>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Find the area of the patio <m>3</m> weeks after construction starts.</p>
+</statement>
+<answer>
+<p><m>121</m> square feet</p>
+</answer>
+<solution>
+<p><m>s(3) = 11</m> feet, so the area is <m>11^2 = 121</m> square feet.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

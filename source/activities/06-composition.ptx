@@ -91,6 +91,7 @@ To find <m>f(g(2))</m>, first look up the inside value in the <m>g</m> row, say 
 
 <paragraphs>
 <title>Composition from Graphs</title>
+<p>The same inside-out idea works with graphs: read the inside value from one graph, then use it as the input on the other.</p>
 </paragraphs>
 
 <exercise xml:id="comp-act-graph">
