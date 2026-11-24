@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-modeling-sine-cosine">
+<title>Activity: Modeling with Sine and Cosine</title>
+
+<page>
+<assemblage xml:id="scm-review">
+<title>Building a Sine or Cosine Model</title>
+<p>A quantity that rises and falls in a steady, repeating pattern can be modeled with a function of the form <m>f(t) = \pm a\cos(Bt) + k</m> or <m>f(t) = \pm a\sin(Bt) + k</m>, where <m>a \gt 0</m> and <m>B \gt 0</m>. Work through these steps in order.</p>
+<p><ol><li><p><em>Find the starting position.</em> Decide where the quantity is at <m>t = 0</m>. That choice tells you which base function to use (see the table below).</p></li><li><p><em>Find the maximum and minimum values.</em></p></li><li><p><em>Find the midline and amplitude.</em> Midline: <m>k = \dfrac{\max + \min}{2}</m>. Amplitude: <m>a = \dfrac{\max - \min}{2}</m>.</p></li><li><p><em>Find the period and <m>B</m>.</em> The period is the time for one full cycle. Then <m>B = \dfrac{2\pi}{\text{period}}</m>.</p></li><li><p><em>Write the function.</em> Put the base function, amplitude, and midline together: <m>f(t) = a\,(\text{base function}) + k</m>.</p></li></ol></p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major">At <m>t = 0</m> the quantity is at a</cell><cell>maximum</cell><cell>minimum</cell><cell>midline, going up</cell><cell>midline, going down</cell></row>
+<row><cell right="major">Base function</cell><cell><m>\cos(Bt)</m></cell><cell><m>-\cos(Bt)</m></cell><cell><m>\sin(Bt)</m></cell><cell><m>-\sin(Bt)</m></cell></row>
+</tabular>
+</assemblage>
+<example xml:id="scm-ex">
+<title>Worked Example</title>
+<statement>
+<p>The water depth at one wall of a wave pool is measured in feet. At <m>t = 0</m> seconds the depth is at its greatest, <m>6</m> feet. The depth then drops to its smallest value, <m>2</m> feet, and returns to <m>6</m> feet every <m>8</m> seconds. Write a sine or cosine function for the depth <m>d(t)</m>, <m>t</m> seconds after the measurements begin.</p>
+</statement>
+<solution>
+<p><ol><li><p>The depth is at a maximum when <m>t = 0</m>, so the base function is <m>\cos(Bt)</m>.</p></li><li><p>The maximum is <m>6</m> and the minimum is <m>2</m>.</p></li><li><p>The midline is <m>k = \dfrac{6 + 2}{2} = 4</m> and the amplitude is <m>a = \dfrac{6 - 2}{2} = 2</m>.</p></li><li><p>One full cycle takes <m>8</m> seconds, so the period is <m>8</m> and <m>B = \dfrac{2\pi}{8} = \dfrac{\pi}{4}</m>.</p></li><li><p>Putting it together, <m>d(t) = 2\cos\left(\dfrac{\pi}{4}t\right) + 4</m>.</p></li></ol></p>
+<p><em>Check.</em> At <m>t = 0</m>: <m>d(0) = 2\cos(0) + 4 = 6</m>, the maximum. At <m>t = 4</m>, halfway through the cycle: <m>d(4) = 2\cos(\pi) + 4 = 2</m>, the minimum.</p>
+</solution>
+</example>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Use the five steps for each problem.</p>
+</paragraphs>
+<exercise xml:id="scm-pedal">
+<introduction>
+<p>A bicycle pedal travels in a circle. Its height above the ground, in inches, is measured over time. At <m>t = 0</m> seconds the pedal is at its lowest point, <m>11</m> inches above the ground. Its highest point is <m>25</m> inches above the ground. The pedal makes one full turn every <m>2</m> seconds.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Find the starting position and the base function.</p>
+</statement>
+<answer>
+<p>Minimum, so <m>-\cos(Bt)</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Find the maximum and minimum values.</p>
+</statement>
+<answer>
+<p>Max <m>25</m>, min <m>11</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the midline and amplitude.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 18</m>, amplitude <m>7</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the period and <m>B</m>.</p>
+</statement>
+<answer>
+<p>Period <m>2</m>, <m>B = \pi</m></p>
+</answer>
+<solution>
+<p><m>B = \frac{2\pi}{2} = \pi</m>. Watch for <m>B = 2</m>, the period itself.</p>
+</solution>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Write the function.</p>
+</statement>
+<answer>
+<p><m>f(t) = -7\cos(\pi t) + 18</m></p>
+</answer>
+<solution>
+<p>Check: <m>f(0) = -7 + 18 = 11</m>, and <m>f(1) = -7\cos(\pi) + 18 = 25</m>.</p>
+<p>Common errors: <m>\cos(Bt)</m> with a positive amplitude (that model starts at the maximum); midline <m>11</m> or <m>25</m> instead of <m>18</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="scm-spring">
+<introduction>
+<p>A mass hangs from a spring and bounces up and down. Its height above a table, in centimeters, is measured over time. At <m>t = 0</m> seconds the mass is passing through the middle of its motion, moving upward. It rises to a high point of <m>36</m> cm, falls to a low point of <m>24</m> cm, and completes one full bounce every <m>3</m> seconds.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Find the starting position and the base function.</p>
+</statement>
+<answer>
+<p>Midline, going up, so <m>\sin(Bt)</m></p>
+</answer>
+<solution>
+<p>Watch for students choosing <m>\cos(Bt)</m> because it goes up.</p>
+</solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Find the maximum and minimum values.</p>
+</statement>
+<answer>
+<p>Max <m>36</m>, min <m>24</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the midline and amplitude.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 30</m>, amplitude <m>6</m></p>
+</answer>
+<solution>
+<p>Amplitude <m>12</m> (the full height) is a common error.</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the period and <m>B</m>.</p>
+</statement>
+<answer>
+<p>Period <m>3</m>, <m>B = \frac{2\pi}{3}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Write the function.</p>
+</statement>
+<answer>
+<p><m>f(t) = 6\sin\left(\frac{2\pi}{3}t\right) + 30</m></p>
+</answer>
+<solution>
+<p>Check: <m>f(0) = 30</m>, and <m>f(0.75) = 6\sin\left(\frac{\pi}{2}\right) + 30 = 36</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="scm-buoy" workspace="1.4in">
+<statement>
+<p>A buoy floats in a harbor and rises and falls with the waves. The table below gives the height of the buoy above the ocean floor, in feet, <m>t</m> seconds after the first measurement. Assume the largest and smallest values in the table are the maximum and minimum heights of the buoy. Write a sine or cosine function <m>h(t)</m> that models the height of the buoy.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>t</m> (seconds)</cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell><cell><m>4</m></cell><cell><m>5</m></cell><cell><m>6</m></cell><cell><m>7</m></cell><cell><m>8</m></cell></row>
+<row><cell right="major"><m>h(t)</m> (feet)</cell><cell><m>12</m></cell><cell><m>10</m></cell><cell><m>12</m></cell><cell><m>14</m></cell><cell><m>12</m></cell><cell><m>10</m></cell><cell><m>12</m></cell><cell><m>14</m></cell><cell><m>12</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p><m>h(t) = -2\sin\left(\frac{\pi}{2}t\right) + 12</m></p>
+</answer>
+<solution>
+<p>At <m>t = 0</m> the height is <m>12</m>, halfway between the max <m>14</m> and min <m>10</m>, and it drops to <m>10</m> at <m>t = 1</m>, so the buoy starts on the midline going down: <m>-\sin(Bt)</m>. Midline <m>\frac{14 + 10}{2} = 12</m>, amplitude <m>\frac{14 - 10}{2} = 2</m>. The values repeat every <m>4</m> seconds, so the period is <m>4</m> and <m>B = \frac{\pi}{2}</m>.</p>
+<p>Check: <m>h(1) = -2\sin\left(\frac{\pi}{2}\right) + 12 = 10</m> and <m>h(3) = -2\sin\left(\frac{3\pi}{2}\right) + 12 = 14</m>.</p>
+<p>Common errors: period <m>2</m> (the values return to <m>12</m> every <m>2</m> seconds, but that is only half a cycle); choosing <m>\sin(Bt)</m> without checking which way the values move after <m>t = 0</m>; period <m>8</m> from reading the whole table as one cycle.</p>
+</solution>
+</exercise>
+
+</page>
+</worksheet>
