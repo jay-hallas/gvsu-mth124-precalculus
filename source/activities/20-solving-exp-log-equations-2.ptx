@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-solving-exp-log-2">
+<title>Activity: Solving Exponential and Log Equations II</title>
+
+<page>
+<assemblage xml:id="el2-review">
+<title>Isolate, Then Switch Forms</title>
+<p>Isolate the exponential part or the log part first, then switch forms:</p>
+<p><md>
+<mrow>b^{\,\text{exponent}} = c \ \text{ means } \ \text{exponent} = \log_b(c) \qquad\qquad \log_b(\text{input}) = y \ \text{ means } \ \text{input} = b^{y}</mrow>
+</md></p>
+<p>By convention, <m>\ln</m> means base <m>e</m> and <m>\log</m> means base <m>10</m>. <em>Exponent rule:</em> <m>\ln(M^p) = p\ln(M)</m>, and the same holds for <m>\log</m>. Taking <m>\ln</m> of both sides brings an exponent down in front.</p>
+<p>A quantity that starts at <m>a</m> and changes by a rate <m>r</m> each year has model <m>a(1 + r)^t</m> for growth and <m>a(1 - r)^t</m> for decay. One that is multiplied by <m>b</m> every <m>k</m> units of time has model <m>a \cdot b^{t/k}</m>. Give the exact answer, then a decimal, and check log answers in the original equation.</p>
+</assemblage>
+<p><em>Read each worked example, then use the same steps on the guided example after it.</em></p>
+<example xml:id="el2-ex1">
+<title>Worked Example 1</title>
+<statement>
+<p>Solve <m>6 + 4(5)^x = 90</m>.</p>
+</statement>
+<solution>
+<p><md>
+<mrow>4(5)^x \amp = 84 \amp\amp \text{subtract } 6</mrow>
+<mrow>5^x \amp = 21 \amp\amp \text{divide by } 4</mrow>
+<mrow>x \amp = \log_5(21) \amp\amp \text{log form}</mrow>
+</md></p>
+<p>Exact: <m>x = \log_5(21)</m>. Decimal: <m>x \approx 1.89</m>.</p>
+</solution>
+</example>
+<exercise xml:id="el2-g1" workspace="1.4in">
+<statement>
+<p>Solve <m>3e^{x/2} - 7 = 29</m>. Give the exact answer and a decimal.</p>
+</statement>
+<answer>
+<p><m>x = 2\ln(12) \approx 4.97</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>3e^{x/2} \amp = 36</mrow>
+<mrow>e^{x/2} \amp = 12</mrow>
+<mrow>\tfrac{x}{2} \amp = \ln(12)</mrow>
+<mrow>x \amp = 2\ln(12)</mrow>
+</md></p>
+<p>Common errors: taking <m>\ln</m> before isolating <m>e^{x/2}</m>; stopping at <m>\frac{x}{2} \approx 2.48</m>; writing <m>e^{x/6}</m> after dividing by <m>3</m>.</p>
+</solution>
+</exercise>
+<example xml:id="el2-ex2">
+<title>Worked Example 2</title>
+<statement>
+<p>Solve <m>2\log_3(x - 4) + 1 = 7</m>.</p>
+</statement>
+<solution>
+<p><md>
+<mrow>2\log_3(x - 4) \amp = 6 \amp\amp \text{subtract } 1</mrow>
+<mrow>\log_3(x - 4) \amp = 3 \amp\amp \text{divide by } 2</mrow>
+<mrow>x - 4 \amp = 3^3 = 27 \amp\amp \text{exponential form}</mrow>
+<mrow>x \amp = 31 \amp\amp \text{add } 4</mrow>
+</md></p>
+<p>Check: <m>31 - 4 = 27 \gt 0</m>, and <m>2\log_3(27) + 1 = 2(3) + 1 = 7</m>.</p>
+</solution>
+</example>
+<exercise xml:id="el2-g2" workspace="1.4in">
+<statement>
+<p>Solve <m>4\ln(3x + 2) - 5 = 7</m>. Give the exact answer and a decimal, and check it.</p>
+</statement>
+<answer>
+<p><m>x = \frac{e^3 - 2}{3} \approx 6.03</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>4\ln(3x + 2) \amp = 12</mrow>
+<mrow>\ln(3x + 2) \amp = 3</mrow>
+<mrow>3x + 2 \amp = e^3</mrow>
+<mrow>x \amp = \frac{e^3 - 2}{3}</mrow>
+</md></p>
+<p>Check: <m>3(6.03) + 2 \approx 20.09 \gt 0</m>, and <m>4\ln(20.09) - 5 \approx 7</m>.</p>
+<p>Common errors: rewriting in exponential form before isolating the log (<m>3x + 2 = e^7</m> or <m>e^{12}</m>); solving <m>3x = e^3 - 2</m> as <m>x = \frac{e^3}{3} - 2</m>.</p>
+</solution>
+</exercise>
+<example xml:id="el2-ex3">
+<title>Worked Example 3</title>
+<statement>
+<p>A city has <m>85{,}000</m> residents and grows by <m>2\%</m> each year. When will it reach <m>120{,}000</m>?</p>
+</statement>
+<solution>
+<p>Growth of <m>2\%</m> gives <m>b = 1.02</m>, so <m>P(t) = 85000(1.02)^t</m>, <m>t</m> years from now.</p>
+<p><md>
+<mrow>85000(1.02)^t \amp = 120000</mrow>
+<mrow>1.02^t \amp = \tfrac{24}{17} \amp\amp \text{divide by } 85000</mrow>
+<mrow>\ln\left(1.02^t\right) \amp = \ln\left(\tfrac{24}{17}\right) \amp\amp \text{take ln of both sides}</mrow>
+<mrow>t\ln(1.02) \amp = \ln\left(\tfrac{24}{17}\right) \amp\amp \text{exponent rule}</mrow>
+<mrow>t \amp = \frac{\ln(24/17)}{\ln(1.02)} \approx 17.41 \amp\amp \text{divide by } \ln(1.02)</mrow>
+</md></p>
+<p>The city reaches <m>120{,}000</m> residents in about <m>17.4</m> years.</p>
+</solution>
+</example>
+<exercise xml:id="el2-g3">
+<introduction>
+<p>A new laptop costs <m>\$1{,}400</m> and loses <m>22\%</m> of its value each year.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the value <m>V</m>, <m>t</m> years after it is bought.</p>
+</statement>
+<answer>
+<p><m>V(t) = 1400(0.78)^t</m></p>
+</answer>
+<solution>
+<p>Watch for <m>b = 0.22</m> or <m>b = 1.22</m>.</p>
+</solution>
+</task>
+<task workspace="1.4in">
+<statement>
+<p>When will the laptop be worth <m>\$500</m>?</p>
+</statement>
+<answer>
+<p><m>t = \frac{\ln(5/14)}{\ln(0.78)} \approx 4.14</m> years</p>
+</answer>
+<solution>
+<p><m>0.78^t = \frac{500}{1400} = \frac{5}{14}</m>. Take <m>\ln</m> of both sides and use the exponent rule: <m>t\ln(0.78) = \ln\left(\frac{5}{14}\right)</m>. Both logs are negative, so <m>t</m> comes out positive. The log-form answer <m>\log_{0.78}\left(\frac{5}{14}\right)</m> is the same value.</p>
+<p>Common errors: dividing the wrong way and getting <m>\frac{14}{5}</m>, which gives a negative time; taking <m>\ln</m> of <m>1400(0.78)^t</m> before dividing by <m>1400</m>; writing <m>\frac{\ln(5/14)}{\ln(0.78)}</m> as <m>\ln\left(\frac{5/14}{0.78}\right)</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Use the same steps on your own.</p>
+</paragraphs>
+<exercise xml:id="el2-p1">
+<introduction>
+<p>Solve each equation. Give the exact answer, then approximate to two decimal places when the answer is not a whole number.</p>
+</introduction>
+<task workspace="1in">
+<statement>
+<p><m>9^x = 120</m></p>
+</statement>
+<answer>
+<p><m>x = \log_9(120) \approx 2.18</m></p>
+</answer>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>2e^{3x} + 5 = 41</m></p>
+</statement>
+<answer>
+<p><m>x = \frac{\ln(18)}{3} \approx 0.96</m></p>
+</answer>
+<solution>
+<p><m>e^{3x} = 18</m>, so <m>3x = \ln(18)</m>. Watch for <m>\ln(18 \div 3)</m> typed into a calculator.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>\log_2(5x - 1) = 6</m></p>
+</statement>
+<answer>
+<p><m>x = 13</m></p>
+</answer>
+<solution>
+<p><m>5x - 1 = 2^6 = 64</m>. Check: <m>\log_2(64) = 6</m>. Watch for <m>5x - 1 = 6^2</m>.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>3\ln(x + 4) - 2 = 7</m></p>
+</statement>
+<answer>
+<p><m>x = e^3 - 4 \approx 16.09</m></p>
+</answer>
+<solution>
+<p><m>\ln(x + 4) = 3</m>, so <m>x + 4 = e^3</m>. Watch for <m>e^9</m> or <m>e^7</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="el2-p2">
+<introduction>
+<p>An invasive plant covers <m>30</m> square meters of a pond, and the area it covers doubles every <m>4</m> weeks.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the area <m>A</m>, in square meters, <m>t</m> weeks from now.</p>
+</statement>
+<answer>
+<p><m>A(t) = 30 \cdot 2^{t/4}</m></p>
+</answer>
+<solution>
+<p>At <m>t = 8</m> the exponent is <m>2</m>, matching two doublings. Watch for <m>30 \cdot 2^{4t}</m>.</p>
+</solution>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>How much of the pond will the plant cover <m>10</m> weeks from now?</p>
+</statement>
+<answer>
+<p>About <m>169.71</m> square meters</p>
+</answer>
+<solution>
+<p><m>30 \cdot 2^{2.5} \approx 169.71</m>.</p>
+</solution>
+</task>
+<task workspace="1.2in">
+<statement>
+<p>When will the plant cover <m>500</m> square meters? Give the exact answer and an approximation.</p>
+</statement>
+<answer>
+<p><m>t = 4\log_2\left(\frac{50}{3}\right) \approx 16.24</m> weeks</p>
+</answer>
+<solution>
+<p><m>2^{t/4} = \frac{50}{3}</m>. Watch for students who stop at <m>\frac{t}{4} \approx 4.06</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="el2-p3">
+<introduction>
+<p>A patient takes a <m>120</m> mg dose of a medication. The medication has a half-life of <m>8</m> hours, so the amount in the body is cut in half every <m>8</m> hours.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the amount <m>M</m>, in mg, <m>t</m> hours after the dose.</p>
+</statement>
+<answer>
+<p><m>M(t) = 120\left(\frac12\right)^{t/8}</m></p>
+</answer>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>How much of the medication remains <m>10</m> hours after the dose?</p>
+</statement>
+<answer>
+<p>About <m>50.45</m> mg</p>
+</answer>
+<solution>
+<p><m>120(0.5)^{1.25} \approx 50.45</m>. Watch for <m>(0.5)^{10}</m>.</p>
+</solution>
+</task>
+<task workspace="1.2in">
+<statement>
+<p>When will <m>15</m> mg remain? Give the exact answer, then explain why the answer is a whole number.</p>
+</statement>
+<answer>
+<p><m>24</m> hours</p>
+</answer>
+<solution>
+<p><m>\left(\frac12\right)^{t/8} = \frac18</m>, so <m>\frac{t}{8} = 3</m> and <m>t = 24</m>. The answer is a whole number because <m>15</m> mg is exactly <m>\frac18</m> of the dose: three half-lives, <m>120 \to 60 \to 30 \to 15</m>. Watch for <m>3</m> hours, the number of half-lives.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>
