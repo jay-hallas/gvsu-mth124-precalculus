@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-exponential-practice">
+<title>Practice: Exponential Functions</title>
+<introduction>
+<p>Show your work. Try each problem before you open the answer.</p>
+</introduction>
+
+<page>
+<paragraphs>
+<title>Is the Table Exponential?</title>
+<p>For each table, decide whether it is exponential. If it is, write a formula <m>f(x) = a \cdot b^x</m>.</p>
+</paragraphs>
+<exercise xml:id="expp-q1" workspace="0.7in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>250</m></cell><cell><m>100</m></cell><cell><m>40</m></cell><cell><m>16</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>Yes; <m>f(x) = 250(0.4)^x</m></p>
+</answer>
+<solution>
+<p>The ratios are all <m>0.4</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="expp-q2" workspace="0.7in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>3</m></cell><cell><m>6</m></cell><cell><m>11</m></cell><cell><m>18</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>No</p>
+</answer>
+<solution>
+<p>The ratios are <m>2</m>, about <m>1.83</m>, and about <m>1.64</m>, which are not constant.</p>
+</solution>
+</exercise>
+<exercise xml:id="expp-q3" workspace="0.7in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>5</m></cell><cell><m>15</m></cell><cell><m>45</m></cell><cell><m>135</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>Yes; <m>f(x) = 5 \cdot 3^x</m></p>
+</answer>
+<solution>
+<p>The ratios are all <m>3</m>.</p>
+</solution>
+</exercise>
+<paragraphs>
+<title>Percent Increase and Decrease</title>
+<p>Write a function for each situation, then answer the question.</p>
+</paragraphs>
+<exercise xml:id="expp-q4" workspace="1.6in">
+<statement>
+<p>A town has <m>15{,}000</m> residents, and its population grows by <m>2.5\%</m> each year. Write a function for the population <m>P(t)</m>, <m>t</m> years from now, and find the population <m>8</m> years from now.</p>
+</statement>
+<answer>
+<p><m>P(t) = 15{,}000(1.025)^t</m>; <m>P(8) \approx 18{,}276</m> people</p>
+</answer>
+</exercise>
+<exercise xml:id="expp-q5" workspace="1.6in">
+<statement>
+<p>A laptop bought for <m>\$1{,}200</m> loses <m>18\%</m> of its value each year. Write a function for its value <m>V(t)</m>, <m>t</m> years after it is bought, and find its value <m>4</m> years after it is bought.</p>
+</statement>
+<answer>
+<p><m>V(t) = 1200(0.82)^t</m>; <m>V(4) \approx \$542.55</m></p>
+</answer>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Change Over Longer Time Intervals</title>
+<p>Write a function for each situation, then answer the question.</p>
+</paragraphs>
+<exercise xml:id="expp-q6" workspace="1.6in">
+<statement>
+<p>A tenant pays <m>\$950</m> a month in rent, and the landlord raises the rent by <m>8\%</m> every <m>2</m> years. Write a function for the monthly rent <m>R(t)</m>, <m>t</m> years from now, and find the rent <m>10</m> years from now.</p>
+</statement>
+<answer>
+<p><m>R(t) = 950(1.08)^{t/2}</m>; <m>R(10) \approx \$1395.86</m></p>
+</answer>
+</exercise>
+<exercise xml:id="expp-q7" workspace="1.6in">
+<statement>
+<p>Iodine-131 has a half-life of <m>8</m> days. A lab has a <m>640</m> mg sample. Write a function for the amount <m>A(t)</m> left <m>t</m> days from now, and find the amount left <m>32</m> days from now.</p>
+</statement>
+<answer>
+<p><m>A(t) = 640\left(\frac12\right)^{t/8}</m>; <m>A(32) = 640\left(\frac12\right)^4 = 40</m> mg</p>
+</answer>
+</exercise>
+<paragraphs>
+<title>Finding a Formula from Two Points</title>
+<p>Find an exponential function <m>f(x) = a \cdot b^x</m> whose graph passes through the given points.</p>
+</paragraphs>
+<exercise xml:id="expp-q8" workspace="1.6in">
+<statement>
+<p><m>(0, 4)</m> and <m>(3, 108)</m></p>
+</statement>
+<answer>
+<p><m>f(x) = 4 \cdot 3^x</m></p>
+</answer>
+<solution>
+<p><m>108 = 4b^3</m>, so <m>b^3 = 27</m> and <m>b = 3</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="expp-q9" workspace="1.6in">
+<statement>
+<p><m>(2, 50)</m> and <m>(4, 2)</m></p>
+</statement>
+<answer>
+<p><m>f(x) = 1250(0.2)^x</m></p>
+</answer>
+<solution>
+<p><m>\frac{ab^4}{ab^2} = \frac{2}{50}</m>, so <m>b^2 = 0.04</m> and <m>b = 0.2</m>. Then <m>50 = a(0.2)^2</m> gives <m>a = 1250</m>.</p>
+</solution>
+</exercise>
+
+</page>
+</worksheet>
