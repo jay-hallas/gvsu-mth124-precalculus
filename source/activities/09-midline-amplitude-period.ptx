@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-midline-amplitude-period">
+<title>Activity: Midline, Amplitude, and Period</title>
+
+<page>
+<assemblage xml:id="map-review">
+<title>Describing a Wave</title>
+<p>The graph of a sine or cosine function is a wave that repeats the same pattern over and over. Three numbers describe the wave.</p>
+<p><ul><li><p>The <alert>midline</alert> is the horizontal line halfway between the highest and lowest values: <m>y = \dfrac{\max + \min}{2}</m>.</p></li><li><p>The <alert>amplitude</alert> is the distance from the midline up to a peak (or down to a trough): <m>\dfrac{\max - \min}{2}</m>.</p></li><li><p>The <alert>period</alert> is the horizontal length of one full wave, for example the distance between two consecutive peaks.</p></li></ul></p>
+<p>A graph is <alert>increasing</alert> where it rises as you move to the right and <alert>decreasing</alert> where it falls. It is <alert>concave up</alert> where it bends like a cup and <alert>concave down</alert> where it bends like a frown. On a wave, the concavity switches each time the graph crosses the midline.</p>
+</assemblage>
+<paragraphs>
+<title>Reading a Graph</title>
+<example xml:id="map-ex-graph">
+<title>Worked Example</title>
+<statement>
+<p>For the graph of the circular function <m>f(x)</m> below, find the midline, amplitude, and period, an interval where <m>f</m> is increasing, and an interval where <m>f</m> is decreasing and concave up.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points one, six and five, six and troughs at negative one, negative two and three, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="map-graph-example">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-3,-3.6,7,7.3)">
+<grid spacings="((-3,1,7),(-3,1,7))"/>
+<axes xlabel="x" ylabel="y" hticks="(-3,1,7)" hlabels="(-2,1,6)" vticks="(-3,1,7)" vlabels="(-3,1,7)"/>
+<definition>f(x) = 4*sin(pi*x/2)+2</definition>
+<graph function="f" domain="(-2,6)" stroke="#0072CE" thickness="3"/>
+<point p="(-1,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(1,6)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(5,6)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<solution>
+<p>The highest value is <m>y = 6</m> and the lowest value is <m>y = -2</m>.</p>
+<p><ul><li><p><em>Midline, amplitude, period.</em> The midline is the average of the max and min, <m>\dfrac{6 + (-2)}{2} = 2</m>, so the midline is <m>y = 2</m>. The amplitude is half the distance from min to max, <m>\dfrac{6 - (-2)}{2} = 4</m>. The peaks at <m>x = 1</m> and <m>x = 5</m> are <m>4</m> units apart, so the period is <m>4</m>.</p></li><li><p><em>Increasing.</em> The graph rises from the trough at <m>x = -1</m> up to the peak at <m>x = 1</m>, so <m>f</m> is increasing on <m>(-1, 1)</m>. Shifting by a whole period also works, for example <m>(3, 5)</m>.</p></li><li><p><em>Decreasing and concave up.</em> The graph crosses the midline heading down at <m>x = 2</m> and keeps falling to the trough at <m>x = 3</m>, bending like a cup as it levels out. So <m>f</m> is decreasing and concave up on <m>(2, 3)</m>. Shifting by a period, <m>(-2, -1)</m> also works.</p></li></ul></p>
+</solution>
+</example>
+
+</paragraphs>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>For the intervals, one interval is enough; you do not need to list them all.</p>
+</paragraphs>
+<exercise xml:id="map-q1">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, answer each part. The dots mark peaks and troughs.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points zero, four and eight, four and troughs at negative four, negative two and four, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="map-graph-1">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-5,-3.6,9,5.3)">
+<grid spacings="((-5,1,9),(-3,1,5))"/>
+<axes xlabel="x" ylabel="y" hticks="(-5,1,9)" hlabels="(-4,2,8)" vticks="(-3,1,5)" vlabels="(-3,1,5)"/>
+<definition>f(x) = 3*cos(pi*x/4)+1</definition>
+<graph function="f" domain="(-4,8)" stroke="#0072CE" thickness="3"/>
+<point p="(-4,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(0,4)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(4,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(8,4)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 1</m>, amplitude <m>3</m>, period <m>8</m></p>
+</answer>
+<solution>
+<p>Max <m>4</m>, min <m>-2</m>. Midline <m>y = \frac{4 + (-2)}{2} = 1</m>, amplitude <m>\frac{4 - (-2)}{2} = 3</m>, period <m>8</m> (peaks at <m>x = 0</m> and <m>x = 8</m>).</p>
+<p>Common errors: giving the period as <m>4</m> (peak to the next trough is only half a period); giving the amplitude as <m>6</m> (the full height).</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is increasing.</p>
+</statement>
+<answer>
+<p><m>(-4, 0)</m> or <m>(4, 8)</m></p>
+</answer>
+<solution>
+<p>The graph rises from the trough at <m>x = -4</m> to the peak at <m>x = 0</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is decreasing and concave up.</p>
+</statement>
+<answer>
+<p><m>(2, 4)</m></p>
+</answer>
+<solution>
+<p>The graph crosses the midline going down at <m>x = 2</m> and reaches the trough at <m>x = 4</m>. Watch for <m>(0, 2)</m>, which is decreasing but concave down.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="map-q2">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, answer each part.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave below the x-axis with peaks at the points one, negative one and five, negative one and troughs at negative one, negative five; three, negative five; and seven, negative five.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="map-graph-2">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-2,-6.6,8,1.3)">
+<grid spacings="((-2,1,8),(-6,1,1))"/>
+<axes xlabel="x" ylabel="y" hticks="(-2,1,8)" hlabels="(-1,1,7)" vticks="(-6,1,1)" vlabels="(-6,1,1)"/>
+<definition>f(x) = 2*cos(pi*(x-1)/2)-3</definition>
+<graph function="f" domain="(-1,7)" stroke="#0072CE" thickness="3"/>
+<point p="(-1,-5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(1,-1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,-5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(5,-1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(7,-5)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = -3</m>, amplitude <m>2</m>, period <m>4</m></p>
+</answer>
+<solution>
+<p>Max <m>-1</m>, min <m>-5</m>. Midline <m>y = -3</m>, amplitude <m>2</m>, period <m>4</m> (peaks at <m>x = 1</m> and <m>x = 5</m>).</p>
+<p>Common errors: reporting the midline as <m>y = 3</m> or <m>y = 0</m>; using the shifted peak at <m>x = 1</m> as the period.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is increasing.</p>
+</statement>
+<answer>
+<p><m>(-1, 1)</m> or <m>(3, 5)</m></p>
+</answer>
+<solution>
+<p>The graph rises from the trough at <m>x = -1</m> to the peak at <m>x = 1</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is decreasing and concave up.</p>
+</statement>
+<answer>
+<p><m>(2, 3)</m> or <m>(6, 7)</m></p>
+</answer>
+<solution>
+<p>The graph crosses the midline going down at <m>x = 2</m> and reaches the trough at <m>x = 3</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="map-q3">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, answer each part.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points negative three, five and nine, five and troughs at three, negative three and fifteen, negative three.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="map-graph-3">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-4,-4.6,16,6.3)">
+<grid spacings="((-4,1,16),(-4,1,6))"/>
+<axes xlabel="x" ylabel="y" hticks="(-4,1,16)" hlabels="(-3,3,15)" vticks="(-4,1,6)" vlabels="(-4,1,6)"/>
+<definition>f(x) = -4*sin(pi*x/6)+1</definition>
+<graph function="f" domain="(-3,15)" stroke="#0072CE" thickness="3"/>
+<point p="(-3,5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,-3)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(9,5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(15,-3)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 1</m>, amplitude <m>4</m>, period <m>12</m></p>
+</answer>
+<solution>
+<p>Max <m>5</m>, min <m>-3</m>. Midline <m>y = 1</m>, amplitude <m>4</m>, period <m>12</m> (peaks at <m>x = -3</m> and <m>x = 9</m>). The axis runs from <m>-3</m> to <m>15</m>, so students need to count carefully.</p>
+<p>Common errors: period read as <m>6</m> (peak to trough); starting a period at the <m>y</m>-axis instead of at a peak or trough.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is increasing.</p>
+</statement>
+<answer>
+<p><m>(3, 9)</m></p>
+</answer>
+<solution>
+<p>The graph rises from the trough at <m>x = 3</m> to the peak at <m>x = 9</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is decreasing and concave up.</p>
+</statement>
+<answer>
+<p><m>(0, 3)</m> or <m>(12, 15)</m></p>
+</answer>
+<solution>
+<p>The graph is on the midline at <m>x = 0</m>, falls, and reaches the trough at <m>x = 3</m>. The stretch <m>(-3, 0)</m> is decreasing but concave down.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="map-q4">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, answer each part. The midline does not have to land on a whole number.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points negative two, three; two, three; and six, three, and troughs at zero, negative two and four, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="map-graph-4">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-3,-3.6,7,4.3)">
+<grid spacings="((-3,1,7),(-3,1,4))"/>
+<axes xlabel="x" ylabel="y" hticks="(-3,1,7)" hlabels="(-2,1,6)" vticks="(-3,1,4)" vlabels="(-3,1,4)"/>
+<definition>f(x) = -2.5*cos(pi*x/2)+0.5</definition>
+<graph function="f" domain="(-2,6)" stroke="#0072CE" thickness="3"/>
+<point p="(-2,3)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(0,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(2,3)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(4,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(6,3)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = \frac12</m>, amplitude <m>\frac52</m>, period <m>4</m></p>
+</answer>
+<solution>
+<p>Max <m>3</m>, min <m>-2</m>. Midline <m>y = \frac{3 + (-2)}{2} = \frac12</m>, amplitude <m>\frac{3 - (-2)}{2} = \frac52</m>, period <m>4</m> (peaks at <m>x = -2</m>, <m>2</m>, and <m>6</m>).</p>
+<p>Common errors: rounding the midline to <m>0</m> or <m>1</m> instead of <m>\frac12</m>; computing the amplitude as <m>5</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is increasing.</p>
+</statement>
+<answer>
+<p><m>(0, 2)</m> or <m>(4, 6)</m></p>
+</answer>
+<solution>
+<p>The graph rises from the trough at <m>x = 0</m> to the peak at <m>x = 2</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Give an interval where <m>f</m> is decreasing and concave up.</p>
+</statement>
+<answer>
+<p><m>(-1, 0)</m> or <m>(3, 4)</m></p>
+</answer>
+<solution>
+<p>The graph crosses the midline going down at <m>x = 3</m> and reaches the trough at <m>x = 4</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<assemblage xml:id="map-review-formula">
+<title>From the Formula</title>
+<p>For a function written as</p>
+<p><md>
+<mrow>f(x) = A\sin(Bx) + k \qquad \text{or} \qquad f(x) = A\cos(Bx) + k \qquad (B > 0),</mrow>
+</md></p>
+<p>the midline is <m>y = k</m>, the amplitude is <m>|A|</m>, and the period is <m>\dfrac{2\pi}{B}</m>. The maximum value is <m>k + |A|</m> and the minimum value is <m>k - |A|</m>. A negative <m>A</m> flips the wave upside down, but the amplitude is still positive.</p>
+</assemblage>
+<example xml:id="map-ex-formula">
+<title>Worked Example</title>
+<statement>
+<p>Find the midline, amplitude, period, maximum, and minimum of <m>g(x) = -5\cos\left(\dfrac{\pi}{3}x\right) + 2</m>.</p>
+</statement>
+<solution>
+<p>Here <m>A = -5</m>, <m>B = \frac{\pi}{3}</m>, and <m>k = 2</m>.</p>
+<p><ul><li><p>The midline is <m>y = 2</m> and the amplitude is <m>|-5| = 5</m>.</p></li><li><p>The period is <m>\dfrac{2\pi}{\pi/3} = 2\pi \cdot \dfrac{3}{\pi} = 6</m>. The <m>\pi</m>'s cancel, so the period is a whole number.</p></li><li><p>The maximum is <m>2 + 5 = 7</m> and the minimum is <m>2 - 5 = -3</m>. Since <m>A</m> is negative, the graph starts at the minimum when <m>x = 0</m>: <m>g(0) = -5(1) + 2 = -3</m>.</p></li></ul></p>
+</solution>
+</example>
+<exercise xml:id="map-q5">
+<introduction>
+<p>Find the midline, amplitude, period, maximum, and minimum of each function. Show your work for the period.</p>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p><m>f(x) = 3\sin\left(\frac{\pi}{4}x\right) - 1</m></p>
+</statement>
+<answer>
+<p>Midline <m>y = -1</m>, amplitude <m>3</m>, period <m>8</m>, max <m>2</m>, min <m>-4</m></p>
+</answer>
+<solution>
+<p>Period <m>\frac{2\pi}{\pi/4} = 8</m>. Watch for <m>\frac{\pi}{4}</m> or <m>\frac{2\pi}{4}</m> from reading <m>B</m> as <m>4</m> or as the period itself.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>f(x) = -2\cos(2\pi x) + 5</m></p>
+</statement>
+<answer>
+<p>Midline <m>y = 5</m>, amplitude <m>2</m>, period <m>1</m>, max <m>7</m>, min <m>3</m></p>
+</answer>
+<solution>
+<p>Period <m>\frac{2\pi}{2\pi} = 1</m>. Watch for an amplitude of <m>-2</m> instead of <m>|-2| = 2</m>.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>f(x) = \tfrac12\sin\left(\frac{\pi}{5}x\right) + \tfrac32</m></p>
+</statement>
+<answer>
+<p>Midline <m>y = \frac32</m>, amplitude <m>\frac12</m>, period <m>10</m>, max <m>2</m>, min <m>1</m></p>
+</answer>
+<solution>
+<p>Period <m>\frac{2\pi}{\pi/5} = 10</m>.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>f(x) = 6\cos\left(\frac{3\pi}{2}x\right) + 4</m></p>
+</statement>
+<answer>
+<p>Midline <m>y = 4</m>, amplitude <m>6</m>, period <m>\frac43</m>, max <m>10</m>, min <m>-2</m></p>
+</answer>
+<solution>
+<p>Period <m>2\pi \cdot \frac{2}{3\pi} = \frac43</m>. Students who divide incorrectly get <m>3</m> or <m>\frac34</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="map-q6" workspace="1.4in">
+<statement>
+<p>Write a cosine function with midline <m>y = -2</m>, amplitude <m>3</m>, and period <m>10</m>.</p>
+<p><em>Hint:</em> choose <m>B</m> so that <m>\dfrac{2\pi}{B} = 10</m>.</p>
+</statement>
+<answer>
+<p><m>f(x) = 3\cos\left(\frac{\pi}{5}x\right) - 2</m></p>
+</answer>
+<solution>
+<p>Solve <m>\frac{2\pi}{B} = 10</m> to get <m>B = \frac{\pi}{5}</m>, so <m>f(x) = 3\cos\left(\frac{\pi}{5}x\right) - 2</m>. Also accept <m>-3\cos\left(\frac{\pi}{5}x\right) - 2</m>, since a negative <m>A</m> still has amplitude <m>3</m>.</p>
+<p>Common errors: writing <m>\cos(10x)</m> (using the period as <m>B</m>); writing <m>-2\cos(\ldots) + 3</m> (switching the roles of midline and amplitude).</p>
+</solution>
+</exercise>
+
+</page>
+</worksheet>

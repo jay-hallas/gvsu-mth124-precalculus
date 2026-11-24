@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-intro-logs">
+<title>Activity: Introducing Logarithms</title>
+
+<page>
+<assemblage xml:id="logb-review">
+<title>Logarithms</title>
+<p>A logarithm is an exponent. For <m>b \gt 0</m> and <m>b \neq 1</m>,</p>
+<p><md>
+<mrow>\log_b(x) = y \quad \text{means} \quad b^y = x.</mrow>
+</md></p>
+<p>Read <m>\log_b(x)</m> as <q>the power of <m>b</m> that gives <m>x</m>.</q> Two bases have their own notation: <m>\log(x)</m> means <m>\log_{10}(x)</m>, and <m>\ln(x)</m> means <m>\log_e(x)</m>.</p>
+<p>Since <m>\log_b(x)</m> and <m>b^x</m> are inverse functions, each one undoes the other:</p>
+<p><md>
+<mrow>\log_b\left(b^x\right) = x \qquad \text{and} \qquad b^{\log_b(x)} = x.</mrow>
+</md></p>
+</assemblage>
+<example xml:id="logb-ex1">
+<title>Worked Example 1: Switching Between Forms</title>
+<statement>
+<p>Rewrite <m>\log_3(81) = 4</m> in exponential form, and rewrite <m>5^{-2} = \frac{1}{25}</m> in logarithmic form.</p>
+</statement>
+<solution>
+<p>In <m>\log_3(81) = 4</m>, the base is <m>3</m> and the log is the exponent, so the exponent is <m>4</m>. The base raised to that exponent gives <m>81</m>, so the exponential form is <m>3^4 = 81</m>. Going the other way, <m>5^{-2} = \frac{1}{25}</m> has base <m>5</m> and exponent <m>-2</m>. The log of <m>\frac{1}{25}</m> with base <m>5</m> is that exponent, so the logarithmic form is <m>\log_5\left(\frac{1}{25}\right) = -2</m>.</p>
+</solution>
+</example>
+<example xml:id="logb-ex2">
+<title>Worked Example 2: Using the Inverse Property</title>
+<statement>
+<p>Find the exact value of <m>\log_2(32)</m> and of <m>e^{\ln(7)}</m>.</p>
+</statement>
+<solution>
+<p>Write <m>32</m> as a power of <m>2</m>: <m>32 = 2^5</m>. Then <m>\log_2(32) = \log_2\left(2^5\right) = 5</m>, since the log undoes the exponential. For <m>e^{\ln(7)}</m>, the base <m>e</m> matches the log <m>\ln</m>, so they undo each other and <m>e^{\ln(7)} = 7</m>.</p>
+</solution>
+</example>
+<paragraphs>
+<title>Guided Example</title>
+<p>Work through these with the class.</p>
+</paragraphs>
+<exercise xml:id="logb-q1">
+<introduction>
+<p>Rewrite each equation in the other form.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p><m>\log_4(64) = 3</m></p>
+</statement>
+<answer>
+<p><m>4^3 = 64</m></p>
+</answer>
+<solution>
+<p>Common error: <m>3^4 = 64</m> (swapping base and exponent).</p>
+</solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<p><m>2^{-1} = \frac{1}{2}</m></p>
+</statement>
+<answer>
+<p><m>\log_2\left(\frac12\right) = -1</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p><m>\ln(w) = n</m></p>
+</statement>
+<answer>
+<p><m>e^n = w</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p><m>c^d = k</m></p>
+</statement>
+<answer>
+<p><m>\log_c(k) = d</m></p>
+</answer>
+<solution>
+<p>Common error: <m>\log_d(k) = c</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="logb-q2">
+<introduction>
+<p>Find the exact value of each expression.</p>
+</introduction>
+<task workspace="0.6in">
+<statement>
+<p><m>\log_7\left(7^3\right)</m></p>
+</statement>
+<answer>
+<p><m>3</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p><m>10^{\log(w)}</m></p>
+</statement>
+<answer>
+<p><m>w</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p><m>\log_3(81)</m></p>
+</statement>
+<answer>
+<p><m>4</m></p>
+</answer>
+<solution>
+<p><m>81 = 3^4</m>. Watch for <m>81/3 = 27</m>, treating the log like division.</p>
+</solution>
+</task>
+<task workspace="0.6in">
+<statement>
+<p><m>\ln\left(e^t\right)</m></p>
+</statement>
+<answer>
+<p><m>t</m></p>
+</answer>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Try these on your own.</p>
+</paragraphs>
+<exercise xml:id="logb-q3">
+<introduction>
+<p>Rewrite each equation in exponential form.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p><m>\log_2\left(\frac{1}{8}\right) = -3</m></p>
+</statement>
+<answer>
+<p><m>2^{-3} = \frac18</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>\log_x(64) = y</m></p>
+</statement>
+<answer>
+<p><m>x^y = 64</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>\log(0.001) = -3</m></p>
+</statement>
+<answer>
+<p><m>10^{-3} = 0.001</m></p>
+</answer>
+<solution>
+<p>Watch for students who forget that <m>\log</m> with no base means base <m>10</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>\log_{13}(142) = a</m></p>
+</statement>
+<answer>
+<p><m>13^a = 142</m></p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="logb-q4">
+<introduction>
+<p>Rewrite each equation in logarithmic form.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p><m>9^{1/2} = 3</m></p>
+</statement>
+<answer>
+<p><m>\log_9(3) = \frac12</m></p>
+</answer>
+<solution>
+<p>Watch for <m>\log_3(9) = \frac12</m>.</p>
+</solution>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>10^x = \frac{1}{100}</m></p>
+</statement>
+<answer>
+<p><m>\log\left(\frac{1}{100}\right) = x</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>n^4 = 103</m></p>
+</statement>
+<answer>
+<p><m>\log_n(103) = 4</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>e^{0.5} = k</m></p>
+</statement>
+<answer>
+<p><m>\ln(k) = 0.5</m></p>
+</answer>
+<solution>
+<p><m>\log_e(k) = 0.5</m> is also correct; point out the <m>\ln</m> notation.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="logb-q5">
+<introduction>
+<p>Find the exact value of each expression. Rewrite the number inside the log as a power of the base when it helps.</p>
+</introduction>
+<task workspace="0.7in">
+<statement>
+<p><m>\log_5\left(\frac{1}{25}\right)</m></p>
+</statement>
+<answer>
+<p><m>-2</m></p>
+</answer>
+<solution>
+<p><m>\frac{1}{25} = 5^{-2}</m>. Watch for <m>2</m>.</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p><m>\log_2(16)</m></p>
+</statement>
+<answer>
+<p><m>4</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p><m>\ln\left(e^{-3}\right)</m></p>
+</statement>
+<answer>
+<p><m>-3</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p><m>e^{\ln(9)}</m></p>
+</statement>
+<answer>
+<p><m>9</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p><m>4\log_3(9)</m></p>
+</statement>
+<answer>
+<p><m>8</m></p>
+</answer>
+<solution>
+<p><m>\log_3(9) = 2</m>, so <m>4 \cdot 2 = 8</m>.</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p><m>\log_{16}(4)</m></p>
+</statement>
+<answer>
+<p><m>\frac12</m></p>
+</answer>
+<solution>
+<p><m>4 = 16^{1/2}</m>. Watch for <m>4</m> or <m>2</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="logb-q6">
+<introduction>
+<p>Rewriting an exponential equation in logarithmic form solves it for the exponent. Rewrite each equation in logarithmic form to find the exact value of <m>x</m>.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p><m>6^x = 40</m></p>
+</statement>
+<answer>
+<p><m>x = \log_6(40)</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p><m>e^x = 15</m>; then approximate <m>x</m> with <m>\ln</m>.</p>
+</statement>
+<answer>
+<p><m>x = \ln(15) \approx 2.71</m></p>
+</answer>
+<solution>
+<p>This sets up the next class. The exact answer is the log itself; the decimal comes from the calculator.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

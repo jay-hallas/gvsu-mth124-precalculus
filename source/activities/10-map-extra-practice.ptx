@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-map-extra">
+<title>Extra Practice: Midline, Amplitude, and Period</title>
+
+<page>
+<assemblage xml:id="mapx-review">
+<title>Describing a Wave</title>
+<p>The graph of a sine or cosine function is a wave that repeats the same pattern over and over. Three numbers describe the wave.</p>
+<p><ul><li><p>The <alert>midline</alert> is the horizontal line halfway between the highest and lowest values: <m>y = \dfrac{\max + \min}{2}</m>.</p></li><li><p>The <alert>amplitude</alert> is the distance from the midline up to a peak (or down to a trough): <m>\dfrac{\max - \min}{2}</m>.</p></li><li><p>The <alert>period</alert> is the horizontal length of one full wave, for example the distance between two consecutive peaks.</p></li></ul></p>
+</assemblage>
+<example xml:id="mapx-ex">
+<title>Worked Example</title>
+<statement>
+<p>For the graph of the circular function <m>f(x)</m> below, find the midline, amplitude, and period.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points zero, two and six, two and a trough at three, negative four.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="mapx-graph-ex">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-2,-5.6,8,3.3)">
+<grid spacings="((-2,1,8),(-5,1,3))"/>
+<axes xlabel="x" ylabel="y" hticks="(-2,1,8)" hlabels="(-1,1,7)" vticks="(-5,1,3)" vlabels="(-5,1,3)"/>
+<definition>f(x) = 3*cos(pi*x/3)-1</definition>
+<graph function="f" domain="(-1,7)" stroke="#0072CE" thickness="3"/>
+<point p="(0,2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,-4)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(6,2)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<solution>
+<p>The highest value is <m>y = 2</m> and the lowest value is <m>y = -4</m>. The midline is the average of the max and min, <m>\dfrac{2 + (-4)}{2} = -1</m>, so the midline is <m>y = -1</m>. The amplitude is half the distance from min to max, <m>\dfrac{2 - (-4)}{2} = 3</m>. The peaks at <m>x = 0</m> and <m>x = 6</m> are <m>6</m> units apart, so the period is <m>6</m>.</p>
+</solution>
+</example>
+<paragraphs>
+<title>Let's Do One Together</title>
+<p>Work through this one with the class.</p>
+</paragraphs>
+<exercise xml:id="mapx-q1">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, find the midline, amplitude, and period. The dots mark peaks and troughs.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points negative one, five; three, five; and seven, five, and troughs at one, one and five, one.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="mapx-graph-1">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-2,-1.6,8,6.3)">
+<grid spacings="((-2,1,8),(-1,1,6))"/>
+<axes xlabel="x" ylabel="y" hticks="(-2,1,8)" hlabels="(-1,1,7)" vticks="(-1,1,6)" vlabels="(-1,1,6)"/>
+<definition>f(x) = -2*sin(pi*x/2)+3</definition>
+<graph function="f" domain="(-1,7)" stroke="#0072CE" thickness="3"/>
+<point p="(-1,5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(1,1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,5)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(5,1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(7,5)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Find the highest value and the lowest value.</p>
+</statement>
+<answer>
+<p>Highest <m>5</m>, lowest <m>1</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 3</m>, amplitude <m>2</m>, period <m>4</m></p>
+</answer>
+<solution>
+<p>Midline <m>y = \frac{5 + 1}{2} = 3</m>, amplitude <m>\frac{5 - 1}{2} = 2</m>, period <m>4</m> (peaks at <m>x = -1</m> and <m>x = 3</m>, or troughs at <m>x = 1</m> and <m>x = 5</m>).</p>
+<p>Discussion point: the graph crosses the <m>y</m>-axis at the midline, not at a peak, so students cannot start counting at <m>x = 0</m> and stop at the next place the graph hits <m>y = 3</m>; that gives <m>2</m>, only half a period.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Try these with a partner.</p>
+</paragraphs>
+<exercise xml:id="mapx-q2">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, find the midline, amplitude, and period.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points two, six and ten, six and troughs at negative two, negative two and six, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="mapx-graph-2">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-3,-3.6,11,7.3)">
+<grid spacings="((-3,1,11),(-3,1,7))"/>
+<axes xlabel="x" ylabel="y" hticks="(-3,1,11)" hlabels="(-2,2,10)" vticks="(-3,1,7)" vlabels="(-3,1,7)"/>
+<definition>f(x) = 4*sin(pi*x/4)+2</definition>
+<graph function="f" domain="(-2,10)" stroke="#0072CE" thickness="3"/>
+<point p="(-2,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(2,6)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(6,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(10,6)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 2</m>, amplitude <m>4</m>, period <m>8</m></p>
+</answer>
+<solution>
+<p>Max <m>6</m>, min <m>-2</m>. Midline <m>y = \frac{6 + (-2)}{2} = 2</m>, amplitude <m>\frac{6 - (-2)}{2} = 4</m>, period <m>8</m> (peaks at <m>x = 2</m> and <m>x = 10</m>).</p>
+<p>Common errors: period <m>4</m> (peak to trough is only half a period); amplitude <m>8</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="mapx-q3">
+<introduction>
+<p>For the graph of the circular function <m>f(x)</m> below, find the midline, amplitude, and period. The midline does not have to land on a whole number.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave with peaks at the points negative three, one; three, one; and nine, one, and troughs at zero, negative two and six, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="mapx-graph-3">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-4,-3.6,10,2.3)">
+<grid spacings="((-4,1,10),(-3,1,2))"/>
+<axes xlabel="x" ylabel="y" hticks="(-4,1,10)" hlabels="(-3,1,9)" vticks="(-3,1,2)" vlabels="(-3,1,2)"/>
+<definition>f(x) = -1.5*cos(pi*x/3)-0.5</definition>
+<graph function="f" domain="(-3,9)" stroke="#0072CE" thickness="3"/>
+<point p="(-3,1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(0,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(6,-2)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(9,1)" fill="#002967" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find the midline, amplitude, and period.</p>
+</statement>
+<answer>
+<p>Midline <m>y = -\frac12</m>, amplitude <m>\frac32</m>, period <m>6</m></p>
+</answer>
+<solution>
+<p>Max <m>1</m>, min <m>-2</m>. Midline <m>y = \frac{1 + (-2)}{2} = -\frac12</m>, amplitude <m>\frac{1 - (-2)}{2} = \frac32</m>, period <m>6</m> (peaks at <m>x = -3</m>, <m>3</m>, and <m>9</m>).</p>
+<p>Common errors: rounding the midline to <m>0</m> or <m>-1</m>; amplitude <m>3</m>; sign errors with the negative midline.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

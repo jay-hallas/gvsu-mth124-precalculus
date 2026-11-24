@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-more-modeling-sine-cosine">
+<title>Activity: More Modeling with Sine and Cosine</title>
+
+<page>
+<assemblage xml:id="scm2-review">
+<title>Building the Model</title>
+<p>Write the model as <m>f(t) = a\,(\text{base function}) + k</m> with midline <m>k = \tfrac{\max + \min}{2}</m>, amplitude <m>a = \tfrac{\max - \min}{2}</m>, and <m>B = \tfrac{2\pi}{\text{period}}</m>. The starting position picks the base function.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major">At <m>t = 0</m> the quantity is at a</cell><cell>maximum</cell><cell>minimum</cell><cell>midline, going up</cell><cell>midline, going down</cell></row>
+<row><cell right="major">Base function</cell><cell><m>\cos(Bt)</m></cell><cell><m>-\cos(Bt)</m></cell><cell><m>\sin(Bt)</m></cell><cell><m>-\sin(Bt)</m></cell></row>
+</tabular>
+</assemblage>
+<example xml:id="scm2-ex1">
+<title>Worked Example 1: From a Table</title>
+<statement>
+<p>The table gives the water depth in a tidal pool, in feet, <m>t</m> hours after high tide. Write a sine or cosine function for the depth <m>d(t)</m>.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>t</m> (hours)</cell><cell><m>0</m></cell><cell><m>3</m></cell><cell><m>6</m></cell><cell><m>9</m></cell><cell><m>12</m></cell><cell><m>15</m></cell><cell><m>18</m></cell></row>
+<row><cell right="major"><m>d(t)</m> (feet)</cell><cell><m>9</m></cell><cell><m>6</m></cell><cell><m>3</m></cell><cell><m>6</m></cell><cell><m>9</m></cell><cell><m>6</m></cell><cell><m>3</m></cell></row>
+</tabular>
+</statement>
+<solution>
+<p>The depth starts at its largest value, so it starts at a maximum and the base function is <m>\cos(Bt)</m>. The maximum is <m>9</m> and the minimum is <m>3</m>, so the midline is <m>k = \frac{9 + 3}{2} = 6</m> and the amplitude is <m>a = \frac{9 - 3}{2} = 3</m>. The depth goes <m>9, 6, 3, 6</m> and is back to <m>9</m> at <m>t = 12</m>, so the period is <m>12</m> and <m>B = \frac{2\pi}{12} = \frac{\pi}{6}</m>. Putting it together, <m>d(t) = 3\cos\left(\frac{\pi}{6}t\right) + 6</m>.</p>
+</solution>
+</example>
+<example xml:id="scm2-ex2">
+<title>Worked Example 2: From a Description</title>
+<statement>
+<p>In one northern town, the number of hours of daylight is at its average value of <m>12</m> hours on the first day of fall, and it is getting shorter. The longest day of the year has <m>15</m> hours of daylight and the shortest has <m>9</m>. The pattern repeats every <m>365</m> days. Write a function for the hours of daylight <m>L(t)</m>, <m>t</m> days after the first day of fall.</p>
+</statement>
+<solution>
+<p>At <m>t = 0</m> the daylight is on the midline and going down, so the base function is <m>-\sin(Bt)</m>. The maximum is <m>15</m> and the minimum is <m>9</m>, so the midline is <m>k = \frac{15 + 9}{2} = 12</m> and the amplitude is <m>a = \frac{15 - 9}{2} = 3</m>. The period is <m>365</m> days, so <m>B = \frac{2\pi}{365}</m>. Putting it together, <m>L(t) = -3\sin\left(\frac{2\pi}{365}t\right) + 12</m>.</p>
+</solution>
+</example>
+<paragraphs>
+<title>Let's Do One Together</title>
+<p>Use the five steps from the reference box.</p>
+</paragraphs>
+<exercise xml:id="scm2-ferris">
+<introduction>
+<p>A Ferris wheel has a diameter of <m>100</m> feet. Riders get on at the bottom of the wheel from a platform that is <m>4</m> feet above the ground. The wheel makes one full turn every <m>10</m> minutes. Let <m>f(t)</m> be a rider's height above the ground, in feet, <m>t</m> minutes after getting on.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Find the starting position and the base function.</p>
+</statement>
+<answer>
+<p>Minimum, so <m>-\cos(Bt)</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Find the maximum and minimum values.</p>
+</statement>
+<answer>
+<p>Max <m>104</m>, min <m>4</m></p>
+</answer>
+<solution>
+<p>The lowest point is the platform, <m>4</m> feet. The highest point is one diameter higher, <m>4 + 100 = 104</m> feet. Watch for <m>100</m> as the maximum.</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the midline and amplitude.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 54</m>, amplitude <m>50</m></p>
+</answer>
+<solution>
+<p>The amplitude is the radius. Watch for amplitude <m>100</m> (the diameter) or midline <m>50</m> (the radius instead of the height of the center).</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the period and <m>B</m>.</p>
+</statement>
+<answer>
+<p>Period <m>10</m>, <m>B = \frac{\pi}{5}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Write the function.</p>
+</statement>
+<answer>
+<p><m>f(t) = -50\cos\left(\frac{\pi}{5}t\right) + 54</m></p>
+</answer>
+<solution>
+<p>Check: <m>f(0) = -50 + 54 = 4</m>, and <m>f(5) = -50\cos(\pi) + 54 = 104</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Use the same steps on each problem.</p>
+</paragraphs>
+<exercise xml:id="scm2-camera">
+<introduction>
+<p>A camera is mounted on the edge of a Ferris wheel. The center of the wheel is <m>70</m> feet above the ground, and the wheel has a diameter of <m>120</m> feet. At <m>t = 0</m> minutes the camera is level with the center of the wheel and moving upward. The wheel makes one full turn every <m>12</m> minutes. Let <m>f(t)</m> be the height of the camera above the ground, in feet, <m>t</m> minutes after that moment.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>Find the starting position and the base function.</p>
+</statement>
+<answer>
+<p>Midline, going up, so <m>\sin(Bt)</m></p>
+</answer>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Find the maximum and minimum values.</p>
+</statement>
+<answer>
+<p>Max <m>130</m>, min <m>10</m></p>
+</answer>
+<solution>
+<p>The radius is <m>60</m>, so the max is <m>70 + 60</m> and the min is <m>70 - 60</m>. Watch for <m>70 + 120 = 190</m>.</p>
+</solution>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the midline and amplitude.</p>
+</statement>
+<answer>
+<p>Midline <m>y = 70</m>, amplitude <m>60</m></p>
+</answer>
+</task>
+<task workspace="0.7in">
+<statement>
+<p>Find the period and <m>B</m>.</p>
+</statement>
+<answer>
+<p>Period <m>12</m>, <m>B = \frac{\pi}{6}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Write the function.</p>
+</statement>
+<answer>
+<p><m>f(t) = 60\sin\left(\frac{\pi}{6}t\right) + 70</m></p>
+</answer>
+<solution>
+<p>Check: <m>f(0) = 70</m>, and <m>f(3) = 60\sin\left(\frac{\pi}{2}\right) + 70 = 130</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="scm2-temp" workspace="1.4in">
+<statement>
+<p>The table below gives the average high temperature in a city, in degrees Fahrenheit, <m>t</m> months after the middle of January. Assume the largest and smallest values in the table are the maximum and minimum temperatures. Write a sine or cosine function <m>T(t)</m> that models the temperature.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>t</m> (months)</cell><cell><m>0</m></cell><cell><m>3</m></cell><cell><m>6</m></cell><cell><m>9</m></cell><cell><m>12</m></cell></row>
+<row><cell right="major"><m>T(t)</m> (<m>^\circ</m>F)</cell><cell><m>22</m></cell><cell><m>47</m></cell><cell><m>72</m></cell><cell><m>47</m></cell><cell><m>22</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p><m>T(t) = -25\cos\left(\frac{\pi}{6}t\right) + 47</m></p>
+</answer>
+<solution>
+<p>At <m>t = 0</m> the temperature is <m>22</m>, the smallest value, so the model starts at a minimum: <m>-\cos(Bt)</m>. Midline <m>\frac{72 + 22}{2} = 47</m>, amplitude <m>\frac{72 - 22}{2} = 25</m>. The values return to <m>22</m> at <m>t = 12</m>, so the period is <m>12</m> and <m>B = \frac{\pi}{6}</m>.</p>
+<p>Check: <m>T(6) = -25\cos(\pi) + 47 = 72</m> and <m>T(3) = 47</m>.</p>
+<p>Common errors: period <m>6</m> (low to high is only half a cycle); using <m>\sin(Bt)</m> because the values go up.</p>
+</solution>
+</exercise>
+<exercise xml:id="scm2-carousel" workspace="1.4in">
+<statement>
+<p>A horse on a carousel moves up and down as the carousel turns. At <m>t = 0</m> seconds the saddle is at its highest point, <m>6</m> feet above the floor of the carousel. The lowest point of the saddle is <m>3</m> feet above the floor, and the horse goes from its highest point down and back up again every <m>3</m> seconds. Write a sine or cosine function <m>h(t)</m> for the height of the saddle, in feet.</p>
+</statement>
+<answer>
+<p><m>h(t) = 1.5\cos\left(\frac{2\pi}{3}t\right) + 4.5</m></p>
+</answer>
+<solution>
+<p>Starts at a maximum, so <m>\cos(Bt)</m>. Max <m>6</m>, min <m>3</m>, midline <m>4.5</m>, amplitude <m>1.5</m>, period <m>3</m>, <m>B = \frac{2\pi}{3}</m>. Equivalently <m>\frac32\cos\left(\frac{2\pi}{3}t\right) + \frac92</m>.</p>
+<p>Check: <m>h(0) = 6</m> and <m>h(1.5) = 1.5\cos(\pi) + 4.5 = 3</m>. Common errors: amplitude <m>3</m> (the full height change); <m>B = 3</m>.</p>
+</solution>
+</exercise>
+
+</page>
+</worksheet>

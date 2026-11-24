@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-gq5-practice">
+<title>Activity: Group Quiz 5 Practice</title>
+
+<page>
+<assemblage xml:id="gq5p-review-trig">
+<title>Building a Sine or Cosine Model</title>
+<p>Write the model as <m>f(t) = a\,(\text{base function}) + k</m>. The midline is <m>k = (\max + \min)/2</m>, the amplitude is <m>a = (\max - \min)/2</m>, and <m>B = 2\pi/\text{period}</m>. Start at a maximum: <m>\cos(Bt)</m>. Start at a minimum: <m>-\cos(Bt)</m>. Start on the midline going up: <m>\sin(Bt)</m>. Start on the midline going down: <m>-\sin(Bt)</m>.</p>
+</assemblage>
+<exercise xml:id="gq5p-pebble">
+<introduction>
+<p>A small pebble is stuck in the tread of a bicycle tire. The tire has a radius of <m>13</m> inches, so the center of the wheel is <m>13</m> inches above the ground. At <m>t = 0</m> seconds, the pebble is touching the ground, and the wheel makes one full turn every <m>0.5</m> seconds. Let <m>f(t)</m> be the height of the pebble above the ground, in inches, <m>t</m> seconds later.</p>
+</introduction>
+<task workspace="0.4in">
+<statement>
+<p>At <m>t = 0</m>, where does the model start: maximum, minimum, midline going up, or midline going down? Which base function goes with it?</p>
+</statement>
+<answer>
+<p>Minimum, so <m>-\cos(Bt)</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the maximum and minimum heights of the pebble. Use them to find the midline and the amplitude.</p>
+</statement>
+<answer>
+<p>Max <m>26</m>, min <m>0</m>, midline <m>y = 13</m>, amplitude <m>13</m></p>
+</answer>
+</task>
+<task workspace="1in">
+<statement>
+<p>Find the period and <m>B</m>, then write a formula for <m>f(t)</m>.</p>
+</statement>
+<answer>
+<p>Period <m>0.5</m>, <m>B = 4\pi</m>, <m>f(t) = -13\cos(4\pi t) + 13</m></p>
+</answer>
+<solution>
+<p><m>B = \frac{2\pi}{0.5} = 4\pi</m>.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Use your formula to find <m>f(0.25)</m>. Explain in a complete sentence why this answer makes sense for the bicycle.</p>
+</statement>
+<answer>
+<p><m>f(0.25) = 26</m>; a quarter second is half a turn, so the pebble is at the top of the wheel.</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="gq5p-tables">
+<introduction>
+<p>For each table, decide whether it could be an exponential function. Show the ratios you compute. If the table is exponential, write a formula <m>f(x) = a \cdot b^x</m>. If it is not, explain how you know.</p>
+</introduction>
+<task workspace="0.8in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>4</m></cell><cell><m>6</m></cell><cell><m>9</m></cell><cell><m>13</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>Not exponential</p>
+</answer>
+<solution>
+<p>The ratios are <m>1.5</m>, <m>1.5</m>, and about <m>1.44</m>. The last ratio breaks the pattern.</p>
+</solution>
+</task>
+<task workspace="0.8in">
+<statement>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>50</m></cell><cell><m>60</m></cell><cell><m>72</m></cell><cell><m>86.4</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p><m>f(x) = 50(1.2)^x</m></p>
+</answer>
+<solution>
+<p>The ratios are all <m>1.2</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<assemblage xml:id="gq5p-review-exp">
+<title>Exponential Functions</title>
+<p>An exponential function has the form <m>f(x) = a \cdot b^x</m>, where <m>a</m> is the starting value and <m>b</m> is the growth factor. Growth by <m>r\%</m> each unit gives <m>b = 1 + r</m>, and decay by <m>r\%</m> gives <m>b = 1 - r</m>, with <m>r</m> written as a decimal. If the change happens every <m>k</m> units of time, use <m>f(t) = a \cdot b^{t/k}</m>. Given two points, plug both into <m>a \cdot b^x</m> and divide one equation by the other to cancel <m>a</m>.</p>
+</assemblage>
+<exercise xml:id="gq5p-truck">
+<introduction>
+<p>A used pickup truck is bought for <m>\$18{,}500</m>. The truck loses <m>12\%</m> of its value each year. Let <m>V(t)</m> be the value of the truck <m>t</m> years after it is bought.</p>
+</introduction>
+<task workspace="0.8in">
+<statement>
+<p>What is the decay factor <m>b</m>? Explain in a complete sentence where it comes from.</p>
+</statement>
+<answer>
+<p><m>b = 1 - 0.12 = 0.88</m>; the truck keeps <m>88\%</m> of its value each year.</p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Write a formula for <m>V(t)</m>.</p>
+</statement>
+<answer>
+<p><m>V(t) = 18{,}500(0.88)^t</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Find the value of the truck <m>6</m> years after it is bought, rounded to the nearest cent.</p>
+</statement>
+<answer>
+<p><m>V(6) \approx \$8{,}591.48</m></p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="gq5p-stamp">
+<introduction>
+<p>A rare stamp is bought for <m>\$400</m>. Its value increases by <m>15\%</m> every <m>5</m> years. Let <m>S(t)</m> be the value of the stamp <m>t</m> years after it is bought.</p>
+</introduction>
+<task workspace="0.6in">
+<statement>
+<p>Write a formula for <m>S(t)</m>.</p>
+</statement>
+<answer>
+<p><m>S(t) = 400(1.15)^{t/5}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Find the value of the stamp <m>20</m> years after it is bought.</p>
+</statement>
+<answer>
+<p><m>400(1.15)^4 \approx \$699.60</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Find the value of the stamp <m>12</m> years after it is bought, rounded to the nearest cent.</p>
+</statement>
+<answer>
+<p><m>400(1.15)^{2.4} \approx \$559.42</m></p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="gq5p-two-points">
+<introduction>
+<p>Find an exponential function <m>f(x) = a \cdot b^x</m> whose graph passes through the points <m>(1, 12)</m> and <m>(4, 324)</m>.</p>
+</introduction>
+<task workspace="0.6in">
+<statement>
+<p>Substitute each point into <m>f(x) = a \cdot b^x</m> to write two equations.</p>
+</statement>
+<answer>
+<p><m>12 = ab</m> and <m>324 = ab^4</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Use your two equations to find <m>b</m>. Show the division you use to cancel <m>a</m>.</p>
+</statement>
+<answer>
+<p><m>\frac{ab^4}{ab} = \frac{324}{12}</m>, so <m>b^3 = 27</m> and <m>b = 3</m>.</p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find <m>a</m> and write a formula for <m>f(x)</m>. Then check that your formula gives <m>f(4) = 324</m>.</p>
+</statement>
+<answer>
+<p><m>a = 4</m>, <m>f(x) = 4 \cdot 3^x</m>; <m>f(4) = 4(81) = 324</m></p>
+</answer>
+</task>
+</exercise>
+
+</page>
+</worksheet>

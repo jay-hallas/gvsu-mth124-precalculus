@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-solving-exp-log">
+<title>Activity: Solving Exponential and Log Equations</title>
+
+<page>
+<assemblage xml:id="elsolve-review">
+<title>Solving Exponential and Log Equations</title>
+<p>When the variable is in an exponent, isolate the exponential part and rewrite the equation in logarithmic form. When the variable is inside a log, isolate the log and rewrite the equation in exponential form.</p>
+<p><md>
+<mrow>b^{\,\text{exponent}} = c \ \text{ means } \ \text{exponent} = \log_b(c) \qquad\qquad \log_b(\text{input}) = y \ \text{ means } \ \text{input} = b^{y}</mrow>
+</md></p>
+<p>The exact answer keeps the log, such as <m>x = \log_7(50)</m>. For a decimal, type the log into Desmos or your calculator exactly as written. The input of a log must be positive, so check answers to log equations in the original equation.</p>
+</assemblage>
+<paragraphs>
+<title>Guided Examples</title>
+<p>Work through these with the class.</p>
+</paragraphs>
+<exercise xml:id="elsolve-q1">
+<introduction>
+<p>Solve each equation. Give the exact answer, then approximate to two decimal places.</p>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p><m>7^x = 50</m></p>
+</statement>
+<answer>
+<p><m>x = \log_7(50) \approx 2.01</m></p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>3e^x = 18</m></p>
+</statement>
+<answer>
+<p><m>x = \ln(6) \approx 1.79</m></p>
+</answer>
+<solution>
+<p>Divide by <m>3</m> first: <m>e^x = 6</m>. Watch for <m>e^{x/3}</m>.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>2^{x/4} = 10</m></p>
+</statement>
+<answer>
+<p><m>x = 4\log_2(10) \approx 13.29</m></p>
+</answer>
+<solution>
+<p><m>\frac{x}{4} = \log_2(10)</m>; watch for students who stop there.</p>
+</solution>
+</task>
+<task workspace="0.9in">
+<statement>
+<p><m>5 + 2(1.5)^x = 35</m></p>
+</statement>
+<answer>
+<p><m>x = \log_{1.5}(15) \approx 6.68</m></p>
+</answer>
+<solution>
+<p>Subtract <m>5</m> and divide by <m>2</m>: <m>1.5^x = 15</m>. Watch for <m>7^x = 35</m> from combining <m>5 + 2</m>. Students who already know the power rule may write <m>\frac{\ln(15)}{\ln(1.5)}</m>; it is the same value.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="elsolve-q2">
+<introduction>
+<p>Solve each equation. Give exact answers, and approximate when the answer is not a whole number.</p>
+</introduction>
+<task workspace="1in">
+<statement>
+<p><m>\ln(x) = 2.5</m></p>
+</statement>
+<answer>
+<p><m>x = e^{2.5} \approx 12.18</m></p>
+</answer>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>\log_2(x + 3) = 4</m></p>
+</statement>
+<answer>
+<p><m>x = 13</m></p>
+</answer>
+<solution>
+<p><m>x + 3 = 2^4 = 16</m>. Watch for <m>x + 3 = 4^2</m>.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>4\log(x) = 12</m></p>
+</statement>
+<answer>
+<p><m>x = 1000</m></p>
+</answer>
+<solution>
+<p><m>\log(x) = 3</m>, so <m>x = 10^3</m>. Watch for students who forget that <m>\log</m> means base <m>10</m>.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p><m>3\ln(2x - 5) + 4 = 10</m></p>
+</statement>
+<answer>
+<p><m>x = \frac{e^2 + 5}{2} \approx 6.19</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>3\ln(2x - 5) \amp = 6</mrow>
+<mrow>\ln(2x - 5) \amp = 2</mrow>
+<mrow>2x - 5 \amp = e^2</mrow>
+<mrow>x \amp = \frac{e^2 + 5}{2}</mrow>
+</md></p>
+<p>Check: <m>2(6.19) - 5 \gt 0</m>. Watch for rewriting in exponential form before isolating the log (<m>2x - 5 = e^{10}</m>), or <m>x = \frac{e^2}{2} + 5</m>.</p>
+</solution>
+</task>
+</exercise>
+<paragraphs>
+<title>You Try It</title>
+<p>Try these on your own.</p>
+</paragraphs>
+<exercise xml:id="elsolve-q3">
+<introduction>
+<p>Solve each equation. Give the exact answer, then approximate to two decimal places.</p>
+</introduction>
+<task workspace="1.2in">
+<statement>
+<p><m>4 + 3e^{2x - 1} = 40</m></p>
+</statement>
+<answer>
+<p><m>x = \frac{1 + \ln(12)}{2} \approx 1.74</m></p>
+</answer>
+<solution>
+<p><m>3e^{2x-1} = 36</m>, <m>e^{2x-1} = 12</m>, <m>2x - 1 = \ln(12)</m>. Watch for taking <m>\ln</m> before isolating, or <m>x = \frac{\ln(12)}{2} + 1</m>.</p>
+</solution>
+</task>
+<task workspace="1.2in">
+<statement>
+<p><m>2\log_3(4x + 1) - 5 = 1</m></p>
+</statement>
+<answer>
+<p><m>x = \frac{13}{2} = 6.5</m></p>
+</answer>
+<solution>
+<p><m>\log_3(4x+1) = 3</m>, so <m>4x + 1 = 27</m>. Watch for <m>4x + 1 = 3^6</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<assemblage xml:id="elsolve-review-app">
+<title>Exponential Models</title>
+<p>If a quantity starts at <m>a</m> and is multiplied by <m>b</m> every one unit of time, then <m>A(t) = a \cdot b^{t}</m>. A growth rate <m>r</m> gives <m>b = 1 + r</m>, and a decay rate <m>r</m> gives <m>b = 1 - r</m>. If the quantity is multiplied by <m>b</m> every <m>k</m> units of time instead, the exponent counts how many of those <m>k</m>-unit intervals have passed: <m>A(t) = a \cdot b^{t/k}</m>.</p>
+</assemblage>
+<paragraphs>
+<title>Applications: Guided Examples</title>
+<p>Work through these with the class.</p>
+</paragraphs>
+<exercise xml:id="elsolve-car">
+<introduction>
+<p>A used car is worth <m>\$18{,}000</m> today and loses <m>15\%</m> of its value each year.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the value <m>V</m> of the car <m>t</m> years from now.</p>
+</statement>
+<answer>
+<p><m>V(t) = 18000(0.85)^t</m></p>
+</answer>
+<solution>
+<p>Watch for <m>b = 0.15</m> or <m>b = -0.15</m>.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p>When will the car be worth <m>\$8{,}000</m>? Give the exact answer and an approximation.</p>
+</statement>
+<answer>
+<p><m>t = \log_{0.85}\left(\frac49\right) \approx 4.99</m> years</p>
+</answer>
+<solution>
+<p><m>0.85^t = \frac{8000}{18000} = \frac49</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="elsolve-bacteria">
+<introduction>
+<p>A bacteria culture starts with <m>1200</m> cells and triples every <m>5</m> hours.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the number of cells <m>N</m>, <m>t</m> hours after the culture starts.</p>
+</statement>
+<answer>
+<p><m>N(t) = 1200 \cdot 3^{t/5}</m></p>
+</answer>
+<solution>
+<p>A good check: at <m>t = 10</m> the exponent is <m>2</m>, matching two triplings. Watch for <m>3^{5t}</m>.</p>
+</solution>
+</task>
+<task workspace="1in">
+<statement>
+<p>When will the culture reach <m>50{,}000</m> cells? Give the exact answer and an approximation.</p>
+</statement>
+<answer>
+<p><m>t = 5\log_3\left(\frac{125}{3}\right) \approx 16.97</m> hours</p>
+</answer>
+<solution>
+<p><m>3^{t/5} = \frac{125}{3}</m>, so <m>\frac{t}{5} = \log_3\left(\frac{125}{3}\right)</m>. Watch for students who stop at <m>\frac{t}{5} \approx 3.39</m>.</p>
+</solution>
+</task>
+</exercise>
+<paragraphs>
+<title>You Try It</title>
+<p>Try these on your own.</p>
+</paragraphs>
+<exercise xml:id="elsolve-town">
+<introduction>
+<p>A small town has <m>24{,}000</m> residents, and its population grows by <m>3.5\%</m> each year.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the population <m>P</m>, <m>t</m> years from now.</p>
+</statement>
+<answer>
+<p><m>P(t) = 24000(1.035)^t</m></p>
+</answer>
+<solution>
+<p>Watch for <m>b = 0.035</m>, <m>3.5</m>, or <m>1.35</m>.</p>
+</solution>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Predict the population <m>10</m> years from now.</p>
+</statement>
+<answer>
+<p>About <m>33{,}854</m> residents</p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>When will the population reach <m>40{,}000</m>? Give the exact answer and an approximation.</p>
+</statement>
+<answer>
+<p><m>t = \log_{1.035}\left(\frac53\right) \approx 14.85</m> years</p>
+</answer>
+</task>
+</exercise>
+<exercise xml:id="elsolve-caffeine">
+<introduction>
+<p>A cup of coffee contains <m>200</m> mg of caffeine. Caffeine has a half-life of about <m>5</m> hours, so the amount in the body is cut in half every <m>5</m> hours.</p>
+</introduction>
+<task workspace="0.5in">
+<statement>
+<p>Write a model for the amount of caffeine <m>A</m>, in mg, <m>t</m> hours after drinking the coffee.</p>
+</statement>
+<answer>
+<p><m>A(t) = 200\left(\frac12\right)^{t/5}</m></p>
+</answer>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>How much caffeine remains <m>8</m> hours after drinking the coffee?</p>
+</statement>
+<answer>
+<p>About <m>65.98</m> mg</p>
+</answer>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>When will <m>30</m> mg of caffeine remain? Give the exact answer and an approximation.</p>
+</statement>
+<answer>
+<p><m>t = 5\log_{1/2}(0.15) \approx 13.68</m> hours</p>
+</answer>
+<solution>
+<p>Check: after <m>10</m> hours, <m>200 \cdot \frac14 = 50</m> mg, so <m>30</m> mg should come a bit later.</p>
+<p>Watch for students who stop at <m>\frac{t}{5} \approx 2.74</m> and report <m>2.74</m> hours.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

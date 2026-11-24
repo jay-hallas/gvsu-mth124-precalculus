@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-composition">
+<title>Activity: Composition of Functions</title>
+
+<page>
+<assemblage xml:id="comp-act-review">
+<title>Composition</title>
+<p>
+The composition <m>f(g(x))</m>, also written <m>(f \circ g)(x)</m>, means we apply <m>g</m> first and then apply <m>f</m> to the result. The output of the inside function <m>g</m> becomes the input of the outside function <m>f</m>. Always work from the inside out. Order matters: in general, <m>f(g(x))</m> and <m>g(f(x))</m> are not the same.
+</p>
+</assemblage>
+
+<paragraphs>
+<title>Composition from Tables</title>
+<example xml:id="comp-act-example-table">
+<title>Worked Example</title>
+<p>
+To find <m>f(g(2))</m>, first look up the inside value in the <m>g</m> row, say <m>g(2) = 7</m>. Then use <m>7</m> as the new input in the <m>f</m> row, say <m>f(7) = -1</m>. So <m>f(g(2)) = f(7) = -1</m>.
+</p>
+</example>
+</paragraphs>
+
+<exercise xml:id="comp-act-table">
+<introduction>
+<p>Use the table to answer each part.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell right="major"><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell right="major"><m>f(x)</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>1</m></cell>
+</row>
+<row bottom="major">
+<cell right="major"><m>g(x)</m></cell>
+<cell><m>2</m></cell>
+<cell><m>0</m></cell>
+<cell><m>4</m></cell>
+<cell><m>1</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell right="major"><m>f(g(x))</m></cell>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+</row>
+</tabular>
+</introduction>
+
+<task workspace="1.3cm">
+<statement>
+<p>Evaluate <m>f(g(1))</m>, <m>g(f(3))</m>, and <m>g(g(3))</m>.</p>
+</statement>
+<answer>
+<p><m>3</m>, <m>4</m>, <m>0</m></p>
+</answer>
+<solution>
+<p>
+<m>g(1) = 0</m>, so <m>f(g(1)) = f(0) = 3</m>. Next, <m>f(3) = 2</m>, so <m>g(f(3)) = g(2) = 4</m>. Finally, <m>g(3) = 1</m>, so <m>g(g(3)) = g(1) = 0</m>.
+</p>
+</solution>
+</task>
+
+<task workspace="0.5cm">
+<statement>
+<p>Complete the last row of the table.</p>
+</statement>
+<answer>
+<p><m>0,\ 3,\ 1,\ 4,\ 2</m></p>
+</answer>
+<solution>
+<p>
+<m>f(g(0)) = f(2) = 0</m>, <m>f(g(1)) = f(0) = 3</m>, <m>f(g(2)) = f(4) = 1</m>, <m>f(g(3)) = f(1) = 4</m>, <m>f(g(4)) = f(3) = 2</m>.
+</p>
+<p>The most common error is looking up <m>f</m> first and then <m>g</m>, which produces the row for <m>g(f(x))</m> instead: <m>1, 3, 2, 4, 0</m>.</p>
+</solution>
+</task>
+</exercise>
+
+<paragraphs>
+<title>Composition from Graphs</title>
+<p>The same inside-out idea works with graphs: read the inside value from one graph, then use it as the input on the other.</p>
+</paragraphs>
+
+<exercise xml:id="comp-act-graph">
+<introduction>
+<p>The graphs of <m>f</m> and <m>g</m> are shown below. Use them to evaluate each expression.</p>
+<sidebyside widths="45% 45%" margins="auto">
+<image>
+<shortdescription>The graph of f, a zigzag made of three line segments.</shortdescription>
+<description>
+<p>The graph of f consists of three connected line segments. The first segment rises from the point negative three, one to the point negative one, three. The second segment falls from negative one, three to the point one, negative one. The third segment rises from one, negative one to the point three, one.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="comp-act-graph-f">
+<diagram dimensions="(260,260)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-3,1),(-1,3))" stroke="blue" thickness="3"/>
+<line endpoints="((-1,3),(1,-1))" stroke="blue" thickness="3"/>
+<line endpoints="((1,-1),(3,1))" stroke="blue" thickness="3"/>
+<point p="(-3,1)" fill="blue" stroke="blue"/>
+<point p="(-1,3)" fill="blue" stroke="blue"/>
+<point p="(1,-1)" fill="blue" stroke="blue"/>
+<point p="(3,1)" fill="blue" stroke="blue"/>
+<label anchor="(3.5,3.3)" alignment="west"><m>y = f(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+<image>
+<shortdescription>The graph of g, a peak shape made of two line segments.</shortdescription>
+<description>
+<p>The graph of g consists of two connected line segments. The first segment rises from the point negative three, negative two to the point zero, one. The second segment falls from zero, one to the point three, negative two.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="comp-act-graph-g">
+<diagram dimensions="(260,260)" margins="5">
+<coordinates bbox="(-4,-4,4,4)">
+<grid-axes xlabel="x" ylabel="y"/>
+<line endpoints="((-3,-2),(0,1))" stroke="red" thickness="3"/>
+<line endpoints="((0,1),(3,-2))" stroke="red" thickness="3"/>
+<point p="(-3,-2)" fill="red" stroke="red"/>
+<point p="(0,1)" fill="red" stroke="red"/>
+<point p="(3,-2)" fill="red" stroke="red"/>
+<label anchor="(3.5,3.3)" alignment="west"><m>y = g(x)</m></label>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</sidebyside>
+</introduction>
+
+<task workspace="2.5cm">
+<statement>
+<p>Evaluate <m>f(g(0))</m>, <m>g(f(0))</m>, and <m>f(g(2))</m>.</p>
+</statement>
+<answer>
+<p><m>-1</m>, <m>0</m>, <m>3</m></p>
+</answer>
+<solution>
+<p>
+<m>g(0) = 1</m>, so <m>f(g(0)) = f(1) = -1</m>. Next, <m>f(0) = 1</m>, so <m>g(f(0)) = g(1) = 0</m>. Finally, <m>g(2) = -1</m>, so <m>f(g(2)) = f(-1) = 3</m>.
+</p>
+<p>For <m>f(0)</m>, students need to read a value from the middle of a segment rather than at a marked point.</p>
+</solution>
+</task>
+
+<task workspace="1cm">
+<statement>
+<p>Is <m>f(g(0))</m> equal to <m>g(f(0))</m>? What does this say about order?</p>
+</statement>
+<answer>
+<p>No.</p>
+</answer>
+<solution>
+<p>No; <m>f(g(0)) = -1</m> while <m>g(f(0)) = 0</m>. Changing the order of the functions changes the result, so the order in a composition matters.</p>
+</solution>
+</task>
+</exercise>
+</page>
+
+<page>
+<paragraphs>
+<title>Composition from Formulas</title>
+<example xml:id="comp-act-example-formula">
+<title>Worked Example</title>
+<p>
+Let <m>f(x) = x^2 + 1</m> and <m>g(x) = x - 3</m>. To find a formula for <m>f(g(x))</m>, replace every <m>x</m> in the formula for <m>f</m> with the entire expression <m>g(x) = x - 3</m>:
+<md>
+<mrow>f(g(x)) \amp = f(x-3)</mrow>
+<mrow>\amp = (x-3)^2 + 1</mrow>
+<mrow>\amp = x^2 - 6x + 9 + 1</mrow>
+<mrow>\amp = x^2 - 6x + 10</mrow>
+</md>
+</p>
+<p>Check with <m>x = 5</m>: <m>g(5) = 2</m> and <m>f(2) = 5</m>. The formula gives <m>25 - 30 + 10 = 5</m>, so the two agree.</p>
+</example>
+</paragraphs>
+
+<exercise xml:id="comp-act-formula">
+<introduction>
+<p>Let <m>f(x) = 3x - 2</m> and <m>g(x) = x^2 + 4</m>.</p>
+</introduction>
+
+<task workspace="2cm">
+<statement>
+<p>Evaluate <m>f(g(1))</m> and <m>g(f(1))</m>.</p>
+</statement>
+<answer>
+<p><m>13</m> and <m>5</m></p>
+</answer>
+<solution>
+<p><m>g(1) = 5</m>, so <m>f(g(1)) = f(5) = 13</m>. Also <m>f(1) = 1</m>, so <m>g(f(1)) = g(1) = 5</m>.</p>
+</solution>
+</task>
+
+<task workspace="2cm">
+<statement>
+<p>Find a formula for <m>f(g(x))</m> and simplify.</p>
+</statement>
+<answer>
+<p><m>3x^2 + 10</m></p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>f(g(x)) \amp = 3(x^2 + 4) - 2</mrow>
+<mrow>\amp = 3x^2 + 12 - 2</mrow>
+<mrow>\amp = 3x^2 + 10</mrow>
+</md>
+</p>
+<p>Checking with <m>x = 1</m> gives <m>13</m>, which matches the first part.</p>
+</solution>
+</task>
+
+<task workspace="2.2cm">
+<statement>
+<p>Find a formula for <m>g(f(x))</m> and simplify.</p>
+</statement>
+<answer>
+<p><m>9x^2 - 12x + 8</m></p>
+</answer>
+<solution>
+<p>
+<md>
+<mrow>g(f(x)) \amp = (3x - 2)^2 + 4</mrow>
+<mrow>\amp = 9x^2 - 12x + 4 + 4</mrow>
+<mrow>\amp = 9x^2 - 12x + 8</mrow>
+</md>
+</p>
+<p>Checking with <m>x = 1</m> gives <m>5</m>. Watch for <m>(3x-2)^2</m> written as <m>9x^2 + 4</m> or <m>3x^2 + 4</m>.</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="comp-act-decompose">
+<introduction>
+<p>Each function <m>h</m> below can be written as a composition <m>h(x) = f(g(x))</m>. Find an inside function <m>g</m> and an outside function <m>f</m> that work.</p>
+</introduction>
+
+<task workspace="1.5cm">
+<statement>
+<p><m>h(x) = (4x + 1)^3</m></p>
+</statement>
+<answer>
+<p>Answers vary. One choice is <m>g(x) = 4x + 1</m> and <m>f(x) = x^3</m>.</p>
+</answer>
+<solution>
+<p>One choice is <m>g(x) = 4x + 1</m> and <m>f(x) = x^3</m>. Have students check their choice by composing it back together.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p><m>h(x) = \sqrt{x^2 + 9}</m></p>
+</statement>
+<answer>
+<p>Answers vary. One choice is <m>g(x) = x^2 + 9</m> and <m>f(x) = \sqrt{x}</m>.</p>
+</answer>
+<solution>
+<p>One choice is <m>g(x) = x^2 + 9</m> and <m>f(x) = \sqrt{x}</m>. Another is <m>g(x) = x^2</m> and <m>f(x) = \sqrt{x + 9}</m>.</p>
+<p>A good question to ask: what does <q>inside</q> mean in terms of the order you would press buttons on a calculator?</p>
+</solution>
+</task>
+</exercise>
+
+<exercise xml:id="comp-act-ripple">
+<introduction>
+<p>A stone is dropped into a still pond, and a circular ripple spreads outward. The radius of the ripple <m>t</m> seconds after the stone hits the water is <m>r(t) = 3t</m> inches, and the area of a circle with radius <m>r</m> is <m>A(r) = \pi r^2</m>.</p>
+</introduction>
+
+<task workspace="1.9cm">
+<statement>
+<p>Find a formula for <m>A(r(t))</m> and explain in words what it measures.</p>
+</statement>
+<answer>
+<p><m>9\pi t^2</m></p>
+</answer>
+<solution>
+<p><m>A(r(t)) = \pi (3t)^2 = 9\pi t^2</m>. This gives the area, in square inches, inside the ripple <m>t</m> seconds after the stone hits the water.</p>
+<p>Students often write <m>3\pi t^2</m> by forgetting to square the <m>3</m>.</p>
+</solution>
+</task>
+
+<task workspace="1.5cm">
+<statement>
+<p>Find the area inside the ripple <m>4</m> seconds after the stone hits the water.</p>
+</statement>
+<answer>
+<p><m>144\pi \approx 452.4</m> square inches</p>
+</answer>
+<solution>
+<p><m>A(r(4)) = 9\pi(16) = 144\pi \approx 452.4</m> square inches. Alternatively, <m>r(4) = 12</m> inches and <m>A(12) = 144\pi</m>.</p>
+</solution>
+</task>
+</exercise>
+</page>
+</worksheet>

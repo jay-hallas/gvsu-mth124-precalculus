@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-heating-cooling">
+<title>Activity: Heating and Cooling Models Essentials</title>
+
+<page>
+<assemblage xml:id="hc-review">
+<title>Newton's Law of Heating and Cooling</title>
+<p>Newton's law says an object's temperature changes at a rate proportional to the difference between its temperature and the temperature around it. The model is <m>F(t) = c + a e^{-kt}</m>, with <m>k \gt 0</m>.</p>
+<p><ul><li><p><m>c</m> is the surrounding (room) temperature. As <m>t</m> grows, <m>e^{-kt} \to 0</m>, so <m>F(t) \to c</m>.</p></li><li><p><m>F(0) = a + c</m> is the starting temperature, so <m>a = \text{start} - c</m>. Cooling gives <m>a \gt 0</m>; heating gives <m>a \lt 0</m>.</p></li><li><p>To find <m>k</m>, substitute the given data point, isolate <m>e^{-kt}</m>, and take <m>\ln</m> of both sides.</p></li></ul></p>
+<p><em>Simplifying and rounding <m>e^{-k}</m>.</em> Since <m>e^{-kt} = \left(e^{-k}\right)^t</m>, you can compute <m>b = e^{-k}</m> and write <m>F(t) = c + a\,b^{t}</m>. In this form, each minute the gap between the object and the room shrinks to <m>b</m> times what it was. This form is easier to read, but rounding <m>k</m> or <m>b</m> shifts later answers a little. When you solve for a time, keep <m>k</m> exact by storing it in Desmos or your calculator, and round only the final answer.</p>
+</assemblage>
+<example xml:id="hc-ex">
+<title>Worked Example</title>
+<statement>
+<p>A cup of tea is <m>190^\circ</m>F when poured in a <m>70^\circ</m>F room. Five minutes after it is poured, it has cooled to <m>160^\circ</m>F. Find a model for the temperature <m>F(t)</m>, <m>t</m> minutes after the tea is poured, and find when the tea reaches <m>100^\circ</m>F.</p>
+</statement>
+<solution>
+<p>The room is <m>70^\circ</m>F, so <m>c = 70</m>. The start is <m>190^\circ</m>F, so <m>a + c = 190</m> and <m>a = 120</m>. That gives <m>F(t) = 70 + 120e^{-kt}</m>. Use <m>F(5) = 160</m>:</p>
+<p><md>
+<mrow>160 \amp = 70 + 120e^{-5k}</mrow>
+<mrow>90 \amp = 120e^{-5k} \amp\amp \text{subtract } 70</mrow>
+<mrow>0.75 \amp = e^{-5k} \amp\amp \text{divide by } 120</mrow>
+<mrow>\ln(0.75) \amp = -5k \amp\amp \text{take ln}</mrow>
+<mrow>k \amp = \tfrac{\ln(0.75)}{-5} \approx 0.0575 \amp\amp \text{divide by } -5</mrow>
+</md></p>
+<p>So <m>F(t) \approx 70 + 120e^{-0.0575t}</m>. Simplify and round: <m>e^{-0.0575} \approx 0.944</m>, so <m>F(t) \approx 70 + 120(0.944)^t</m>. Each minute, the gap to room temperature shrinks to about <m>94.4\%</m> of what it was.</p>
+<p>Now set <m>F(t) = 100</m>:</p>
+<p><md>
+<mrow>100 \amp = 70 + 120e^{-kt}</mrow>
+<mrow>0.25 \amp = e^{-kt} \amp\amp \text{since } \tfrac{100 - 70}{120} = 0.25</mrow>
+<mrow>\ln(0.25) \amp = -kt \amp\amp \text{take ln}</mrow>
+<mrow>t \amp = \tfrac{\ln(0.25)}{-k} \approx 24.09 \amp\amp \text{exact } k</mrow>
+</md></p>
+<p>The tea reaches <m>100^\circ</m>F about <m>24.09</m> minutes after it is poured. Rounding to <m>k \approx 0.0575</m> first gives <m>24.11</m>.</p>
+</solution>
+</example>
+<paragraphs>
+<title>Guided Example</title>
+<p>Work through this one with the class.</p>
+</paragraphs>
+<exercise xml:id="hc-soda">
+<introduction>
+<p>A can of soda is <m>38^\circ</m>F when it comes out of the fridge, and it is set on a counter in a <m>72^\circ</m>F room. Ten minutes after it comes out, it has warmed to <m>48^\circ</m>F. Let <m>F(t)</m> be the temperature of the soda <m>t</m> minutes after it comes out of the fridge.</p>
+</introduction>
+<task workspace="0.8in">
+<statement>
+<p>Find <m>c</m>, <m>a + c</m>, and <m>a</m>. Why is <m>a</m> negative here?</p>
+</statement>
+<answer>
+<p><m>c = 72</m>, <m>a + c = 38</m>, <m>a = -34</m></p>
+</answer>
+<solution>
+<p>The soda starts <em>below</em> room temperature, so the term <m>ae^{-kt}</m> has to be negative; it shrinks toward <m>0</m> and the temperature rises toward <m>72</m>. Watch for <m>a = 34</m> or <m>a = 38</m>.</p>
+</solution>
+</task>
+<task workspace="0.4in">
+<statement>
+<p>Write the model with <m>k</m> still unknown.</p>
+</statement>
+<answer>
+<p><m>F(t) = 72 - 34e^{-kt}</m></p>
+</answer>
+</task>
+<task workspace="1.4in">
+<statement>
+<p>Use <m>F(10) = 48</m> to solve for <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>k = \frac{\ln(12/17)}{-10} \approx 0.0348</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>48 \amp = 72 - 34e^{-10k}</mrow>
+<mrow>-24 \amp = -34e^{-10k}</mrow>
+<mrow>\tfrac{12}{17} \amp = e^{-10k}</mrow>
+<mrow>\ln\left(\tfrac{12}{17}\right) \amp = -10k</mrow>
+</md></p>
+<p>Watch for <m>e^{-10k} = -\frac{12}{17}</m> from a dropped negative, which leads to the log of a negative number.</p>
+</solution>
+</task>
+<task workspace="0.6in">
+<statement>
+<p>Write the model with <m>k</m>. Then simplify and round <m>e^{-k}</m> to three decimals.</p>
+</statement>
+<answer>
+<p><m>F(t) \approx 72 - 34e^{-0.0348t} \approx 72 - 34(0.966)^t</m></p>
+</answer>
+<solution>
+<p>Each minute, the gap between the soda and the room shrinks to about <m>96.6\%</m> of what it was.</p>
+</solution>
+</task>
+<task workspace="1.3in">
+<statement>
+<p>When will the soda reach <m>60^\circ</m>F?</p>
+</statement>
+<answer>
+<p>About <m>29.90</m> minutes after it comes out of the fridge</p>
+</answer>
+<solution>
+<p><md>
+<mrow>\tfrac{6}{17} \amp = e^{-kt}</mrow>
+<mrow>t \amp = \frac{\ln(6/17)}{-k} = \frac{10\ln(6/17)}{\ln(12/17)} \approx 29.90</mrow>
+</md></p>
+<p>Accept <m>29.93</m> from students who used <m>k \approx 0.0348</m>, and about <m>30.11</m> from the rounded model; all three round to <m>30</m> minutes.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Practice</title>
+<p>Use the same steps on your own.</p>
+</paragraphs>
+<exercise xml:id="hc-brownies">
+<introduction>
+<p>A pan of brownies is <m>325^\circ</m>F when it comes out of the oven, and it is set on a counter in a <m>68^\circ</m>F kitchen. Ten minutes after it comes out of the oven, the brownies are <m>250^\circ</m>F. Let <m>F(t)</m> be the temperature of the brownies <m>t</m> minutes after they come out of the oven.</p>
+</introduction>
+<task workspace="1.6in">
+<statement>
+<p>Find a model for <m>F(t)</m>. Show how you found <m>a</m>, <m>c</m>, and <m>k</m>.</p>
+</statement>
+<answer>
+<p><m>c = 68</m>, <m>a = 257</m>, <m>k = \frac{\ln(182/257)}{-10} \approx 0.0345</m>, so <m>F(t) \approx 68 + 257e^{-0.0345t}</m></p>
+</answer>
+<solution>
+<p><md>
+<mrow>250 \amp = 68 + 257e^{-10k}</mrow>
+<mrow>\tfrac{182}{257} \amp = e^{-10k}</mrow>
+<mrow>k \amp = \frac{\ln(182/257)}{-10} \approx 0.0345</mrow>
+</md></p>
+</solution>
+</task>
+<task workspace="0.8in">
+<statement>
+<p>Rewrite your model by simplifying and rounding <m>e^{-k}</m> to three decimal places. What does that number tell you about the brownies?</p>
+</statement>
+<answer>
+<p><m>F(t) \approx 68 + 257(0.966)^t</m>; each minute the gap between the brownies and the kitchen shrinks to about <m>96.6\%</m> of what it was.</p>
+</answer>
+<solution>
+<p>Watch for students who read <m>0.966</m> as the temperature dropping by <m>96.6\%</m> each minute.</p>
+</solution>
+</task>
+<task workspace="1.4in">
+<statement>
+<p>The brownies are cool enough to cut at <m>100^\circ</m>F. Use your model from the first part to find when that will happen.</p>
+</statement>
+<answer>
+<p>About <m>60.37</m> minutes after they come out of the oven</p>
+</answer>
+<solution>
+<p><m>t = \frac{10\ln(32/257)}{\ln(182/257)} \approx 60.37</m>. Students who used <m>k \approx 0.0345</m> get <m>60.39</m>; accept it, but point out the advice to keep <m>k</m> exact. Rounding <m>k</m> to <m>0.03</m> before solving gives about <m>69</m> minutes.</p>
+</solution>
+</task>
+<task workspace="1.2in">
+<statement>
+<p>Redo the previous part with your rounded model. How much does rounding <m>e^{-k}</m> change the answer?</p>
+</statement>
+<answer>
+<p>About <m>60.23</m> minutes, a difference of less than <m>10</m> seconds</p>
+</answer>
+<solution>
+<p><m>t = \frac{\ln(32/257)}{\ln(0.966)} \approx 60.23</m>. Rounding is reasonable for reading the model, but small rounding errors grow when <m>t</m> is large or when <m>b</m> is rounded more heavily; <m>b = 0.97</m> gives about <m>68.4</m> minutes.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-exponential-guided-notes">
+<title>Guided Notes: Exponential Functions</title>
+
+<page>
+<assemblage xml:id="expgn-review">
+<title>Exponential Functions</title>
+<p><m>f(t) = a \cdot b^t</m>, where <m>a</m> is the initial value and <m>b</m> is the growth factor. Equal steps in <m>t</m> give a constant <em>ratio</em> of outputs.</p>
+<p>Growth by <m>r\%</m>: <m>b = 1 + r</m>. Decay by <m>r\%</m>: <m>b = 1 - r</m> (<m>r</m> as a decimal). Change every <m>k</m> units: <m>f(t) = a \cdot b^{t/k}</m>.</p>
+</assemblage>
+<paragraphs>
+<title>Is the Table Exponential?</title>
+<example xml:id="expgn-ex1">
+<title>Worked Example</title>
+<statement>
+<p>Is the table exponential?</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>400</m></cell><cell><m>300</m></cell><cell><m>225</m></cell><cell><m>168.75</m></cell></row>
+</tabular>
+</statement>
+<solution>
+<p>The <m>x</m>-values go up by <m>1</m> each time, so divide each output by the one before it: <m>\frac{300}{400} = 0.75</m>, <m>\frac{225}{300} = 0.75</m>, <m>\frac{168.75}{225} = 0.75</m>. The ratio is constant, so the table is exponential with <m>a = 400</m> and <m>b = 0.75</m>: <m>f(x) = 400(0.75)^x</m>.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="expgn-q1" workspace="0.9in">
+<statement>
+<p>Is the table exponential? If so, write a formula.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>8</m></cell><cell><m>12</m></cell><cell><m>18</m></cell><cell><m>27</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>Yes; <m>f(x) = 8(1.5)^x</m></p>
+</answer>
+<solution>
+<p>Ratios: <m>12/8 = 1.5</m>, <m>18/12 = 1.5</m>, <m>27/18 = 1.5</m>.</p>
+<p>Common error: checking differences instead of ratios (<m>4, 6, 9</m> are not constant, so students may say no).</p>
+</solution>
+</exercise>
+<exercise xml:id="expgn-q2" workspace="0.9in">
+<statement>
+<p>Is the table exponential? If so, write a formula.</p>
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+<row><cell right="major"><m>x</m></cell><cell><m>0</m></cell><cell><m>1</m></cell><cell><m>2</m></cell><cell><m>3</m></cell></row>
+<row><cell right="major"><m>y</m></cell><cell><m>8</m></cell><cell><m>16</m></cell><cell><m>24</m></cell><cell><m>32</m></cell></row>
+</tabular>
+</statement>
+<answer>
+<p>No</p>
+</answer>
+<solution>
+<p>Ratios: <m>16/8 = 2</m>, <m>24/16 = 1.5</m>, <m>32/24 \approx 1.33</m>. Not exponential. The differences are all <m>8</m>, so the table is linear: <m>y = 8x + 8</m>.</p>
+<p>Common error: seeing <m>8 \to 16</m> double and calling it exponential without checking the rest.</p>
+</solution>
+</exercise>
+<paragraphs>
+<title>Percent Increase and Decrease</title>
+<example xml:id="expgn-ex2">
+<title>Worked Example</title>
+<statement>
+<p>A car bought for <m>\$28{,}000</m> loses <m>15\%</m> of its value each year. Write a function for its value <m>V(t)</m>, <m>t</m> years after it is bought, and find its value <m>5</m> years after it is bought.</p>
+</statement>
+<solution>
+<p>Losing <m>15\%</m> means keeping <m>85\%</m>, so <m>b = 1 - 0.15 = 0.85</m>. The initial value is <m>a = 28{,}000</m>, so <m>V(t) = 28{,}000(0.85)^t</m>. Then <m>V(5) = 28{,}000(0.85)^5 \approx \$12{,}423.75</m>.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="expgn-q3" workspace="1.4in">
+<statement>
+<p>A savings account starts with <m>\$2{,}500</m> and earns <m>4\%</m> interest per year, compounded annually. Write a function for the balance <m>A(t)</m>, <m>t</m> years after the deposit, and find the balance <m>10</m> years after the deposit.</p>
+</statement>
+<answer>
+<p><m>A(t) = 2500(1.04)^t</m>; <m>A(10) \approx \$3700.61</m></p>
+</answer>
+<solution>
+<p><m>b = 1 + 0.04 = 1.04</m>.</p>
+<p>Common errors: <m>b = 0.04</m> or <m>b = 4</m>; writing <m>2500 + 1.04^t</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="expgn-q4" workspace="1.4in">
+<statement>
+<p>A lake has <m>900</m> fish, and the population decreases by <m>6\%</m> each year. Write a function for the number of fish <m>F(t)</m>, <m>t</m> years from now, and find the number <m>10</m> years from now.</p>
+</statement>
+<answer>
+<p><m>F(t) = 900(0.94)^t</m>; about <m>485</m> fish</p>
+</answer>
+<solution>
+<p><m>b = 1 - 0.06 = 0.94</m>, and <m>F(10) = 900(0.94)^{10} \approx 484.75</m>.</p>
+<p>Common errors: <m>b = 1.06</m> or <m>b = 0.06</m>.</p>
+</solution>
+</exercise>
+
+</page>
+
+<page>
+<paragraphs>
+<title>Change Over Longer Time Intervals</title>
+<example xml:id="expgn-ex3">
+<title>Worked Example</title>
+<statement>
+<p>A hospital prepares <m>80</m> mg of a medical tracer, which has a half-life of <m>6</m> hours. Write a function for the amount <m>A(t)</m> left <m>t</m> hours after it is prepared, and find the amount left one day after it is prepared.</p>
+</statement>
+<solution>
+<p>Half-life means the amount is multiplied by <m>\frac{1}{2}</m> every <m>6</m> hours, so <m>b = \frac12</m> and <m>k = 6</m>. The number of half-lives after <m>t</m> hours is <m>\frac{t}{6}</m>, so <m>A(t) = 80\left(\frac{1}{2}\right)^{t/6}</m>. One day is <m>24</m> hours, which is <m>4</m> half-lives: <m>A(24) = 80\left(\frac12\right)^4 = 5</m> mg.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="expgn-q5" workspace="1.6in">
+<statement>
+<p>A coin collection is worth <m>\$1{,}500</m>, and its value increases by <m>10\%</m> every <m>4</m> years. Write a function for the value <m>V(t)</m>, <m>t</m> years from now, and find the value <m>12</m> years from now.</p>
+</statement>
+<answer>
+<p><m>V(t) = 1500(1.1)^{t/4}</m>; <m>V(12) = \$1996.50</m></p>
+</answer>
+<solution>
+<p><m>V(12) = 1500(1.1)^3 = 1500(1.331) = 1996.50</m>. Check: <m>V(4) = 1500(1.1) = 1650</m>, one <m>10\%</m> increase.</p>
+<p>Common errors: <m>1500(1.1)^{4t}</m>; using <m>b = 1.025</m> by dividing the <m>10\%</m> by <m>4</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="expgn-q6" workspace="1.6in">
+<statement>
+<p>Caffeine has a half-life of about <m>5</m> hours. A cup of coffee contains <m>120</m> mg of caffeine. Write a function for the amount <m>C(t)</m> left in the body <m>t</m> hours after drinking it, and find the amount left <m>15</m> hours after drinking it.</p>
+</statement>
+<answer>
+<p><m>C(t) = 120\left(\frac12\right)^{t/5}</m>; <m>15</m> mg</p>
+</answer>
+<solution>
+<p><m>15</m> hours is <m>3</m> half-lives, so <m>C(15) = 120 \cdot \frac18 = 15</m> mg.</p>
+<p>Common errors: <m>120(0.5)^{5t}</m>; computing <m>120 - 3(60)</m>.</p>
+</solution>
+</exercise>
+<paragraphs>
+<title>Finding a Formula from Two Points</title>
+<example xml:id="expgn-ex4">
+<title>Worked Example</title>
+<statement>
+<p>Find an exponential function <m>f(x) = a \cdot b^x</m> whose graph passes through <m>(2, 12)</m> and <m>(5, 96)</m>.</p>
+</statement>
+<solution>
+<p>Plug in both points: <m>12 = a b^2</m> and <m>96 = a b^5</m>. Divide the second equation by the first to cancel <m>a</m>:</p>
+<p><md>
+<mrow>\frac{a b^5}{a b^2} = \frac{96}{12} \quad\Longrightarrow\quad b^3 = 8 \quad\Longrightarrow\quad b = 2.</mrow>
+</md></p>
+<p>Then <m>12 = a(2)^2 = 4a</m>, so <m>a = 3</m> and <m>f(x) = 3 \cdot 2^x</m>. If one point is <m>(0, a)</m>, you already know <m>a</m> and only need to solve for <m>b</m>.</p>
+</solution>
+</example>
+
+</paragraphs>
+<exercise xml:id="expgn-q7" workspace="1.8in">
+<statement>
+<p>Find an exponential function whose graph passes through <m>(0, 3)</m> and <m>(2, 75)</m>.</p>
+</statement>
+<answer>
+<p><m>f(x) = 3 \cdot 5^x</m></p>
+</answer>
+<solution>
+<p><m>a = 3</m> from <m>(0, 3)</m>. Then <m>75 = 3b^2</m>, so <m>b^2 = 25</m> and <m>b = 5</m>. Check: <m>f(2) = 75</m>.</p>
+</solution>
+</exercise>
+<exercise xml:id="expgn-q8" workspace="1.8in">
+<statement>
+<p>Find an exponential function whose graph passes through <m>(1, 10)</m> and <m>(3, 2.5)</m>.</p>
+</statement>
+<answer>
+<p><m>f(x) = 20(0.5)^x</m></p>
+</answer>
+<solution>
+<p><m>10 = ab</m> and <m>2.5 = ab^3</m>. Dividing, <m>b^2 = 0.25</m>, so <m>b = 0.5</m>. Then <m>10 = 0.5a</m> gives <m>a = 20</m>.</p>
+<p>Common errors: taking <m>a = 10</m> because it is the first <m>y</m>-value given; dividing in the wrong order and getting <m>b^2 = 4</m>.</p>
+</solution>
+</exercise>
+
+</page>
+</worksheet>

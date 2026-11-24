@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Name (change me)</title>
+    <title>Precalculus</title>
 
-    <subtitle>MATH xxx Semester 20xx</subtitle>
+    <subtitle>MTH 124</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -51,6 +51,25 @@
       <xi:include href="./activities/01-functions.ptx"/>
   <xi:include href="./activities/02-average.ptx"/>
     <xi:include href="./activities/03-linear.ptx"/>
+    <xi:include href="./activities/04-quiz1-review.ptx"/>
+    <xi:include href="./activities/05-takehome-packet1.ptx"/>
+    <xi:include href="./activities/06-composition.ptx"/>
+    <xi:include href="./activities/07-inverses.ptx"/>
+    <xi:include href="./activities/08-quiz2-review.ptx"/>
+    <xi:include href="./activities/09-midline-amplitude-period.ptx"/>
+    <xi:include href="./activities/10-map-extra-practice.ptx"/>
+    <xi:include href="./activities/11-modeling-sine-cosine.ptx"/>
+    <xi:include href="./activities/12-more-modeling-sine-cosine.ptx"/>
+    <xi:include href="./activities/13-exponential-guided-notes.ptx"/>
+    <xi:include href="./activities/14-exponential-practice.ptx"/>
+    <xi:include href="./activities/15-group-quiz5-practice.ptx"/>
+    <xi:include href="./activities/16-increasing-decreasing-concavity.ptx"/>
+    <xi:include href="./activities/17-introducing-logarithms.ptx"/>
+    <xi:include href="./activities/18-checkpoint5-practice.ptx"/>
+    <xi:include href="./activities/19-solving-exp-log-equations.ptx"/>
+    <xi:include href="./activities/20-solving-exp-log-equations-2.ptx"/>
+    <xi:include href="./activities/21-heating-cooling.ptx"/>
+    <xi:include href="./activities/22-warmup-exp-log-equations.ptx"/>
     <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -77,6 +96,7 @@
       <title>Writing Assignments</title>
       <xi:include href="./homework/homework-01.ptx"/>
       <xi:include href="./homework/homework-02.ptx"/>
+      <xi:include href="./homework/homework-03.ptx"/>
     </chapter>
 
 
