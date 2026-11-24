@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-graph-shape">
+<title>Guided Notes: Increasing, Decreasing, and Concavity</title>
+
+<page>
+<assemblage xml:id="shape-review">
+<title>Shape Words</title>
+<p><em>Increasing</em>: rises left to right. <em>Decreasing</em>: falls. <em>Concave up</em>: bends like a cup. <em>Concave down</em>: bends like a frown.</p>
+<p><em>Midline strategy:</em> a sine or cosine graph turns around at each max and min, and switches concavity at each midline crossing: concave down above the midline, concave up below it.</p>
+</assemblage>
+<paragraphs>
+<title>Sine and Cosine: The Midline Strategy</title>
+<example xml:id="shape-ex1">
+<title>Worked Example</title>
+<statement>
+<p>The graph of a sinusoidal function <m>f</m> is shown on <m>[0, 6]</m>. Find where <m>f</m> is increasing, decreasing, concave up, and concave down.</p>
+<image width="60%">
+<shortdescription>A cosine wave with its midline drawn.</shortdescription>
+<description>
+<p>A wave on the interval from zero to six starting at a maximum of three, falling to a minimum of negative one at x equals three, and rising back to three at x equals six. A dashed midline is drawn at y equals one, and open dots mark where the graph crosses it at x equals 1.5 and 4.5.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="shape-graph-ex">
+<diagram dimensions="(420,300)" margins="5">
+<coordinates bbox="(-0.6,-2.6,7,4.3)">
+<grid spacings="((-1,1,7),(-2,1,4))"/>
+<axes xlabel="x" ylabel="y" hticks="(-1,1,7)" hlabels="(1,1,6)" vticks="(-2,1,4)" vlabels="(-2,1,4)"/>
+<definition>f(x) = 2*cos(pi*x/3)+1</definition>
+<graph function="f" domain="(0,6)" stroke="#0072CE" thickness="3"/>
+<line endpoints="((0,1),(6,1))" stroke="#3E4A59" thickness="2" dash="6 4"/>
+<point p="(0,3)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(3,-1)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(6,3)" fill="#002967" stroke="#002967" size="4"/>
+<point p="(1.5,1)" fill="white" stroke="#002967" size="4"/>
+<point p="(4.5,1)" fill="white" stroke="#002967" size="4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</statement>
+<solution>
+<p>The max is <m>3</m> and the min is <m>-1</m>, so the midline is <m>y = \frac{3 + (-1)}{2} = 1</m>. The graph falls from the max at <m>x = 0</m> to the min at <m>x = 3</m>, then rises to the max at <m>x = 6</m>, so it is decreasing on <m>(0, 3)</m> and increasing on <m>(3, 6)</m>.</p>
+<p>The graph crosses the midline at <m>x = 1.5</m> and <m>x = 4.5</m> (open dots). It is concave down on <m>(0, 1.5)</m> and <m>(4.5, 6)</m>, where it is above the midline, and concave up on <m>(1.5, 4.5)</m>, where it is below.</p>
+</solution>
+</example>
+
+</paragraphs>
+<paragraphs>
+<title>Let's Try One Together</title>
+<p>Work through this one with the class.</p>
+</paragraphs>
+<exercise xml:id="shape-q1">
+<introduction>
+<p>The graph of <m>g</m> is shown on <m>[0, 4]</m>. Draw the midline, mark the max, the min, and the midline crossings, then answer each part.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave on the interval from zero to four that starts at two, falls to a minimum of negative one at x equals one, rises to a maximum of five at x equals three, and falls back to two at x equals four.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="shape-graph-1">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-1,-2.6,5,6.3)">
+<grid spacings="((-1,1,5),(-2,1,6))"/>
+<axes xlabel="x" ylabel="y" hticks="(-1,1,5)" hlabels="(0,1,4)" vticks="(-2,1,6)" vlabels="(-2,1,6)"/>
+<definition>f(x) = -3*sin(pi*x/2)+2</definition>
+<graph function="f" domain="(0,4)" stroke="#0072CE" thickness="3"/>
+
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Find the midline.</p>
+</statement>
+<answer>
+<p><m>y = 2</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Where is the function increasing? Where is it decreasing?</p>
+</statement>
+<answer>
+<p>Increasing on <m>(1, 3)</m>; decreasing on <m>(0, 1)</m> and <m>(3, 4)</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Where is the function concave up? Where is it concave down?</p>
+</statement>
+<answer>
+<p>Concave up on <m>(0, 2)</m>; concave down on <m>(2, 4)</m></p>
+</answer>
+<solution>
+<p>Max <m>5</m> at <m>x = 3</m>, min <m>-1</m> at <m>x = 1</m>, midline crossed at <m>x = 0, 2, 4</m>. Graph: <m>g(x) = -3\sin\left(\frac{\pi}{2}x\right) + 2</m>.</p>
+<p>Common errors: using the <m>x</m>-axis as the midline; listing only one of the two decreasing intervals; treating the turning points <m>x = 1</m> and <m>x = 3</m> as where the concavity changes.</p>
+</solution>
+</task>
+</exercise>
+<paragraphs>
+<title>You Try</title>
+<p>Use the midline strategy on your own.</p>
+</paragraphs>
+<exercise xml:id="shape-q2">
+<introduction>
+<p>The graph of <m>h</m> is shown on <m>[0, 8]</m>.</p>
+<image width="80%">
+<shortdescription>Graph of a sine or cosine wave.</shortdescription>
+<description>
+<p>A wave on the interval from zero to eight that starts at a minimum of negative five, rises to a maximum of three at x equals four, and falls back to negative five at x equals eight.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="shape-graph-2">
+<diagram dimensions="(480,300)" margins="5">
+<coordinates bbox="(-1,-6.6,9,4.3)">
+<grid spacings="((-1,1,9),(-6,1,4))"/>
+<axes xlabel="x" ylabel="y" hticks="(-1,1,9)" hlabels="(0,1,8)" vticks="(-6,1,4)" vlabels="(-6,1,4)"/>
+<definition>f(x) = -4*cos(pi*x/4)-1</definition>
+<graph function="f" domain="(0,8)" stroke="#0072CE" thickness="3"/>
+
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Find the midline.</p>
+</statement>
+<answer>
+<p><m>y = -1</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Where is the function increasing? Where is it decreasing?</p>
+</statement>
+<answer>
+<p>Increasing on <m>(0, 4)</m>; decreasing on <m>(4, 8)</m></p>
+</answer>
+</task>
+<task workspace="0.5in">
+<statement>
+<p>Where is the function concave up? Where is it concave down?</p>
+</statement>
+<answer>
+<p>Concave up on <m>(0, 2)</m> and <m>(6, 8)</m>; concave down on <m>(2, 6)</m></p>
+</answer>
+<solution>
+<p>Midline crossed at <m>x = 2</m> and <m>x = 6</m>. Graph: <m>h(x) = -4\cos\left(\frac{\pi}{4}x\right) - 1</m>.</p>
+<p>Common error: reading the concavity changes from where the graph crosses the <m>x</m>-axis (near <m>x \approx 2.7</m> and <m>5.3</m>) instead of the midline <m>y = -1</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<assemblage xml:id="shape-review-exp">
+<title>Exponential Functions <m>f(x) = c + ab^x</m></title>
+<p>Start with <m>b^x</m>: if <m>b \gt 1</m> it grows and is <em>increasing and concave up</em>; if <m>0 \lt b \lt 1</m> it decays toward <m>0</m> and is <em>decreasing and concave up</em>. A negative <m>a</m> flips the graph over, which switches both. Adding <m>c</m> moves the graph up or down. As <m>x \to \infty</m>, <m>f(x) \to c</m> when <m>0 \lt b \lt 1</m>, and <m>f(x) \to \infty</m> or <m>-\infty</m> when <m>b \gt 1</m>.</p>
+</assemblage>
+<example xml:id="shape-ex2">
+<title>Worked Example</title>
+<statement>
+<p>Without graphing, decide whether <m>f(x) = 20 - 8(0.5)^x</m> is increasing or decreasing, concave up or concave down, and what <m>f(x)</m> approaches as <m>x \to \infty</m>.</p>
+</statement>
+<solution>
+<p>Since <m>b = 0.5 \lt 1</m>, the term <m>(0.5)^x</m> decays toward <m>0</m>; by itself it is decreasing and concave up. Here <m>a = -8</m> is negative, which flips the graph over, so <m>f</m> is <em>increasing and concave down</em>. As <m>x \to \infty</m>, <m>8(0.5)^x \to 0</m>, so <m>f(x) \to 20</m>.</p>
+<p>The graph confirms it: <m>f</m> climbs toward <m>y = 20</m> and levels off.</p>
+<image width="55%">
+<shortdescription>An increasing curve leveling off below a dashed line.</shortdescription>
+<description>
+<p>The graph of f of x equals 20 minus 8 times 0.5 to the x. It rises from about four at x equals negative one, passes through twelve at x equals zero, and levels off just below a dashed horizontal line at y equals twenty.</p>
+</description>
+<prefigure xmlns="https://prefigure.org" label="shape-graph-exp">
+<diagram dimensions="(420,300)" margins="5">
+<coordinates bbox="(-1.5,-2,8.5,27)">
+<grid spacings="((-1,1,8),(0,5,25))"/>
+<axes xlabel="x" ylabel="y" hlabels="(2,2,8)" vlabels="(5,5,25)"/>
+<definition>f(x) = 20-8*0.5^x</definition>
+<graph function="f" domain="(-1,8)" stroke="#0072CE" thickness="3"/>
+<line endpoints="((-1,20),(8,20))" stroke="#3E4A59" thickness="2" dash="6 4"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</solution>
+</example>
+<paragraphs>
+<title>Let's Try One Together</title>
+<p>Decide each behavior from the formula.</p>
+</paragraphs>
+<exercise xml:id="shape-q3">
+<introduction>
+<p><m>P(x) = 6(0.8)^x + 3</m></p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Is the function increasing or decreasing?</p>
+</statement>
+<answer>
+<p>Decreasing</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Is it concave up or concave down?</p>
+</statement>
+<answer>
+<p>Concave up</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>What does the function approach as <m>x \to \infty</m>?</p>
+</statement>
+<answer>
+<p><m>P(x) \to 3</m></p>
+</answer>
+<solution>
+<p><m>b = 0.8 \lt 1</m>, so <m>(0.8)^x</m> is decaying, and <m>a = 6 \gt 0</m>, so the graph is not flipped.</p>
+</solution>
+</task>
+</exercise>
+<paragraphs>
+<title>You Try</title>
+<p>Decide each behavior from the formula first, then check your answers with Desmos.</p>
+</paragraphs>
+<exercise xml:id="shape-q4">
+<introduction>
+<p><m>Q(x) = 10 - 2(3)^x</m></p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Is the function increasing or decreasing?</p>
+</statement>
+<answer>
+<p>Decreasing</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Is it concave up or concave down?</p>
+</statement>
+<answer>
+<p>Concave down</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>What does the function approach as <m>x \to \infty</m>?</p>
+</statement>
+<answer>
+<p><m>Q(x) \to -\infty</m></p>
+</answer>
+<solution>
+<p><m>b = 3 \gt 1</m>, so <m>3^x</m> grows; <m>a = -2</m> flips it.</p>
+<p>Common error: saying <m>Q(x) \to 10</m> because <m>10</m> is the constant; the constant is only the limit when <m>0 \lt b \lt 1</m>.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="shape-q5">
+<introduction>
+<p><m>R(x) = 4(1.5)^x - 7</m></p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Is the function increasing or decreasing?</p>
+</statement>
+<answer>
+<p>Increasing</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Is it concave up or concave down?</p>
+</statement>
+<answer>
+<p>Concave up</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>What does the function approach as <m>x \to \infty</m>?</p>
+</statement>
+<answer>
+<p><m>R(x) \to \infty</m></p>
+</answer>
+<solution>
+<p><m>b = 1.5 \gt 1</m> and <m>a = 4 \gt 0</m>. The <m>-7</m> only shifts the graph down.</p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="shape-q6">
+<introduction>
+<p><m>S(x) = 30 - 25(0.6)^x</m></p>
+</introduction>
+<task workspace="0.3in">
+<statement>
+<p>Is the function increasing or decreasing?</p>
+</statement>
+<answer>
+<p>Increasing</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>Is it concave up or concave down?</p>
+</statement>
+<answer>
+<p>Concave down</p>
+</answer>
+</task>
+<task workspace="0.3in">
+<statement>
+<p>What does the function approach as <m>x \to \infty</m>?</p>
+</statement>
+<answer>
+<p><m>S(x) \to 30</m></p>
+</answer>
+<solution>
+<p><m>b = 0.6 \lt 1</m> and <m>a = -25 \lt 0</m>, so the decaying curve is flipped. This is the same shape as the worked example.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

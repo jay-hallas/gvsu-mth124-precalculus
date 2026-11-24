@@ -62,6 +62,8 @@
     <xi:include href="./activities/12-more-modeling-sine-cosine.ptx"/>
     <xi:include href="./activities/13-exponential-guided-notes.ptx"/>
     <xi:include href="./activities/14-exponential-practice.ptx"/>
+    <xi:include href="./activities/15-group-quiz5-practice.ptx"/>
+    <xi:include href="./activities/16-increasing-decreasing-concavity.ptx"/>
     <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
