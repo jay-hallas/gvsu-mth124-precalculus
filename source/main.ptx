@@ -56,6 +56,7 @@
     <xi:include href="./activities/06-composition.ptx"/>
     <xi:include href="./activities/07-inverses.ptx"/>
     <xi:include href="./activities/08-quiz2-review.ptx"/>
+    <xi:include href="./activities/09-midline-amplitude-period.ptx"/>
     <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
