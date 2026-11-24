@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-act-q6-warmup">
+<title>Warm-Up: Exponential and Log Equations</title>
+
+<page>
+<exercise xml:id="q6w-q1">
+<introduction>
+<p>Solve each equation. Give an exact answer, then round it to two decimal places.</p>
+</introduction>
+<task workspace="1.6in">
+<statement>
+<p><m>4 \cdot 3^{x} + 5 = 37</m></p>
+</statement>
+<answer>
+<p><m>x = \log_3(8) \approx 1.89</m></p>
+</answer>
+<solution>
+<p><m>4 \cdot 3^x = 32</m>, so <m>3^x = 8</m>. Common error: combining <m>4 \cdot 3^x</m> into <m>12^x</m>.</p>
+</solution>
+</task>
+<task workspace="1.6in">
+<statement>
+<p><m>2e^{0.5x} - 3 = 17</m></p>
+</statement>
+<answer>
+<p><m>x = 2\ln(10) \approx 4.61</m></p>
+</answer>
+<solution>
+<p><m>e^{0.5x} = 10</m>, so <m>0.5x = \ln(10)</m>.</p>
+</solution>
+</task>
+<task workspace="1.6in">
+<statement>
+<p><m>7 + 4\ln(x + 3) = 19</m></p>
+</statement>
+<answer>
+<p><m>x = e^3 - 3 \approx 17.09</m></p>
+</answer>
+<solution>
+<p><m>\ln(x + 3) = 3</m>, so <m>x + 3 = e^3</m>. The domain requires <m>x \gt -3</m>.</p>
+</solution>
+</task>
+<task workspace="1.6in">
+<statement>
+<p><m>2\ln(x - 5) - 1 = 9</m></p>
+</statement>
+<answer>
+<p><m>x = e^5 + 5 \approx 153.41</m></p>
+</answer>
+<solution>
+<p><m>\ln(x - 5) = 5</m>, so <m>x - 5 = e^5</m>. The domain requires <m>x \gt 5</m>.</p>
+</solution>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="q6w-tea">
+<introduction>
+<p>Emery pours a mug of tea at <m>190^\circ</m>F and sets it on a desk in a room that is <m>70^\circ</m>F. The temperature of the tea, in degrees Fahrenheit, <m>x</m> minutes after it is poured can be modeled by</p>
+<p><md>
+<mrow>T(x) = a e^{-0.06x} + c.</mrow>
+</md></p>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find <m>a</m> and <m>c</m>, then write the model.</p>
+</statement>
+<answer>
+<p><m>a = 120</m>, <m>c = 70</m>, <m>T(x) = 120e^{-0.06x} + 70</m></p>
+</answer>
+<solution>
+<p><m>c</m> is room temperature and <m>a + c = 190</m>.</p>
+</solution>
+</task>
+<task workspace="1.8in">
+<statement>
+<p>How many minutes after it is poured is the tea <m>130^\circ</m>F? Set up an equation and solve it. Give an exact answer, then round it to two decimal places.</p>
+</statement>
+<answer>
+<p><m>x = \frac{\ln(1/2)}{-0.06} \approx 11.55</m> minutes</p>
+</answer>
+<solution>
+<p><md>
+<mrow>130 \amp = 120e^{-0.06x} + 70</mrow>
+<mrow>\tfrac12 \amp = e^{-0.06x}</mrow>
+<mrow>-0.06x \amp = \ln\left(\tfrac12\right)</mrow>
+</md></p>
+</solution>
+</task>
+</exercise>
+<exercise xml:id="q6w-juice">
+<introduction>
+<p>Toph takes a bottle of juice out of the refrigerator and sets it on the counter. The juice starts at <m>36^\circ</m>F, and the kitchen is <m>68^\circ</m>F. The temperature of the juice, in degrees Fahrenheit, <m>x</m> minutes after it is taken out of the refrigerator can be modeled by</p>
+<p><md>
+<mrow>T(x) = a e^{-0.03x} + c.</mrow>
+</md></p>
+</introduction>
+<task workspace="0.9in">
+<statement>
+<p>Find <m>a</m> and <m>c</m>, then write the model.</p>
+</statement>
+<answer>
+<p><m>a = -32</m>, <m>c = 68</m>, <m>T(x) = -32e^{-0.03x} + 68</m></p>
+</answer>
+<solution>
+<p>Because the juice is warming, <m>a</m> is negative. Common errors: <m>a = 36</m> or <m>a = 32</m>.</p>
+</solution>
+</task>
+<task workspace="1.8in">
+<statement>
+<p>How many minutes after it is taken out of the refrigerator is the juice <m>50^\circ</m>F? Set up an equation and solve it. Give an exact answer, then round it to two decimal places.</p>
+</statement>
+<answer>
+<p><m>x = \frac{\ln(9/16)}{-0.03} \approx 19.18</m> minutes</p>
+</answer>
+<solution>
+<p><md>
+<mrow>50 \amp = -32e^{-0.03x} + 68</mrow>
+<mrow>-18 \amp = -32e^{-0.03x}</mrow>
+<mrow>\tfrac{9}{16} \amp = e^{-0.03x}</mrow>
+<mrow>-0.03x \amp = \ln\left(\tfrac{9}{16}\right)</mrow>
+</md></p>
+</solution>
+</task>
+</exercise>
+
+</page>
+</worksheet>

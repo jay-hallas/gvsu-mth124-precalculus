@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="mth124-writing-assignment-3">
+<title>Writing Assignment 3: Sinusoidal and Exponential Models</title>
+<introduction>
+<p>This assignment covers Learning Targets 7 and 10.</p>
+<p><ul><li><p>Be as detailed as possible when writing up a solution, and show all of your work.</p></li><li><p>You may use any resource, but do not directly copy work that is not your own.</p></li><li><p>You may work with a partner, but it is not required. <alert>If you work with a partner, each of you should write at least two parts, and initial each part you write.</alert></p></li><li><p>Every answer that asks for an explanation should be written in complete sentences.</p></li><li><p>Submit your final solutions on these pages, and upload a clear, high-quality scan of both sides to Blackboard.</p></li></ul></p>
+</introduction>
+
+<page>
+<exercise xml:id="wa3-124-spring">
+<introduction>
+<p>A weight hangs from a spring attached to a hook in the ceiling. The weight is pulled down and released, and it bounces up and down. At its lowest point the weight is <m>20</m> cm above the floor, and at its highest point it is <m>50</m> cm above the floor. It takes <m>1.5</m> seconds for the weight to travel from its lowest point to its highest point. When the timer starts at <m>t = 0</m>, the weight is at its lowest point. Let <m>h(t)</m> be the height of the weight above the floor, in cm, <m>t</m> seconds after the timer starts.</p>
+</introduction>
+<task workspace="0.8in">
+<statement>
+<p>Find the midline, amplitude, and period of <m>h(t)</m>. Include units.</p>
+</statement>
+</task>
+<task workspace="1.1in">
+<statement>
+<p>Write a formula for <m>h(t)</m> using cosine.</p>
+<p><em>Hint: Think about where a cosine graph starts, and whether your graph needs to be flipped.</em></p>
+</statement>
+</task>
+<task workspace="1.1in">
+<statement>
+<p>Write a formula for <m>h(t)</m> using sine.</p>
+<p><em>Hint: Use the form <m>h(t) = A\sin\big(B(t - C)\big) + k</m>. A sine graph starts on its midline heading upward, so <m>C</m> is the first time the weight passes its midline while moving up.</em></p>
+</statement>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>Find the exact height of the weight <m>2</m> seconds after the timer starts. You may use either formula; both should give the same answer.</p>
+</statement>
+</task>
+<task workspace="1in">
+<statement>
+<p>In complete sentences, explain what the amplitude and the midline tell you about the motion of the weight.</p>
+</statement>
+</task>
+</exercise>
+
+</page>
+
+<page>
+<exercise xml:id="wa3-124-car">
+<introduction>
+<p>A used car is bought for <m>\$25{,}000</m>. Two years later, the car is worth <m>\$19{,}360</m>. Assume the value of the car decreases exponentially. Let <m>V(t)</m> be the value of the car, in dollars, <m>t</m> years after it was bought.</p>
+</introduction>
+<task workspace="1.3in">
+<statement>
+<p>Find an exponential model <m>V(t) = ab^t</m> for the value of the car.</p>
+<p><em>Hint: <m>a</m> is the value of the car when <m>t = 0</m>. Use the value after <m>2</m> years to solve for <m>b</m>.</em></p>
+</statement>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>By what percent does the value of the car decrease each year? Explain how you can tell from your model, in complete sentences.</p>
+</statement>
+</task>
+<task workspace="0.9in">
+<statement>
+<p>What is the value of the car <m>5</m> years after it was bought? Round to the nearest cent.</p>
+</statement>
+</task>
+<task workspace="1.6in">
+<statement>
+<p>How long until the car is worth half of what it was bought for? Solve using logarithms. Give an exact answer, then round to two decimal places.</p>
+<p><em>Hint: Divide both sides by <m>25{,}000</m> first, then take the natural log of both sides.</em></p>
+</statement>
+</task>
+<task workspace="1.2in">
+<statement>
+<p>Your friend takes the percent from the second part and says, <q>If the car loses that percent of its value every year, then after <m>100 \div (\text{that percent})</m> years it will be worth nothing.</q> Explain why your friend is wrong. Use your model in your explanation.</p>
+</statement>
+</task>
+</exercise>
+
+</page>
+</worksheet>

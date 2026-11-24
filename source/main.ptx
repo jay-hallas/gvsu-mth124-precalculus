@@ -69,6 +69,7 @@
     <xi:include href="./activities/19-solving-exp-log-equations.ptx"/>
     <xi:include href="./activities/20-solving-exp-log-equations-2.ptx"/>
     <xi:include href="./activities/21-heating-cooling.ptx"/>
+    <xi:include href="./activities/22-warmup-exp-log-equations.ptx"/>
     <xi:include href="./activities/90-exp-log-comp.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -95,6 +96,7 @@
       <title>Writing Assignments</title>
       <xi:include href="./homework/homework-01.ptx"/>
       <xi:include href="./homework/homework-02.ptx"/>
+      <xi:include href="./homework/homework-03.ptx"/>
     </chapter>
 
 
